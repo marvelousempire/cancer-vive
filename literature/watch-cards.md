@@ -1,10 +1,10 @@
 # Watch cards — variable cabinet
 
 Filed 2026-09-14. These are Factor × Form × Lane positions, not a protocol and not a 0–1 kill rating.
-Rule: forms do not inherit. Kitchen spice ≠ extract ≠ oil ≠ resin ≠ “cleanse kit.”
+Rule: forms do not inherit. Kitchen spice ≠ extract ≠ oil ≠ resin ≠ “cleanse kit” ≠ 3% bottle ≠ ingested peroxide ≠ IV peroxide.
 Rule: this week is G1 surgery. New concentrated products stay on the disclose-or-hold shelf unless a clinician already owns them.
 
-Operator list as spoken: blackseed oil, black walnut, wormwood, shilajit resin, magnesium, zinc, humic / fulvic acid (“humid”), cayenne pepper, turmeric, Cuban oregano.
+Operator list as spoken: blackseed oil, black walnut, wormwood, shilajit resin, magnesium, zinc, humic / fulvic acid (“humid”), cayenne pepper, turmeric, Cuban oregano, 3% hydrogen peroxide.
 
 ## Closed doors for the whole cabinet
 
@@ -14,6 +14,8 @@ Operator list as spoken: blackseed oil, black walnut, wormwood, shilajit resin, 
 | A parasite-cleanse kit (wormwood + black-walnut hull + clove) replaces excision | not-supported + harm-flag |
 | Wormwood (A. absinthium / thujone) is the same object as A. annua / artemisinin | not-supported |
 | Watch-position 1.0 means the 1 cm mass dies | not-supported |
+| Drinking or infusing hydrogen peroxide “oxygenates” and kills a breast mass | not-supported + harm-flag |
+| 3% household peroxide is the same object as 35% “food grade” | not-supported |
 
 ## Cards
 
@@ -97,11 +99,26 @@ Human breast-cancer treatment: not-supported.
 | Culinary leaf | food | Watch | Common kitchen herb |
 | Essential oil / high-dose extract | cell / animal only | Stay-away this week | In-vitro and mouse tumor work exists. No human breast-cancer trial. Oil ≠ leaf. |
 
+### W-018 Hydrogen peroxide 3%
+
+Named object: drugstore 3% H2O2. Different objects: 35% industrial / “food grade,” ingested “oxygen therapy,” IV infusion, clinician-directed wound irrigant.
+
+| Form | Lane | Band | Note |
+|------|------|------|------|
+| 3% topical on intact skin / surface disinfectant | household | Watch | Label antiseptic. Not a tumor treatment. |
+| 3% on a surgical wound | wound care | Stay-away unless the surgeon owns it | Can injure fibroblasts; modern wound practice often prefers not to use it on healing tissue. |
+| Swallowed 3% as “oxygen therapy” | ingestion | Harm-flag | GI irritation and chemical injury. Not shown to treat cancer. |
+| 35% “food grade” or any internal / IV use | oxidative slogan | Harm-flag | FDA: no proven medical value internally; can cause burns, gas embolism, death. NCI: no support for rubbing it on skin as a cancer cure. |
+
+Slogan closed: cancer as hypoxia that a brown bottle will oxygenate. That is metaphor (see §04 / §05). Warburg / HIF work does not hatch this bottle.
+
+This house does not file a recipe for internal use.
+
 ## This-week heat (detriment first)
 
-Harm-flag / do not start new: wormwood oil or cleanse kit; black-walnut hull kit; new black-seed oil; high-dose curcumin; untested shilajit; concentrated cayenne capsules.
+Harm-flag / do not start new: wormwood oil or cleanse kit; black-walnut hull kit; new black-seed oil; high-dose curcumin; untested shilajit; concentrated cayenne capsules; swallowed or infused hydrogen peroxide; 35% “food grade” peroxide.
 
-Disclose if already in the house: any of the above, plus magnesium, zinc, culinary spices.
+Disclose if already in the house: any of the above, plus magnesium, zinc, culinary spices, and a 3% brown bottle used only as labeled surface antiseptic.
 
 Checkable later (not G1): confirm magnesium and zinc on labs if the team will draw them; COA for any resin already purchased; keep food spices as food.
 
