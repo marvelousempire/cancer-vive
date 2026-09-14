@@ -1,20 +1,37 @@
-# Cancer Vive corpus allowlist
+# Corpus allowlist
 
-Default policy: deny undeclared paths.
+Default policy: deny undeclared paths. This list is the seed corpus for a future `agent-housekeeper` row. It does not grant write power by itself.
 
-## First-read corpus
+```text
+README.md
+DECLARATION.md
+CHANGELOG.md
+housekeeper.pointer.json
+i Cover.md
+ii Intent-and-Purpose.md
+iii Summary.md
+iv Table-of-Contents.md
+v How-to-Read.md
+vi Diagram-8-Review-Claim-Filter.md
+vii Sources-and-References.md
+handbook/
+literature/claims.md
+literature/sources.md
+literature/watch-cards.md
+literature/harvest-breast-1cm-preop.md
+literature/una-decision-gates-breast-window.md
+literature/florida-statutes-breast-consent-stack.md
+literature/nodes.md
+housekeeper/brief.md
+housekeeper/corpus.md
+bishop/
+historia/
+```
 
-- README.md
-- DECLARATION.md
-- CHANGELOG.md
-- housekeeper.pointer.json
-- housekeeper/brief.md
-- housekeeper/corpus.md
-- literature/claims.md
-- literature/sources.md
-- v How-to-Read.md
-- vii Sources-and-References.md
-- historia/LEDGER-0001-session-2026-09-13.md
-- historia/LEDGER-0002-house-structure-2026-09-13.md
+## Keep out of corpus
 
-Handbook chapters and Bishop session cards live in the repo. They are not first-read corpus until named here.
+- Raw chat logs
+- Personal health information
+- Protocol blogs
+- Unread PDFs dumped without a source id
+- Bishop Creation Packs (those belong in `marvelousempire/bishop` if they are ever born)
