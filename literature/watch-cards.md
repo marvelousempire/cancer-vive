@@ -3,8 +3,9 @@
 Filed 2026-09-14. These are Factor × Form × Lane positions, not a protocol and not a 0–1 kill rating.
 Rule: forms do not inherit. Kitchen spice ≠ extract ≠ oil ≠ resin ≠ “cleanse kit” ≠ bottle of peroxide.
 Rule: this week is G1 surgery. New concentrated products stay on the disclose-or-hold shelf unless a clinician already owns them.
+Rule: a prescription drug appearing in this cabinet means “track and grade this variable,” not “take this drug.”
 
-Operator list as spoken: blackseed oil, black walnut, wormwood, shilajit resin, magnesium, zinc, humic / fulvic acid (“humid”), cayenne pepper, turmeric, Cuban oregano, 3% hydrogen peroxide.
+Operator list as spoken: blackseed oil, black walnut, wormwood, shilajit resin, magnesium, zinc, humic / fulvic acid (“humid”), cayenne pepper, turmeric, Cuban oregano, 3% hydrogen peroxide, ivermectin, “hydroxychloride” (filed as hydroxychloroquine / HCQ; if another compound was intended, this card does not inherit that meaning).
 
 ## Closed doors for the whole cabinet
 
@@ -15,6 +16,8 @@ Operator list as spoken: blackseed oil, black walnut, wormwood, shilajit resin, 
 | Wormwood (A. absinthium / thujone) is the same object as A. annua / artemisinin | not-supported |
 | Hydrogen peroxide taken by mouth or vein treats cancer | not-supported + harm-flag |
 | Watch-position 1.0 means the 1 cm mass dies | not-supported |
+| Ivermectin being studied in cancer trials means it is an established cancer treatment | not-supported |
+| Hydroxychloroquine being studied in cancer trials means it is an established cancer treatment | not-supported |
 
 ## Cards
 
@@ -113,14 +116,53 @@ Closed: Warburg / hypoxia talk in this house does not license drinking peroxide.
 
 Grade: human cancer-treatment claim not-supported. Ingestion and injection: harm-flag.
 
+### W-019 Ivermectin
+
+Ivermectin is filed as a prescription-drug research variable, not as a parasite-cleanse extension and not as a treatment instruction.
+
+| Form | Lane | Band | Note |
+|------|------|------|------|
+| Ivermectin used for labeled antiparasitic indications | established non-oncology medicine | Separate egg | NCI defines ivermectin as an antiparasitic drug. The FDA oral label is for antiparasitic use, not a cancer indication. |
+| Ivermectin + immune-checkpoint inhibitor in metastatic triple-negative breast cancer | investigational oncology | Investigate | ClinicalTrials.gov NCT05318469 is a Phase I/II study evaluating ivermectin with balstilimab or pembrolizumab in metastatic TNBC. Recruiting status was posted in 2026. |
+| Ivermectin + immune-checkpoint inhibitor in solid tumors (ICONIC) | investigational oncology | Investigate | ClinicalTrials.gov NCT07487805 is a Phase 2 study designed to measure safety and immune effects; the posted record states clinical cancer data remain very limited. |
+| Self-started ivermectin as a cancer treatment outside a clinician-owned trial or plan | off-label / ungraded | Stay-away / disclose | Research activity does not establish benefit. Interaction and toxicity questions remain part of the research problem. No Cancer Vive dose is created here. |
+
+Cancer Vive grade: human oncology evidence = investigational / incomplete. Established human breast-cancer treatment = not-supported.
+
+Evidence handles:
+- NCI Drug Dictionary: ivermectin — https://www.cancer.gov/publications/dictionaries/cancer-drug/def/ivermectin
+- ClinicalTrials.gov NCT05318469 — https://clinicaltrials.gov/study/NCT05318469
+- ClinicalTrials.gov NCT07487805 — https://clinicaltrials.gov/study/NCT07487805
+- FDA Stromectol label (oral ivermectin) — https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/050742s030lbl.pdf
+
+### W-020 Hydroxychloroquine (HCQ)
+
+Operator phrase was “hydroxychloride.” Cancer Vive normalizes that phrase to **hydroxychloroquine (HCQ)** for this card only. If a different chemical was intended, it must receive a separate card rather than inheriting HCQ evidence.
+
+| Form | Lane | Band | Note |
+|------|------|------|------|
+| Hydroxychloroquine for its established non-oncology prescription uses | established non-oncology medicine | Separate egg | Prescription medicine with its own labeled indications and monitoring requirements. |
+| Hydroxychloroquine used in oncology trials, including breast-cancer combinations | investigational oncology | Investigate | NCI currently lists oncology trials using hydroxychloroquine, including the ABBY breast-cancer trial. Trial presence is evidence of study, not proof of efficacy. |
+| Hydroxychloroquine as a stand-alone established cancer treatment | oncology claim | Not-supported | Cancer Vive does not treat active research as an approved or demonstrated cancer indication. |
+| Self-started HCQ for cancer outside a clinician-owned plan or trial | off-label / ungraded | Stay-away / disclose | FDA labeling includes important risks such as QT prolongation and retinal toxicity. No Cancer Vive dose is created here. |
+
+Cancer Vive grade: human oncology evidence = investigational. Established human breast-cancer treatment = not-supported.
+
+Evidence handles:
+- NCI clinical trials using hydroxychloroquine — https://www.cancer.gov/research/participate/clinical-trials/intervention/hydroxychloroquine
+- NCI hydroxychloroquine sulfate trials — https://www.cancer.gov/research/participate/clinical-trials/intervention/hydroxychloroquine-sulfate
+- FDA hydroxychloroquine sulfate label — https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/214581s007lbl.pdf
+
 ## This-week heat (detriment first)
 
 Harm-flag / do not start new: wormwood oil or cleanse kit; black-walnut hull kit; new black-seed oil; high-dose curcumin; untested shilajit; concentrated cayenne capsules; swallowed or injected hydrogen peroxide.
 
+Prescription-drug variables: ivermectin and hydroxychloroquine are **clinician-owned / investigate**, not self-start variables. If already being used, they belong on the medication disclosure list so the treating team can evaluate indication, interactions, and timing.
+
 Disclose if already in the house: any of the above, plus magnesium, zinc, culinary spices, and whether a brown bottle of 3% peroxide is being used as anything other than a labeled topical.
 
-Checkable later (not G1): confirm magnesium and zinc on labs if the team will draw them; COA for any resin already purchased; keep food spices as food.
+Checkable later (not G1): confirm magnesium and zinc on labs if the team will draw them; COA for any resin already purchased; keep food spices as food; track the cited ivermectin and hydroxychloroquine oncology trials as evidence updates rather than converting them into a protocol.
 
 ## How a card moves
 
-A card only leaves Harm-flag or Stay-away when a human measurement in this window exists (lab, pathology, or a clinician-owned plan). Metaphor and cell papers do not hatch G1.
+A card only leaves Harm-flag or Stay-away when a human measurement in this window exists (lab, pathology, or a clinician-owned plan). Metaphor and cell papers do not hatch G1. Investigational prescription-drug cards also require human trial evidence or a clinician-owned indication before their oncology lane can move.

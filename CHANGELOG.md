@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.5.0 — 2026-09-14
+
+### Added
+
+- Watch variable W-019: ivermectin
+- Watch variable W-020: hydroxychloroquine (HCQ), normalized from operator dictation “hydroxychloride” with the original phrase preserved
+- Current NCI / ClinicalTrials.gov evidence handles for ivermectin oncology studies and hydroxychloroquine oncology studies
+- Prescription-drug rule: presence in the variable cabinet means track and grade, not take or prescribe
+
+### Notes
+
+- Ivermectin has active/in-development oncology research, including metastatic triple-negative breast-cancer and solid-tumor immune-checkpoint studies; Cancer Vive records that as investigational, not established treatment
+- Hydroxychloroquine appears in oncology trials, including breast-cancer research; Cancer Vive records that as investigational, not established treatment
+- No dosing protocol was created for either drug
+- Existing or contemplated prescription-drug use stays clinician-owned and belongs on the medication disclosure list
+
 ## 0.4.0 — 2026-09-13
 
 ### Added
