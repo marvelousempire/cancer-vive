@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0.0",
+  "fleet_repo_id": "cancer-vive",
+  "display_name": "Cancer Vive Housekeeper",
+  "brief": "housekeeper/brief.md",
+  "corpus": "housekeeper/corpus.md",
+  "status": "bootstrap",
+  "sole_write": "OR-045 pending registration in marvelousempire/agent-housekeeper"
+}
