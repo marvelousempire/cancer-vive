@@ -9,7 +9,7 @@ Window: results about five days before Sunday 13 Sep 2026; surgery the following
 |------|-------|
 | Sex | female |
 | Age | 41 |
-| Children | 1 female child |
+| Household | female heir teen |
 | Breast tissue | dense |
 | Last-year impression | 1 cm finding called benign / nonmalignant cyst |
 | This-week object | biopsy named breast cancer, about 1 cm |
@@ -19,7 +19,7 @@ Window: results about five days before Sunday 13 Sep 2026; surgery the following
 | Family history | paternal aunt breast cancer (survived); paternal grandmother breast cancer (outcome not filed) |
 | Care site named | Mount Sinai Medical Center, Miami Beach |
 
-Not in this file: date of birth, brand names, weight, blood type, personal names.
+Not in this file: date of birth, brand names, weight, blood type, personal names. House language: heir teen, not child.
 
 Still missing for later eggs: DCIS vs invasive, grade, nodes, ER / PR / HER2, exact operation name.
 

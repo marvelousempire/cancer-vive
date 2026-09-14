@@ -21,7 +21,7 @@ Receipt = written name of the step + why + what the tissue or scan showed + what
 
 Operator-filed marks, 2026-09-13:
 
-- Female, age 41, 1 female child
+- Female, age 41, female heir teen
 - Dense breast tissue
 - Last year: 1 cm finding called a benign / nonmalignant cyst
 - This week: biopsy named breast cancer, still described as about 1 cm
@@ -32,6 +32,7 @@ Operator-filed marks, 2026-09-13:
 - Care site named: Mount Sinai Medical Center, Miami Beach
 
 Not filed in this house: exact operation name, DCIS vs invasive, grade, nodes, ER / PR / HER2.
+House language: heir teen, not child.
 
 ## Gate cards
 
