@@ -1,7 +1,7 @@
 # Watch cards — variable cabinet
 
 Filed 2026-09-14. These are Factor × Form × Lane positions, not a protocol and not a 0–1 kill rating.
-Rule: forms do not inherit. Kitchen spice ≠ extract ≠ oil ≠ resin ≠ “cleanse kit” ≠ 3% bottle ≠ ingested peroxide ≠ IV peroxide.
+Rule: forms do not inherit. Kitchen spice ≠ extract ≠ oil ≠ resin ≠ “cleanse kit” ≠ bottle of peroxide.
 Rule: this week is G1 surgery. New concentrated products stay on the disclose-or-hold shelf unless a clinician already owns them.
 
 Operator list as spoken: blackseed oil, black walnut, wormwood, shilajit resin, magnesium, zinc, humic / fulvic acid (“humid”), cayenne pepper, turmeric, Cuban oregano, 3% hydrogen peroxide.
@@ -13,9 +13,8 @@ Operator list as spoken: blackseed oil, black walnut, wormwood, shilajit resin, 
 | Any item here is a demonstrated human breast-cancer treatment | not-supported |
 | A parasite-cleanse kit (wormwood + black-walnut hull + clove) replaces excision | not-supported + harm-flag |
 | Wormwood (A. absinthium / thujone) is the same object as A. annua / artemisinin | not-supported |
+| Hydrogen peroxide taken by mouth or vein treats cancer | not-supported + harm-flag |
 | Watch-position 1.0 means the 1 cm mass dies | not-supported |
-| Drinking or infusing hydrogen peroxide “oxygenates” and kills a breast mass | not-supported + harm-flag |
-| 3% household peroxide is the same object as 35% “food grade” | not-supported |
 
 ## Cards
 
@@ -101,24 +100,24 @@ Human breast-cancer treatment: not-supported.
 
 ### W-018 Hydrogen peroxide 3%
 
-Named object: drugstore 3% H2O2. Different objects: 35% industrial / “food grade,” ingested “oxygen therapy,” IV infusion, clinician-directed wound irrigant.
+Household 3% is not 35% “food-grade,” not IV oxidative therapy, and not a tumor treatment.
 
 | Form | Lane | Band | Note |
 |------|------|------|------|
-| 3% topical on intact skin / surface disinfectant | household | Watch | Label antiseptic. Not a tumor treatment. |
-| 3% on a surgical wound | wound care | Stay-away unless the surgeon owns it | Can injure fibroblasts; modern wound practice often prefers not to use it on healing tissue. |
-| Swallowed 3% as “oxygen therapy” | ingestion | Harm-flag | GI irritation and chemical injury. Not shown to treat cancer. |
-| 35% “food grade” or any internal / IV use | oxidative slogan | Harm-flag | FDA: no proven medical value internally; can cause burns, gas embolism, death. NCI: no support for rubbing it on skin as a cancer cure. |
+| 3% topical OTC on intact skin / a minor cut | antiseptic monograph | Watch | That is the labeled US OTC use. Not a breast-mass treatment. |
+| 3% swallowed (“oxygen therapy,” drops in water) | ingestion | Harm-flag | Poison Control: even 3% can irritate or burn the gut. Not shown to treat cancer. |
+| 35% “food-grade” drunk or used as medicine | high-strength | Harm-flag | FDA 2006: do not drink high-strength H2O2 for cancer or other diseases. Burns, gas emboli, deaths reported. |
+| IV / injected hydrogen peroxide | oxidative therapy | Harm-flag | ACS: oxygen-releasing chemicals have not been shown to treat cancer; injected H2O2 can form oxygen bubbles that block blood flow. |
 
-Slogan closed: cancer as hypoxia that a brown bottle will oxygenate. That is metaphor (see §04 / §05). Warburg / HIF work does not hatch this bottle.
+Closed: Warburg / hypoxia talk in this house does not license drinking peroxide. More oxygen in a bottle is not the same object as tumor oxygenation biology.
 
-This house does not file a recipe for internal use.
+Grade: human cancer-treatment claim not-supported. Ingestion and injection: harm-flag.
 
 ## This-week heat (detriment first)
 
-Harm-flag / do not start new: wormwood oil or cleanse kit; black-walnut hull kit; new black-seed oil; high-dose curcumin; untested shilajit; concentrated cayenne capsules; swallowed or infused hydrogen peroxide; 35% “food grade” peroxide.
+Harm-flag / do not start new: wormwood oil or cleanse kit; black-walnut hull kit; new black-seed oil; high-dose curcumin; untested shilajit; concentrated cayenne capsules; swallowed or injected hydrogen peroxide.
 
-Disclose if already in the house: any of the above, plus magnesium, zinc, culinary spices, and a 3% brown bottle used only as labeled surface antiseptic.
+Disclose if already in the house: any of the above, plus magnesium, zinc, culinary spices, and whether a brown bottle of 3% peroxide is being used as anything other than a labeled topical.
 
 Checkable later (not G1): confirm magnesium and zinc on labs if the team will draw them; COA for any resin already purchased; keep food spices as food.
 
