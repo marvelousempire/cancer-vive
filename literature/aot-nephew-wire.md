@@ -14,11 +14,25 @@ Study the Architecture of Truth, the repository, and the game inside Nephew / Op
 4. Reason only when a clear, provable contradiction or error is present.
 5. Use the existing AoT house and the existing Optimus game contract on this ledger. Do not invent a third system.
 
+## Who is who (do not fuse)
+
+| Name | Role |
+|---|---|
+| Architecture of Truth | Platform. Filter engine lives there. |
+| Cancer Vive | Tenant. This house. Uses AOT as a tool. |
+| TrueThat | Ninth That owner. Projects AOT. Calls slice 01. Does not copy it. |
+| SaidThat | Eighth That owner. Spoken wrap. |
+
+TrueThat home: `marvelousempire/ai-skills-library/skills/cabinet-kitchen/truethat/`.
+AOT call from this house: `literature/wire/01_call_aot_filter.py`.
+A paragraph is not a wire.
+
 ## Objects that already exist (do not merge them)
 
 | Object | Repo / file | Job here |
 |--------|-------------|----------|
 | Architecture of Truth handbook | `marvelousempire/ArchitectureOfTruth` | Name object, name form, verify, divide fact from opinion |
+| TrueThat projection | `ai-skills-library` `skills/cabinet-kitchen/truethat/` | Suite owner that calls AOT. Not this house. |
 | 8-Review Trust Engine | `cancer-vive` `vi Diagram-8-Review-Claim-Filter.md` | Filter slogans into graded claims |
 | Fact–Opinion Divider | AoT ch. 22 | Opinion shelf vs checkable bay |
 | Honor of Verification | AoT ch. 14 | Source row required |
@@ -79,7 +93,8 @@ Reasoning is allowed only at the Truth Filter and Review 7 when a clash is on th
 - Skills pack: `ai-skills-library/rules/packs/cancer-vive-core.json`.
 - Game loop used: Interactive AoT state/source/challenge/revise/recontract.
 - Game loop not used: PATTAP, casino scoring, live immersive world.
+- Truth projection used: TrueThat calls AOT. This house stays tenant.
 
 ## Receipt
 
-Paths this file points at exist on main as of 2026-09-14. No new philosophy was added.
+Paths this file points at exist on main as of 2026-09-14. TrueThat suitcase may still be seating on AISL. No new philosophy was added.
