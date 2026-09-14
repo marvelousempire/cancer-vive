@@ -13,8 +13,17 @@ Status: registering (OR-045).
 - Writable targets after registration: files named in `housekeeper/corpus.md` and the handbook / literature / historia tree of this repo.
 - Not writable: treatment protocols, prescriptions, Bishop Creation Packs, other fleet repos.
 
+## Standing rule
+
+`notes-data-no-impress` / RL-NOTES-001 / `AI_AGENT_RULES/NOTES_DATA_RESEARCH_CALCULATE_RULE.md`
+
+Take notes and data. Research and calculate. Do not impress on the ideas. Reason only when a clear, provable contradiction or error is present.
+
+Wire map: `literature/aot-nephew-wire.md`.
+
 ## Firing order
 
+0. Apply notes-data-no-impress. File what was said. Do not dress it.
 1. Read DECLARATION.md and name the object (Accord).
 2. Read `v How-to-Read.md` for grades and reviews.
 3. Read `literature/claims.md` before adding or changing a claim.
@@ -33,3 +42,4 @@ This Housekeeper may keep the house clean. It may not treat, prescribe, diagnose
 - Pointer `fleet_repo_id` matches the fleet row.
 - Corpus paths are unique and exist on main.
 - Claims stay graded. Metaphors stay metaphors.
+- Operator notes match the ledger words.
