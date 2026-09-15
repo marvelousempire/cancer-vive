@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "purpose": "Machine-readable Cancer Vive prescription-drug research variables. Track and grade; never prescribe or dose.",
+  "safety_boundary": {
+    "creates_treatment_protocol": false,
+    "creates_dose": false,
+    "permits_self_start": false,
+    "trial_presence_equals_efficacy": false,
+    "clinical_owner_required_for_use": true
+  },
+  "variables": {
+    "W-019": {
+      "canonical_name": "ivermectin",
+      "aliases": ["ivermectin"],
+      "category": "prescription_drug_research_variable",
+      "established_cancer_treatment": false,
+      "dose_available": false,
+      "evidence_handles": ["NCT05318469", "NCT07487805"],
+      "lanes": {
+        "oncology_research": {
+          "grader_lane": "investigational",
+          "research_state": "investigational / incomplete",
+          "action": "track evidence; clinician-owned if used"
+        },
+        "established_non_oncology": {
+          "grader_lane": "established-non-oncology",
+          "research_state": "established medicine outside the oncology claim",
+          "action": "separate egg"
+        },
+        "off_label_self_start": {
+          "grader_lane": "off-label-ungraded",
+          "research_state": "not a Cancer Vive protocol",
+          "action": "stay-away / disclose"
+        },
+        "cancer_treatment_claim": {
+          "grader_lane": "oncology-claim-not-supported",
+          "research_state": "not established by Cancer Vive",
+          "action": "do not promote to treatment"
+        }
+      }
+    },
+    "W-020": {
+      "canonical_name": "hydroxychloroquine",
+      "aliases": ["hydroxychloroquine", "hcq", "hydroxychloride"],
+      "category": "prescription_drug_research_variable",
+      "established_cancer_treatment": false,
+      "dose_available": false,
+      "evidence_handles": ["NCI:hydroxychloroquine-oncology-trials"],
+      "normalization_note": "Operator phrase 'hydroxychloride' maps to hydroxychloroquine for W-020 only; another compound must get a separate card.",
+      "lanes": {
+        "oncology_research": {
+          "grader_lane": "investigational",
+          "research_state": "investigational",
+          "action": "track evidence; clinician-owned if used"
+        },
+        "established_non_oncology": {
+          "grader_lane": "established-non-oncology",
+          "research_state": "established medicine outside the oncology claim",
+          "action": "separate egg"
+        },
+        "off_label_self_start": {
+          "grader_lane": "off-label-ungraded",
+          "research_state": "not a Cancer Vive protocol",
+          "action": "stay-away / disclose"
+        },
+        "cancer_treatment_claim": {
+          "grader_lane": "oncology-claim-not-supported",
+          "research_state": "not established by Cancer Vive",
+          "action": "do not promote to treatment"
+        }
+      }
+    }
+  }
+}

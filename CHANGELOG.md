@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.6.0 — 2026-09-15
+
+### Wired
+
+- W-019 ivermectin and W-020 hydroxychloroquine are now executable Cancer Vive research variables, not literature-only cards
+- Added machine-readable `prescription_variables.json`
+- Added Slice 11 intent → Bootstrap English → Python router → JSON receipt path
+- Slice 11 resolves `ivermectin`, `hydroxychloroquine`, `HCQ`, and preserved operator alias `hydroxychloride`
+- Slice 11 calls Slice 06 for evidence grading instead of inventing a second grading system
+- Slice 06 now recognizes prescription research lanes: investigational, established non-oncology, off-label/ungraded, and unsupported oncology-treatment claim
+- Smoke test expanded from 5 to 13 checks and passed 13/13 before commit
+- Added runnable Cancer Vive CLI commands to the wire README, Drive, and Smoke docs
+- Added Historia LEDGER-0009
+
+### Safety invariants
+
+- W-019 and W-020 both return `dose_available=false`
+- W-019 and W-020 both return `established_cancer_treatment=false`
+- Actual use remains clinician-owned and disclose-if-using
+- Research/trial presence is not converted into proof of efficacy
+
 ## 0.5.0 — 2026-09-14
 
 ### Added

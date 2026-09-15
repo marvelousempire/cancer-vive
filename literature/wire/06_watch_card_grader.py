@@ -12,6 +12,11 @@ BANDS = {
     "metaphor": ("Not-supported", 0.00),
     "not-supported": ("Not-supported", 0.00),
     "harm-flag": ("Harm-flag", -0.18),
+    # Prescription-drug research lanes. These are evidence positions, not treatment scores.
+    "investigational": ("Investigate", 0.20),
+    "established-non-oncology": ("Separate egg", 0.00),
+    "off-label-ungraded": ("Stay-away / disclose", -0.05),
+    "oncology-claim-not-supported": ("Not-supported", 0.00),
 }
 
 
