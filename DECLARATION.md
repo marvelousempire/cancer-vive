@@ -1,29 +1,20 @@
 # Declaration
 
-Created: Sunday, September 13, 2026
-House: marvelousempire/cancer-vive
-Contribution type: Handbook Framework / Research Ledger
+Cancer Vive is an evidence-oriented cancer research corpus.
 
-## What this house is
+It records and grades claims about mechanisms, exposures, interventions, candidate substances, clinical variables, and other factors relevant to causing detriment to cancer cells or tumors, cancer progression, or treatment response.
 
-A place to name objects, hold definitions, grade claims, and keep sources so a later reader can check the work.
+The current corpus includes metabolic overlap with type 2 diabetes, the Warburg effect, pseudohypoxia and hypoxia biology, selected food/extract claims, prescription-drug research variables, and breast-cancer-specific decision context.
 
-The first research object is the metabolic overlap of type 2 diabetes and some cancers, including Warburg mechanisms, pseudohypoxia, intermittent hypoxia training, and cloves as a glucose-handling adjunct.
+## Boundaries
 
-## What this house is not
+This repository is not:
 
-- A clinic
-- A treatment protocol
-- A substitute for an oncologist, endocrinologist, or licensed clinician
-- A claim that cancer is a type of diabetes
-- A reason to add hypoxia, cut sugar as a cure, or take clove oil as medicine
+- a clinic;
+- a treatment protocol;
+- individualized medical advice;
+- a substitute for an oncologist or other licensed clinician;
+- evidence that a studied substance is an established cancer treatment merely because a mechanism, animal study, case report, or clinical trial exists;
+- a dosing guide or self-start medication guide.
 
-## Language safety
-
-Chapters use reviews, not self-help steps.
-Examples illustrate. They do not prescribe.
-Feelings may be named. They do not replace measurement.
-
-## Authority
-
-Until a durable Housekeeper Creation Pack is registered in agent-housekeeper, this repository is in bootstrap. Session workers may draft. They do not gain production actuation by writing here.
+Claims should name their evidence level and point to a checkable source. Cancer-specific uncertainty stays visible rather than being filled with framework language or unsupported certainty.

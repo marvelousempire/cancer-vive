@@ -19,15 +19,15 @@ Window: results about five days before Sunday 13 Sep 2026; surgery the following
 | Family history | paternal aunt breast cancer (survived); paternal grandmother breast cancer (outcome not filed) |
 | Care site named | Mount Sinai Medical Center, Miami Beach |
 
-Not in this file: date of birth, brand names, weight, blood type, personal names. House language: heir teen, not child.
+Not in this file: date of birth, brand names, weight, blood type, personal names. Relationship label retained as filed: female heir teen.
 
-Still missing for later eggs: DCIS vs invasive, grade, nodes, ER / PR / HER2, exact operation name.
+Still missing for later clinical decisions: DCIS vs invasive, grade, nodes, ER / PR / HER2, exact operation name.
 
 ## Closed doors
 
 | Door | Grade | Why it stays shut |
 |------|-------|-------------------|
-| Skip or replace the planned excision with cloves, oil, hypoxia, or homeopathy | not-supported | No human trial in this house shows those objects remove a 1 cm breast mass |
+| Skip or replace the planned excision with cloves, oil, hypoxia, or homeopathy | not-supported | No human trial in this repository shows those objects remove a 1 cm breast mass |
 | "Cancer is a type of diabetes" | metaphor | C-016. Identity 0% |
 | Clove / eugenol / clove oil is a demonstrated human cancer treatment | not-supported | C-020 |
 | Concentrated clove essential oil as a peri-op tool | harm-flag | Different object from food spice |
@@ -40,7 +40,7 @@ Stay-away this week: delay surgery for an ungraded remedy; concentrated clove oi
 
 ## Heat map — checkable
 
-Surgery plus pathology of the named 1 cm mass; radiation as a separate local egg after breast-conserving surgery; disclose every supplement; paternal family history as a later genetics conversation.
+Surgery plus pathology of the named 1 cm mass; radiation as a separate local treatment decision after breast-conserving surgery; disclose every supplement; paternal family history as a later genetics conversation.
 
 Last year's imaging call (benign cyst) is not this week's tissue call (breast cancer). Radiation is not chemotherapy.
 
@@ -48,6 +48,6 @@ Last year's imaging call (benign cyst) is not this week's tissue call (breast ca
 
 1. The mass is a named object. Surgery is how that object becomes pathology.
 2. Identity slogan is 0%.
-3. Florida statutes split the eggs: 381.026, 458.324, 766.103.
+3. Florida statutes separate these decisions: 381.026, 458.324, 766.103.
 4. Disclose vape, wine, prior low iron / magnesium, and every oil or pill already in the cabinet.
 5. Ask: What is the operation named? What will pathology report? Is radiation a separate consent? Is chemo even on the table yet?
