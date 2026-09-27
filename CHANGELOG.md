@@ -4,12 +4,10 @@
 
 ### Repository focus cleanup
 
-- Removed Architecture of Truth / Concise Perspective front matter and review-framework material.
-- Removed Housekeeper, Bishop, and Historia directories and pointers.
-- Removed generic Nephew, TrueThat, stage-door, tenant, CMS, session, and orchestration notes.
+- Removed non-cancer front matter, governance, staff/session ledgers, tenant/CMS notes, and generic orchestration material.
 - Removed the generic micro-slice / wire framework from this repository.
 - Preserved the machine-readable prescription-drug research variables at `literature/prescription_variables.json`.
-- Renamed the breast decision document so it describes cancer-care decision points without UNA / egg terminology.
+- Renamed the breast decision document so it uses plain cancer-care decision terminology.
 - Cleaned remaining cancer-specific files of framework vocabulary while retaining their cancer-related substance.
 - Rewrote the README and declaration around cancer evidence, mechanisms, interventions, exposures, treatment response, and source grading.
 

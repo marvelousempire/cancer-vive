@@ -19,7 +19,7 @@ Cancer Vive keeps material directly tied to cancer, including:
 
 ## Out of scope
 
-Generic ecosystem governance does not live here. Architecture of Truth / Concise Perspective, Housekeeper, Bishop, Historia, Nephew/TrueThat orchestration, session-worker machinery, and generic workflow plumbing belong in their own repositories.
+Generic ecosystem governance, staff/session machinery, application orchestration, and unrelated workflow plumbing do not live here. They belong in their own repositories.
 
 ## Start here
 

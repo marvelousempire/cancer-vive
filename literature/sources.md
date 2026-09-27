@@ -18,6 +18,6 @@ Ids are stable. Prefer primary papers and major reviews over blogs. A source can
 
 ## Audit notes
 
-- S-010 is intentionally marked thin. The opening session treated cloves as a real question. The house will not invent a polished citation for a pilot that has not been re-read at paper level.
+- S-010 is intentionally marked thin. The opening session treated cloves as a real question. This repository will not invent a polished citation for a pilot that has not been re-read at paper level.
 - S-011 is a class row, not a single paper. Promote to paper-level ids when the evidence librarian runs the §09(a) pass.
 - Do not add protocol blogs or product pages to this table.

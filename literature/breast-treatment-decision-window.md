@@ -29,7 +29,7 @@ Operator-filed marks, 2026-09-13:
 - Care site named: Mount Sinai Medical Center, Miami Beach
 
 Not filed in this repository: exact operation name, DCIS vs invasive, grade, nodes, ER / PR / HER2.
-House language: heir teen, not child.
+Relationship label retained as filed: female heir teen.
 
 ## Decision points
 

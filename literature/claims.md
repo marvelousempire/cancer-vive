@@ -1,6 +1,6 @@
 # Claim ledger
 
-Each row is one sentence. Grade is required. Source ids point at `sources.md`. Review status: `seed` means the row was filed at house bootstrap and has not had a second-pass evidence audit.
+Each row is one sentence. Grade is required. Source ids point at `sources.md`. Review status: `seed` means the row was filed initially and has not had a second-pass evidence audit.
 
 Status key: `seed` | `reviewed` | `disputed` | `retired`
 
@@ -10,7 +10,7 @@ Status key: `seed` | `reviewed` | `disputed` | `retired`
 | C-002 | High tumor glucose uptake is used clinically in FDG-PET imaging. | shown | S-002 | §04 | seed |
 | C-003 | HIF-1α, PI3K/AKT/mTOR, MYC, and PKM2 are recurrent drivers of aerobic glycolysis programs. | mechanism | S-002 S-003 | §04 | seed |
 | C-004 | “Cancer is sugar” as a complete cause statement. | metaphor | S-002 | §04 | seed |
-| C-005 | Cutting dietary sugar is a demonstrated cancer treatment in this house. | not-supported | — | §04 | seed |
+| C-005 | Cutting dietary sugar is a demonstrated cancer treatment in this repository. | not-supported | — | §04 | seed |
 | C-006 | HIF-1α is marked by PHDs in oxygen and removed through VHL. | mechanism | S-003 S-004 | §05 | seed |
 | C-007 | VHL loss stabilizes HIF in oxygen (classic clear cell kidney cancer path). | mechanism | S-004 | §05 | seed |
 | C-008 | SDH or FH loss raises succinate or fumarate and can block PHDs (pseudohypoxia). | mechanism | S-005 | §05 | seed |
