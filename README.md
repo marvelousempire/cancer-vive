@@ -27,6 +27,7 @@ Generic ecosystem governance, staff/session machinery, application orchestration
 |---|---|
 | [literature/claims.md](literature/claims.md) | Cancer-related claims and evidence grades |
 | [literature/sources.md](literature/sources.md) | Source ledger |
+| [literature/MASTER-CANCER-DETRIMENT-MATRIX.md](literature/MASTER-CANCER-DETRIMENT-MATRIX.md) | Master comparison matrix for all filed cancer-relevant substances and variables |
 | [literature/watch-cards.md](literature/watch-cards.md) | Research variables and evidence-position cards |
 | [literature/prescription_variables.json](literature/prescription_variables.json) | Machine-readable prescription-drug research variables |
 | [literature/harvest-breast-1cm-preop.md](literature/harvest-breast-1cm-preop.md) | Breast-cancer-specific recorded context |
