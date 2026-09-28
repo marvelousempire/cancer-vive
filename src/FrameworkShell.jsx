@@ -90,7 +90,7 @@ export default function FrameworkShell({activeView,onNavigate,children}){
       <EdgeRail edge="top" state={rails.top} setState={setEdge("top")} items={navItems} onNavigate={onNavigate} brand />
       <EdgeRail edge="left" state={rails.left} setState={setEdge("left")} items={navItems} onNavigate={onNavigate} />
       <EdgeRail edge="right" state={rails.right} setState={setEdge("right")} items={sourceItems} onNavigate={onNavigate} />
-      <EdgeRail edge="bottom" state={rails.bottom} setState={setEdge("bottom")} items={navItems} onNavigate={onNavigate} />
+      <EdgeRail edge="bottom" state={rails.bottom} setState={setEdge("bottom")} items={[...navItems, ...sourceItems]} onNavigate={onNavigate} />
       <div className="framework-stage">
         <div className="framework-stage-context"><span>{active?.icon}</span><strong>{active?.label}</strong><small>React · Vite · Framework Design DNA</small></div>
         {children}

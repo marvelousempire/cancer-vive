@@ -12,7 +12,8 @@
       "top_rail": "framework-edge-rail",
       "left_rail": "framework-edge-rail",
       "right_rail": "framework-edge-rail",
-      "bottom_rail": "framework-edge-rail"
+      "bottom_rail": "framework-edge-rail",
+      "bottom_actions": "all-navigation-and-source-actions"
     },
     "rails": {
       "top": {
@@ -79,5 +80,8 @@
       "keyboard_pointer_parity": true,
       "focus_reveals_icon_label": true
     }
-  }
+  },
+  "framework_authority_revision": "1570daace7142aa82fc16ebce3bc99b213f67ae9",
+  "manager_revision": "f6e0e3bc2fbc792956da04852d2f88f336ff7acf",
+  "automata_timeline_revision": "64c4f1df2d114976f2fb53c6b1b1be97aacc8bfb"
 }
