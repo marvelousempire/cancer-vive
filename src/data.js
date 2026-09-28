@@ -1,0 +1,181 @@
+export const evidenceItems = [
+  {
+    id: "cloves",
+    name: "Cloves",
+    constituent: "Culinary clove · clove extract · eugenol",
+    evidence: "Preclinical signal + indirect human evidence",
+    status: "Investigate",
+    human: "No demonstrated human cancer-treatment evidence currently filed.",
+    rationale: "Metabolic, inflammatory, and preclinical mechanism signals are filed; glucose-handling overlap is tracked separately.",
+    boundary: "Culinary clove ≠ extract ≠ essential oil. Human glucose evidence does not establish an oncology effect.",
+    mechanisms: ["metabolism", "inflammation", "cell-growth"],
+    tone: "investigate"
+  },
+  {
+    id: "turmeric",
+    name: "Turmeric / curcumin",
+    constituent: "Culinary turmeric · concentrated curcumin · curcumin ± piperine",
+    evidence: "Needs source audit",
+    status: "Investigate",
+    human: "Human breast-cancer treatment is not established in the current corpus.",
+    rationale: "Filed as a cancer-interest variable, but the current corpus still needs paper-level anticancer mechanism and trial sourcing.",
+    boundary: "Culinary use ≠ high-dose supplement. Concentrated curcumin, especially with piperine, has interaction and peri-operative concerns.",
+    mechanisms: ["source-audit"],
+    tone: "audit"
+  },
+  {
+    id: "black-seed",
+    name: "Black seed / Nigella sativa",
+    constituent: "Seed · black-seed oil · thymoquinone",
+    evidence: "Preclinical signal + thin human adjunct evidence",
+    status: "Investigate",
+    human: "Human breast-cancer treatment is not established.",
+    rationale: "Thymoquinone has cell/animal cancer-relevant work; small human adjunct studies are noted.",
+    boundary: "Seed ≠ oil ≠ isolated thymoquinone. Oil has interaction and peri-operative concerns.",
+    mechanisms: ["inflammation", "cell-growth"],
+    tone: "investigate"
+  },
+  {
+    id: "black-walnut",
+    name: "Black walnut",
+    constituent: "Walnut meat · black-walnut hull · juglone-containing extracts",
+    evidence: "Needs source audit / harm concern",
+    status: "Harm-flag",
+    human: "No human cancer-treatment evidence is established in the current corpus.",
+    rationale: "Filed primarily because of parasite-cleanse and toxicity claims rather than established oncology evidence.",
+    boundary: "Walnut food ≠ hull extract. Hull products carry toxicity and allergy concerns.",
+    mechanisms: ["source-audit", "harm"],
+    tone: "harm"
+  },
+  {
+    id: "wormwood",
+    name: "Wormwood",
+    constituent: "Artemisia absinthium herb/oil · thujone",
+    evidence: "Needs source audit / harm concern",
+    status: "Keep separate from artemisinin",
+    human: "No human cancer-treatment evidence is established in the current corpus.",
+    rationale: "No established cancer-detriment claim is currently filed for A. absinthium.",
+    boundary: "A. absinthium ≠ A. annua. Concentrated oil and high-dose use carry toxicity concerns.",
+    mechanisms: ["source-audit", "harm"],
+    tone: "harm"
+  },
+  {
+    id: "shilajit",
+    name: "Shilajit",
+    constituent: "Purified resin · raw/unverified resin",
+    evidence: "Needs source audit / harm concern",
+    status: "Watch / disclose",
+    human: "No human oncology effect is established in the current corpus.",
+    rationale: "No established anticancer effect is currently filed.",
+    boundary: "Product standardization and heavy-metal contamination are major confounders.",
+    mechanisms: ["source-audit", "harm"],
+    tone: "audit"
+  },
+  {
+    id: "humic-fulvic",
+    name: "Humic / fulvic acid",
+    constituent: "Isolated humic and fulvic fractions",
+    evidence: "Needs source audit",
+    status: "Watch",
+    human: "No human oncology effect is established in the current corpus.",
+    rationale: "No established anticancer effect is currently filed.",
+    boundary: "Isolated fractions ≠ whole shilajit. Quality and metal contamination matter.",
+    mechanisms: ["source-audit"],
+    tone: "audit"
+  },
+  {
+    id: "magnesium",
+    name: "Magnesium",
+    constituent: "Food magnesium · clinician-confirmed replacement",
+    evidence: "Indirect human evidence",
+    status: "Supportive physiology",
+    human: "Not an oncology-treatment variable in the current corpus.",
+    rationale: "Relevant to deficiency, recovery, and physiology, not filed as a tumor-killing intervention.",
+    boundary: "Replacement for deficiency ≠ antitumor dosing.",
+    mechanisms: ["supportive"],
+    tone: "supportive"
+  },
+  {
+    id: "zinc",
+    name: "Zinc",
+    constituent: "Food zinc · clinician-confirmed replacement",
+    evidence: "Indirect human evidence",
+    status: "Supportive physiology",
+    human: "Not established as a cancer treatment here.",
+    rationale: "Relevant to deficiency, wound healing, and infection risk rather than a demonstrated anticancer intervention.",
+    boundary: "Deficiency correction ≠ megadose anticancer therapy.",
+    mechanisms: ["supportive"],
+    tone: "supportive"
+  },
+  {
+    id: "capsaicin",
+    name: "Cayenne / capsaicin",
+    constituent: "Culinary cayenne · oral capsaicin · topical capsaicin",
+    evidence: "Indirect human evidence + needs oncology source audit",
+    status: "Separate symptom evidence",
+    human: "Human cancer-treatment benefit is not established.",
+    rationale: "Tumor-biology claims remain separate from established symptom-control uses.",
+    boundary: "Food ≠ oral supplement ≠ topical medicine. Symptom evidence does not establish tumor detriment.",
+    mechanisms: ["source-audit", "supportive"],
+    tone: "audit"
+  },
+  {
+    id: "cuban-oregano",
+    name: "Cuban oregano",
+    constituent: "Culinary leaf · essential oil · concentrated extract",
+    evidence: "Preclinical signal",
+    status: "Investigate",
+    human: "No human breast-cancer trial is currently filed.",
+    rationale: "In-vitro and mouse tumor work is noted in the repository.",
+    boundary: "Leaf ≠ essential oil or concentrated extract.",
+    mechanisms: ["inflammation", "cell-growth"],
+    tone: "investigate"
+  },
+  {
+    id: "hydrogen-peroxide",
+    name: "Hydrogen peroxide",
+    constituent: "3% topical · swallowed peroxide · high-strength peroxide · injected/IV peroxide",
+    evidence: "Not supported + harm concern",
+    status: "Harm-flag",
+    human: "No demonstrated human cancer-treatment benefit is filed.",
+    rationale: "The cancer-treatment rationale based on “oxygen therapy” is not supported in the current corpus.",
+    boundary: "Topical labeled use does not transfer to ingestion or injection. Ingestion/injection can cause serious harm.",
+    mechanisms: ["hypoxia", "harm"],
+    tone: "harm"
+  },
+  {
+    id: "ivermectin",
+    name: "Ivermectin",
+    constituent: "Prescription ivermectin · oncology combinations under study",
+    evidence: "Human oncology evidence · investigational/incomplete",
+    status: "Investigate",
+    human: "Human oncology trials are filed, including NCT05318469 and NCT07487805.",
+    rationale: "The filed oncology rationale is investigational, including combinations with immune-checkpoint therapy.",
+    boundary: "Trial activity ≠ established efficacy. Cancer Vive creates no dose or self-start instruction.",
+    mechanisms: ["immune-combination", "cell-growth"],
+    tone: "human"
+  },
+  {
+    id: "hcq",
+    name: "Hydroxychloroquine (HCQ)",
+    constituent: "Prescription hydroxychloroquine · oncology combinations under study",
+    evidence: "Human oncology evidence · investigational",
+    status: "Investigate",
+    human: "NCI oncology trial listings are filed, including breast-cancer combination research.",
+    rationale: "Filed as an investigational oncology variable, including combination-treatment research.",
+    boundary: "Oncology study ≠ approved cancer indication. Drug-specific risks and monitoring remain.",
+    mechanisms: ["immune-combination", "cell-growth"],
+    tone: "human"
+  }
+];
+
+export const mechanismLabels = {
+  "metabolism": "Metabolism / glucose",
+  "hypoxia": "Hypoxia / oxygen",
+  "inflammation": "Inflammation / oxidative stress",
+  "cell-growth": "Cell growth / survival",
+  "immune-combination": "Immune / treatment combination",
+  "supportive": "Supportive physiology",
+  "source-audit": "Needs source audit",
+  "harm": "Safety concern"
+};
