@@ -86,7 +86,7 @@
   "automata_timeline_revision": "64c4f1df2d114976f2fb53c6b1b1be97aacc8bfb",
   "cross_repo_handoff": {
     "correlation": "GITTALK-DESIGN-DNA-CONTROL-PLANE-20260928-001",
-    "report": "marvelousempire/nephew:docs/handoffs/2026-09-28-design-dna-control-plane-gittalk.md",
+    "report": "marvelousempire/nephew:docs/gittalk/GITTALK-DESIGN-DNA-CONTROL-PLANE-COMMISSIONING-20260928.md",
     "packet": "marvelousempire/nephew:data/gittalk/design-dna-control-plane.packet.json"
   }
 }
