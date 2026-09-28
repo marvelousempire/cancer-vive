@@ -177,7 +177,7 @@ function Dashboard({ onNavigate }) {
   );
 }
 
-function Matrix({ compareIds, toggleCompare }) {
+function Mechanisms({ compareIds, toggleCompare }) {
   const [query, setQuery] = useState("");
   const [mechanism, setMechanism] = useState("all");
   const [evidenceClass, setEvidenceClass] = useState("all");
@@ -277,7 +277,7 @@ function Matrix({ compareIds, toggleCompare }) {
   );
 }
 
-function Mechanisms() {
+function Matrix() {
   const mechanisms = Object.entries(mechanismLabels).filter(([key]) => !["source-audit", "harm"].includes(key));
   return (
     <section className="section-block view-section">
