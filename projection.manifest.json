@@ -4,7 +4,10 @@
   "application_id": "cancer-vive",
   "projection_class": "front_end",
   "audience": {
-    "roles": ["public-reader", "researcher"],
+    "roles": [
+      "public-reader",
+      "researcher"
+    ],
     "authentication_required": false,
     "tenant_scope": "public"
   },
@@ -15,26 +18,79 @@
   },
   "design": {
     "layout": {
-      "shell": "evidence-workbench",
-      "navigation": "sticky-top",
-      "content_width": "wide"
+      "work_stage": "inset",
+      "max_width_px": 1500
     },
     "furniture": {
-      "primary": ["metric-cards", "evidence-cards", "matrix-table", "compare-drawer", "research-queue"]
+      "top_rail": "framework-edge-rail",
+      "left_rail": "framework-edge-rail",
+      "right_rail": "framework-edge-rail",
+      "bottom_rail": "framework-edge-rail"
     },
-    "motif": {
-      "voice": "research-first",
-      "labels": ["evidence", "mechanism", "human oncology", "boundary", "source audit"]
+    "rails": {
+      "top": {
+        "default_state": "icon",
+        "lip_enabled": true
+      },
+      "right": {
+        "default_state": "icon",
+        "lip_enabled": true
+      },
+      "bottom": {
+        "default_state": "expanded",
+        "lip_enabled": true
+      },
+      "left": {
+        "default_state": "icon",
+        "lip_enabled": true
+      },
+      "states": [
+        "hidden",
+        "icon",
+        "expanded"
+      ],
+      "icon_hover_label": "transient",
+      "expanded_labels": "persistent"
+    },
+    "spacing": {
+      "base_unit_px": 8,
+      "rail_gap_px": 8,
+      "work_stage_gutter_px": 16
     },
     "paint": {
       "theme": "deep-clinical-green",
-      "density": "comfortable",
-      "contrast": "high"
+      "accent": "#8fe2b3"
+    },
+    "border": {
+      "width_px": 1,
+      "radius_px": 12
+    },
+    "motion": {
+      "rail_reveal_ms": 180,
+      "hover_label_ms": 140,
+      "reduced_motion": "instant-state"
+    },
+    "motif": {
+      "brand": "Cancer Vive",
+      "surface": "Evidence Explorer"
     },
     "behavior": {
-      "navigation": "client-side-view-switching",
-      "filters": "instant",
-      "comparison": "up-to-three-items"
+      "persist_rail_state": true,
+      "storage_key": "cancer-vive.rail-state.v1",
+      "hover_changes_persistent_state": false
+    },
+    "responsive": {
+      "mobile": {
+        "left": "hidden",
+        "right": "hidden",
+        "top": "icon",
+        "bottom": "icon"
+      }
+    },
+    "accessibility": {
+      "minimum_hit_target_css_px": 44,
+      "keyboard_pointer_parity": true,
+      "focus_reveals_icon_label": true
     }
   },
   "capabilities": {
@@ -44,12 +100,29 @@
       "literature/sources.md",
       "literature/watch-cards.md"
     ],
-    "actions": ["search", "filter", "compare", "navigate-source"],
-    "routes": ["dashboard", "matrix", "mechanisms", "research"]
+    "actions": [
+      "search",
+      "filter",
+      "compare",
+      "navigate-source",
+      "rail-state",
+      "rail-hover-label",
+      "rail-expand-collapse",
+      "rail-state-persist-readback"
+    ],
+    "routes": [
+      "dashboard",
+      "matrix",
+      "mechanisms",
+      "research"
+    ]
   },
   "renderer": {
     "contract": "renderer-neutral",
-    "allowed_suits": ["react", "web"],
+    "allowed_suits": [
+      "react",
+      "web"
+    ],
     "preferred_suit": "react"
   },
   "build": {
@@ -60,7 +133,12 @@
   "verification": {
     "readback_required": true,
     "receipt_required": true,
-    "truth_states": ["specified", "built", "observed", "proven"]
+    "truth_states": [
+      "specified",
+      "built",
+      "observed",
+      "proven"
+    ]
   },
   "provenance": {
     "canonical_source": "marvelousempire/cancer-vive",
@@ -70,5 +148,6 @@
       "literature/sources.md",
       "literature/watch-cards.md"
     ]
-  }
+  },
+  "design_dna_profile_ref": "design-dna.profile.json"
 }

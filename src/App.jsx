@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { evidenceItems, evidenceClasses, mechanismLabels, researchQueue } from "./data.js";
+import FrameworkShell from "./FrameworkShell.jsx";
 
 const REPO = "https://github.com/marvelousempire/cancer-vive";
 const LINKS = {
@@ -358,20 +359,8 @@ export default function App() {
   };
 
   return (
-    <div className="site-shell">
-      <header className="topbar">
-        <button className="brand-button" onClick={() => navigate("dashboard")}>
-          <span className="brand-mark">CV</span>
-          <span><strong>Cancer Vive</strong><small>Evidence Explorer</small></span>
-        </button>
-        <nav className="view-nav" aria-label="Primary navigation">
-          {views.map(([id, label]) => (
-            <button className={view === id ? "active" : ""} key={id} onClick={() => navigate(id)}>{label}</button>
-          ))}
-        </nav>
-        <a className="repo-link" href={REPO} target="_blank" rel="noreferrer">GitHub ↗</a>
-      </header>
-
+    <FrameworkShell activeView={view} onNavigate={navigate}>
+      <div className="site-shell">
       <main className="page">
         {view === "dashboard" && <Dashboard onNavigate={navigate} />}
         {view === "matrix" && <Matrix />}
@@ -389,9 +378,10 @@ export default function App() {
 
       <footer className="footer">
         <span>Cancer Vive · public research projection</span>
-        <span>React · Vite · GitHub Pages</span>
+        <span>Framework rails · React · Vite · GitHub Pages</span>
         <span>Research interface, not treatment advice</span>
       </footer>
-    </div>
+      </div>
+    </FrameworkShell>
   );
 }

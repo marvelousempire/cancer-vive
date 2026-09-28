@@ -1,0 +1,83 @@
+{
+  "schema": "cancer-vive.design-dna-profile/v1",
+  "framework_authority": "marvelousempire/father-framework:data/design-dna-rails.contract.json",
+  "manager": "marvelousempire/that-app-studio:/design-dna",
+  "automata_timeline": "marvelousempire/automata:timelines/design-dna-framework.json",
+  "domains": {
+    "layout": {
+      "work_stage": "inset",
+      "max_width_px": 1500
+    },
+    "furniture": {
+      "top_rail": "framework-edge-rail",
+      "left_rail": "framework-edge-rail",
+      "right_rail": "framework-edge-rail",
+      "bottom_rail": "framework-edge-rail"
+    },
+    "rails": {
+      "top": {
+        "default_state": "icon",
+        "lip_enabled": true
+      },
+      "right": {
+        "default_state": "icon",
+        "lip_enabled": true
+      },
+      "bottom": {
+        "default_state": "expanded",
+        "lip_enabled": true
+      },
+      "left": {
+        "default_state": "icon",
+        "lip_enabled": true
+      },
+      "states": [
+        "hidden",
+        "icon",
+        "expanded"
+      ],
+      "icon_hover_label": "transient",
+      "expanded_labels": "persistent"
+    },
+    "spacing": {
+      "base_unit_px": 8,
+      "rail_gap_px": 8,
+      "work_stage_gutter_px": 16
+    },
+    "paint": {
+      "theme": "deep-clinical-green",
+      "accent": "#8fe2b3"
+    },
+    "border": {
+      "width_px": 1,
+      "radius_px": 12
+    },
+    "motion": {
+      "rail_reveal_ms": 180,
+      "hover_label_ms": 140,
+      "reduced_motion": "instant-state"
+    },
+    "motif": {
+      "brand": "Cancer Vive",
+      "surface": "Evidence Explorer"
+    },
+    "behavior": {
+      "persist_rail_state": true,
+      "storage_key": "cancer-vive.rail-state.v1",
+      "hover_changes_persistent_state": false
+    },
+    "responsive": {
+      "mobile": {
+        "left": "hidden",
+        "right": "hidden",
+        "top": "icon",
+        "bottom": "icon"
+      }
+    },
+    "accessibility": {
+      "minimum_hit_target_css_px": 44,
+      "keyboard_pointer_parity": true,
+      "focus_reveals_icon_label": true
+    }
+  }
+}
