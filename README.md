@@ -59,3 +59,13 @@ Generic ecosystem governance, staff/session machinery, application orchestration
 | not-supported | Current evidence in this repository does not support the claim |
 
 The repository should remain narrow: cancer subject matter first, supporting evidence second, infrastructure somewhere else.
+
+## Cross-repo continuation
+
+System-level continuation and ownership map:
+
+- Nephew handoff: `marvelousempire/nephew:docs/handoffs/2026-09-28-design-dna-control-plane-gittalk.md`
+- GitTalk packet: `marvelousempire/nephew:data/gittalk/design-dna-control-plane.packet.json`
+- Correlation: `GITTALK-DESIGN-DNA-CONTROL-PLANE-20260928-001`
+
+Read that handoff before changing the shared Design DNA rail/lip, Vite projection, Automata timeline, WordPress adapter, or consumer contract. This repository owns only its named layer; do not fork the cross-repo authority map here.
