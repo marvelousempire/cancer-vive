@@ -1,0 +1,74 @@
+{
+  "schema_version": "that-studio.projection-manifest/v1",
+  "projection_id": "cancer-vive.front-end.public",
+  "application_id": "cancer-vive",
+  "projection_class": "front_end",
+  "audience": {
+    "roles": ["public-reader", "researcher"],
+    "authentication_required": false,
+    "tenant_scope": "public"
+  },
+  "authority": {
+    "owner": "marvelousempire/cancer-vive",
+    "projection_is_authority": false,
+    "mutation_policy": "read_only"
+  },
+  "design": {
+    "layout": {
+      "shell": "evidence-workbench",
+      "navigation": "sticky-top",
+      "content_width": "wide"
+    },
+    "furniture": {
+      "primary": ["metric-cards", "evidence-cards", "matrix-table", "compare-drawer", "research-queue"]
+    },
+    "motif": {
+      "voice": "research-first",
+      "labels": ["evidence", "mechanism", "human oncology", "boundary", "source audit"]
+    },
+    "paint": {
+      "theme": "deep-clinical-green",
+      "density": "comfortable",
+      "contrast": "high"
+    },
+    "behavior": {
+      "navigation": "client-side-view-switching",
+      "filters": "instant",
+      "comparison": "up-to-three-items"
+    }
+  },
+  "capabilities": {
+    "resources": [
+      "literature/MASTER-CANCER-DETRIMENT-MATRIX.md",
+      "literature/claims.md",
+      "literature/sources.md",
+      "literature/watch-cards.md"
+    ],
+    "actions": ["search", "filter", "compare", "navigate-source"],
+    "routes": ["dashboard", "matrix", "mechanisms", "research"]
+  },
+  "renderer": {
+    "contract": "renderer-neutral",
+    "allowed_suits": ["react", "web"],
+    "preferred_suit": "react"
+  },
+  "build": {
+    "target": "projection.vite",
+    "carrier": "github-pages",
+    "base_path": "/cancer-vive/"
+  },
+  "verification": {
+    "readback_required": true,
+    "receipt_required": true,
+    "truth_states": ["specified", "built", "observed", "proven"]
+  },
+  "provenance": {
+    "canonical_source": "marvelousempire/cancer-vive",
+    "generated_from": [
+      "literature/MASTER-CANCER-DETRIMENT-MATRIX.md",
+      "literature/claims.md",
+      "literature/sources.md",
+      "literature/watch-cards.md"
+    ]
+  }
+}

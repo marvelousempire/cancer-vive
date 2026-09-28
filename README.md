@@ -6,6 +6,20 @@ Its subject is evidence about factors, mechanisms, exposures, interventions, sub
 
 This repository is not medical advice, a treatment protocol, or a substitute for oncology care.
 
+
+## Public web projection
+
+Cancer Vive includes a governed React/Vite public evidence explorer deployed through GitHub Pages.
+
+- projection manifest: `projection.manifest.json`
+- renderer: React
+- build adapter: `projection.vite`
+- carrier: GitHub Pages
+- app source: `src/`
+- deploy workflow: `.github/workflows/pages.yml`
+
+The web interface is a projection of the research corpus. Markdown and JSON research files remain canonical.
+
 ## Scope
 
 Cancer Vive keeps material directly tied to cancer, including:

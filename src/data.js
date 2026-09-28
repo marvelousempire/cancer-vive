@@ -2,180 +2,227 @@ export const evidenceItems = [
   {
     id: "cloves",
     name: "Cloves",
+    short: "Cloves / eugenol",
     constituent: "Culinary clove · clove extract · eugenol",
     evidence: "Preclinical signal + indirect human evidence",
+    evidenceClass: "preclinical",
     status: "Investigate",
     human: "No demonstrated human cancer-treatment evidence currently filed.",
     rationale: "Metabolic, inflammatory, and preclinical mechanism signals are filed; glucose-handling overlap is tracked separately.",
     boundary: "Culinary clove ≠ extract ≠ essential oil. Human glucose evidence does not establish an oncology effect.",
     mechanisms: ["metabolism", "inflammation", "cell-growth"],
-    tone: "investigate"
+    refs: ["C-017", "C-019", "C-020", "S-010", "S-011"]
   },
   {
     id: "turmeric",
     name: "Turmeric / curcumin",
+    short: "Turmeric / curcumin",
     constituent: "Culinary turmeric · concentrated curcumin · curcumin ± piperine",
     evidence: "Needs source audit",
+    evidenceClass: "audit",
     status: "Investigate",
     human: "Human breast-cancer treatment is not established in the current corpus.",
     rationale: "Filed as a cancer-interest variable, but the current corpus still needs paper-level anticancer mechanism and trial sourcing.",
     boundary: "Culinary use ≠ high-dose supplement. Concentrated curcumin, especially with piperine, has interaction and peri-operative concerns.",
     mechanisms: ["source-audit"],
-    tone: "audit"
+    refs: []
   },
   {
     id: "black-seed",
     name: "Black seed / Nigella sativa",
+    short: "Black seed / thymoquinone",
     constituent: "Seed · black-seed oil · thymoquinone",
     evidence: "Preclinical signal + thin human adjunct evidence",
+    evidenceClass: "preclinical",
     status: "Investigate",
     human: "Human breast-cancer treatment is not established.",
     rationale: "Thymoquinone has cell/animal cancer-relevant work; small human adjunct studies are noted.",
     boundary: "Seed ≠ oil ≠ isolated thymoquinone. Oil has interaction and peri-operative concerns.",
     mechanisms: ["inflammation", "cell-growth"],
-    tone: "investigate"
+    refs: []
   },
   {
     id: "black-walnut",
     name: "Black walnut",
+    short: "Black walnut / juglone",
     constituent: "Walnut meat · black-walnut hull · juglone-containing extracts",
     evidence: "Needs source audit / harm concern",
+    evidenceClass: "harm",
     status: "Harm-flag",
     human: "No human cancer-treatment evidence is established in the current corpus.",
     rationale: "Filed primarily because of parasite-cleanse and toxicity claims rather than established oncology evidence.",
     boundary: "Walnut food ≠ hull extract. Hull products carry toxicity and allergy concerns.",
     mechanisms: ["source-audit", "harm"],
-    tone: "harm"
+    refs: []
   },
   {
     id: "wormwood",
     name: "Wormwood",
+    short: "Wormwood (A. absinthium)",
     constituent: "Artemisia absinthium herb/oil · thujone",
     evidence: "Needs source audit / harm concern",
+    evidenceClass: "harm",
     status: "Keep separate from artemisinin",
     human: "No human cancer-treatment evidence is established in the current corpus.",
     rationale: "No established cancer-detriment claim is currently filed for A. absinthium.",
     boundary: "A. absinthium ≠ A. annua. Concentrated oil and high-dose use carry toxicity concerns.",
     mechanisms: ["source-audit", "harm"],
-    tone: "harm"
+    refs: []
   },
   {
     id: "shilajit",
     name: "Shilajit",
+    short: "Shilajit",
     constituent: "Purified resin · raw/unverified resin",
     evidence: "Needs source audit / harm concern",
+    evidenceClass: "audit",
     status: "Watch / disclose",
     human: "No human oncology effect is established in the current corpus.",
     rationale: "No established anticancer effect is currently filed.",
     boundary: "Product standardization and heavy-metal contamination are major confounders.",
     mechanisms: ["source-audit", "harm"],
-    tone: "audit"
+    refs: []
   },
   {
     id: "humic-fulvic",
     name: "Humic / fulvic acid",
+    short: "Humic / fulvic acid",
     constituent: "Isolated humic and fulvic fractions",
     evidence: "Needs source audit",
+    evidenceClass: "audit",
     status: "Watch",
     human: "No human oncology effect is established in the current corpus.",
     rationale: "No established anticancer effect is currently filed.",
     boundary: "Isolated fractions ≠ whole shilajit. Quality and metal contamination matter.",
     mechanisms: ["source-audit"],
-    tone: "audit"
+    refs: []
   },
   {
     id: "magnesium",
     name: "Magnesium",
+    short: "Magnesium",
     constituent: "Food magnesium · clinician-confirmed replacement",
     evidence: "Indirect human evidence",
+    evidenceClass: "supportive",
     status: "Supportive physiology",
     human: "Not an oncology-treatment variable in the current corpus.",
     rationale: "Relevant to deficiency, recovery, and physiology, not filed as a tumor-killing intervention.",
     boundary: "Replacement for deficiency ≠ antitumor dosing.",
     mechanisms: ["supportive"],
-    tone: "supportive"
+    refs: []
   },
   {
     id: "zinc",
     name: "Zinc",
+    short: "Zinc",
     constituent: "Food zinc · clinician-confirmed replacement",
     evidence: "Indirect human evidence",
+    evidenceClass: "supportive",
     status: "Supportive physiology",
     human: "Not established as a cancer treatment here.",
     rationale: "Relevant to deficiency, wound healing, and infection risk rather than a demonstrated anticancer intervention.",
     boundary: "Deficiency correction ≠ megadose anticancer therapy.",
     mechanisms: ["supportive"],
-    tone: "supportive"
+    refs: []
   },
   {
     id: "capsaicin",
     name: "Cayenne / capsaicin",
+    short: "Cayenne / capsaicin",
     constituent: "Culinary cayenne · oral capsaicin · topical capsaicin",
     evidence: "Indirect human evidence + needs oncology source audit",
+    evidenceClass: "audit",
     status: "Separate symptom evidence",
     human: "Human cancer-treatment benefit is not established.",
     rationale: "Tumor-biology claims remain separate from established symptom-control uses.",
     boundary: "Food ≠ oral supplement ≠ topical medicine. Symptom evidence does not establish tumor detriment.",
     mechanisms: ["source-audit", "supportive"],
-    tone: "audit"
+    refs: []
   },
   {
     id: "cuban-oregano",
     name: "Cuban oregano",
+    short: "Cuban oregano",
     constituent: "Culinary leaf · essential oil · concentrated extract",
     evidence: "Preclinical signal",
+    evidenceClass: "preclinical",
     status: "Investigate",
     human: "No human breast-cancer trial is currently filed.",
     rationale: "In-vitro and mouse tumor work is noted in the repository.",
     boundary: "Leaf ≠ essential oil or concentrated extract.",
     mechanisms: ["inflammation", "cell-growth"],
-    tone: "investigate"
+    refs: []
   },
   {
     id: "hydrogen-peroxide",
     name: "Hydrogen peroxide",
+    short: "Hydrogen peroxide",
     constituent: "3% topical · swallowed peroxide · high-strength peroxide · injected/IV peroxide",
     evidence: "Not supported + harm concern",
+    evidenceClass: "harm",
     status: "Harm-flag",
     human: "No demonstrated human cancer-treatment benefit is filed.",
     rationale: "The cancer-treatment rationale based on “oxygen therapy” is not supported in the current corpus.",
     boundary: "Topical labeled use does not transfer to ingestion or injection. Ingestion/injection can cause serious harm.",
     mechanisms: ["hypoxia", "harm"],
-    tone: "harm"
+    refs: []
   },
   {
     id: "ivermectin",
     name: "Ivermectin",
+    short: "Ivermectin",
     constituent: "Prescription ivermectin · oncology combinations under study",
     evidence: "Human oncology evidence · investigational/incomplete",
+    evidenceClass: "human",
     status: "Investigate",
     human: "Human oncology trials are filed, including NCT05318469 and NCT07487805.",
     rationale: "The filed oncology rationale is investigational, including combinations with immune-checkpoint therapy.",
     boundary: "Trial activity ≠ established efficacy. Cancer Vive creates no dose or self-start instruction.",
     mechanisms: ["immune-combination", "cell-growth"],
-    tone: "human"
+    refs: ["NCT05318469", "NCT07487805"]
   },
   {
     id: "hcq",
     name: "Hydroxychloroquine (HCQ)",
+    short: "Hydroxychloroquine",
     constituent: "Prescription hydroxychloroquine · oncology combinations under study",
     evidence: "Human oncology evidence · investigational",
+    evidenceClass: "human",
     status: "Investigate",
     human: "NCI oncology trial listings are filed, including breast-cancer combination research.",
     rationale: "Filed as an investigational oncology variable, including combination-treatment research.",
     boundary: "Oncology study ≠ approved cancer indication. Drug-specific risks and monitoring remain.",
     mechanisms: ["immune-combination", "cell-growth"],
-    tone: "human"
+    refs: ["NCI oncology trial listings"]
   }
 ];
 
 export const mechanismLabels = {
-  "metabolism": "Metabolism / glucose",
-  "hypoxia": "Hypoxia / oxygen",
-  "inflammation": "Inflammation / oxidative stress",
+  metabolism: "Metabolism / glucose",
+  hypoxia: "Hypoxia / oxygen",
+  inflammation: "Inflammation / oxidative stress",
   "cell-growth": "Cell growth / survival",
   "immune-combination": "Immune / treatment combination",
-  "supportive": "Supportive physiology",
+  supportive: "Supportive physiology",
   "source-audit": "Needs source audit",
-  "harm": "Safety concern"
+  harm: "Safety concern"
+};
+
+export const researchQueue = [
+  { priority: 1, item: "Turmeric / curcumin", work: "Add paper-level cancer mechanism, breast-cancer, pharmacology, and human-trial sources; separate curcumin from turmeric-food evidence." },
+  { priority: 2, item: "Cloves / eugenol", work: "Replace class-level S-011 with exact cancer paper citations and distinguish eugenol, extract, oil, and culinary clove." },
+  { priority: 3, item: "Black seed / thymoquinone", work: "Add exact preclinical and human adjunct oncology citations." },
+  { priority: 4, item: "Cuban oregano", work: "Add exact cell/animal tumor papers and verify species/form." },
+  { priority: 5, item: "Ivermectin", work: "Track trial status/results and distinguish monotherapy claims from combination-trial evidence." },
+  { priority: 6, item: "Hydroxychloroquine", work: "Add exact breast-cancer/solid-tumor trial records and mechanism sources." },
+  { priority: 7, item: "Capsaicin", work: "Separate tumor-biology literature from symptom-control evidence." },
+  { priority: 8, item: "Black walnut / wormwood / shilajit / humic-fulvic", work: "Establish whether a credible cancer evidence lane exists before assigning a cancer-mechanism position." }
+];
+
+export const evidenceClasses = {
+  human: { label: "Human oncology", detail: "Human cancer studies or trials exist for the named context." },
+  preclinical: { label: "Preclinical", detail: "Cancer-relevant cell, animal, or pathway signal is filed." },
+  supportive: { label: "Indirect human", detail: "Human evidence exists outside an established tumor-treatment lane." },
+  audit: { label: "Needs source audit", detail: "The variable is filed, but paper-level oncology sourcing is incomplete." },
+  harm: { label: "Harm concern", detail: "Safety concerns matter independently of anticancer claims." }
 };
