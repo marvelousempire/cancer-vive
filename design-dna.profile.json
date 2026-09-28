@@ -83,5 +83,10 @@
   },
   "framework_authority_revision": "1570daace7142aa82fc16ebce3bc99b213f67ae9",
   "manager_revision": "f6e0e3bc2fbc792956da04852d2f88f336ff7acf",
-  "automata_timeline_revision": "64c4f1df2d114976f2fb53c6b1b1be97aacc8bfb"
+  "automata_timeline_revision": "64c4f1df2d114976f2fb53c6b1b1be97aacc8bfb",
+  "cross_repo_handoff": {
+    "correlation": "GITTALK-DESIGN-DNA-CONTROL-PLANE-20260928-001",
+    "report": "marvelousempire/nephew:docs/handoffs/2026-09-28-design-dna-control-plane-gittalk.md",
+    "packet": "marvelousempire/nephew:data/gittalk/design-dna-control-plane.packet.json"
+  }
 }
