@@ -194,8 +194,8 @@ function Mechanisms({ compareIds, toggleCompare }) {
   return (
     <section className="section-block view-section">
       <div className="section-head">
-        <div><p className="eyebrow">Master matrix</p><h1 className="view-title">Compare what is actually filed.</h1></div>
-        <p>Search by substance, form, mechanism, human evidence, or safety boundary. Select up to three items for direct comparison.</p>
+        <div><p className="eyebrow">Mechanism explorer</p><h1 className="view-title">Explore each variable by mechanism and evidence.</h1></div>
+        <p>Search and filter substances by mechanism, form, human evidence, and safety boundary. Select up to three items for direct comparison.</p>
       </div>
 
       <div className="filter-panel">
@@ -282,8 +282,8 @@ function Matrix() {
   return (
     <section className="section-block view-section">
       <div className="section-head">
-        <div><p className="eyebrow">Mechanism explorer</p><h1 className="view-title">Same variables. Different biological questions.</h1></div>
-        <p>This is a map of how the current corpus categorizes research questions, not a claim that every mechanism is proven in humans.</p>
+        <div><p className="eyebrow">Master matrix</p><h1 className="view-title">Variables × biological questions.</h1></div>
+        <p>This matrix crosses every filed variable against the mechanism lanes in the current corpus. A marked cell means the lane is filed, not that a human treatment effect is established.</p>
       </div>
 
       <div className="mechanism-matrix">
@@ -374,8 +374,8 @@ export default function App() {
 
       <main className="page">
         {view === "dashboard" && <Dashboard onNavigate={navigate} />}
-        {view === "matrix" && <Matrix compareIds={compareIds} toggleCompare={toggleCompare} />}
-        {view === "mechanisms" && <Mechanisms />}
+        {view === "matrix" && <Matrix />}
+        {view === "mechanisms" && <Mechanisms compareIds={compareIds} toggleCompare={toggleCompare} />}
         {view === "research" && <ResearchQueue />}
       </main>
 
