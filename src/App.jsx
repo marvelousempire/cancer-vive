@@ -107,10 +107,10 @@ function Dashboard({ onNavigate }) {
       <section className="hero-panel">
         <div className="hero-copy">
           <p className="eyebrow">Cancer Vive · evidence explorer</p>
-          <h1>One corpus. Many claims. No skipped evidence.</h1>
+          <h1>Explore the claims. See the evidence and the gaps.</h1>
           <p className="hero-text">
             Explore cancer-relevant substances, mechanisms, human evidence, safety boundaries, and open research work
-            without turning “interesting” into “established.”
+            with each source and open review visible. A mechanism or trial listing is not a proven treatment.
           </p>
           <div className="hero-actions">
             <button className="primary-button" onClick={() => onNavigate("matrix")}>Open master matrix</button>
