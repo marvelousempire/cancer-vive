@@ -4,7 +4,7 @@ Ids are stable. Prefer primary papers and major reviews over blogs. A source can
 
 | ID | Citation | Class | Holds claims |
 |----|----------|-------|--------------|
-| S-001 | Warburg, O. On the origin of cancer cells. *Science* 123, 309–314 (1956). | primary observation | C-001 |
+| S-001 | Warburg, O. On the origin of cancer cells. *Science* 123, 309–314 (1956). [PMID 13298683](https://pubmed.ncbi.nlm.nih.gov/13298683/); DOI: 10.1126/science.123.3191.309. | primary observation | C-001 |
 | S-002 | Vander Heiden, M. G., Cantley, L. C. & Thompson, C. B. Understanding the Warburg effect: the metabolic requirements of cell proliferation. *Science* 324, 1029–1033 (2009). | mechanism review | C-001 C-002 C-003 C-004 C-015 |
 | S-003 | Semenza, G. L. Hypoxia-inducible factors in physiology and medicine. *Cell* 148, 399–408 (2012). | pathway review | C-003 C-006 C-010 C-013 |
 | S-004 | Kaelin, W. G. Jr & Ratcliffe, P. J. Oxygen sensing by metazoans: the hypoxic response pathway. *Cell* 129, 458–468 (2007). | pathway review | C-006 C-007 |
@@ -13,7 +13,7 @@ Ids are stable. Prefer primary papers and major reviews over blogs. A source can
 | S-007 | Levy, P. et al. Obstructive sleep apnoea syndrome. *Nat. Rev. Dis. Primers* 1, 15015 (2015). | clinical review | C-011 |
 | S-008 | Dewhirst, M. W., Cao, Y. & Moeller, B. Cycling hypoxia and free radicals regulate angiogenesis and radiotherapy response. *Nat. Rev. Cancer* 8, 425–437 (2008). | tumor hypoxia review | C-012 C-013 |
 | S-009 | Giovannucci, E. et al. Diabetes and cancer: a consensus report. *Diabetes Care* 33, 1674–1685 (2010). See also later site-specific epidemiologic updates. | epidemiology consensus | C-014 C-015 C-016 |
-| S-010 | Mohan, R. et al. Water-soluble polyphenol-rich clove extract lowers pre- and post-prandial blood glucose levels in healthy and prediabetic volunteers: an open label pilot study. *BMC Complement. Altern. Med.* 19, 99 (2019). n=13, 250 mg/day, 30 days, open-label. Related later: Clovinol MetS comparative study, *J. Funct. Foods* (2022). Still thin: small samples, extract-specific, not a licensed medicine. | human adjunct (small / open-label) | C-017 |
+| S-010 | Mohan, R. et al. Water-soluble polyphenol-rich clove extract lowers pre- and post-prandial blood glucose levels in healthy and prediabetic volunteers: an open label pilot study. *BMC Complement. Altern. Med.* 19, 99 (2019). [PMID 31064377](https://pubmed.ncbi.nlm.nih.gov/31064377/); DOI: 10.1186/s12906-019-2507-7. n=13, 250 mg/day, 30 days, open-label. Related later: Clovinol MetS comparative study, *J. Funct. Foods* (2022). Still thin: small samples, extract-specific, not a licensed medicine. | human adjunct (small / open-label) | C-017 |
 | S-011 | Animal and cell papers on eugenol / clove extracts and glucose or inflammatory marks. Representative class: eugenol AMPK / oxidative-stress / insulin-mark studies. Exact paper-level audit is an open task in §09(a). | animal / cell mechanism | C-019 |
 | S-012 | ClinicalTrials.gov NCT01740323, Phase II Study of Curcumin vs Placebo for Chemotherapy-Treated Breast Cancer Patients Undergoing Radiotherapy, https://clinicaltrials.gov/study/NCT01740323. Completed; 30 enrolled; registered measures include inflammation markers and fatigue, not tumor response or survival. Record checked 2026-10-06; posted results require separate outcome audit. | primary trial registry | C-022 |
 
@@ -22,3 +22,9 @@ Ids are stable. Prefer primary papers and major reviews over blogs. A source can
 - S-010 is intentionally marked thin. The opening session treated cloves as a real question. This repository will not invent a polished citation for a pilot that has not been re-read at paper level.
 - S-011 is a class row, not a single paper. Promote to paper-level ids when the evidence librarian runs the §09(a) pass.
 - Do not add protocol blogs or product pages to this table.
+
+## Source readback · 2026-10-06
+
+- S-001 bibliographic identity and DOI checked against PubMed. This does not independently validate the broader C-001 wording or every tumor type.
+- S-010 full PubMed abstract checked: open-label pilot, 13 otherwise healthy volunteers grouped by starting glucose, 250 mg/day water-soluble clove polyphenolic extract for 30 days. The measured endpoint is glucose handling, not cancer treatment. The small, unblinded design leaves treatment efficacy unproven. C-017 stays `seed` pending a separate reviewer and full-paper/conflict-of-interest audit.
+- S-012 registry lists NF-kB DNA binding, inflammatory markers and fatigue endpoints for NCT01740323. Enrollment was 30 and the study is completed. The registered endpoints do not establish tumor response or survival; posted results and any paper remain to be checked. C-022 stays `seed`.
