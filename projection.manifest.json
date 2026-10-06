@@ -58,8 +58,8 @@
       "work_stage_gutter_px": 16
     },
     "paint": {
-      "theme": "deep-clinical-green",
-      "accent": "#8fe2b3"
+      "theme": "clinical-blue-auto-light-dark",
+      "accent": "light-dark(#155fae, #8fc1ff)"
     },
     "border": {
       "width_px": 1,
@@ -95,6 +95,7 @@
   },
   "capabilities": {
     "resources": [
+      "README.md",
       "literature/MASTER-CANCER-DETRIMENT-MATRIX.md",
       "literature/claims.md",
       "literature/sources.md",
