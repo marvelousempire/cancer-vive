@@ -15,6 +15,7 @@ Ids are stable. Prefer primary papers and major reviews over blogs. A source can
 | S-009 | Giovannucci, E. et al. Diabetes and cancer: a consensus report. *Diabetes Care* 33, 1674–1685 (2010). See also later site-specific epidemiologic updates. | epidemiology consensus | C-014 C-015 C-016 |
 | S-010 | Mohan, R. et al. Water-soluble polyphenol-rich clove extract lowers pre- and post-prandial blood glucose levels in healthy and prediabetic volunteers: an open label pilot study. *BMC Complement. Altern. Med.* 19, 99 (2019). n=13, 250 mg/day, 30 days, open-label. Related later: Clovinol MetS comparative study, *J. Funct. Foods* (2022). Still thin: small samples, extract-specific, not a licensed medicine. | human adjunct (small / open-label) | C-017 |
 | S-011 | Animal and cell papers on eugenol / clove extracts and glucose or inflammatory marks. Representative class: eugenol AMPK / oxidative-stress / insulin-mark studies. Exact paper-level audit is an open task in §09(a). | animal / cell mechanism | C-019 |
+| S-012 | ClinicalTrials.gov NCT01740323, Phase II Study of Curcumin vs Placebo for Chemotherapy-Treated Breast Cancer Patients Undergoing Radiotherapy, https://clinicaltrials.gov/study/NCT01740323. Completed; 30 enrolled; registered measures include inflammation markers and fatigue, not tumor response or survival. Record checked 2026-10-06; posted results require separate outcome audit. | primary trial registry | C-022 |
 
 ## Audit notes
 
