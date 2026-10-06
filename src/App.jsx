@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { evidenceItems, evidenceClasses, mechanismLabels, researchQueue } from "./data.js";
 import FrameworkShell from "./FrameworkShell.jsx";
+import Corpus from "./Corpus.jsx";
 
 const REPO = "https://github.com/marvelousempire/cancer-vive";
 const LINKS = {
@@ -126,6 +127,8 @@ function Dashboard({ onNavigate }) {
           <div className="orbit-note orbit-three">boundaries</div>
         </div>
       </section>
+
+      <Corpus initial="overview" />
 
       <section className="metrics-grid">
         <Metric value={counts.human} label="Human oncology" detail="Human cancer studies or trials exist for the named context." />
@@ -287,6 +290,8 @@ function Matrix() {
         <p>This matrix crosses every filed variable against the mechanism lanes in the current corpus. A marked cell means the lane is filed, not that a human treatment effect is established.</p>
       </div>
 
+      <Corpus initial="matrix" />
+
       <div className="mechanism-matrix">
         <div className="matrix-header-row">
           <span>Variable</span>
@@ -327,6 +332,8 @@ function ResearchQueue() {
         ))}
       </div>
 
+      <Corpus initial="claims" />
+
       <div className="source-dock">
         <div><p className="eyebrow">Canonical files</p><h2>Go to the evidence, not the decoration.</h2></div>
         <div className="source-links">
@@ -342,6 +349,8 @@ function ResearchQueue() {
 
 export default function App() {
   const [view, setView] = useState("dashboard");
+  const [theme, setTheme] = useState(() => { try { return localStorage.getItem("cancer-vive.theme.v1") || "auto"; } catch { return "auto"; } });
+  const setThemeChoice = (choice) => { setTheme(choice); try { localStorage.setItem("cancer-vive.theme.v1", choice); } catch {} };
   const [compareIds, setCompareIds] = useState([]);
   const [compareOpen, setCompareOpen] = useState(false);
 
@@ -359,8 +368,10 @@ export default function App() {
   };
 
   return (
+    <div className={"theme-root theme-" + theme}>
     <FrameworkShell activeView={view} onNavigate={navigate}>
       <div className="site-shell">
+      <div className="theme-control" role="group" aria-label="Color theme">{["auto", "light", "dark"].map((choice) => <button type="button" key={choice} aria-pressed={theme === choice} onClick={() => setThemeChoice(choice)}>{choice[0].toUpperCase() + choice.slice(1)}</button>)}</div>
       <main className="page">
         {view === "dashboard" && <Dashboard onNavigate={navigate} />}
         {view === "matrix" && <Matrix />}
@@ -383,5 +394,6 @@ export default function App() {
       </footer>
       </div>
     </FrameworkShell>
+    </div>
   );
 }
