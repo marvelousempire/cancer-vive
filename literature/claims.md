@@ -27,6 +27,7 @@ Status key: `seed` | `reviewed` | `disputed` | `retired`
 | C-019 | Eugenol or clove extracts show metabolic and inflammatory marks in animal and cell work. | mechanism | S-011 | §08 | seed |
 | C-020 | Clove oil or eugenol is a demonstrated human cancer treatment. | not-supported | — | §08 | seed |
 | C-021 | Intermittent hypoxia training is a demonstrated cancer treatment. | not-supported | — | §06 | seed |
+| C-022 | A completed breast-cancer trial studied a curcumin formulation for treatment-related inflammation and fatigue; its listed endpoints do not establish tumor control or survival benefit. | shown | S-012 | §09(a) | seed |
 
 ## How to add a row
 
