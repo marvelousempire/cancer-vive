@@ -18,14 +18,14 @@ export const evidenceItems = [
     name: "Turmeric / curcumin",
     short: "Turmeric / curcumin",
     constituent: "Culinary turmeric · concentrated curcumin · curcumin ± piperine",
-    evidence: "Needs source audit",
+    evidence: "Supportive-endpoint trial filed; cancer-treatment audit open",
     evidenceClass: "audit",
     status: "Investigate",
-    human: "Human breast-cancer treatment is not established in the current corpus.",
-    rationale: "Filed as a cancer-interest variable, but the current corpus still needs paper-level anticancer mechanism and trial sourcing.",
+    human: "A completed breast-cancer radiotherapy study measured inflammation and fatigue. Tumor-control benefit is not established here.",
+    rationale: "The filed trial studied treatment-related endpoints; paper-level anticancer mechanism and outcome sourcing remains open.",
     boundary: "Culinary use ≠ high-dose supplement. Concentrated curcumin, especially with piperine, has interaction and peri-operative concerns.",
     mechanisms: ["source-audit"],
-    refs: []
+    refs: ["C-022", "S-012", "NCT01740323"]
   },
   {
     id: "black-seed",
