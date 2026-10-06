@@ -6,7 +6,7 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   --bg: #07100c;
-  --surface: var(--surface);
+  --surface: light-dark(#f5f9ff, #0d1d31);
   --surface-2: #112119;
   --surface-3: #172a20;
   --line: rgba(174, 214, 189, .16);
