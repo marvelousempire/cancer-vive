@@ -34,20 +34,20 @@ A mechanism is not a clinical outcome. A trial is not proof of benefit. A food, 
 | **Comfrey powder** | Leaf/root powder; lab extract; tested skin medicine | Mixed rat findings include early-lesion changes and liver tumors | **Harm concern + limited animal signal**. C-031–C-033, S-022–S-024 | No filed proof of cancer treatment | **No** | Do not swallow; liver poisons may be present; skin medicines do not validate raw powder or a DMSO mix | **Harm concern** |
 | **Tree-frog gut bacteria** | Live frog-derived Ewingella americana strain | Complete responses in a five-mouse Colon-26 group | **Animal result**. C-034–C-036, S-025 S-026 | No human cancer trial in the paper | **No** | Strain-specific mouse result; not raw gut material; human infection reports exist | **Study further** |
 | **DMSO on skin / compound mixes** | Solvent; named medical combination; unnamed herbs | Skin passage; skin-cancer combination study; care for leaked-drug injury | **Named human contexts + unsupported herb mix**. C-037–C-041, S-027–S-032 | Human skin-cancer combination study, not DMSO alone or an herb mix | **No for DMSO alone or unnamed herbs** | ALA/light/scraping is a medical procedure; skin entry does not prove tumor delivery; exact mix and drugs need review | **Name the compound first** |
-| **Cloves** | Culinary clove, clove extract, eugenol | Eugenol / clove extracts have metabolic, inflammatory, and preclinical mechanism signals; glucose-handling overlap is also tracked | **Preclinical signal + indirect human evidence**. C-017, C-019, S-010, S-011 | No demonstrated human cancer-treatment evidence currently filed | **No**. C-020 | Culinary clove ≠ extract ≠ essential oil. Human glucose pilot does not establish an oncology effect | **Investigate / source-audit cancer papers** |
-| **Turmeric / curcumin** | Culinary turmeric; concentrated curcumin; curcumin ± piperine | Filed as a cancer-interest variable, but the current corpus does not yet contain a paper-level anticancer mechanism/source row | **Human supportive-endpoint trial filed + source audit open**. C-022, S-012 | A completed breast-cancer radiotherapy study measured inflammation and fatigue; tumor-control benefit is not established here | **No** | Culinary use ≠ high-dose supplement. Concentrated curcumin, especially with piperine, has interaction/peri-operative concerns | **Investigate; do not promote beyond evidence** |
-| **Black seed / Nigella sativa** | Seed, black-seed oil, thymoquinone | Thymoquinone has cell/animal cancer-relevant work; some small human adjunct studies are noted | **Preclinical signal + thin human adjunct evidence** | Human breast-cancer treatment not established | **No** | Seed ≠ oil ≠ isolated thymoquinone. Oil has interaction/peri-operative concerns | **Investigate** |
-| **Black walnut** | Walnut meat; black-walnut hull / juglone-containing extracts | Filed mainly because of parasite-cleanse and toxicity claims; no human cancer-treatment evidence is established | **Needs source audit / harm concern** | None established in corpus | **No** | Walnut food ≠ hull extract. Hull products carry toxicity/allergy concerns and should not inherit food evidence | **Harm-flag for cleanse claims** |
-| **Wormwood** | Artemisia absinthium herb/oil; thujone | No established cancer detriment claim in current corpus; specifically kept separate from Artemisia annua / artemisinin | **Needs source audit / harm concern** | None established in corpus | **No** | A. absinthium ≠ A. annua. Concentrated oil/high-dose use carries toxicity concerns | **Do not merge with artemisinin evidence** |
-| **Shilajit** | Purified resin; raw/unverified resin | No established anticancer effect in current corpus | **Needs source audit / harm concern** | None established | **No** | Product standardization and heavy-metal contamination are major confounders | **Watch / disclose; source audit before any cancer claim** |
-| **Humic / fulvic acid** | Isolated humic/fulvic fractions | No established anticancer effect in current corpus | **Needs source audit** | None established | **No** | Isolated fractions ≠ whole shilajit. Quality and metal contamination matter | **Watch / source audit** |
-| **Magnesium** | Food magnesium; clinician-confirmed replacement | Relevant to deficiency, recovery, and physiology, not filed as a tumor-killing intervention | **Indirect human evidence** | Not an oncology-treatment variable in current corpus | **No** | Replacement for deficiency ≠ antitumor dosing | **Supportive/physiologic variable, not cancer treatment** |
-| **Zinc** | Food zinc; clinician-confirmed replacement | Relevant to deficiency, wound healing, and infection risk rather than a demonstrated anticancer intervention | **Indirect human evidence** | Not established as cancer treatment here | **No** | Deficiency correction ≠ megadose anticancer therapy | **Supportive/physiologic variable** |
-| **Cayenne / capsaicin** | Culinary cayenne; oral capsaicin; topical capsaicin | Cancer-kill claim is not established in the current corpus; topical capsaicin has separate symptom-control evidence | **Indirect human evidence + needs oncology source audit** | Human cancer-treatment benefit not established | **No** | Food ≠ oral supplement ≠ topical medicine. Topical symptom evidence does not establish tumor detriment | **Separate symptom evidence from oncology claims** |
-| **Cuban oregano** | Culinary leaf; essential oil / concentrated extract | In-vitro and mouse tumor work is noted | **Preclinical signal** | No human breast-cancer trial currently filed | **No** | Leaf ≠ essential oil / concentrated extract | **Investigate** |
+| **Cloves** | Culinary clove, clove extract, eugenol | Did pure eugenol slow breast-tumor growth in the mouse test? | Scoped **Yes**. C-062 S-053 | No established human cancer-treatment result for this form | **No**. C-020 | Culinary clove ≠ extract ≠ essential oil. Human glucose pilot does not establish an oncology effect | Named result only; broader product and human-use questions remain Open |
+| **Turmeric / curcumin** | Culinary turmeric; concentrated curcumin; curcumin ± piperine | Did added oral curcumin show a higher tumor response in this breast-cancer trial? | Scoped **No**. C-063 S-054 | Primary human trial; exact endpoint matters | **No** | Culinary use ≠ high-dose supplement. Concentrated curcumin, especially with piperine, has interaction/peri-operative concerns | Named result only; broader product and human-use questions remain Open |
+| **Black seed / Nigella sativa** | Seed, black-seed oil, thymoquinone | Did pure thymoquinone slow breast-tumor growth in the mouse test? | Scoped **Yes**. C-064 S-055 | No established human cancer-treatment result for this form | **No** | Seed ≠ oil ≠ isolated thymoquinone. Oil has interaction/peri-operative concerns | Named result only; broader product and human-use questions remain Open |
+| **Black walnut** | Walnut meat; black-walnut hull / juglone-containing extracts | Did pure juglone lower prostate-cancer cell growth in the lab test? | Scoped **Yes**. C-065 S-056 | No established human cancer-treatment result for this form | **No** | Walnut food ≠ hull extract. Hull products carry toxicity/allergy concerns and should not inherit food evidence | Named result only; broader product and human-use questions remain Open |
+| **Wormwood** | Artemisia absinthium herb/oil; thujone | Did the exact tested form reduce cancer growth against a comparison group? | Scoped **Open**. S-064; paid full-methods access gap | No established human cancer-treatment result for this form | **No** | A. absinthium ≠ A. annua. Concentrated oil/high-dose use carries toxicity concerns | Named result only; broader product and human-use questions remain Open |
+| **Shilajit** | Purified resin; raw/unverified resin | Did the named shilajit sample lower breast-cancer cell growth in the lab test? | Scoped **Yes**. C-066 S-057 | No established human cancer-treatment result for this form | **No** | Product standardization and heavy-metal contamination are major confounders | Named result only; broader product and human-use questions remain Open |
+| **Humic / fulvic acid** | Isolated humic/fulvic fractions | Did the named fulvic acid slow ovarian-cancer cell growth in the lab test? | Scoped **Yes**. C-067 S-058 | No established human cancer-treatment result for this form | **No** | Isolated fractions ≠ whole shilajit. Quality and metal contamination matter | Named result only; broader product and human-use questions remain Open |
+| **Magnesium** | Food magnesium; clinician-confirmed replacement | Did the exact tested form reduce cancer growth against a comparison group? | Scoped **Open**. S-065; magnesium-alone effect and full group audit remain open | No established human cancer-treatment result for this form | **No** | Replacement for deficiency ≠ antitumor dosing | Named result only; broader product and human-use questions remain Open |
+| **Zinc** | Food zinc; clinician-confirmed replacement | Did high zinc intake slow melanoma growth in this mouse test? | Scoped **No**. C-070 S-061 | No established human cancer-treatment result for this form | **No** | Deficiency correction ≠ megadose anticancer therapy | Named result only; broader product and human-use questions remain Open |
+| **Cayenne / capsaicin** | Culinary cayenne; oral capsaicin; topical capsaicin | Did pure capsaicin reduce prostate-tumor size in the reported mouse test? | Scoped **Yes**. C-068 S-059 | No established human cancer-treatment result for this form | **No** | Food ≠ oral supplement ≠ topical medicine. Topical symptom evidence does not establish tumor detriment | Named result only; broader product and human-use questions remain Open |
+| **Cuban oregano** | Culinary leaf; essential oil / concentrated extract | Did the named leaf extract lower cancer-cell counts in the mouse test? | Scoped **Yes**. C-069 S-060 | No established human cancer-treatment result for this form | **No** | Leaf ≠ essential oil / concentrated extract | Named result only; broader product and human-use questions remain Open |
 | **Hydrogen peroxide** | 3% topical; swallowed peroxide; high-strength peroxide; injected/IV peroxide | Cancer-treatment rationale based on “oxygen therapy” is not supported in the corpus | **Not supported + harm concern** | No demonstrated human cancer-treatment benefit | **No** | Topical labeled use does not transfer to ingestion or injection. Ingestion/injection can cause serious harm | **Harm-flag for oral/high-strength/injected use** |
-| **Ivermectin** | Prescription ivermectin; oncology combinations under study | Filed oncology rationale is investigational, including combinations with immune-checkpoint therapy | **Human oncology evidence, investigational/incomplete** | Yes: trials including NCT05318469 and NCT07487805 are filed | **No** | Trial participation/research ≠ established efficacy. No Cancer Vive dose or self-start instruction | **Investigate / clinician-owned if used** |
-| **Hydroxychloroquine (HCQ)** | Prescription hydroxychloroquine; oncology combinations under study | Filed as an investigational oncology variable, including breast-cancer combination research | **Human oncology evidence, investigational** | Yes: NCI oncology trial listings are filed | **No** | Oncology study ≠ approved cancer indication. Important drug-specific risks and monitoring remain | **Investigate / clinician-owned if used** |
+| **Ivermectin** | Prescription ivermectin; oncology combinations under study | Did the exact tested form reduce cancer growth against a comparison group? | Scoped **Open**. C-072 S-063; journal concern, original data unavailable | No established human cancer-treatment result for this form | **No** | Trial participation/research ≠ established efficacy. No Cancer Vive dose or self-start instruction | Independent replication and data concern check needed |
+| **Hydroxychloroquine (HCQ)** | Prescription hydroxychloroquine; oncology combinations under study | Did added hydroxychloroquine show better one-year survival in this pancreatic-cancer trial? | Scoped **No**. C-071 S-062 | Primary human trial; exact endpoint matters | **No** | Oncology study ≠ approved cancer indication. Important drug-specific risks and monitoring remain | Named result only; broader product and human-use questions remain Open |
 
 ## Cancer-mechanism matrix
 
@@ -56,36 +56,34 @@ This second view organizes the same cabinet by the kind of cancer question being
 | Item | Metabolism / glucose | Hypoxia / oxygen | Inflammation / oxidative stress | Direct cell-survival / growth signal | Immune / treatment-combination signal | Human oncology lane |
 |---|---:|---:|---:|---:|---:|---|
 | Cloves / eugenol | ✓ filed | — | ✓ filed | ✓ preclinical | — | Not established |
-| Turmeric / curcumin | ? source audit | ? source audit | human inflammation/fatigue endpoints filed (C-022) | ? source audit | ? source audit | Supportive-endpoint trial; tumor control not established |
+| Turmeric / curcumin | — | — | supportive trial filed | randomized trial: no added response benefit | exact combination only | Other forms and cancers Open |
 | Black seed / thymoquinone | — | — | ✓ preclinical | ✓ preclinical | ? | Thin adjunct / not established |
-| Black walnut / juglone | — | — | ? source audit | ? source audit | — | None established |
+| Black walnut / juglone | — | — | — | ✓ scoped cell signal | mouse text needs correction | Human treatment Open |
 | Wormwood (A. absinthium) | — | — | ? source audit | ? source audit | — | None established |
-| Shilajit | ? | — | ? | ? | — | None established |
-| Humic / fulvic acid | ? | — | ? | ? | — | None established |
-| Magnesium | supportive physiology | — | supportive | — | — | Not an oncology-treatment lane |
-| Zinc | supportive physiology | — | supportive | — | — | Not an oncology-treatment lane |
-| Cayenne / capsaicin | — | — | ? source audit | ? source audit | — | Symptom evidence separate |
+| Shilajit | — | — | — | ✓ named batch cell signal | — | Human treatment Open |
+| Humic / fulvic acid | — | — | — | ✓ named fulvic fraction cell signal | — | Human treatment Open |
+| Magnesium | supportive physiology | — | — | alone effect Open | cisplatin/deficiency lead | Human tumor treatment Open |
+| Zinc | supportive physiology | — | — | high intake increased melanoma growth | context-dependent immune signal | Human tumor treatment Open |
+| Cayenne / capsaicin | — | — | — | mouse signal; primary abstract read | — | Full methods and human treatment Open |
 | Cuban oregano | — | — | ✓ preclinical | ✓ preclinical | — | No human breast-cancer trial filed |
 | Hydrogen peroxide | — | oxygen claim rejected | oxidative injury, unsafe forms | Cancer-treatment claim not supported | — | None |
-| Ivermectin | ? research | — | ? research | investigational | ✓ combination trials | **Investigational human oncology** |
-| Hydroxychloroquine | autophagy-related oncology rationale requires source-row audit | — | — | investigational | ✓ combination research | **Investigational human oncology** |
+| Ivermectin | — | — | — | Open; source concern | disputed mouse combination report | Trial results and replication Open |
+| Hydroxychloroquine | autophagy research | — | — | higher secondary response | no primary survival benefit in pancreatic trial | Exact combination and endpoint only |
 
 Legend: **✓ filed** = Cancer Vive already contains evidence language for that lane. **? source audit** = do not assume the mechanism; add paper-level sources before upgrading the cell.
 
-## Priority research queue
+## Priority research queue · updated October 14, 2026
 
-The matrix should become stronger by filling the largest evidence gaps first:
+The primary-source pass filed C-062–C-072 and S-053–S-066. Seven new Yes and three No answers apply only to the named experiments. The question ledger records exact scope, comparison, endpoint, read level, source location and next check. Every new claim still needs a second scientific reader.
 
-| Priority | Item | Missing work |
-|---|---|---|
-| 1 | Turmeric / curcumin | Add paper-level cancer mechanism, breast-cancer, pharmacology, and human-trial sources; separate curcumin from turmeric-food evidence |
-| 2 | Cloves / eugenol | Replace class-level S-011 with exact cancer paper citations and distinguish eugenol, extract, oil, and culinary clove |
-| 3 | Black seed / thymoquinone | Add exact preclinical and human adjunct oncology citations |
-| 4 | Cuban oregano | Add exact cell/animal tumor papers and verify species/form |
-| 5 | Ivermectin | Track trial status/results and distinguish monotherapy claims from combination-trial evidence |
-| 6 | Hydroxychloroquine | Add exact breast-cancer/solid-tumor trial records and mechanism sources |
-| 7 | Capsaicin | Separate tumor-biology literature from symptom-control evidence |
-| 8 | Black walnut / wormwood / shilajit / humic-fulvic | Establish whether a credible cancer evidence lane exists before giving them a cancer-mechanism position |
+| Priority | Missing work |
+|---|---|
+| 1 | Obtain full methods for capsaicin and hydroxychloroquine; confirm groups and repeat results. Their public answers disclose the limited read level. |
+| 2 | Read full bitter-wormwood methods and magnesium group/results details; matching growth-alone questions remain Open. |
+| 3 | Resolve ivermectin image/data concerns with independent repeat work; trial listings do not answer efficacy. |
+| 4 | Check the juglone mouse model/unit inconsistency before using animal numbers. Its Yes uses the cell assay. |
+| 5 | Repeat named findings and test human delivery, benefit and harm. Food, oil, resin and powder do not inherit another form's proof. |
+| 6 | Review all claims with a second scientific reader. Keep No for a named failed benefit distinct from Open for missing or disputed proof. |
 
 ## Operating rule
 
