@@ -24,12 +24,12 @@ function RailButton({item,state,onNavigate}){
   return <button className="framework-rail-item" onClick={()=>onNavigate(item.id)} aria-label={item.label}>{content}</button>;
 }
 
-function EdgeRail({edge,state,setState,items,onNavigate,brand}){
+function EdgeRail({edge,state,setState,items,onNavigate,brand,subject}){
   const horizontal=edge==="top"||edge==="bottom";
   return (
     <aside className={"framework-rail rail-"+edge+" state-"+state} data-edge={edge} data-state={state} aria-label={menuNames[edge]}>
       <div className="framework-rail-body">
-        {brand ? <div className="framework-rail-brand"><span>CV</span><strong>Cancer Vive</strong><small>{content.ui.learn}</small></div> : null}
+        {brand ? <div className="framework-rail-brand"><span>{subject === "diabetes" ? "DV" : "CV"}</span><strong>{subject === "diabetes" ? "Diabetes Vive" : "Cancer Vive"}</strong><small>{content.ui.learn}</small></div> : null}
         <div className={"framework-rail-items "+(horizontal?"horizontal":"vertical")}>
           {items.map((item,index)=><RailButton item={item} state={state} onNavigate={onNavigate} key={index+":"+(item.id||item.href)}/>)}
         </div>
@@ -46,7 +46,7 @@ function EdgeRail({edge,state,setState,items,onNavigate,brand}){
   );
 }
 
-export default function FrameworkShell({activeView,onNavigate,children}){
+export default function FrameworkShell({activeView,onNavigate,subject="cancer",children}){
   const defaults=designDNA.domains.rails;
   const [rails,setRails]=useState(()=>({
     top:defaults.top.default_state,
@@ -80,7 +80,7 @@ export default function FrameworkShell({activeView,onNavigate,children}){
 
   return (
     <div className="framework-shell" style={insets} data-top-state={rails.top} data-right-state={rails.right} data-bottom-state={rails.bottom} data-left-state={rails.left}>
-      <EdgeRail edge="top" state={rails.top} setState={setEdge("top")} items={navItems} onNavigate={onNavigate} brand />
+      <EdgeRail edge="top" state={rails.top} setState={setEdge("top")} items={navItems} onNavigate={onNavigate} brand subject={subject} />
       <EdgeRail edge="left" state={rails.left} setState={setEdge("left")} items={navItems} onNavigate={onNavigate} />
       <EdgeRail edge="right" state={rails.right} setState={setEdge("right")} items={sourceItems} onNavigate={onNavigate} />
       <EdgeRail edge="bottom" state={rails.bottom} setState={setEdge("bottom")} items={[...navItems, ...sourceItems]} onNavigate={onNavigate} />
