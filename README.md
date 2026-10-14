@@ -75,3 +75,13 @@ System-level continuation and ownership map:
 - Correlation: `GITTALK-DESIGN-DNA-CONTROL-PLANE-20260928-001`
 
 Read that handoff before changing the shared Design DNA rail/lip, Vite projection, Automata timeline, WordPress adapter, or consumer contract. This repository owns only its named layer; do not fork the cross-repo authority map here.
+
+## Three app targets
+
+`product.identity.json` and `suit-stack.manifest.json` name the Web, separate Mac Console, and native SwiftUI targets. All three read the same public text and have the same five routes. The Apple apps bundle the topics, lessons and full public source records for offline reading. They do not bundle dated private case notes. Source links open in a browser and need a connection.
+
+Run `npm install --ignore-scripts --no-package-lock` at the root and in `apps/cancer-vive-desktop`. Initialize the pinned native contract package with `git submodule update --init`. Use `make web`, `make mac`, and `make native`. `make native` refreshes resources before generating the Xcode project; this order is required when a new resource is added. Open `interface/swift/CancerViveNative.xcodeproj` in Xcode for the real native target.
+
+Mac app: `apps/cancer-vive-desktop/src-tauri/target/release/bundle/macos/Cancer Vive.app`. Native app: `.build/native-derived/Build/Products/Release/Cancer Vive Native.app`. Install the exact tested artifacts into `~/Applications`, then drive the real apps. Keep each target's version, source commit, content hashes, actions and captures in its release receipt. Local builds can use local signing. A notarized public Apple download uses the protected release route and is not implied by a local install.
+
+Desktop link opening is limited to exact checked source URLs. The policy is parsed from the public JSON and Markdown source ledger, not from user input. Credential URLs and local files are refused. Native links use those same bundled records. Rust release symbol stripping is disabled because Rust 1.96.1 can emit load tables rejected by macOS 27; see rust-lang/rust#157750.

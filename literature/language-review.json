@@ -5,7 +5,7 @@
   "profile": "board-grade-5",
   "status": "pass",
   "checked_at": "2026-10-14",
-  "content_sha256": "9a0117b5b3182f30c6625c04220ebb5f3eca06a006433686a48afc887b0db0b3",
+  "content_sha256": "db83774e4ecee01616081d7c53271cea438fbb5959c3c9fb3c314b61e4fb53dc",
   "checker_sha256": "d0b32c524033efb9dcc40bebd1ffc9fa6fd4419fda17915cf357899ba034f2d5",
   "scope": "All normal-view prose: topics, lessons, questions, help, home, proof types, pages and footer. Short labels manually reviewed. Exact source and drug names preserved. Original Expert records excluded. This is a language review, not a scientific second review.",
   "blocks": [
@@ -307,6 +307,11 @@
     {
       "id": "ui.empty",
       "text_sha256": "7f733af080a21011d383266167d6b824ac30833731b433db6b22a278588e7f97",
+      "status": "pass"
+    },
+    {
+      "id": "ui.load_failed",
+      "text_sha256": "497b10b483927004034ba71ab87dfae2c37163ab6bde6970a4c21c04afa4afa7",
       "status": "pass"
     },
     {

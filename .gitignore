@@ -1,2 +1,10 @@
 node_modules/
 dist/
+
+**/target/
+.build/
+apps/cancer-vive-desktop/frontend/
+interface/swift/Resources/
+interface/swift/*.xcodeproj/
+interface/swift/Info.plist
+interface/swift/Sources/GeneratedMessages.swift

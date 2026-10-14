@@ -21,6 +21,6 @@ jobs:
       - name: Install site dependencies
         run: npm install --ignore-scripts --no-package-lock
       - name: Check public content and refusal tests
-        run: npm run check:content && npm test
+        run: npm run check:content && npm run check:suits && npm test
       - name: Build public projection
         run: npm run build
