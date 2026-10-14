@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import data from "./diabetes-content.json";
+import ResearchIntegrationPanel from "./ResearchIntegrationPanel.jsx";
 
 const links = (sources) => <div className="source-links">{sources.map(([label,url]) => <a key={url} href={url} target="_blank" rel="noreferrer">{label} ↗</a>)}</div>;
 export default function DiabetesView({ view, navigate }) {
@@ -16,6 +17,7 @@ export default function DiabetesView({ view, navigate }) {
     {view==="matrix"&&<section className="section-block view-section"><div className="section-head"><h1 className="view-title">Quick view</h1><p>Full diabetes evidence matrix with the same comparison layout.</p></div>{table(data.topics)}</section>}
     {view==="education"&&<section className="section-block view-section"><div className="section-head"><h1 className="view-title">Learn diabetes</h1><p>Education is not individual diagnosis or medication advice.</p></div>{data.lessons.map((l,i)=><details className="lesson" key={l.title} open={i===0}><summary>{l.title}</summary><p>{l.text}</p>{links([[ "Read the clinical education source",l.source ]])}</details>)}</section>}
     {view==="research"&&<section className="section-block view-section"><div className="section-head"><h1 className="view-title">Research questions</h1><p>Bring these prompts and source references to a qualified care professional.</p></div><div className="evidence-grid">{data.topics.map(t=><article className="evidence-card" key={t.id}><h3>{t.name}</h3><p>{t.next}</p><p><strong>Important:</strong> {t.caution}</p>{links(t.sources)}</article>)}</div></section>}
+    {view === "research" && <ResearchIntegrationPanel />}
     <footer className="footer"><span>{data.title} · {data.updated}</span><span>Medical education, not personal medical advice.</span></footer>
   </main>;
 }
