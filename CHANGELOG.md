@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.12.1 — 2026-10-14
+
+- Classified the scoped DMSO and magnesium mouse-study answers as cell or mouse proof. The proof filter now matches their exact study model on all targets.
+
 ## 0.12.0 — 2026-10-14
 
 - Completed a second AI source-audit pass over the eight Open questions. Four new scoped Yes and one No answers cite full primary papers. Three matching-product gaps remain Open.

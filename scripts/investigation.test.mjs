@@ -28,3 +28,7 @@ test('second source pass cannot close wider product or independent review gaps',
  assert.match(topics.find(t=>t.id==='spike-proteins').human,/not a vaccine/);
  assert.match(topics.find(t=>t.id==='dmso').research,/did not use a skin herb mix/);
 });
+
+test('new cell and mouse questions carry the matching proof label',()=>{
+ for(const id of ['dmso','magnesium','wormwood','spike-proteins','ivermectin'])assert.equal(topics.find(t=>t.id===id).grade,'cells');
+});
