@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { content, evidenceItems, evidenceClasses, mechanismLabels, navItems } from "./data.js";
 import FrameworkShell from "./FrameworkShell.jsx";
-import Corpus from "./Corpus.jsx";
+import Corpus, { ResearchDocuments } from "./Corpus.jsx";
 import design from "../design-dna.profile.json";
 
 const palette = design.domains.paint.palette;
@@ -53,7 +53,7 @@ function CompareModal({ ids, onClose }) {
     <section className="compare-modal" role="dialog" aria-modal="true" aria-label={u.compare} onMouseDown={(e) => e.stopPropagation()}>
       <div className="modal-head"><h2>{u.compare}</h2><button className="icon-button" onClick={onClose} aria-label={u.close}>×</button></div>
       <div className="compare-grid">{selected.map((item) => <article className="compare-column" key={item.id}>
-        <EvidenceBadge kind={item.grade} /><h3>{item.name}</h3><p>{item.summary}</p>
+        <EvidenceBadge kind={item.grade} /><h3>{item.name}</h3><h4>{item.question}</h4><strong>{item.answer_label}</strong><p>{item.research}</p>
         <div className="compare-field"><span>{u.caution}</span><p>{item.caution}</p></div>
         <TopicDetails item={item} />
       </article>)}</div>
@@ -80,7 +80,7 @@ function Topics({ compareIds, toggleCompare, initialQuery }) {
   const [grade, setGrade] = useState("all");
   const [layout, setLayout] = useState("cards");
   const filtered = useMemo(() => evidenceItems.filter((item) => {
-    const text = [item.name, item.form, item.summary, item.research, item.human, item.caution, item.next_step].join(" ").toLowerCase();
+    const text = [item.question, item.name, item.form, item.summary, item.research, item.human, item.caution, item.next_step].join(" ").toLowerCase();
     return (!query.trim() || text.includes(query.trim().toLowerCase())) && (category === "all" || item.tags.includes(category)) && (grade === "all" || item.grade === grade);
   }), [query, category, grade]);
   const selected = (id) => compareIds.includes(id);
@@ -97,17 +97,17 @@ function Topics({ compareIds, toggleCompare, initialQuery }) {
     {!filtered.length && <p role="status">{u.empty}</p>}
     {layout === "cards" ? <div className="evidence-grid">{filtered.map((item) => <article className={"evidence-card class-" + item.grade} key={item.id}>
       <div className="card-head"><EvidenceBadge kind={item.grade} /><button className={"compare-toggle " + (selected(item.id) ? "selected" : "")} disabled={atLimit(item.id)} onClick={() => toggleCompare(item.id)} aria-label={(selected(item.id) ? u.remove : u.add) + ": " + item.name}>{selected(item.id) ? u.selected : u.add}</button></div>
-      <h3>{item.name}</h3><p className="topic-summary">{item.summary}</p>
-      <div className="caution-box"><strong>{u.caution}</strong><p>{item.caution}</p></div>
+      <h3>{item.name}</h3><h4>{item.question}</h4><strong>{u.answer}: {item.answer_label}</strong><p className="topic-summary">{item.research}</p><SourceLinks sources={item.sources} />
+
       {item.id === "spike-proteins" && <a className="quiet-button" href="#education">{content.home.spike}</a>}
-      <details className="topic-details"><summary>{u.read_more}</summary><TopicDetails item={item} /></details>
-    </article>)}</div> : <div className="table-wrap"><table className="matrix-table"><thead><tr><th>{u.topic}</th><th>{u.summary}</th><th>{u.evidence}</th><th>{u.caution}</th><th>{u.compare}</th></tr></thead><tbody>{filtered.map((item) => <tr key={item.id}><td><strong>{item.name}</strong></td><td>{item.summary}</td><td><EvidenceBadge kind={item.grade} /></td><td>{item.caution}</td><td><button className="table-compare" disabled={atLimit(item.id)} onClick={() => toggleCompare(item.id)} aria-label={(selected(item.id) ? u.remove : u.add) + ": " + item.name}>{selected(item.id) ? u.selected : "+"}</button></td></tr>)}</tbody></table></div>}
+      <details className="topic-details"><summary>{u.read_more}</summary><TopicDetails item={item} /><div className="caution-box"><strong>{u.caution}</strong><p>{item.caution}</p></div></details>
+    </article>)}</div> : <div className="table-wrap"><table className="matrix-table"><thead><tr><th>{u.topic}</th><th>{u.summary}</th><th>{u.evidence}</th><th>{u.caution}</th><th>{u.compare}</th></tr></thead><tbody>{filtered.map((item) => <tr key={item.id}><td><strong>{item.name}</strong></td><td>{item.question}<br/><strong>{item.answer_label}</strong><p>{item.research}</p><SourceLinks sources={item.sources}/></td><td><EvidenceBadge kind={item.grade} /></td><td>{item.caution}</td><td><button className="table-compare" disabled={atLimit(item.id)} onClick={() => toggleCompare(item.id)} aria-label={(selected(item.id) ? u.remove : u.add) + ": " + item.name}>{selected(item.id) ? u.selected : "+"}</button></td></tr>)}</tbody></table></div>}
   </section>;
 }
 
 function QuickView() {
   return <section className="section-block view-section"><div className="section-head"><h1 className="view-title">{content.pages.quick_title}</h1><p>{content.pages.quick_intro}</p></div>
-    <div className="table-wrap"><table className="matrix-table"><thead><tr><th>{u.topic}</th><th>{u.summary}</th><th>{u.evidence}</th><th>{u.caution}</th></tr></thead><tbody>{evidenceItems.map((item) => <tr key={item.id}><td><strong>{item.name}</strong></td><td>{item.summary}</td><td><EvidenceBadge kind={item.grade} /></td><td>{item.caution}</td></tr>)}</tbody></table></div>
+    <div className="table-wrap"><table className="matrix-table"><thead><tr><th>{u.topic}</th><th>{u.summary}</th><th>{u.evidence}</th><th>{u.caution}</th></tr></thead><tbody>{evidenceItems.map((item) => <tr key={item.id}><td><strong>{item.name}</strong></td><td>{item.question}<br/><strong>{item.answer_label}</strong><p>{item.research}</p><SourceLinks sources={item.sources}/></td><td><EvidenceBadge kind={item.grade} /></td><td>{item.caution}</td></tr>)}</tbody></table></div>
   </section>;
 }
 
@@ -120,7 +120,7 @@ function Education() {
 function Questions() {
   return <section className="section-block view-section"><div className="section-head"><h1 className="view-title">{content.pages.questions_title}</h1><p>{content.pages.questions_intro}</p></div>
     <div className="evidence-grid">{content.questions.map((question) => <article className="evidence-card" key={question.heading}><h3>{question.heading}</h3><p>{question.text}</p></article>)}</div>
-    <h2>{u.sources}</h2><p>{content.pages.sources_intro}</p><Corpus initial="sources" />
+    <ResearchDocuments /><h2>{u.sources}</h2><p>{content.pages.sources_intro}</p><Corpus initial="sources" />
   </section>;
 }
 

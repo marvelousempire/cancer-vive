@@ -16,6 +16,8 @@ export function checkPublicContent(raw, receipt, knownClaims) {
   for (const topic of topics) {
     if (seen.has(topic.id)) errors.push(`duplicate topic ${topic.id}`);
     seen.add(topic.id);
+    if (!topic.question || !topic.answer_label || ![true,false,null].includes(topic.answer)) errors.push(`${topic.id} needs a valid Boolean question`);
+    if (topic.answer === null && topic.answer_label !== "Open") errors.push(`${topic.id} must keep an unanswered question open`);
     for (const key of ['summary', 'research', 'human', 'caution', 'next_step']) if (!topic[key]?.trim()) errors.push(`${topic.id} is missing ${key}`);
     if (!data.normal_view.grades[topic.grade]) errors.push(`${topic.id} has an unknown proof label`);
     if (!topic.refs?.length) errors.push(`${topic.id} has no claim references`);

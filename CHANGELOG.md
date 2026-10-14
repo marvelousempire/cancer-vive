@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.10.0 — 2026-10-14
+
+- Questions, findings and source proof lead all three app targets.
+- Open questions stay distinct from No. Three exact reported findings receive scoped Yes answers; second review stays open.
+- Risks remain available in expanded details.
+
+
 ## 0.9.2 — 2026-10-14
 
 - Light and Dark now swap white and the same blue. Auto follows the system.

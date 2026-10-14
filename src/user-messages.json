@@ -22,12 +22,12 @@
       "clear": "Clear",
       "close": "Close comparison",
       "remove": "Remove",
-      "summary": "What to know",
-      "research": "What was tested",
+      "summary": "Question and answer",
+      "research": "What the test found",
       "human": "What is known in people",
       "caution": "Key caution",
-      "next_step": "Useful next step",
-      "read_more": "Read the study limits",
+      "next_step": "Next question",
+      "read_more": "Open questions and risks",
       "sources": "Read the sources",
       "expert": "Expert details",
       "empty": "No topic matches. Try a shorter name or clear the filters.",
@@ -43,7 +43,7 @@
       "theme": "Color theme",
       "version": "Version",
       "checked": "Sources checked October 13, 2026.",
-      "scope": "Research notes, not a treatment plan. Some claims still need a second source check.",
+      "scope": "Find what can work against cancer. Ask a clear question. Check the test and its proof. Keep gaps open.",
       "code": "Code and release details",
       "study_records": "Full study records",
       "top_menu": "Top menu",
@@ -60,19 +60,22 @@
       "citations": "Full citations",
       "claims": "Original claim records",
       "draft": "Draft build",
-      "load_failed": "The study notes did not open. You can close Cancer Vive and try to open it again."
+      "load_failed": "The study notes did not open. You can close Cancer Vive and try to open it again.",
+      "question": "Question",
+      "answer": "Answer",
+      "finding": "Finding"
     },
     "home": {
       "eyebrow": "Cancer Vive",
-      "title": "What does the research really show?",
-      "intro": "Find a topic. See what was tested, what is known in people, and what could cause harm. Open the source before you trust a cancer claim.",
+      "title": "Put cancer under the microscope.",
+      "intro": "Find what can slow cancer growth or harm cancer cells. Ask clear yes or no questions. Keep each answer tied to its test and source. A gap stays open.",
       "browse": "Find a topic",
       "spike": "Learn about spike proteins",
       "head": "Start with the question that matters to you.",
       "choices": [
         {
-          "title": "Could this treat cancer?",
-          "text": "Look for results in people with the same cancer type. A cell or mouse result is an early clue, not a proven treatment.",
+          "title": "What can work against cancer?",
+          "text": "Start with a growth or cell death question. Read the finding and its proof. Then ask what test should come next.",
           "route": "mechanisms",
           "button": "Browse the topics"
         },
@@ -97,7 +100,7 @@
         }
       ],
       "proof_title": "What each type of proof can tell you.",
-      "proof_intro": "A test in cells is not a test in people. A good cell result is not proof of a human benefit.",
+      "proof_intro": "A yes holds for the exact test. A no holds for the exact test too. A question with no sound answer stays open.",
       "proof_steps": [
         {
           "title": "Cells in a lab",
@@ -119,8 +122,8 @@
     },
     "grades": {
       "cells": {
-        "label": "Cells or mice only",
-        "description": "Cell and mouse tests do not prove that a product helps people."
+        "label": "Cell or mouse research",
+        "description": "A finding holds for the cell or mouse model tested."
       },
       "human": {
         "label": "Human study; limits apply",
@@ -159,11 +162,11 @@
         "short": "Fenugreek",
         "form": "Food seeds and lab extracts",
         "grade": "cells",
-        "summary": "A seed extract can harm some cancer cells in the lab. Seeds and pills have not been shown to treat cancer by those tests.",
+        "summary": "Breast, prostate, and pancreas cancer cells were in the tests. Growth was slower after the extract. Some cells died.",
         "research": "Breast, prostate, and pancreas cancer cells were in the tests. Growth was slower after the extract. Some cells died.",
         "human": "The filed studies did not test cancer care in people.",
         "caution": "Strong extracts can lower blood sugar or cause an allergy. Food seeds are not the tested lab product.",
-        "next_step": "Ask the care team to check the bottle and your drugs before you use a new pill or extract.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-023",
           "C-024",
@@ -186,7 +189,10 @@
         "tags": [
           "herbs",
           "cells"
-        ]
+        ],
+        "question": "Did the seed extract slow cancer cell growth in the filed lab study?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test"
       },
       {
         "id": "castor-oil",
@@ -194,11 +200,11 @@
         "short": "Castor oil",
         "form": "Skin oil, oil packs, and modified drug carriers",
         "grade": "other",
-        "summary": "Rubbing castor oil on skin has no proven cancer benefit.",
+        "summary": "Oil packs were studied for bowel symptoms. A changed form of oil can carry some cancer drugs. The active drug is the cancer treatment.",
         "research": "Oil packs were studied for bowel symptoms. A changed form of oil can carry some cancer drugs. The active drug is the cancer treatment.",
         "human": "The bowel study did not measure tumor shrinkage. Household oil is not a cancer drug.",
         "caution": "Ricin is a poison found in raw castor beans. Do not make a home bean extract.",
-        "next_step": "Keep oil packs separate from fruit-extract studies and drugs made in a lab.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-026",
           "C-027",
@@ -222,7 +228,10 @@
         "tags": [
           "skin",
           "harm"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "castor-fruit-extract",
@@ -230,11 +239,11 @@
         "short": "Castor fruit extract",
         "form": "A lab extract from castor fruit",
         "grade": "cells",
-        "summary": "Breast-cancer cells were harmed by a fruit extract. Tumor growth was slower in mice. Skin oil was not tested.",
+        "summary": "The lab test used breast-cancer cells. The mouse test used a shot of fruit extract.",
         "research": "The lab test used breast-cancer cells. The mouse test used a shot of fruit extract.",
         "human": "The filed paper did not test cancer care in people.",
         "caution": "A lab extract is not store-bought castor oil. Raw castor beans can poison people.",
-        "next_step": "The fruit-extract result is an early research lead. Do not copy the mouse test as a home treatment.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-028"
         ],
@@ -247,7 +256,10 @@
         "tags": [
           "cells",
           "harm"
-        ]
+        ],
+        "question": "Did the fruit extract reduce tumor growth in the filed mouse study?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test"
       },
       {
         "id": "comfrey",
@@ -255,11 +267,11 @@
         "short": "Comfrey powder",
         "form": "Powder from the plant and tested skin creams",
         "grade": "harm",
-        "summary": "Do not swallow comfrey powder. Comfrey can contain poisons that harm the liver.",
+        "summary": "One rat test had fewer early spots of changed liver cells but more cell harm. A long feeding test had liver tumors.",
         "research": "One rat test had fewer early spots of changed liver cells but more cell harm. A long feeding test had liver tumors.",
         "human": "The sources do not show a cancer benefit in people. Some skin creams have a use for sprains and bruises.",
         "caution": "Raw powder is not a tested skin cream. Drying the plant does not prove its poisons are gone.",
-        "next_step": "Do not make a DMSO skin mix from the powder. Human proof is needed for that exact mix.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-031",
           "C-032",
@@ -283,7 +295,10 @@
           "herbs",
           "harm",
           "skin"
-        ]
+        ],
+        "question": "Does a DMSO mix of this powder slow tumor growth?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "tree-frog-gut-bacteria",
@@ -291,11 +306,11 @@
         "short": "Tree-frog gut bacteria",
         "form": "A live bacterial strain tested in mice",
         "grade": "cells",
-        "summary": "All five treated mice in one group had a complete tumor response. That small test did not prove a cure in people.",
+        "summary": "A live germ from a tree frog was in the 2025 test. The mice had colon-type tumors. Cell killing and an immune response were seen.",
         "research": "A live germ from a tree frog was in the 2025 test. The mice had colon-type tumors. Cell killing and an immune response were seen.",
         "human": "The paper tested mice, not people with cancer. A small mouse test does not prove a human cure.",
         "caution": "This germ species has caused illness in people. Raw frog gut material is not the tested strain.",
-        "next_step": "The germ study is an early research lead. Do not collect, grow, swallow, or inject frog gut material.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-034",
           "C-035",
@@ -317,7 +332,10 @@
         ],
         "expert_view": {
           "identity": "Ewingella americana; Dryophytes japonicus; Colon-26 tumors in BALB/c mice. Main group n=5."
-        }
+        },
+        "question": "Did all five treated mice have a complete tumor response in the filed group?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test"
       },
       {
         "id": "dmso",
@@ -325,11 +343,11 @@
         "short": "DMSO on skin",
         "form": "A solvent used with named medical compounds",
         "grade": "human",
-        "summary": "DMSO can help some drugs cross skin. That skin effect does not prove that an herb mix reaches a tumor or treats cancer.",
+        "summary": "A skin-cancer test used DMSO with ALA, a drug compound, light, and skin scraping. DMSO was not tested alone.",
         "research": "A skin-cancer test used DMSO with ALA, a drug compound, light, and skin scraping. DMSO was not tested alone.",
         "human": "The named skin procedure has results in people. The test did not use herbs or test tumors inside the body.",
         "caution": "The exact compound and mix must be known. Some cancer drugs were less active when mixed with DMSO in the lab.",
-        "next_step": "Ask a cancer pharmacist to check a proposed mix. A pharmacist is a drug expert. No home cancer mix is supported here.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-037",
           "C-038",
@@ -358,7 +376,10 @@
         "tags": [
           "skin",
           "harm"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "spike-proteins",
@@ -366,11 +387,11 @@
         "short": "Spike proteins",
         "form": "Virus spike, vaccine targets, and lab proteins",
         "grade": "education",
-        "summary": "Spike helps the COVID-19 virus enter cells. Spike is not the whole virus. A shot, an infection, and a lab protein are not the same exposure.",
+        "summary": "Lab tests can show how spike binds to a cell. A cell test alone does not show a cancer effect in people.",
         "research": "Lab tests can show how spike binds to a cell. A cell test alone does not show a cancer effect in people.",
         "human": "NCI reports no evidence that COVID-19 shots cause cancer, make it return, or make it grow.",
         "caution": "COVID can be serious during cancer care. Ask the team about shot timing, infection risk, and new symptoms.",
-        "next_step": "Open the spike lesson for the facts, study limits, and useful care-team questions.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-043",
           "C-044",
@@ -395,7 +416,10 @@
         ],
         "tags": [
           "education"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "cloves",
@@ -403,11 +427,11 @@
         "short": "Cloves",
         "form": "Food spice, extract, and clove oil",
         "grade": "unclear",
-        "summary": "A small clove-extract study measured blood sugar. It did not test cancer care.",
+        "summary": "The study had 13 people. There was no blinded placebo group. A full cancer-study check is still open here.",
         "research": "The study had 13 people. There was no blinded placebo group. A full cancer-study check is still open here.",
         "human": "A blood-sugar change does not show that cloves shrink tumors or help people live longer.",
         "caution": "Food spice, strong extract, and clove oil are not the same product. Check strong products with the care team.",
-        "next_step": "Ask for the cancer study, not just a blood-sugar claim.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-017",
           "C-019",
@@ -425,7 +449,10 @@
         ],
         "tags": [
           "herbs"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "turmeric",
@@ -433,11 +460,11 @@
         "short": "Turmeric",
         "form": "Food spice and concentrated curcumin pills",
         "grade": "unclear",
-        "summary": "This food spice is not the same as a strong pill. Pills can have drug and bleeding risks.",
+        "summary": "A breast-cancer trial was set up to test tiredness and swelling during radiation care. Tumor control was not the test goal.",
         "research": "A breast-cancer trial was set up to test tiredness and swelling during radiation care. Tumor control was not the test goal.",
         "human": "No cancer benefit from the trial is shown here. A study listing is not proof that it helps.",
         "caution": "These pills may raise bleeding risk with blood thinners. Some cancer drugs may also be affected.",
-        "next_step": "Ask the team about the exact pill, your drugs, and planned surgery.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-022",
           "C-051"
@@ -455,7 +482,10 @@
         "tags": [
           "herbs",
           "harm"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "black-seed",
@@ -463,11 +493,11 @@
         "short": "Black seed",
         "form": "Food seeds, oil, and a purified compound",
         "grade": "cells",
-        "summary": "Compounds from black seed have cancer-cell research. The oil is not an established cancer treatment in people.",
+        "summary": "Lab and animal work is reported for a compound from the seed. Whole seed and oil are different forms.",
         "research": "Lab and animal work is reported for a compound from the seed. Whole seed and oil are different forms.",
         "human": "MSK says black seed has not been shown to treat cancer in people. MSK is a cancer center.",
         "caution": "Skin oil can cause an allergy. Drug effects may change; the full risk in people is not known.",
-        "next_step": "Show the product to your care team before you add it to cancer care.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-052"
         ],
@@ -483,7 +513,10 @@
         ],
         "expert_view": {
           "identity": "Nigella sativa; isolated thymoquinone is a different form from oil."
-        }
+        },
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "black-walnut",
@@ -491,11 +524,11 @@
         "short": "Black walnut",
         "form": "Food nuts and hull extracts",
         "grade": "unclear",
-        "summary": "There is no checked proof here that black-walnut hull extract treats cancer in people.",
+        "summary": "Food nuts and hull extracts are different products. A cleanse claim is not proof of a cancer benefit.",
         "research": "Food nuts and hull extracts are different products. A cleanse claim is not proof of a cancer benefit.",
         "human": "A human cancer study of the exact hull product is still needed.",
         "caution": "The label and allergy risks need checking. Do not replace cancer care with a cleanse.",
-        "next_step": "Ask for tumor or survival results in people for the product being sold.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-049"
         ],
@@ -507,7 +540,10 @@
         ],
         "tags": [
           "herbs"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "wormwood",
@@ -515,11 +551,11 @@
         "short": "Wormwood",
         "form": "The bitter herb and concentrated oil",
         "grade": "harm",
-        "summary": "Wormwood oil is not a proven cancer treatment. Some forms contain thujone, a compound that can cause harm.",
+        "summary": "The entry is about bitter wormwood. Bitter wormwood is not the same plant or drug as sweet-wormwood research.",
         "research": "The entry is about bitter wormwood. Bitter wormwood is not the same plant or drug as sweet-wormwood research.",
         "human": "No checked cancer benefit is established for this wormwood product in people here.",
         "caution": "Strong thujone exposure can cause seizures. The product strength must be known.",
-        "next_step": "Not all wormwood products are the same drug. Check the plant and product with the care team.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-054"
         ],
@@ -535,7 +571,10 @@
         ],
         "expert_view": {
           "identity": "Artemisia absinthium; not Artemisia annua or artemisinin."
-        }
+        },
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "shilajit",
@@ -543,11 +582,11 @@
         "short": "Shilajit",
         "form": "A resin sold as a supplement",
         "grade": "unclear",
-        "summary": "No checked cancer benefit is shown for this resin in people here.",
+        "summary": "The exact resin and its contents need a study. An old use is not a result showing that tumors shrink.",
         "research": "The exact resin and its contents need a study. An old use is not a result showing that tumors shrink.",
         "human": "This site has no checked human cancer study for the product.",
         "caution": "A natural label does not prove a resin is pure. Some products sold as old remedies have unsafe metal levels. Each batch needs its own test.",
-        "next_step": "Ask for a batch test of purity. Have the care team check the product before you use it.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-049",
           "C-055"
@@ -564,7 +603,10 @@
         ],
         "tags": [
           "herbs"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "humic-fulvic",
@@ -572,11 +614,11 @@
         "short": "Humic and fulvic acids",
         "form": "Fractions from soil or resin products",
         "grade": "unclear",
-        "summary": "These names are used for mixes, not a proven cancer drug.",
+        "summary": "A mixture needs a clear label and a study of that form. A different resin does not give it proof.",
         "research": "A mixture needs a clear label and a study of that form. A different resin does not give it proof.",
         "human": "No checked cancer result here shows that these products help people with cancer.",
         "caution": "The strength and contents need checking. A product with unknown purity is not proven safe.",
-        "next_step": "Ask what is in the product and where the human cancer results were published.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-049"
         ],
@@ -588,7 +630,10 @@
         ],
         "tags": [
           "herbs"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "magnesium",
@@ -596,11 +641,11 @@
         "short": "Magnesium",
         "form": "Food sources and prescribed replacement",
         "grade": "other",
-        "summary": "A low magnesium level may need treatment. Giving more is not a proven way to kill cancer cells.",
+        "summary": "Blood tests can help show whether a level is low. Your team can choose a dose if you need one.",
         "research": "Blood tests can help show whether a level is low. Your team can choose a dose if you need one.",
         "human": "Fixing a low level is a health need, not proof of a tumor treatment.",
         "caution": "Too much can cause harm, especially with kidney problems. A new dose needs a care-team check.",
-        "next_step": "Ask whether your drugs or symptoms call for a blood test before you start a dose.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-053"
         ],
@@ -612,7 +657,10 @@
         ],
         "tags": [
           "nutrition"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "zinc",
@@ -620,11 +668,11 @@
         "short": "Zinc",
         "form": "Food sources and prescribed replacement",
         "grade": "other",
-        "summary": "Zinc is needed for normal health. Extra zinc is not a proven way to treat cancer.",
+        "summary": "A low level may need care. A high dose when you have enough zinc is a different question.",
         "research": "A low level may need care. A high dose when you have enough zinc is a different question.",
         "human": "Routine zinc pills have no established tumor benefit here.",
         "caution": "Too much zinc can lower copper and cause health problems.",
-        "next_step": "Ask whether you have a low level and whether a pill fits your care plan.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-053"
         ],
@@ -636,7 +684,10 @@
         ],
         "tags": [
           "nutrition"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "capsaicin",
@@ -644,11 +695,11 @@
         "short": "Cayenne and capsaicin",
         "form": "Food pepper and topical pain medicine",
         "grade": "other",
-        "summary": "Capsaicin is a compound in cayenne. A skin drug can help some nerve pain. Pain relief is not tumor treatment.",
+        "summary": "Cancer-cell tests and tests of pain drugs ask different questions. Eating pepper does not copy a skin-drug dose.",
         "research": "Cancer-cell tests and tests of pain drugs ask different questions. Eating pepper does not copy a skin-drug dose.",
         "human": "Less pain does not prove that a tumor shrinks or that a person lives longer.",
         "caution": "Skin products can irritate. Food, pills, and skin drugs are not the same form.",
-        "next_step": "Ask about a licensed pain drug for a symptom, not a pepper-based cancer cure.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-056"
         ],
@@ -664,7 +715,10 @@
         ],
         "tags": [
           "skin"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "cuban-oregano",
@@ -672,11 +726,11 @@
         "short": "Cuban oregano",
         "form": "Food leaves, oil, and extracts",
         "grade": "unclear",
-        "summary": "A checked cancer study in people for this herb is still missing here.",
+        "summary": "The plant and product must be known. An oil, a leaf, and a lab extract can have very different contents.",
         "research": "The plant and product must be known. An oil, a leaf, and a lab extract can have very different contents.",
         "human": "This site does not establish a cancer benefit in people for this herb.",
         "caution": "A lab claim does not prove a home oil is safe or useful. Strong products need a care-team review.",
-        "next_step": "Ask for the plant name, tested form, and human result before you rely on a cancer claim.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-049"
         ],
@@ -688,7 +742,10 @@
         ],
         "tags": [
           "herbs"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "hydrogen-peroxide",
@@ -696,11 +753,11 @@
         "short": "Hydrogen peroxide",
         "form": "Household peroxide and concentrated products",
         "grade": "harm",
-        "summary": "Do not drink or inject peroxide for cancer. The liquid can badly harm you.",
-        "research": "Tumor oxygen research is not a reason to drink this liquid. A bottle is not the same as a tumor's oxygen supply.",
+        "summary": "The filed research asks how oxygen affects a tumor. The study does not test a drink made from this liquid.",
+        "research": "The filed research asks how oxygen affects a tumor. The study does not test a drink made from this liquid.",
         "human": "No cancer benefit is shown here for drinking or injecting this liquid.",
         "caution": "If swallowed, the liquid can burn the gut and form gas bubbles. Strong products can cause severe burns.",
-        "next_step": "Call Poison Control if you swallow this liquid. You should get advice right away.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-057"
         ],
@@ -712,7 +769,10 @@
         ],
         "tags": [
           "harm"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "ivermectin",
@@ -720,11 +780,11 @@
         "short": "Ivermectin",
         "form": "A prescription parasite medicine",
         "grade": "human",
-        "summary": "This drug is being studied with other drugs for cancer. A trial does not prove that it works.",
+        "summary": "The filed trial is for people with advanced triple-negative breast cancer. It tests this drug with an immune treatment.",
         "research": "The filed trial is for people with advanced triple-negative breast cancer. It tests this drug with an immune treatment.",
         "human": "A trial listing alone does not show better tumor control or longer life. The listing is not proof for home use.",
         "caution": "Human and animal products are different. A cancer use needs a trial or a treating clinician, not a home dose.",
-        "next_step": "Ask for posted results and whether a trial fits your cancer type.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-058"
         ],
@@ -740,7 +800,10 @@
         ],
         "tags": [
           "drugs"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       },
       {
         "id": "hcq",
@@ -748,11 +811,11 @@
         "short": "Hydroxychloroquine",
         "form": "A prescription medicine studied in cancer trials",
         "grade": "human",
-        "summary": "Cancer trials have studied this drug with other drugs. Those trials do not make it an established cancer treatment.",
+        "summary": "Trials can test different cancers, drugs, and doses. A study listing is not a result.",
         "research": "Trials can test different cancers, drugs, and doses. A study listing is not a result.",
         "human": "A benefit as a cancer drug used alone is not established here.",
         "caution": "Heart rhythm and eye risks need a medical check. Do not start this drug for cancer on your own.",
-        "next_step": "Ask about the exact trial and its published results, not just the drug name.",
+        "next_step": "What should the next test check? What would a clear yes or no need?",
         "refs": [
           "C-059"
         ],
@@ -769,7 +832,10 @@
         "tags": [
           "drugs",
           "harm"
-        ]
+        ],
+        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "answer": null,
+        "answer_label": "Open"
       }
     ],
     "lessons": [
@@ -934,41 +1000,41 @@
     ],
     "questions": [
       {
-        "heading": "Did the study test people?",
-        "text": "A lab or mouse result is an early clue. Ask for a human study and the number of people tested."
+        "heading": "What is the exact question?",
+        "text": "Ask one yes or no question at a time."
       },
       {
-        "heading": "Did it test my cancer type?",
-        "text": "Ask if the people in the study had your cancer type. A result for one type may not apply to another."
+        "heading": "What was tested?",
+        "text": "Name the form, cancer model, and test conditions."
       },
       {
-        "heading": "Was the exact product tested?",
-        "text": "Ask about the form, dose, route, and other drugs used. A food is not the same as an extract."
+        "heading": "What was the comparison?",
+        "text": "Name the groups in the test. How did their results differ?"
       },
       {
-        "heading": "What did the study measure?",
-        "text": "Less pain, a blood-test change, a smaller tumor, and longer life are different results. Ask which one was shown."
+        "heading": "What was measured?",
+        "text": "Keep cell death, tumor growth, pain, and length of life as distinct results."
       },
       {
-        "heading": "What harm was checked?",
-        "text": "Ask about side effects and drug risks. Ask if it changes surgery timing or delays care that can help."
+        "heading": "Where is the proof?",
+        "text": "Link the source. Record the test results. Did a new group get the same result?"
       },
       {
-        "heading": "What is still missing?",
-        "text": "Ask if another group got the same result. Ask if there were larger, fair tests in people."
+        "heading": "What is still open?",
+        "text": "Keep gaps open. No proof is not a no. Ask what test comes next."
       }
     ],
     "pages": {
-      "topics_title": "Find a topic. See the proof and the risks.",
-      "topics_intro": "You can search by name or type. Choose up to three topics to compare. Each source link opens a study or guide.",
+      "topics_title": "Questions, findings, and proof.",
+      "topics_intro": "Look for cancer weak points. Compare clear questions and the tests behind each answer. Open means the question still needs work.",
       "quick_title": "See the main point at a glance.",
       "quick_intro": "The proof label shows the kind of test. A test does not promise that a product works.",
       "learn_title": "Clear answers to common cancer questions.",
       "learn_intro": "Start with spike proteins, food, skin products, or oxygen claims. Check the linked sources and the limits.",
-      "questions_title": "Six questions to ask before trusting a cancer claim.",
-      "questions_intro": "Take a study link and the exact product label to your care team. These questions help you check whether a claim fits your care.",
+      "questions_title": "Build a question that can be checked.",
+      "questions_intro": "Name the cells and form in the test. State what was measured. Check the source and the groups in each test.",
       "sources_intro": "These links let you check the full records. Some new claims still need a second reader to check the science.",
-      "footer": "Cancer Vive helps you read cancer claims with care."
+      "footer": "Cancer Vive investigates what can work against cancer."
     }
   },
   "expert_view": {

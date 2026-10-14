@@ -12,6 +12,7 @@ struct CancerViveNativeApp: App {
     }
 }
 struct Notes {
+    let matrix:String, truthFilter:String
     let palette:InversePalette
     let content:StudyContent, release:BuildRecord, claims:String, sources:String
     let sourceLinks:[SourceLink]
@@ -25,6 +26,8 @@ struct Notes {
         palette=try JSONDecoder().decode(DesignProfile.self,from:data("design-dna.profile","json")).domains.paint.palette
         try content.validate()
         release=try JSONDecoder().decode(BuildRecord.self,from:data("release","json"))
+        matrix=String(decoding:try data("matrix","md"),as:UTF8.self)
+        truthFilter=String(decoding:try data("truth-filter","md"),as:UTF8.self)
         claims=String(decoding:try data("claims","md"),as:UTF8.self)
         sources=String(decoding:try data("sources","md"),as:UTF8.self)
         sourceLinks=try JSONDecoder().decode([SourceLink].self,from:data("source-links","json"))
@@ -134,9 +137,9 @@ struct CancerReader:View {
     private func topicCard(_ t:Topic,full:Bool=false)->some View {
         GroupBox { VStack(alignment:.leading,spacing:12) {
             HStack { proof(t);Spacer(); if !full {compareButton(t)} }
-            Text(t.name).font(.title2.bold());Text(t.summary);caution(t)
+            Text(t.name).font(.title2.bold());Text(t.question).font(.headline);Text(t.answer_label).bold();Text(t.research);sourceLinks(t.sources)
             if t.id=="spike-proteins" && !full { Button(c.home.spike){navigate("education")} }
-            if full { details(t) } else { DisclosureGroup(u("read_more")) {details(t).padding(.top,10)} }
+            if full { details(t);caution(t) } else { DisclosureGroup(u("read_more")) {details(t).padding(.top,10);caution(t)} }
         }.frame(maxWidth:.infinity,alignment:.leading).padding(8) }
     }
     private func details(_ t:Topic)->some View { VStack(alignment:.leading,spacing:12) {
@@ -155,7 +158,7 @@ struct CancerReader:View {
             if compare {
                 Table(rows) {
                     TableColumn(u("topic")) { topic in Text(topic.name).bold().lineLimit(nil) }.width(min:100,ideal:140,max:180)
-                TableColumn(u("summary")) { topic in Text(topic.summary).lineLimit(nil).padding(.vertical,8) }.width(min:180,ideal:300)
+                TableColumn(u("summary")) { topic in Text(topic.question + "\n" + topic.answer_label + "\n" + topic.research).lineLimit(nil).padding(.vertical,8) }.width(min:180,ideal:300)
                 TableColumn(u("evidence")) { topic in proof(topic) }.width(min:100,ideal:150,max:190)
                 TableColumn(u("caution")) { topic in Text(topic.caution).lineLimit(nil).padding(.vertical,8) }.width(min:180,ideal:280)
                     TableColumn(u("compare")) { topic in compareButton(topic) }.width(120)
@@ -163,7 +166,7 @@ struct CancerReader:View {
             } else {
                 Table(rows) {
                     TableColumn(u("topic")) { topic in Text(topic.name).bold().lineLimit(nil) }.width(min:100,ideal:140,max:180)
-                TableColumn(u("summary")) { topic in Text(topic.summary).lineLimit(nil).padding(.vertical,8) }.width(min:180,ideal:300)
+                TableColumn(u("summary")) { topic in Text(topic.question + "\n" + topic.answer_label + "\n" + topic.research).lineLimit(nil).padding(.vertical,8) }.width(min:180,ideal:300)
                 TableColumn(u("evidence")) { topic in proof(topic) }.width(min:100,ideal:150,max:190)
                 TableColumn(u("caution")) { topic in Text(topic.caution).lineLimit(nil).padding(.vertical,8) }.width(min:180,ideal:280)
                 }
@@ -175,6 +178,8 @@ struct CancerReader:View {
         VStack(alignment:.leading,spacing:16) {
             heading(c.pages["questions_title"] ?? "",c.pages["questions_intro"] ?? "")
             ForEach(c.questions,id:\.heading) { q in GroupBox { VStack(alignment:.leading,spacing:8){Text(q.heading).font(.headline);Text(q.text)}.frame(maxWidth:.infinity,alignment:.leading) } }
+            DisclosureGroup("Full cancer detriment matrix · Expert details") { Text(notes.matrix).font(.system(.caption,design:.monospaced)).textSelection(.enabled) }
+            DisclosureGroup("Original eight-review Truth Filter · Expert details") { Text(notes.truthFilter).font(.system(.caption,design:.monospaced)).textSelection(.enabled) }
             Text(u("sources")).font(.title2.bold());Text(c.pages["sources_intro"] ?? "");Text(u("sources_description"))
             DisclosureGroup(u("expert")) { StudyArchive(claims:notes.claims,sources:notes.sources,links:notes.sourceLinks,ui:c.ui) }
         }

@@ -26,9 +26,11 @@ struct Question:Decodable { let heading:String, text:String }
 struct SourceLink:Decodable,Identifiable { let label:String, url:String; var id:String { url } }
 struct ExpertIdentity:Decodable { let identity:String }
 struct Topic:Decodable,Identifiable {
+    let question:String, answer_label:String
+    let answer:Bool?
     let id:String, name:String, short:String, form:String, grade:String, summary:String, research:String, human:String, caution:String, next_step:String
     let refs:[String], sources:[SourceLink], tags:[String], expert_view:ExpertIdentity?
-    var searchText:String { [name,form,summary,research,human,caution,next_step].joined(separator:" ") }
+    var searchText:String { [question,name,form,summary,research,human,caution,next_step].joined(separator:" ") }
 }
 struct Lesson:Decodable,Identifiable { let id:String, title:String, intro:String, sections:[LessonSection] }
 struct LessonSection:Decodable,Identifiable { let heading:String, text:String, sources:[SourceLink]; var id:String { heading } }
