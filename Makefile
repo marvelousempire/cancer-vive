@@ -10,6 +10,7 @@ mac: check
 	npm run build:mac-content
 	cargo test --locked --manifest-path apps/cancer-vive-desktop/src-tauri/Cargo.toml
 	npm --prefix apps/cancer-vive-desktop run build
+	codesign --verify --deep --strict "apps/cancer-vive-desktop/src-tauri/target/release/bundle/macos/Cancer Vive.app"
 native:
 	node scripts/prepare-apple.mjs --write
 	$(MAKE) check
@@ -18,3 +19,4 @@ native:
 	swiftc interface/swift/Sources/ContentModels.swift interface/swift/Tests/main.swift -o .build/native-content-tests
 	.build/native-content-tests src/user-messages.json
 	xcodebuild -project interface/swift/CancerViveNative.xcodeproj -scheme CancerViveNative -configuration Release -destination 'platform=macOS' -derivedDataPath .build/native-derived CODE_SIGN_IDENTITY=- build
+	codesign --verify --deep --strict ".build/native-derived/Build/Products/Release/Cancer Vive Native.app"
