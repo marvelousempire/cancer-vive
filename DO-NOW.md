@@ -1,6 +1,6 @@
 # Second source review release
 
-Version 0.12.0 reviews the eight Open questions with full primary papers where obtainable. Four receive scoped Yes answers and magnesium receives a scoped No for statistically supported added tumor killing during cisplatin. Totals: fourteen Yes, four No, three Open.
+Version 0.12.1 reviews the eight Open questions with full primary papers where obtainable. Four receive scoped Yes answers and magnesium receives a scoped No for statistically supported added tumor killing during cisplatin. Totals: fourteen Yes, four No, three Open.
 
 Castor oil/packs stay Open: the 1992 extract paper is a real lead, but only its record was obtained. Comfrey powder stays Open: full extract paper measures early lesions with cell injury, not established-tumor treatment. Household peroxide stays Open: full engineered-xenograft paper reports growth rescue, not household use. Full method access for previous capsaicin and hydroxychloroquine entries remains open.
 

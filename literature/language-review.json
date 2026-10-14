@@ -4,7 +4,7 @@
   "mode": "enforced",
   "profile": "board-grade-5",
   "status": "pass",
-  "content_sha256": "9ed34abadf1b0beb352007894c6cd0ccfbec573eeaf14062dd7b4ae5551bda40",
+  "content_sha256": "c01338e61d52f49029797ccb1956da9b40c184a4243b89e5904cf63dd26c812f",
   "blocks": [
     {
       "id": "normal.ui.empty",
