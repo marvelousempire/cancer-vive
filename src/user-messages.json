@@ -200,18 +200,23 @@
         "short": "Castor oil",
         "form": "Skin oil, oil packs, and modified drug carriers",
         "grade": "other",
-        "summary": "The pack study measured bowel signs. It did not measure tumors. The fruit extract has its own test and answer. The oil question stays Open.",
-        "research": "The pack study measured bowel signs. It did not measure tumors. The fruit extract has its own test and answer. The oil question stays Open.",
+        "summary": "A 1992 paper is titled as a castor oil extract tumor test. Its full methods and results were not available in this review. That lead is worth checking. The record does not show whether skin oil or packs slow cancer.",
+        "research": "A 1992 paper is titled as a castor oil extract tumor test. Its full methods and results were not available in this review. That lead is worth checking. The record does not show whether skin oil or packs slow cancer.",
         "human": "The bowel study did not measure tumor shrinkage. Household oil is not a cancer drug.",
         "caution": "Ricin is a poison found in raw castor beans. Do not make a home bean extract.",
-        "next_step": "The next test must compare this skin oil with a control group and measure tumors. A bowel test does not answer the tumor question.",
+        "next_step": "Read the full 1992 paper when it is available. Check what was in the extract, the control and the tumor result. Oil and pack benefit stays Open.",
         "refs": [
           "C-026",
           "C-027",
           "C-029",
-          "C-042"
+          "C-042",
+          "C-078"
         ],
         "sources": [
+          {
+            "label": "Read the study record",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/1292501/"
+          },
           {
             "label": "Read the cancer-center review",
             "url": "https://blog.dana-farber.org/insight/2026/02/can-castor-oil-cure-cancer/"
@@ -231,7 +236,10 @@
         ],
         "question": "Did the exact tested form reduce cancer growth against a comparison group?",
         "answer": null,
-        "answer_label": "Open"
+        "answer_label": "Open",
+        "expert_view": {
+          "identity": "Read level: primary bibliographic record only; no abstract or full methods obtained. MSK cites this as a mouse S180 extract study. Do not treat that secondary description as full primary proof.\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nMatching product/tumor question: Open."
+        }
       },
       {
         "id": "castor-fruit-extract",
@@ -267,17 +275,21 @@
         "short": "Comfrey powder",
         "form": "Powder from the plant and tested skin creams",
         "grade": "harm",
-        "summary": "The filed rat studies used fed plant parts or an extract. Neither study tested this powder mixed with DMSO on skin. That exact cancer question stays Open.",
-        "research": "The filed rat studies used fed plant parts or an extract. Neither study tested this powder mixed with DMSO on skin. That exact cancer question stays Open.",
+        "summary": "The leaf extract group had fewer small early liver lesions in rats. The same group had more signs of liver cell injury. The test was of early lesions. Powder was not tested on an existing tumor. Proof is in Figure 1 and Tables 1 and 2.",
+        "research": "The leaf extract group had fewer small early liver lesions in rats. The same group had more signs of liver cell injury. The test was of early lesions. Powder was not tested on an existing tumor. Proof is in Figure 1 and Tables 1 and 2.",
         "human": "The sources do not show a cancer benefit in people. Some skin creams have a use for sprains and bruises.",
         "caution": "Raw powder is not a tested skin cream. Drying the plant does not prove its poisons are gone.",
-        "next_step": "The next test needs a named powder and mix. The test must measure tumors against a control group. The known liver risks still need care.",
+        "next_step": "Can a defined powder change an existing tumor without liver harm? The extract test does not answer that. The powder question stays Open.",
         "refs": [
           "C-031",
           "C-032",
           "C-033"
         ],
         "sources": [
+          {
+            "label": "Read the full study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862927/"
+          },
           {
             "label": "Read the comfrey safety review",
             "url": "https://www.ema.europa.eu/en/medicines/herbal/symphyti-radix"
@@ -298,7 +310,10 @@
         ],
         "question": "Does a DMSO mix of this powder slow tumor growth?",
         "answer": null,
-        "answer_label": "Open"
+        "answer_label": "Open",
+        "expert_view": {
+          "identity": "Full paper read. Ethanolic leaf extract by mouth in a chemically induced early-lesion model. Twenty rats per group initially; only eight control and nine treated survivors analyzed. Deaths excluded, severe attrition and unclear randomization. Fewer small lesions with more megalocytic/vacuolated hepatocytes. Not an established-tumor or powder/DMSO skin test.\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nMatching product/tumor question: Open."
+        }
       },
       {
         "id": "tree-frog-gut-bacteria",
@@ -341,21 +356,26 @@
         "id": "dmso",
         "name": "DMSO on skin",
         "short": "DMSO on skin",
-        "form": "A solvent used with named medical compounds",
-        "grade": "human",
-        "summary": "The skin-cancer study tested DMSO with a drug compound, light, and scraping. Some lesions cleared. There was no group without DMSO to show what DMSO added. The herb-mix question stays Open.",
-        "research": "The skin-cancer study tested DMSO with a drug compound, light, and scraping. Some lesions cleared. There was no group without DMSO to show what DMSO added. The herb-mix question stays Open.",
-        "human": "The named skin procedure has results in people. The test did not use herbs or test tumors inside the body.",
+        "form": "DMSO in saline, injected into mice with 4T1 tumors",
+        "grade": "other",
+        "summary": "Tumor growth was slower with the higher tested amounts of DMSO. The lowest amount did not show the same effect. Proof is in Figure 1. The mice had injections. The test did not use a skin herb mix.",
+        "research": "Tumor growth was slower with the higher tested amounts of DMSO. The lowest amount did not show the same effect. Proof is in Figure 1. The mice had injections. The test did not use a skin herb mix.",
+        "human": "Human benefit from a skin mix stays Open. The herb, compound and route must match a new test.",
         "caution": "The exact compound and mix must be known. Some cancer drugs were less active when mixed with DMSO in the lab.",
-        "next_step": "Would DMSO add a benefit to the same light-and-drug care? A matched comparison is needed. Unnamed herbs still need their own tests.",
+        "next_step": "Can a named skin mix reach a tumor and change its growth? This test does not answer that. Human benefit and long-term harm stay Open.",
         "refs": [
           "C-037",
           "C-038",
           "C-039",
           "C-040",
-          "C-041"
+          "C-041",
+          "C-073"
         ],
         "sources": [
+          {
+            "label": "Read the full study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3988339/"
+          },
           {
             "label": "Read the skin-cancer study",
             "url": "https://pubmed.ncbi.nlm.nih.gov/18803580/"
@@ -377,30 +397,38 @@
           "skin",
           "harm"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did injected DMSO slow breast-tumor growth in this mouse test?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test",
+        "expert_view": {
+          "identity": "Tested form: DMSO in saline, injected into mice with 4T1 tumors\n\nCancer model: Female BALB/c mice with subcutaneous 4T1 breast tumors; five per group\n\nComparison: Saline injections without DMSO\n\nEndpoint: Tumor volume over time and final tumor weight\n\nProof: S-067; Figure 1: 1 mg/g growth difference days 13–19, p<0.01; n=5/group. Daily intraperitoneal DMSO for 10 days. The 0.25 mg/g group had no significant tumor-weight benefit. Small, short mouse experiment; macrophage findings do not prove a causal human mechanism.\n\nRead level: full primary paper; methods, results, figures and discussion\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group?. Wider product and human benefit remains Open."
+        }
       },
       {
         "id": "spike-proteins",
         "name": "Spike proteins",
         "short": "Spike proteins",
-        "form": "Virus spike, vaccine targets, and lab proteins",
-        "grade": "education",
-        "summary": "The structure paper shows how spike binds to a cell. It did not measure tumor growth. The infection paper tests whole viruses, not spike alone. The cancer-growth question stays Open.",
-        "research": "The structure paper shows how spike binds to a cell. It did not measure tumor growth. The infection paper tests whole viruses, not spike alone. The cancer-growth question stays Open.",
-        "human": "NCI reports no evidence that COVID-19 shots cause cancer, make it return, or make it grow.",
+        "form": "Isolated SARS-CoV-2 spike protein preparation, not virus or vaccine",
+        "grade": "cells",
+        "summary": "Cell colony counts were lower with the spike sample than with the control. A colony is a group of cells that grows from a cell. Counts were about half of the control. Proof is in Figure 1. Only one prostate-cell line was tested.",
+        "research": "Cell colony counts were lower with the spike sample than with the control. A colony is a group of cells that grows from a cell. Counts were about half of the control. Proof is in Figure 1. Only one prostate-cell line was tested.",
+        "human": "The study was not a vaccine or infection test. The result does not show that a shot treats or causes cancer.",
         "caution": "COVID can be serious during cancer care. Ask the team about shot timing, infection risk, and new symptoms.",
-        "next_step": "A test must separate spike from infection and other causes. Name the cancer and measure its growth against a comparison group.",
+        "next_step": "Can a new team repeat the result with clear sample checks? Benefit in people, other cells and vaccine effects stay Open.",
         "refs": [
           "C-043",
           "C-044",
           "C-045",
           "C-046",
           "C-047",
-          "C-048"
+          "C-048",
+          "C-074"
         ],
         "sources": [
+          {
+            "label": "Read the full study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775145/"
+          },
           {
             "label": "Read the spike structure study",
             "url": "https://pubmed.ncbi.nlm.nih.gov/32075877/"
@@ -417,9 +445,12 @@
         "tags": [
           "education"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did the isolated spike sample lower prostate-cell colony counts in this lab test?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test",
+        "expert_view": {
+          "identity": "Tested form: Isolated SARS-CoV-2 spike protein preparation, not virus or vaccine\n\nCancer model: LNCaP prostate cancer cells\n\nComparison: Medium-only control\n\nEndpoint: Clonogenic survival, colony count at day 9\n\nProof: S-068; Figure 1A: relative colony counts 49±4%, 41±3%, 45±11% at 20, 50, 200 ng/ml after 72 h exposure; p<0.05 versus medium control, triplicate colony assay. No matched irrelevant-protein control or endotoxin check described. Vaccine benefit is an author hypothesis, not a tested endpoint.\n\nRead level: full primary paper; methods, results, figures and discussion\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group?. Wider product and human benefit remains Open."
+        }
       },
       {
         "id": "cloves",
@@ -484,8 +515,8 @@
             "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/hsr2.70052"
           },
           {
-            "label": "Read the trial record",
-            "url": "https://clinicaltrials.gov/study/NCT01740323"
+            "label": "Read the tumor-response trial",
+            "url": "https://clinicaltrials.gov/study/NCT00852332"
           },
           {
             "label": "Read the turmeric safety review",
@@ -496,7 +527,7 @@
           "herbs",
           "harm"
         ],
-        "question": "Did added oral curcumin show a higher tumor response in this breast-cancer trial?",
+        "question": "Did added oral curcumin show a clear gain in tumor response in this breast-cancer trial?",
         "answer": false,
         "answer_label": "No, reported in this test",
         "expert_view": {
@@ -578,17 +609,22 @@
         "id": "wormwood",
         "name": "Wormwood",
         "short": "Wormwood",
-        "form": "The bitter herb and concentrated oil",
-        "grade": "harm",
-        "summary": "The paper says the bitter-herb extract can kill breast-cancer cells. Two cell types were tested. Only the short study report was read. The full methods cost money to read. Control groups and repeat tests still need a check.",
-        "research": "The paper says the bitter-herb extract can kill breast-cancer cells. Two cell types were tested. Only the short study report was read. The full methods cost money to read. Control groups and repeat tests still need a check.",
-        "human": "No checked cancer benefit is established for this wormwood product in people here.",
+        "form": "Total flavonoid fraction from Artemisia absinthium",
+        "grade": "cells",
+        "summary": "The cell test signal was lower with the named extract. The test measures cell activity, not a direct count. Proof is in the cell results and Figure 8. The plant was bitter wormwood. Sweet wormwood is a different plant.",
+        "research": "The cell test signal was lower with the named extract. The test measures cell activity, not a direct count. Proof is in the cell results and Figure 8. The plant was bitter wormwood. Sweet wormwood is a different plant.",
+        "human": "Human benefit is Open. Whole herb, oil and other extracts do not share this answer.",
         "caution": "Strong thujone exposure can cause seizures. The product strength must be known.",
-        "next_step": "Read the full methods and control groups before answering the growth question. The herb extract and oil are not sweet-wormwood drugs.",
+        "next_step": "Can a new team test the same batch and count the cells? Safe delivery and benefit in people stay Open.",
         "refs": [
-          "C-054"
+          "C-054",
+          "C-075"
         ],
         "sources": [
+          {
+            "label": "Read the full study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10671751/"
+          },
           {
             "label": "Read the cancer study",
             "url": "https://link.springer.com/article/10.1007/s11033-012-1569-0"
@@ -603,11 +639,11 @@
           "harm"
         ],
         "expert_view": {
-          "identity": "Tested form: The bitter herb and concentrated oil\n\nRead level: primary abstract read; full methods require paid access\n\nCheck date: 2026-10-14\n\nReview: Primary source scope checked; matching proof or reliability gap remains open"
+          "identity": "Tested form: Total flavonoid fraction from Artemisia absinthium\n\nCancer model: HeLa and SiHa cervical cancer cells\n\nComparison: 0.3% DMSO vehicle; cisplatin positive control\n\nEndpoint: MTT viability signal at 24 hours\n\nProof: S-069; Results 2.9: total fraction IC50 396±54.2 µg/ml in HeLa and 449±54.8 µg/ml in SiHa; six replicate wells per group. Figure 8A supports HeLa MTT comparison; apoptosis measured separately. H8 immortalized-cell comparison does not establish safety. Molecular docking predicts, not proves, target binding. This is not the inaccessible 2012 essential-oil paper.\n\nRead level: full primary paper; methods, results, figures and discussion\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group?. Wider product and human benefit remains Open."
         },
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did the named wormwood extract lower the cell-viability signal in this lab test?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test"
       },
       {
         "id": "shilajit",
@@ -688,17 +724,22 @@
         "id": "magnesium",
         "name": "Magnesium",
         "short": "Magnesium",
-        "form": "Food sources and prescribed replacement",
+        "form": "Magnesium replacement during cisplatin treatment after magnesium deficiency",
         "grade": "other",
-        "summary": "The mouse test used this nutrient during cancer-drug care. Kidney harm was worse at low levels. The tumor-killing effect was weaker too. Added nutrient did not block the drug. The short study report was read. A benefit from the nutrient alone is still Open.",
-        "research": "The mouse test used this nutrient during cancer-drug care. Kidney harm was worse at low levels. The tumor-killing effect was weaker too. Added nutrient did not block the drug. The short study report was read. A benefit from the nutrient alone is still Open.",
-        "human": "Fixing a low level is a health need, not proof of a tumor treatment.",
+        "summary": "No clear gain in tumor killing was shown from added magnesium. The small change did not pass the study test for a real difference. Proof is in Figure 7D and its results. Kidney harm was lower in a separate test.",
+        "research": "No clear gain in tumor killing was shown from added magnesium. The small change did not pass the study test for a real difference. Proof is in Figure 7D and its results. Kidney harm was lower in a separate test.",
+        "human": "Low levels of this nutrient can need care. This No is for one test. The answer does not rule out all uses. The nutrient alone as a tumor treatment stays Open.",
         "caution": "Too much can cause harm, especially with kidney problems. A new dose needs a care-team check.",
-        "next_step": "Read the full groups and tumor results. A test to fix a low level during drug care is not a test of the nutrient alone.",
+        "next_step": "Can a larger test confirm the tumor effect? A human benefit from this nutrient alone stays Open.",
         "refs": [
-          "C-053"
+          "C-053",
+          "C-076"
         ],
         "sources": [
+          {
+            "label": "Read the full study",
+            "url": "https://journals.physiology.org/doi/full/10.1152/ajprenal.00688.2016"
+          },
           {
             "label": "Read the cancer study",
             "url": "https://pubmed.ncbi.nlm.nih.gov/28424213/"
@@ -711,11 +752,11 @@
         "tags": [
           "nutrition"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open",
+        "question": "Did added magnesium show a clear gain in tumor killing with cisplatin in this mouse test?",
+        "answer": false,
+        "answer_label": "No, reported in this test",
         "expert_view": {
-          "identity": "Tested form: Food sources and prescribed replacement\n\nRead level: primary abstract read; full publisher access failed\n\nCheck date: 2026-10-14\n\nReview: Primary source scope checked; matching proof or reliability gap remains open"
+          "identity": "Tested form: Magnesium replacement during cisplatin treatment after magnesium deficiency\n\nCancer model: BALB/c CT26 colon-tumor model, 8–12 mice/group; supplemented group n=10\n\nComparison: Magnesium-deficient mice on cisplatin without the replacement regimen\n\nEndpoint: Final tumor weight, Figure 7D\n\nProof: S-065; Full publisher paper read in browser. Results: magnesium supplementation slightly, but not statistically, improved cisplatin killing versus deficient cisplatin group. Figure 7D. Combined diet restoration, magnesium threonate drinking water and injected magnesium sulfate cannot isolate one component. Deficiency versus normal diet affected tumor weight; that comparison is different from added replacement during cisplatin.\n\nRead level: full primary paper; methods, results, figures and discussion\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group?. Wider product and human benefit remains Open."
         }
       },
       {
@@ -833,15 +874,20 @@
         "short": "Hydrogen peroxide",
         "form": "Household peroxide and concentrated products",
         "grade": "harm",
-        "summary": "The filed tests do not use drinks made from this liquid to control cancer. A test that sends oxygen to mouse tumors is a different test. The growth question for this home product stays Open.",
-        "research": "The filed tests do not use drinks made from this liquid to control cancer. A test that sends oxygen to mouse tumors is a different test. The growth question for this home product stays Open.",
+        "summary": "In a mouse test, dilute peroxide put into tumors was linked to restored tumor growth. The cells had changed genes. The test was not of a drink or household skin product. Proof is in Figure 7. A result can change with the form and test.",
+        "research": "In a mouse test, dilute peroxide put into tumors was linked to restored tumor growth. The cells had changed genes. The test was not of a drink or household skin product. Proof is in Figure 7. A result can change with the form and test.",
         "human": "No cancer benefit is shown here for drinking or injecting this liquid.",
         "caution": "If swallowed, the liquid can burn the gut and form gas bubbles. Strong products can cause severe burns.",
-        "next_step": "A new test must use this exact form and compare tumor growth with a control group. Drinking the liquid can cause burns and harmful gas bubbles.",
+        "next_step": "What happens in a test that matches the exact product and route? The household-product question stays Open. Do not drink or inject this liquid for cancer.",
         "refs": [
-          "C-057"
+          "C-057",
+          "C-079"
         ],
         "sources": [
+          {
+            "label": "Read the full study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3877547/"
+          },
           {
             "label": "Read the poison-control guidance",
             "url": "https://www.poison.org/articles/hydrogen-peroxide"
@@ -852,24 +898,32 @@
         ],
         "question": "Did the exact tested form reduce cancer growth against a comparison group?",
         "answer": null,
-        "answer_label": "Open"
+        "answer_label": "Open",
+        "expert_view": {
+          "identity": "Full paper read. Engineered IGHG1 knockdown xenografts plus intratumoral 2 µM H2O2 versus same knockdown without H2O2; Figure 7A reports n=6/group. Growth restoration, not tumor shrinkage. Methods and results describe allocation differently; injected cell identity is not explicit in the tumor-method paragraph. Do not invent a liver-cancer model or import this result into household ingestion.\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nMatching product/tumor question: Open."
+        }
       },
       {
         "id": "ivermectin",
         "name": "Ivermectin",
         "short": "Ivermectin",
-        "form": "A prescription parasite medicine",
-        "grade": "human",
-        "summary": "The paper says a mix of this drug and an immune drug can help mice with tumors. The journal has a June 2026 notice about flaws. Some images look too much alike. The source data are gone. The answer stays Open.",
-        "research": "The paper says a mix of this drug and an immune drug can help mice with tumors. The journal has a June 2026 notice about flaws. Some images look too much alike. The source data are gone. The answer stays Open.",
-        "human": "A trial listing alone does not show better tumor control or longer life. The listing is not proof for home use.",
+        "form": "Research ivermectin in cultured cells",
+        "grade": "cells",
+        "summary": "The cell test signal was lower with the drug in two breast cell lines. The test used estrogen, a hormone. Proof is in Figure 2. The 2026 paper is from a different team. The older mouse paper still has a journal concern.",
+        "research": "The cell test signal was lower with the drug in two breast cell lines. The test used estrogen, a hormone. Proof is in Figure 2. The 2026 paper is from a different team. The older mouse paper still has a journal concern.",
+        "human": "Benefit in people stays Open. This cell result does not fix the flaws in the earlier mouse study. A trial listing alone does not show benefit.",
         "caution": "Human and animal products are different. A cancer use needs a trial or a treating clinician, not a home dose.",
-        "next_step": "A new team must repeat the test. The drug mix and tumor type must match. Human benefit and the flaws in the paper remain Open.",
+        "next_step": "Can a new team repeat the cell test? Can people safely reach the drug level used? Human benefit and the disputed mouse result stay Open.",
         "refs": [
           "C-058",
-          "C-072"
+          "C-072",
+          "C-077"
         ],
         "sources": [
+          {
+            "label": "Read the full study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13132456/"
+          },
           {
             "label": "Read the journal concern",
             "url": "https://www.nature.com/articles/s41523-026-00988-z"
@@ -890,11 +944,11 @@
         "tags": [
           "drugs"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open",
+        "question": "Did ivermectin lower the cell-viability signal in these breast-cell tests?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test",
         "expert_view": {
-          "identity": "Tested form: A prescription parasite medicine\n\nRead level: full current article and journal concern read; concern via publisher HTML\n\nCheck date: 2026-10-14\n\nReview: disputed source; independent replication open"
+          "identity": "Tested form: Research ivermectin in cultured cells\n\nCancer model: MCF-7 and T-47D estrogen-stimulated breast cancer cell lines\n\nComparison: Same estrogen conditions with 0.01% DMSO vehicle and no ivermectin\n\nEndpoint: MTT viability after five days\n\nProof: S-070; Rujimongkon et al., 2026, Figure 2A–B: 3 and 5 µM ivermectin reduced estrogen-stimulated MTT signal in MCF-7 and T-47D; 10 nM estradiol, five days, n=3 independent experiments; two-way ANOVA. This is viability/metabolic signal, not tumor survival. Micromolar exposure and human delivery are unresolved. Combination analysis elsewhere reuses the same team’s 2025 data; not independent replication.\n\nRead level: full primary paper; methods, results, figures and discussion\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group?. Wider product and human benefit remains Open."
         }
       },
       {
@@ -971,6 +1025,16 @@
               {
                 "label": "Read the NCI cancer guidance",
                 "url": "https://www.cancer.gov/about-cancer/coronavirus/covid-19-vaccines-people-with-cancer"
+              }
+            ]
+          },
+          {
+            "heading": "What did the isolated spike test show?",
+            "text": "A 2022 lab test had fewer groups of prostate cancer cells with a spike sample. The groups are called colonies. The study used one cell line. The test was not of a shot or infection. Benefit in people stays Open.",
+            "sources": [
+              {
+                "label": "Read the full cell study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775145/"
               }
             ]
           },

@@ -4,7 +4,7 @@
   "mode": "enforced",
   "profile": "board-grade-5",
   "status": "pass",
-  "content_sha256": "95d91e51bcbe8eac92e0d8275c02a3bce6142f062ae081cb2fee36f386982c19",
+  "content_sha256": "9ed34abadf1b0beb352007894c6cd0ccfbec573eeaf14062dd7b4ae5551bda40",
   "blocks": [
     {
       "id": "normal.ui.empty",
@@ -118,7 +118,7 @@
     },
     {
       "id": "normal.topics.1",
-      "text_sha256": "b3be17c15053d1de9c3a63b623321b9a54ad74ce8b8dedfc870403f26c52f2e7",
+      "text_sha256": "aa124f673733e051a8b4edb67306755e0afbe289f229ffd356ac2b53a10fccee",
       "status": "pass"
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       "id": "normal.topics.3",
-      "text_sha256": "a81504d32cd32f2c6592bcbe6bbd4e4653e7fbe7b904783d94fe0c25a18474d8",
+      "text_sha256": "b8a514e81d5a8db5d3dc1ee280cd29d22d2858e10c6db5ae467384c071da72e2",
       "status": "pass"
     },
     {
@@ -138,12 +138,12 @@
     },
     {
       "id": "normal.topics.5",
-      "text_sha256": "31a888e9f9c1b7c09112ae58c5473f2ce7f424551d4f0e68dfb2d3e39ec5a986",
+      "text_sha256": "62c84cb92b2135dc9415612bad9cf8072e2000dbaa96065e2124e6df43085fa9",
       "status": "pass"
     },
     {
       "id": "normal.topics.6",
-      "text_sha256": "5dde0c10172d29389b166b79eef61a36c4deb5886d981f798e56435849c393f1",
+      "text_sha256": "5dc6b6cdb87ad39953114acbc32685c7cf7b92340a16d7f5c5b7f1f79f2e9ff9",
       "status": "pass"
     },
     {
@@ -168,7 +168,7 @@
     },
     {
       "id": "normal.topics.11",
-      "text_sha256": "c1ff0a1fa2a1ee09431007ee8389bb34a8a36593c711bc9394e9045dc74d979e",
+      "text_sha256": "746bc78cd8f5cb69884a663a47fdd3f887ccb731027c149531669c3d019869f6",
       "status": "pass"
     },
     {
@@ -183,7 +183,7 @@
     },
     {
       "id": "normal.topics.14",
-      "text_sha256": "f182ee2180c4825233ff22adfa3979c7ab4f853314e942f22b27ebb9052236f4",
+      "text_sha256": "fec36d7233db4dee47d5ca041d7a4093ee4032bc35d550fd2d405562173bf8a0",
       "status": "pass"
     },
     {
@@ -203,12 +203,12 @@
     },
     {
       "id": "normal.topics.18",
-      "text_sha256": "b5d70c34cb61b22f74d7c7f9fd97a96b9578107ebeb432157d31ec0a9c5e9a1c",
+      "text_sha256": "ef3840281fb576dd370ad8a0ea6feb3da1ba93d350081eaf32f53022f5089eed",
       "status": "pass"
     },
     {
       "id": "normal.topics.19",
-      "text_sha256": "b8cd84aa70baa3dbe13ae2c0bdc78f4a03d756551dc4eefba3e02ed3422bbaff",
+      "text_sha256": "f323278ba5a9584d51df65ac9646387c8e78efab85dc1618b35e495c0a04587c",
       "status": "pass"
     },
     {
@@ -218,7 +218,7 @@
     },
     {
       "id": "normal.lessons.0",
-      "text_sha256": "99214c340c00ee0aa781dcdf956c9416ce6fa5358db548ab897edfeee120af58",
+      "text_sha256": "73e4536fed35ad489e16146ce460b95fd157a094c39f4932adadca67ea515ba5",
       "status": "pass"
     },
     {

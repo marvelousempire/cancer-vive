@@ -71,7 +71,7 @@ Status key: `seed` | `reviewed` | `disputed` | `retired`
 | C-061 | The cited oxygen microbubble research in mice does not license drinking peroxide or claim an established human treatment. | mechanism | S-052 | oxygen lesson | seed |
 
 | C-062 | Did pure eugenol slow breast-tumor growth in the mouse test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-053 | study audit | seed |
-| C-063 | Did added oral curcumin show a higher tumor response in this breast-cancer trial? Reported answer: No; exact scope and limits are in the investigation ledger. | shown | S-054 | study audit | seed |
+| C-063 | Did added oral curcumin show a statistically supported gain in tumor response in this breast-cancer trial? Reported answer: No; exact scope and limits are in the investigation ledger. | shown | S-054 | study audit | seed |
 | C-064 | Did pure thymoquinone slow breast-tumor growth in the mouse test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-055 | study audit | seed |
 | C-065 | Did pure juglone lower prostate-cancer cell growth in the lab test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-056 | study audit | seed |
 | C-066 | Did the named shilajit sample lower breast-cancer cell growth in the lab test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-057 | study audit | seed |
@@ -80,7 +80,15 @@ Status key: `seed` | `reviewed` | `disputed` | `retired`
 | C-069 | Did the named leaf extract lower cancer-cell counts in the mouse test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-060 | study audit | seed |
 | C-070 | Did high zinc intake slow melanoma growth in this mouse test? Reported answer: No; exact scope and limits are in the investigation ledger. | mechanism | S-061 | study audit | seed |
 | C-071 | Did added hydroxychloroquine show better one-year survival in this pancreatic-cancer trial? Reported answer: No; exact scope and limits are in the investigation ledger. | shown | S-062 | study audit | seed |
-| C-072 | The June 2026 journal concern identifies further image similarities and unavailable original data in the 2021 ivermectin mouse paper; Cancer Vive keeps efficacy open. | shown | S-063 | study audit | seed |
+| C-072 | The June 2026 journal concern identifies further image similarities and unavailable original data in the 2021 ivermectin mouse paper; Cancer Vive keeps that mouse-combination finding open. | shown | S-063 | study audit | seed |
+
+| C-073 | Injected DMSO reduced 4T1 tumor growth at higher tested exposures in small mouse groups; this does not test skin herbs. | mechanism | S-067 | second source audit | seed |
+| C-074 | An isolated spike preparation reduced LNCaP colony survival versus medium in one cell study; vaccine and human effects were not tested. | mechanism | S-068 | second source audit | seed |
+| C-075 | The named Artemisia absinthium flavonoid fraction reduced cervical-cell MTT viability signal versus vehicle. | mechanism | S-069 | second source audit | seed |
+| C-076 | Added magnesium did not show a statistically significant improvement in cisplatin tumor killing in the CT26 mouse comparison. | mechanism | S-065 | second source audit | seed |
+| C-077 | Ivermectin reduced estrogen-stimulated MTT viability signal in MCF-7 and T-47D cells in a separate 2026 study. | mechanism | S-070 | second source audit | seed |
+| C-078 | A primary bibliographic record identifies a 1992 castor oil extract antitumor paper; its full result remains unaudited. | shown | S-071 | second source audit | seed |
+| C-079 | Intratumoral dilute peroxide restored growth of engineered IGHG1-knockdown xenografts in a mouse experiment, not a household-product treatment test. | mechanism | S-072 | second source audit | seed |
 
 ## How to add a row
 

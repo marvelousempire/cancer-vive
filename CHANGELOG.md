@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.12.0 — 2026-10-14
+
+- Completed a second AI source-audit pass over the eight Open questions. Four new scoped Yes and one No answers cite full primary papers. Three matching-product gaps remain Open.
+- Added exact findings for injected DMSO, isolated spike, wormwood fraction, magnesium with cisplatin, and separate 2026 ivermectin cell research.
+- Kept comfrey early lesions and injury, peroxide growth rescue, and the inaccessible 1992 castor oil extract lead distinct from product treatment claims.
+- Preserved the disputed ivermectin mouse finding and all human-use gaps. Independent scientific review remains open; no claim is promoted as independently reviewed.
+- Fixed the curcumin tumor-response trial link. Updated shared content and both original research documents in Web, Mac Console and native SwiftUI.
+
 ## 0.11.0 — 2026-10-14
 
 - Added ten scoped study answers: seven Yes and three No, each with its exact test and proof location.
