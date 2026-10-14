@@ -2,7 +2,7 @@
 
 ## Current work
 
-Version 0.9.0 adds the separate Tauri Mac Console and native SwiftUI Mac app. No earlier Mac or Swift owner existed in Cancer Vive. The owner paths, routes and build targets are in product.identity.json and suit-stack.manifest.json.
+Version 0.9.1 carries the separate Tauri Mac Console and native SwiftUI Mac app. No earlier Mac or Swift owner existed in Cancer Vive. The owner paths, routes and build targets are in product.identity.json and suit-stack.manifest.json.
 
 All three use src/user-messages.json. Its 71 prose blocks pass enforced ClarifyThat board-grade-5. Claims stay seed pending a second scientific reader. Public bundles contain topics, lessons, claims and source records. They omit dated private case files.
 
@@ -28,7 +28,7 @@ Local installed apps are the requested Apple target. App Store, TestFlight and n
 
 ## Source fixes and recovery
 
-Rust 1.96.1 with release symbol stripping can emit a load table rejected on macOS 27. The exact dylib load error was confirmed. The product release profile keeps stripping off; no OS guard is bypassed. Primary report: https://github.com/rust-lang/rust/issues/157750.
+Rust 1.96.1 with release symbol stripping can emit a load table rejected on macOS 27. The exact dylib load error was confirmed. The final Console check also caught a linker-only signature with no resource seal. Its bundle config now requests local ad-hoc signing, and both Makefile targets verify the full signature before install. The product release profile keeps stripping off; no OS guard is bypassed. Primary report: https://github.com/rust-lang/rust/issues/157750.
 
 The native body uses SwiftUI, native search/pickers/tables/sheets/links and a pinned Father Apple contract package. It is not a webview, and it does not claim full Briefcase Framework infrastructure adoption. Tauri carries the bundled React app and Rust owns source opening. Exact source URLs are parsed from checked JSON and Markdown; credential and local-file links are refused.
 

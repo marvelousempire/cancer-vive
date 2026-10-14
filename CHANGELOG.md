@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.1 — 2026-10-14
+
+- Added full local signing of the Mac Console bundle. The linker signature alone did not bind its app resources.
+- Both Apple build targets now check the full app signature before install.
+- Kept all three targets on version 0.9.1.
+
 ## 0.9.0 — 2026-10-14
 
 - Added a separate Mac Console with all content bundled for offline reading.

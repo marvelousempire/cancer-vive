@@ -1,7 +1,7 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "Cancer Vive",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "identifier": "ai.marvelousempire.cancervive.console",
   "build": {
     "beforeBuildCommand": "npm --prefix ../.. run build:mac-content",
@@ -26,7 +26,8 @@
       "icons/icon.png"
     ],
     "macOS": {
-      "minimumSystemVersion": "13.0"
+      "minimumSystemVersion": "13.0",
+      "signingIdentity": "-"
     }
   }
 }
