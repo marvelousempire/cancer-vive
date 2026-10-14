@@ -1,0 +1,269 @@
+{
+  "title": "Diabetes Vive",
+  "intro": "Understand diabetes with the same evidence-first explorer. Type 1, type 2, gestational diabetes, monitoring, treatment, food, activity, and complications each have distinct questions.",
+  "updated": "October 14, 2026",
+  "categories": {
+    "types": "Types and diagnosis",
+    "monitoring": "Tests and monitoring",
+    "treatment": "Treatment and medicines",
+    "lifestyle": "Food and activity",
+    "prevention": "Prevention and risks",
+    "complications": "Complications and urgent signs"
+  },
+  "grades": {
+    "guideline": {
+      "label": "Clinical guidance"
+    },
+    "evidence": {
+      "label": "Human clinical evidence"
+    },
+    "education": {
+      "label": "Educational overview"
+    }
+  },
+  "topics": [
+    {
+      "id": "type-1",
+      "name": "Type 1 diabetes",
+      "category": "types",
+      "grade": "guideline",
+      "question": "Is type 1 diabetes usually caused by an autoimmune attack on insulin-producing cells?",
+      "finding": "Yes. Type 1 diabetes involves destruction of pancreatic beta cells and requires insulin treatment.",
+      "human": "Diagnosis and treatment rely on clinical evaluation; antibody tests may help distinguish type 1 from other types.",
+      "caution": "Insulin should not be stopped. Diabetic ketoacidosis can be life-threatening.",
+      "next": "Ask how your diagnosis was confirmed and what insulin and sick-day plan you need.",
+      "sources": [
+        [
+          "NIDDK — Type 1 Diabetes",
+          "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes"
+        ]
+      ]
+    },
+    {
+      "id": "type-2",
+      "name": "Type 2 diabetes",
+      "category": "types",
+      "grade": "guideline",
+      "question": "Can type 2 diabetes involve both insulin resistance and reduced insulin production?",
+      "finding": "Yes. Type 2 diabetes commonly involves insulin resistance together with insufficient insulin secretion.",
+      "human": "Treatment choices vary with glucose levels, cardiovascular and kidney risk, other conditions, cost and patient preferences.",
+      "caution": "Type 2 is not interchangeable with type 1, and not every person can manage it with lifestyle changes alone.",
+      "next": "Ask which treatment goals and medicines fit your cardiovascular, kidney and glucose risks.",
+      "sources": [
+        [
+          "NIDDK — Type 2 Diabetes",
+          "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes"
+        ]
+      ]
+    },
+    {
+      "id": "gestational",
+      "name": "Gestational diabetes",
+      "category": "types",
+      "grade": "guideline",
+      "question": "Does diabetes first recognized during pregnancy need its own care pathway?",
+      "finding": "Yes. Gestational diabetes requires pregnancy-specific monitoring, nutrition advice and sometimes medication.",
+      "human": "Clinical teams recommend screening during pregnancy and follow-up testing after delivery.",
+      "caution": "Pregnancy glucose targets and medications are not the same as standard adult type 2 diabetes care.",
+      "next": "Ask the prenatal care team about your screening, glucose targets and postpartum testing.",
+      "sources": [
+        [
+          "CDC — Diabetes During Pregnancy",
+          "https://www.cdc.gov/diabetes/about/diabetes-during-pregnancy.html"
+        ]
+      ]
+    },
+    {
+      "id": "a1c",
+      "name": "A1C test",
+      "category": "monitoring",
+      "grade": "guideline",
+      "question": "Does A1C reflect average glucose over about three months?",
+      "finding": "Yes. A1C approximates average blood glucose over the previous two to three months.",
+      "human": "A1C is used for many diagnoses and ongoing checks, but may be unreliable with some blood disorders or during pregnancy.",
+      "caution": "One test does not replace medical interpretation or immediate glucose readings; diagnostic confirmation may be needed.",
+      "next": "Ask whether A1C is accurate for you and what testing interval is appropriate.",
+      "sources": [
+        [
+          "NIDDK — A1C Test & Diabetes",
+          "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        ]
+      ]
+    },
+    {
+      "id": "cgm",
+      "name": "Continuous glucose monitoring",
+      "category": "monitoring",
+      "grade": "guideline",
+      "question": "Can a CGM show glucose trends and alerts that A1C alone misses?",
+      "finding": "Yes. A continuous glucose monitor estimates interstitial glucose over time and can reveal patterns and alarms.",
+      "human": "CGM can support selected people using insulin and others based on clinical indication and access.",
+      "caution": "CGM readings can differ from blood glucose; follow device instructions for confirmation, especially when symptoms do not match.",
+      "next": "Ask whether CGM is indicated and how to interpret time in range, lows and device alerts.",
+      "sources": [
+        [
+          "NIDDK — Continuous Glucose Monitoring",
+          "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/continuous-glucose-monitoring"
+        ]
+      ]
+    },
+    {
+      "id": "insulin",
+      "name": "Insulin treatment",
+      "category": "treatment",
+      "grade": "guideline",
+      "question": "Is insulin essential for type 1 diabetes and sometimes needed for type 2?",
+      "finding": "Yes. Insulin replaces a necessary hormone in type 1 and is also used in many other diabetes care plans.",
+      "human": "Regimens differ by diabetes type, meals, activity and clinical needs.",
+      "caution": "Dosing errors can cause severe low or high glucose. Do not change doses based on a website.",
+      "next": "Review your prescribed insulin, injection or pump technique, supplies and low-glucose rescue plan.",
+      "sources": [
+        [
+          "NIDDK — Insulin and Other Diabetes Medicines",
+          "https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments"
+        ]
+      ]
+    },
+    {
+      "id": "medicines",
+      "name": "Type 2 diabetes medicines",
+      "category": "treatment",
+      "grade": "guideline",
+      "question": "Are non-insulin medicines selected for more than glucose lowering alone?",
+      "finding": "Yes. Some medicines also have established cardiovascular, heart-failure, kidney or weight-related benefits in eligible patients.",
+      "human": "Choice depends on an individual clinical assessment and the specific drug's evidence and contraindications.",
+      "caution": "A class benefit does not apply to every medicine or person; do not start, stop or swap a prescription without clinical advice.",
+      "next": "Ask about kidney function, heart disease, potential adverse effects and cost of each option.",
+      "sources": [
+        [
+          "NIDDK — Insulin and Other Diabetes Medicines",
+          "https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments"
+        ]
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food and meal planning",
+      "category": "lifestyle",
+      "grade": "guideline",
+      "question": "Can meal planning help manage glucose without one universal diabetes diet?",
+      "finding": "Yes. Personalized meal plans can consider carbohydrate intake, food quality, culture, access and medications.",
+      "human": "Nutrition counseling and dietary changes can help manage glucose and related health risks.",
+      "caution": "Extreme restriction or skipped meals can be risky, especially when taking medicines that lower glucose.",
+      "next": "Ask for a practical eating plan tailored to your medicines and goals.",
+      "sources": [
+        [
+          "CDC — Diabetes Meal Planning",
+          "https://www.cdc.gov/diabetes/healthy-eating/diabetes-meal-planning.html"
+        ]
+      ]
+    },
+    {
+      "id": "activity",
+      "name": "Physical activity",
+      "category": "lifestyle",
+      "grade": "guideline",
+      "question": "Can regular activity support diabetes management?",
+      "finding": "Yes. Movement can improve insulin sensitivity, glucose control and general cardiovascular health.",
+      "human": "The amount and type should be personalized to fitness, medicines and complications.",
+      "caution": "Activity can lower glucose during or after exercise, especially for people using insulin or sulfonylureas.",
+      "next": "Ask what activity and glucose monitoring plan is safe for you.",
+      "sources": [
+        [
+          "CDC — Diabetes and Physical Activity",
+          "https://www.cdc.gov/diabetes/living-with/physical-activity.html"
+        ]
+      ]
+    },
+    {
+      "id": "prediabetes",
+      "name": "Prediabetes and prevention",
+      "category": "prevention",
+      "grade": "evidence",
+      "question": "Can structured lifestyle intervention lower progression to type 2 diabetes for many high-risk adults?",
+      "finding": "Yes. The Diabetes Prevention Program demonstrated that structured lifestyle changes reduced development of type 2 diabetes in high-risk study participants.",
+      "human": "Risk and prevention approaches depend on individual factors; outcomes are not guaranteed.",
+      "caution": "Prediabetes is not type 1 diabetes, and prevention findings should not be presented as a cure.",
+      "next": "Ask about your risk, test results and access to a recognized prevention program.",
+      "sources": [
+        [
+          "NIDDK — Diabetes Prevention Program",
+          "https://www.niddk.nih.gov/about-niddk/research-areas/diabetes/diabetes-prevention-program-dpp"
+        ]
+      ]
+    },
+    {
+      "id": "kidney",
+      "name": "Kidney health",
+      "category": "complications",
+      "grade": "guideline",
+      "question": "Can diabetes affect the kidneys even before symptoms appear?",
+      "finding": "Yes. Diabetes can lead to chronic kidney disease; urine albumin and estimated kidney filtration tests can detect damage.",
+      "human": "Kidney monitoring informs preventive and treatment choices.",
+      "caution": "Normal-feeling health does not rule out kidney disease; test interpretation is individualized.",
+      "next": "Ask when your urine albumin and eGFR were last checked.",
+      "sources": [
+        [
+          "NIDDK — Diabetic Kidney Disease",
+          "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-kidney-disease"
+        ]
+      ]
+    },
+    {
+      "id": "low-glucose",
+      "name": "Low blood glucose",
+      "category": "complications",
+      "grade": "guideline",
+      "question": "Can low blood glucose require urgent action?",
+      "finding": "Yes. Hypoglycemia can cause confusion, seizures or loss of consciousness and may require immediate treatment.",
+      "human": "Patients using medicines associated with low glucose should have individualized prevention and rescue plans.",
+      "caution": "Severe symptoms, inability to swallow or unconsciousness are emergencies. Do not give food or drink by mouth to an unconscious person.",
+      "next": "Agree on an emergency plan, including glucagon access when appropriate.",
+      "sources": [
+        [
+          "CDC — Treatment of Low Blood Sugar",
+          "https://www.cdc.gov/diabetes/treatment/treatment-low-blood-sugar-hypoglycemia.html"
+        ]
+      ]
+    },
+    {
+      "id": "dka",
+      "name": "Diabetic ketoacidosis (DKA)",
+      "category": "complications",
+      "grade": "guideline",
+      "question": "Can DKA occur when insulin deficiency leads to a dangerous buildup of ketones?",
+      "finding": "Yes. DKA is an acute medical emergency that can occur in diabetes, especially type 1.",
+      "human": "Signs may include vomiting, abdominal pain, rapid breathing, fruity-smelling breath and very high glucose, although glucose may not always be very high.",
+      "caution": "Suspected DKA requires emergency medical care. An educational site cannot diagnose or treat it.",
+      "next": "Ask your care team for a sick-day and ketone-testing plan before illness occurs.",
+      "sources": [
+        [
+          "CDC — Diabetic Ketoacidosis",
+          "https://www.cdc.gov/diabetes/about/diabetic-ketoacidosis.html"
+        ]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "title": "Start here: What is diabetes?",
+      "text": "Diabetes is a group of conditions involving elevated blood glucose. Type 1, type 2 and gestational diabetes have different causes and care paths.",
+      "source": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes"
+    },
+    {
+      "title": "Diagnosis and tracking",
+      "text": "A1C, fasting plasma glucose and oral glucose tolerance testing can be used in diagnosis; glucose meters and CGM support management. Each has limits.",
+      "source": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis"
+    },
+    {
+      "title": "Treatment options",
+      "text": "Insulin, other medicines, food planning, exercise and education may all be parts of care. No one treatment plan fits every diabetes type.",
+      "source": "https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments"
+    },
+    {
+      "title": "Prevention and complications",
+      "text": "Discuss cardiovascular, kidney, eye, nerve and foot health, vaccinations and routine checks with a clinician. Prediabetes prevention is distinct from treatment of established diabetes.",
+      "source": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems"
+    }
+  ]
+}
