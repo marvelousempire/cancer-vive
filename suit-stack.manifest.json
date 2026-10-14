@@ -1,0 +1,30 @@
+{
+  "schema": "cancer-vive.suit-stack/v1",
+  "version": "0.9.0",
+  "members": [
+    {
+      "id": "web",
+      "renderer": "React",
+      "source": "src",
+      "build": "npm run build",
+      "target": "https://marvelousempire.github.io/cancer-vive/",
+      "canonical_local_door": "http://cancer-vive.localhost/"
+    },
+    {
+      "id": "console",
+      "renderer": "Tauri + bundled React",
+      "source": "apps/cancer-vive-desktop",
+      "build": "tauri build --bundles app",
+      "target": "~/Applications/Cancer Vive.app"
+    },
+    {
+      "id": "native",
+      "renderer": "SwiftUI",
+      "source": "interface/swift",
+      "build": "xcodegen generate + xcodebuild -scheme CancerViveNative -configuration Release",
+      "target": "~/Applications/Cancer Vive Native.app"
+    }
+  ],
+  "content": "src/user-messages.json",
+  "native_contract": "vendor/framework-native-apple/packages/swift-console"
+}

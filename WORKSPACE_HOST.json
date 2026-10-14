@@ -1,0 +1,10 @@
+{
+  "entity_id": "nephew",
+  "display_name": "Nephew",
+  "role": "resident_ai",
+  "product_id": "cancer-vive",
+  "product_owner": "averygoodman/cancer-vive",
+  "lead_sheet": "AI_AGENT_RULES/LEAD-SHEET.md",
+  "app_targets": "suit-stack.manifest.json",
+  "scope": "Repository context only; no claim of an active AI chat in this research reader."
+}

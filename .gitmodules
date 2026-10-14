@@ -1,0 +1,3 @@
+[submodule "vendor/framework-native-apple"]
+	path = vendor/framework-native-apple
+	url = ssh://gitea-dgx/briefcase/framework-native-apple.git

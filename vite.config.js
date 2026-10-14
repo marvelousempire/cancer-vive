@@ -13,5 +13,5 @@ export default defineConfig({
   base,
   define: { __RELEASE__: JSON.stringify(release) },
   plugins: [react(), { name: "cancer-vive-release-record", generateBundle() { this.emitFile({ type: "asset", fileName: "release.json", source: JSON.stringify(release, null, 2) + "\n" }); } }],
-  build: { outDir: "dist", emptyOutDir: true }
+  build: { outDir: process.env.VITE_OUT_DIR || "dist", emptyOutDir: true }
 });

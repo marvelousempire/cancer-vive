@@ -1,0 +1,42 @@
+{
+  "schema": "cancer-vive.identity/v1",
+  "id": "cancer-vive",
+  "name": "Cancer Vive",
+  "version": "0.9.0",
+  "configuration": {
+    "identity": {
+      "id": "cancer-vive",
+      "canonical_name": "Cancer Vive"
+    },
+    "build_targets": {
+      "web": "src",
+      "console": "apps/cancer-vive-desktop",
+      "native": "interface/swift"
+    }
+  },
+  "routes": [
+    "dashboard",
+    "mechanisms",
+    "matrix",
+    "education",
+    "research"
+  ],
+  "content": "src/user-messages.json",
+  "design": "design-dna.profile.json",
+  "bundle": {
+    "console": "ai.marvelousempire.cancervive.console",
+    "native": "ai.marvelousempire.cancervive.native"
+  },
+  "release_scope": "Public Web and installed local macOS Console and Native apps; no App Store/TestFlight request",
+  "web_doors": {
+    "local": "http://cancer-vive.localhost/",
+    "public": "https://marvelousempire.github.io/cancer-vive/"
+  },
+  "local_web": {
+    "manager": "make-doors/lib/local-servers.mjs",
+    "type": "static",
+    "port": 4188,
+    "release_root": ".build/local-web/<exact-main-commit>",
+    "recovery": "startLocalServer(cancer-vive) or the existing Make Doors startup pass"
+  }
+}

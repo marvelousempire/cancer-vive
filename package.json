@@ -1,14 +1,16 @@
 {
   "name": "cancer-vive-evidence-explorer",
   "private": true,
-  "version": "0.8.0",
+  "version": "0.9.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "check:content": "node scripts/check-evidence.mjs",
-    "test": "node --test scripts/content-contract.test.mjs"
+    "test": "node --test scripts/*.test.mjs",
+    "build:mac-content": "VITE_BASE_PATH=./ VITE_OUT_DIR=apps/cancer-vive-desktop/frontend vite build",
+    "check:suits": "node scripts/prepare-apple.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "6.1.1",
@@ -16,6 +18,8 @@
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "react-markdown": "10.1.0",
-    "remark-gfm": "4.0.1"
+    "remark-gfm": "4.0.1",
+    "unified": "11.0.5",
+    "remark-parse": "11.0.0"
   }
 }

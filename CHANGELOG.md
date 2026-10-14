@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.0 — 2026-10-14
+
+- Added a separate Mac Console with all content bundled for offline reading.
+- Added a native SwiftUI app with the same topics, lessons, questions, source records, search, filters and comparison.
+- Kept one content file, route list and version for all three targets.
+- Added target source and build records and tests for native content and link limits.
+- Finished the live Web button checks after reconnecting the browser tool.
+
 ## 0.8.0 — 2026-10-13
 
 - Rewrote the whole public site in plain words, with short answers, visible cautions, and useful questions.

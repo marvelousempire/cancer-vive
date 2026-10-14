@@ -59,7 +59,8 @@
       "sources_description": "Some claims still need a second check. Full study names and old claim records are in Expert details.",
       "citations": "Full citations",
       "claims": "Original claim records",
-      "draft": "Draft build"
+      "draft": "Draft build",
+      "load_failed": "The study notes did not open. You can close Cancer Vive and try to open it again."
     },
     "home": {
       "eyebrow": "Cancer Vive",
