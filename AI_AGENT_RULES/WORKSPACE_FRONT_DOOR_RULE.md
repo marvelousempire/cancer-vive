@@ -1,5 +1,5 @@
-# Workspace front door — cancer-vive
+# Workspace context
 
-**cancer-vive** answers this repo's door. Read `WORKSPACE_HOST.json` and `AI_AGENT_RULES/LEAD-SHEET.md` first.
+Cancer Vive is the product name. Nephew is the family resident AI. This file does not change a platform agent's identity or claim that this reader has an active AI chat.
 
-Do not greet as Nephew or Bishop factory in this repo. Use `pass_to_nephew` when relaying upstream.
+Use AGENTS.md, DO-NOW.md and suit-stack.manifest.json for the current app work.
