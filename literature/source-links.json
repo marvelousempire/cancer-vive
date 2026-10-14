@@ -12,6 +12,10 @@
     "url": "https://www.nccih.nih.gov/health/fenugreek"
   },
   {
+    "label": "Primary record",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1292501/"
+  },
+  {
     "label": "Can Castor Oil Cure Cancer?",
     "url": "https://blog.dana-farber.org/insight/2026/02/can-castor-oil-cure-cancer/"
   },
@@ -26,6 +30,10 @@
   {
     "label": "PMID 31601896",
     "url": "https://pubmed.ncbi.nlm.nih.gov/31601896/"
+  },
+  {
+    "label": "Read the full study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862927/"
   },
   {
     "label": "Symphyti radix / comfrey root",
@@ -48,6 +56,10 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/3942442/"
   },
   {
+    "label": "Full paper",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3988339/"
+  },
+  {
     "label": "Photodynamic therapy with 5-aminolaevulinic acid, dimethylsulfoxide and curettage in basal cell carcinoma: a 6-year clinical and histological follow-up",
     "url": "https://pubmed.ncbi.nlm.nih.gov/18803580/"
   },
@@ -62,6 +74,10 @@
   {
     "label": "Dimethyl sulfoxide",
     "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/dimethyl-sulfoxide"
+  },
+  {
+    "label": "Full paper",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775145/"
   },
   {
     "label": "PMID 32075877",
@@ -92,8 +108,8 @@
     "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/hsr2.70052"
   },
   {
-    "label": "https://clinicaltrials.gov/study/NCT01740323",
-    "url": "https://clinicaltrials.gov/study/NCT01740323"
+    "label": "Read the tumor-response trial",
+    "url": "https://clinicaltrials.gov/study/NCT00852332"
   },
   {
     "label": "Turmeric",
@@ -116,6 +132,10 @@
     "url": "https://www.cancer.gov/about-cancer/treatment/cam/diets-supplements"
   },
   {
+    "label": "Full paper",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10671751/"
+  },
+  {
     "label": "Artemisia absinthium primary abstract",
     "url": "https://link.springer.com/article/10.1007/s11033-012-1569-0"
   },
@@ -136,7 +156,11 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/40221570/"
   },
   {
-    "label": "Magnesium and cisplatin primary abstract",
+    "label": "Magnesium and cisplatin full study",
+    "url": "https://journals.physiology.org/doi/full/10.1152/ajprenal.00688.2016"
+  },
+  {
+    "label": "Read the cancer study",
     "url": "https://pubmed.ncbi.nlm.nih.gov/28424213/"
   },
   {
@@ -168,8 +192,16 @@
     "url": "https://www.jcancer.org/v04p0573.htm"
   },
   {
+    "label": "Full paper",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3877547/"
+  },
+  {
     "label": "Is hydrogen peroxide safe?",
     "url": "https://www.poison.org/articles/hydrogen-peroxide"
+  },
+  {
+    "label": "Full paper",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13132456/"
   },
   {
     "label": "Editorial Expression of Concern",
@@ -222,6 +254,10 @@
   {
     "label": "PMID 13298683",
     "url": "https://pubmed.ncbi.nlm.nih.gov/13298683/"
+  },
+  {
+    "label": "https://clinicaltrials.gov/study/NCT01740323",
+    "url": "https://clinicaltrials.gov/study/NCT01740323"
   },
   {
     "label": "Paclitaxel Injection, USP label",

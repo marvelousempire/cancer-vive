@@ -1,0 +1,224 @@
+{
+  "schema": "cancer-vive.source-audit/v1",
+  "date": "2026-10-14",
+  "reviewer": "Codex AI, second source-audit pass",
+  "independent_reader": false,
+  "clinical_peer_review": false,
+  "scope": "Eight previously Open questions; not a second review of all legacy claims",
+  "criteria": [
+    "Exact substance and route",
+    "Cancer model and control",
+    "Measured endpoint",
+    "Sample size and losses",
+    "Statistical versus numerical difference",
+    "Full access versus abstract/record",
+    "Conflicts, concerns and human extrapolation"
+  ],
+  "records": [
+    {
+      "topic_id": "castor-oil",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "scope": {
+        "form": "Skin oil, oil packs, and modified drug carriers",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "A 1992 paper is titled as a castor oil extract tumor test. Its full methods and results were not available in this review. That lead is worth checking. The record does not show whether skin oil or packs slow cancer.",
+      "proof": {
+        "source_id": "S-071",
+        "read_level": "Read level: primary bibliographic record only; no abstract or full methods obtained. MSK cites this as a mouse S180 extract study. Do not treat that secondary description as full primary proof.",
+        "checked_on": "2026-10-14"
+      },
+      "review_state": "Second AI source audit complete, 2026-10-14; independent scientific reader and replication open",
+      "next_check": "Read the full 1992 paper when it is available. Check what was in the extract, the control and the tumor result. Oil and pack benefit stays Open."
+    },
+    {
+      "topic_id": "comfrey",
+      "question": "Does a DMSO mix of this powder slow tumor growth?",
+      "answer": null,
+      "scope": {
+        "form": "Powder from the plant and tested skin creams",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "The leaf extract group had fewer small early liver lesions in rats. The same group had more signs of liver cell injury. The test was of early lesions. Powder was not tested on an existing tumor. Proof is in Figure 1 and Tables 1 and 2.",
+      "proof": {
+        "source_id": "S-024",
+        "read_level": "Full paper read. Ethanolic leaf extract by mouth in a chemically induced early-lesion model. Twenty rats per group initially; only eight control and nine treated survivors analyzed. Deaths excluded, severe attrition and unclear randomization. Fewer small lesions with more megalocytic/vacuolated hepatocytes. Not an established-tumor or powder/DMSO skin test.",
+        "checked_on": "2026-10-14"
+      },
+      "review_state": "Second AI source audit complete, 2026-10-14; independent scientific reader and replication open",
+      "next_check": "Can a defined powder change an existing tumor without liver harm? The extract test does not answer that. The powder question stays Open."
+    },
+    {
+      "topic_id": "dmso",
+      "question": "Did injected DMSO slow breast-tumor growth in this mouse test?",
+      "answer": true,
+      "scope": {
+        "form": "DMSO in saline, injected into mice with 4T1 tumors",
+        "cancer_model": "Female BALB/c mice with subcutaneous 4T1 breast tumors; five per group",
+        "comparison": "Saline injections without DMSO",
+        "endpoint": "Tumor volume over time and final tumor weight"
+      },
+      "findings": "Tumor growth was slower with the higher tested amounts of DMSO. The lowest amount did not show the same effect. Proof is in Figure 1. The mice had injections. The test did not use a skin herb mix.",
+      "proof": {
+        "source_id": "S-067",
+        "read_level": "Full primary paper: methods, results, figures and discussion read",
+        "checked_on": "2026-10-14",
+        "exact_result": "Figure 1: 1 mg/g growth difference days 13–19, p<0.01; n=5/group. Daily intraperitoneal DMSO for 10 days. The 0.25 mg/g group had no significant tumor-weight benefit. Small, short mouse experiment; macrophage findings do not prove a causal human mechanism."
+      },
+      "review_state": "Second AI source audit complete, 2026-10-14; independent scientific reader and replication open",
+      "next_check": "Can a named skin mix reach a tumor and change its growth? This test does not answer that. Human benefit and long-term harm stay Open."
+    },
+    {
+      "topic_id": "spike-proteins",
+      "question": "Did the isolated spike sample lower prostate-cell colony counts in this lab test?",
+      "answer": true,
+      "scope": {
+        "form": "Isolated SARS-CoV-2 spike protein preparation, not virus or vaccine",
+        "cancer_model": "LNCaP prostate cancer cells",
+        "comparison": "Medium-only control",
+        "endpoint": "Clonogenic survival, colony count at day 9"
+      },
+      "findings": "Cell colony counts were lower with the spike sample than with the control. A colony is a group of cells that grows from a cell. Counts were about half of the control. Proof is in Figure 1. Only one prostate-cell line was tested.",
+      "proof": {
+        "source_id": "S-068",
+        "read_level": "Full primary paper: methods, results, figures and discussion read",
+        "checked_on": "2026-10-14",
+        "exact_result": "Figure 1A: relative colony counts 49±4%, 41±3%, 45±11% at 20, 50, 200 ng/ml after 72 h exposure; p<0.05 versus medium control, triplicate colony assay. No matched irrelevant-protein control or endotoxin check described. Vaccine benefit is an author hypothesis, not a tested endpoint."
+      },
+      "review_state": "Second AI source audit complete, 2026-10-14; independent scientific reader and replication open",
+      "next_check": "Can a new team repeat the result with clear sample checks? Benefit in people, other cells and vaccine effects stay Open."
+    },
+    {
+      "topic_id": "wormwood",
+      "question": "Did the named wormwood extract lower the cell-viability signal in this lab test?",
+      "answer": true,
+      "scope": {
+        "form": "Total flavonoid fraction from Artemisia absinthium",
+        "cancer_model": "HeLa and SiHa cervical cancer cells",
+        "comparison": "0.3% DMSO vehicle; cisplatin positive control",
+        "endpoint": "MTT viability signal at 24 hours"
+      },
+      "findings": "The cell test signal was lower with the named extract. The test measures cell activity, not a direct count. Proof is in the cell results and Figure 8. The plant was bitter wormwood. Sweet wormwood is a different plant.",
+      "proof": {
+        "source_id": "S-069",
+        "read_level": "Full primary paper: methods, results, figures and discussion read",
+        "checked_on": "2026-10-14",
+        "exact_result": "Results 2.9: total fraction IC50 396±54.2 µg/ml in HeLa and 449±54.8 µg/ml in SiHa; six replicate wells per group. Figure 8A supports HeLa MTT comparison; apoptosis measured separately. H8 immortalized-cell comparison does not establish safety. Molecular docking predicts, not proves, target binding. This is not the inaccessible 2012 essential-oil paper."
+      },
+      "review_state": "Second AI source audit complete, 2026-10-14; independent scientific reader and replication open",
+      "next_check": "Can a new team test the same batch and count the cells? Safe delivery and benefit in people stay Open."
+    },
+    {
+      "topic_id": "magnesium",
+      "question": "Did added magnesium show a clear gain in tumor killing with cisplatin in this mouse test?",
+      "answer": false,
+      "scope": {
+        "form": "Magnesium replacement during cisplatin treatment after magnesium deficiency",
+        "cancer_model": "BALB/c CT26 colon-tumor model, 8–12 mice/group; supplemented group n=10",
+        "comparison": "Magnesium-deficient mice on cisplatin without the replacement regimen",
+        "endpoint": "Final tumor weight, Figure 7D"
+      },
+      "findings": "No clear gain in tumor killing was shown from added magnesium. The small change did not pass the study test for a real difference. Proof is in Figure 7D and its results. Kidney harm was lower in a separate test.",
+      "proof": {
+        "source_id": "S-065",
+        "read_level": "Full primary paper: methods, results, figures and discussion read",
+        "checked_on": "2026-10-14",
+        "exact_result": "Full publisher paper read in browser. Results: magnesium supplementation slightly, but not statistically, improved cisplatin killing versus deficient cisplatin group. Figure 7D. Combined diet restoration, magnesium threonate drinking water and injected magnesium sulfate cannot isolate one component. Deficiency versus normal diet affected tumor weight; that comparison is different from added replacement during cisplatin."
+      },
+      "review_state": "Second AI source audit complete, 2026-10-14; independent scientific reader and replication open",
+      "next_check": "Can a larger test confirm the tumor effect? A human benefit from this nutrient alone stays Open."
+    },
+    {
+      "topic_id": "hydrogen-peroxide",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "scope": {
+        "form": "Household peroxide and concentrated products",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "In a mouse test, dilute peroxide put into tumors was linked to restored tumor growth. The cells had changed genes. The test was not of a drink or household skin product. Proof is in Figure 7. A result can change with the form and test.",
+      "proof": {
+        "source_id": "S-072",
+        "read_level": "Full paper read. Engineered IGHG1 knockdown xenografts plus intratumoral 2 µM H2O2 versus same knockdown without H2O2; Figure 7A reports n=6/group. Growth restoration, not tumor shrinkage. Methods and results describe allocation differently; injected cell identity is not explicit in the tumor-method paragraph. Do not invent a liver-cancer model or import this result into household ingestion.",
+        "checked_on": "2026-10-14"
+      },
+      "review_state": "Second AI source audit complete, 2026-10-14; independent scientific reader and replication open",
+      "next_check": "What happens in a test that matches the exact product and route? The household-product question stays Open. Do not drink or inject this liquid for cancer."
+    },
+    {
+      "topic_id": "ivermectin",
+      "question": "Did ivermectin lower the cell-viability signal in these breast-cell tests?",
+      "answer": true,
+      "scope": {
+        "form": "Research ivermectin in cultured cells",
+        "cancer_model": "MCF-7 and T-47D estrogen-stimulated breast cancer cell lines",
+        "comparison": "Same estrogen conditions with 0.01% DMSO vehicle and no ivermectin",
+        "endpoint": "MTT viability after five days"
+      },
+      "findings": "The cell test signal was lower with the drug in two breast cell lines. The test used estrogen, a hormone. Proof is in Figure 2. The 2026 paper is from a different team. The older mouse paper still has a journal concern.",
+      "proof": {
+        "source_id": "S-070",
+        "read_level": "Full primary paper: methods, results, figures and discussion read",
+        "checked_on": "2026-10-14",
+        "exact_result": "Rujimongkon et al., 2026, Figure 2A–B: 3 and 5 µM ivermectin reduced estrogen-stimulated MTT signal in MCF-7 and T-47D; 10 nM estradiol, five days, n=3 independent experiments; two-way ANOVA. This is viability/metabolic signal, not tumor survival. Micromolar exposure and human delivery are unresolved. Combination analysis elsewhere reuses the same team’s 2025 data; not independent replication."
+      },
+      "review_state": "Second AI source audit complete, 2026-10-14; independent scientific reader and replication open",
+      "next_check": "Can a new team repeat the cell test? Can people safely reach the drug level used? Human benefit and the disputed mouse result stay Open."
+    }
+  ],
+  "source_artifacts": [
+    {
+      "name": "PMC8775145.xml",
+      "sha256": "87075639044a7b10e51a027871ae9471fa623cb4d41b384dac79e350783203ae"
+    },
+    {
+      "name": "PMC3988339.xml",
+      "sha256": "0355441812c6ce51c99ad323829dc49500b2f769cec165e179127351ae67b332"
+    },
+    {
+      "name": "ivermectin-2016.pdf",
+      "sha256": "88f6b47f05c20b7e64370a95d1c53966ebb9f69614aaa42638ababa1d86eb51c"
+    },
+    {
+      "name": "PMC10671751.xml",
+      "sha256": "f9061043a4b7ae111068c4ee2ea33512219d1a184a91c2a69d1a77bfbc980710"
+    },
+    {
+      "name": "magnesium-full-ax.txt",
+      "sha256": "39d004ff37bc9384812706cc038faa624175c176e3c3019074973f2aa76d1279"
+    },
+    {
+      "name": "PMC6900471.xml",
+      "sha256": "4004eee1ed9382cabe20f264ad13c19cfa33a3bf933736262c156314040c9e99"
+    },
+    {
+      "name": "PMC2862927.xml",
+      "sha256": "bed08030cca86f07b4b7207c6264bc1af148af0ec24fa95c19fed7cf29610cee"
+    },
+    {
+      "name": "PMC13132456.xml",
+      "sha256": "0f60dea040a1af3999ee840d07df03c5f5bbde6836d1da247af68d5ea37b61ee"
+    },
+    {
+      "name": "PMC3877547.xml",
+      "sha256": "73e2de12341722921e29023f3379b56a50f82b6f209db062b215c47f5cd34fce"
+    }
+  ],
+  "additional_read_limits": [
+    "Full 2016 ivermectin PDF and 2019 glioma paper read as candidate context; newer 2026 cell study selected. Elsevier retraction of another article mentions reuse from 2016 paper; this does not prove which original source is invalid.",
+    "1992 castor oil extract primary bibliographic record only; no full-paper answer assigned.",
+    "No new full read of previous capsaicin or HCQ primary methods; existing access gaps remain."
+  ],
+  "micro_tool_candidate": {
+    "action": "Reuse existing evidence, link-policy, native-staging and refusal checks; no new utility required",
+    "score": 8,
+    "reason": "Primary interpretation is judgment; full-text retrieval source-dependent. Existing deterministic machinery already covers release."
+  }
+}

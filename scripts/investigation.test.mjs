@@ -12,8 +12,19 @@ test('negative answers name the failed benefit rather than an absent study',()=>
  assert.match(ledger.find(q=>q.topic_id==='zinc').scope.cancer_model,/B16F10/);
 });
 test('source concerns and unmatched forms cannot acquire a Yes',()=>{
- for(const id of ['ivermectin','castor-oil','comfrey','dmso','spike-proteins','hydrogen-peroxide','wormwood','magnesium'])assert.equal(topics.find(t=>t.id===id).answer,null);
+ for(const id of ['castor-oil','comfrey','hydrogen-peroxide'])assert.equal(topics.find(t=>t.id===id).answer,null);
  assert.match(topics.find(t=>t.id==='ivermectin').research,/2026/);
- assert.match(ledger.find(q=>q.topic_id==='ivermectin').review_state,/disputed/);
+ assert.match(topics.find(t=>t.id==='ivermectin').next_step,/disputed mouse/);
+ assert.match(topics.find(t=>t.id==='ivermectin').expert_view.identity,/2026/);
  assert.match(ledger.find(q=>q.topic_id==='capsaicin').proof.read_level,/abstract/);
+});
+
+test('second source pass cannot close wider product or independent review gaps',()=>{
+ const audit=JSON.parse(readFileSync('literature/second-source-audit-20261014.json'));
+ assert.equal(audit.records.length,8);assert.equal(audit.independent_reader,false);assert.equal(audit.clinical_peer_review,false);
+ for(const id of ['dmso','spike-proteins','wormwood','magnesium','ivermectin']){let q=ledger.find(q=>q.topic_id===id);assert.equal(q.broader_question_state,'open');assert.match(q.proof.read_level,/Full primary paper/);assert.match(q.review_state,/independent scientific reader.*open/);}
+ assert.equal(ledger.find(q=>q.topic_id==='magnesium').answer,false);
+ assert.match(ledger.find(q=>q.topic_id==='magnesium').scope.comparison,/deficient/);
+ assert.match(topics.find(t=>t.id==='spike-proteins').human,/not a vaccine/);
+ assert.match(topics.find(t=>t.id==='dmso').research,/did not use a skin herb mix/);
 });
