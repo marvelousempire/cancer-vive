@@ -70,6 +70,18 @@ Status key: `seed` | `reviewed` | `disputed` | `retired`
 | C-060 | NCI reports no studies showing that stopping sugar makes cancer shrink or disappear. | not-supported | S-050 | sugar lesson | seed |
 | C-061 | The cited oxygen microbubble research in mice does not license drinking peroxide or claim an established human treatment. | mechanism | S-052 | oxygen lesson | seed |
 
+| C-062 | Did pure eugenol slow breast-tumor growth in the mouse test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-053 | study audit | seed |
+| C-063 | Did added oral curcumin show a higher tumor response in this breast-cancer trial? Reported answer: No; exact scope and limits are in the investigation ledger. | shown | S-054 | study audit | seed |
+| C-064 | Did pure thymoquinone slow breast-tumor growth in the mouse test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-055 | study audit | seed |
+| C-065 | Did pure juglone lower prostate-cancer cell growth in the lab test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-056 | study audit | seed |
+| C-066 | Did the named shilajit sample lower breast-cancer cell growth in the lab test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-057 | study audit | seed |
+| C-067 | Did the named fulvic acid slow ovarian-cancer cell growth in the lab test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-058 | study audit | seed |
+| C-068 | Did pure capsaicin reduce prostate-tumor size in the reported mouse test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-059 | study audit | seed |
+| C-069 | Did the named leaf extract lower cancer-cell counts in the mouse test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-060 | study audit | seed |
+| C-070 | Did high zinc intake slow melanoma growth in this mouse test? Reported answer: No; exact scope and limits are in the investigation ledger. | mechanism | S-061 | study audit | seed |
+| C-071 | Did added hydroxychloroquine show better one-year survival in this pancreatic-cancer trial? Reported answer: No; exact scope and limits are in the investigation ledger. | shown | S-062 | study audit | seed |
+| C-072 | The June 2026 journal concern identifies further image similarities and unavailable original data in the 2021 ivermectin mouse paper; Cancer Vive keeps efficacy open. | shown | S-063 | study audit | seed |
+
 ## How to add a row
 
 1. One sentence.

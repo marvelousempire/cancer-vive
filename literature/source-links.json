@@ -76,12 +76,20 @@
     "url": "https://www.cancer.gov/about-cancer/coronavirus/covid-19-vaccines-people-with-cancer"
   },
   {
+    "label": "Primary report",
+    "url": "https://link.springer.com/article/10.1186/1471-2407-13-600"
+  },
+  {
     "label": "PMID 31064377",
     "url": "https://pubmed.ncbi.nlm.nih.gov/31064377/"
   },
   {
     "label": "Herbal Remedies and Cancer Treatment",
     "url": "https://www.mskcc.org/cancer-care/patient-education/herbal-remedies-and-treatment"
+  },
+  {
+    "label": "Primary report",
+    "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/hsr2.70052"
   },
   {
     "label": "https://clinicaltrials.gov/study/NCT01740323",
@@ -92,28 +100,60 @@
     "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/turmeric"
   },
   {
+    "label": "Primary report",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0075356"
+  },
+  {
     "label": "Nigella sativa",
     "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/nigella-sativa"
+  },
+  {
+    "label": "Primary report",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127467"
   },
   {
     "label": "Diets, Supplements, and Cancer",
     "url": "https://www.cancer.gov/about-cancer/treatment/cam/diets-supplements"
   },
   {
+    "label": "Artemisia absinthium primary abstract",
+    "url": "https://link.springer.com/article/10.1007/s11033-012-1569-0"
+  },
+  {
     "label": "Use of herbal medicinal products containing thujone",
     "url": "https://www.ema.europa.eu/en/scientific-guidelines/use-herbal-medicinal-products-containing-thujone"
+  },
+  {
+    "label": "Primary report",
+    "url": "https://journals.salviapub.com/index.php/gmj/article/download/1812/1196"
   },
   {
     "label": "Heavy-metal warning for certain unapproved ayurvedic products",
     "url": "https://www.fda.gov/drugs/fraudulent-products/fda-warns-about-heavy-metal-poisoning-associated-certain-unapproved-ayurvedic-drug-products"
   },
   {
+    "label": "Read the cancer study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40221570/"
+  },
+  {
+    "label": "Magnesium and cisplatin primary abstract",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28424213/"
+  },
+  {
     "label": "Magnesium: Consumer Fact Sheet",
     "url": "https://ods.od.nih.gov/factsheets/Magnesium-Consumer/"
   },
   {
+    "label": "Primary report",
+    "url": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2024.1389387/full"
+  },
+  {
     "label": "Zinc: Consumer Fact Sheet",
     "url": "https://ods.od.nih.gov/factsheets/Zinc-Consumer/"
+  },
+  {
+    "label": "Primary report",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16540674/"
   },
   {
     "label": "Capsaicin",
@@ -124,8 +164,20 @@
     "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/cayenne"
   },
   {
+    "label": "Primary report",
+    "url": "https://www.jcancer.org/v04p0573.htm"
+  },
+  {
     "label": "Is hydrogen peroxide safe?",
     "url": "https://www.poison.org/articles/hydrogen-peroxide"
+  },
+  {
+    "label": "Editorial Expression of Concern",
+    "url": "https://www.nature.com/articles/s41523-026-00988-z"
+  },
+  {
+    "label": "original article",
+    "url": "https://www.nature.com/articles/s41523-021-00229-5"
   },
   {
     "label": "NCT05318469",
@@ -134,6 +186,10 @@
   {
     "label": "Read the NCI drug definition",
     "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/ivermectin"
+  },
+  {
+    "label": "Primary report",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
   },
   {
     "label": "Read the NCI trial list",
@@ -190,6 +246,14 @@
   {
     "label": "record marked retracted",
     "url": "https://www.mdpi.com/1999-4915/13/10/2056"
+  },
+  {
+    "label": "Primary report",
+    "url": "https://link.springer.com/article/10.1007/s12672-025-02236-5"
+  },
+  {
+    "label": "Reduction in squamous cell carcinomas in mouse skin by dietary zinc supplementation",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27185213/"
   },
   {
     "label": "Code and release details",

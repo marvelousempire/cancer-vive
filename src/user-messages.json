@@ -42,7 +42,7 @@
       "dark": "Dark",
       "theme": "Color theme",
       "version": "Version",
-      "checked": "Sources checked October 13, 2026.",
+      "checked": "Sources checked October 14, 2026.",
       "scope": "Find what can work against cancer. Ask a clear question. Check the test and its proof. Keep gaps open.",
       "code": "Code and release details",
       "study_records": "Full study records",
@@ -200,11 +200,11 @@
         "short": "Castor oil",
         "form": "Skin oil, oil packs, and modified drug carriers",
         "grade": "other",
-        "summary": "Oil packs were studied for bowel symptoms. A changed form of oil can carry some cancer drugs. The active drug is the cancer treatment.",
-        "research": "Oil packs were studied for bowel symptoms. A changed form of oil can carry some cancer drugs. The active drug is the cancer treatment.",
+        "summary": "The pack study measured bowel signs. It did not measure tumors. The fruit extract has its own test and answer. The oil question stays Open.",
+        "research": "The pack study measured bowel signs. It did not measure tumors. The fruit extract has its own test and answer. The oil question stays Open.",
         "human": "The bowel study did not measure tumor shrinkage. Household oil is not a cancer drug.",
         "caution": "Ricin is a poison found in raw castor beans. Do not make a home bean extract.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "The next test must compare this skin oil with a control group and measure tumors. A bowel test does not answer the tumor question.",
         "refs": [
           "C-026",
           "C-027",
@@ -267,11 +267,11 @@
         "short": "Comfrey powder",
         "form": "Powder from the plant and tested skin creams",
         "grade": "harm",
-        "summary": "One rat test had fewer early spots of changed liver cells but more cell harm. A long feeding test had liver tumors.",
-        "research": "One rat test had fewer early spots of changed liver cells but more cell harm. A long feeding test had liver tumors.",
+        "summary": "The filed rat studies used fed plant parts or an extract. Neither study tested this powder mixed with DMSO on skin. That exact cancer question stays Open.",
+        "research": "The filed rat studies used fed plant parts or an extract. Neither study tested this powder mixed with DMSO on skin. That exact cancer question stays Open.",
         "human": "The sources do not show a cancer benefit in people. Some skin creams have a use for sprains and bruises.",
         "caution": "Raw powder is not a tested skin cream. Drying the plant does not prove its poisons are gone.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "The next test needs a named powder and mix. The test must measure tumors against a control group. The known liver risks still need care.",
         "refs": [
           "C-031",
           "C-032",
@@ -343,11 +343,11 @@
         "short": "DMSO on skin",
         "form": "A solvent used with named medical compounds",
         "grade": "human",
-        "summary": "A skin-cancer test used DMSO with ALA, a drug compound, light, and skin scraping. DMSO was not tested alone.",
-        "research": "A skin-cancer test used DMSO with ALA, a drug compound, light, and skin scraping. DMSO was not tested alone.",
+        "summary": "The skin-cancer study tested DMSO with a drug compound, light, and scraping. Some lesions cleared. There was no group without DMSO to show what DMSO added. The herb-mix question stays Open.",
+        "research": "The skin-cancer study tested DMSO with a drug compound, light, and scraping. Some lesions cleared. There was no group without DMSO to show what DMSO added. The herb-mix question stays Open.",
         "human": "The named skin procedure has results in people. The test did not use herbs or test tumors inside the body.",
         "caution": "The exact compound and mix must be known. Some cancer drugs were less active when mixed with DMSO in the lab.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "Would DMSO add a benefit to the same light-and-drug care? A matched comparison is needed. Unnamed herbs still need their own tests.",
         "refs": [
           "C-037",
           "C-038",
@@ -387,11 +387,11 @@
         "short": "Spike proteins",
         "form": "Virus spike, vaccine targets, and lab proteins",
         "grade": "education",
-        "summary": "Lab tests can show how spike binds to a cell. A cell test alone does not show a cancer effect in people.",
-        "research": "Lab tests can show how spike binds to a cell. A cell test alone does not show a cancer effect in people.",
+        "summary": "The structure paper shows how spike binds to a cell. It did not measure tumor growth. The infection paper tests whole viruses, not spike alone. The cancer-growth question stays Open.",
+        "research": "The structure paper shows how spike binds to a cell. It did not measure tumor growth. The infection paper tests whole viruses, not spike alone. The cancer-growth question stays Open.",
         "human": "NCI reports no evidence that COVID-19 shots cause cancer, make it return, or make it grow.",
         "caution": "COVID can be serious during cancer care. Ask the team about shot timing, infection risk, and new symptoms.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "A test must separate spike from infection and other causes. Name the cancer and measure its growth against a comparison group.",
         "refs": [
           "C-043",
           "C-044",
@@ -425,19 +425,24 @@
         "id": "cloves",
         "name": "Cloves",
         "short": "Cloves",
-        "form": "Food spice, extract, and clove oil",
-        "grade": "unclear",
-        "summary": "The study had 13 people. There was no blinded placebo group. A full cancer-study check is still open here.",
-        "research": "The study had 13 people. There was no blinded placebo group. A full cancer-study check is still open here.",
-        "human": "A blood-sugar change does not show that cloves shrink tumors or help people live longer.",
+        "form": "Pure eugenol injected in the mouse test",
+        "grade": "cells",
+        "summary": "Growth was slower with pure eugenol than with the solvent alone. Ten mice were split into two groups. Proof is in Figure 6 and the mouse-test methods.",
+        "research": "Growth was slower with pure eugenol than with the solvent alone. Ten mice were split into two groups. Proof is in Figure 6 and the mouse-test methods.",
+        "human": "No people were tested in this cancer paper. Pure eugenol is not food cloves or clove oil. Higher amounts were harmful to normal cells in the lab.",
         "caution": "Food spice, strong extract, and clove oil are not the same product. Check strong products with the care team.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "Can this finding be repeated? Can food cloves or clove oil help people with cancer? Those questions stay Open.",
         "refs": [
           "C-017",
           "C-019",
-          "C-020"
+          "C-020",
+          "C-062"
         ],
         "sources": [
+          {
+            "label": "Read the cancer study",
+            "url": "https://link.springer.com/article/10.1186/1471-2407-13-600"
+          },
           {
             "label": "Read the blood-sugar study",
             "url": "https://pubmed.ncbi.nlm.nih.gov/31064377/"
@@ -450,26 +455,34 @@
         "tags": [
           "herbs"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did pure eugenol slow breast-tumor growth in the mouse test?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test",
+        "expert_view": {
+          "identity": "Tested form: Pure eugenol injected in the mouse test\n\nCancer model: MDA-MB-231 tumors in nude mice; 10 mice split into two groups\n\nComparison: DMSO vehicle injections\n\nEndpoint: Tumor volume over four weeks\n\nRead level: full methods, results and Figure 6\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
+        }
       },
       {
         "id": "turmeric",
         "name": "Turmeric",
         "short": "Turmeric",
-        "form": "Food spice and concentrated curcumin pills",
-        "grade": "unclear",
-        "summary": "A breast-cancer trial was set up to test tiredness and swelling during radiation care. Tumor control was not the test goal.",
-        "research": "A breast-cancer trial was set up to test tiredness and swelling during radiation care. Tumor control was not the test goal.",
-        "human": "No cancer benefit from the trial is shown here. A study listing is not proof that it helps.",
+        "form": "Oral curcumin added to docetaxel",
+        "grade": "human",
+        "summary": "No added benefit was shown. Tumor response was about 56% with curcumin and 74% with the cancer drug alone. The gap was not clear enough to rule out chance. Proof is in the tumor-response results. The trial stopped early.",
+        "research": "No added benefit was shown. Tumor response was about 56% with curcumin and 74% with the cancer drug alone. The gap was not clear enough to rule out chance. Proof is in the tumor-response results. The trial stopped early.",
+        "human": "The trial tested people with advanced breast cancer. Five of 42 people were left out of the main check. The small test was not blind. Other forms and cancers stay Open.",
         "caution": "These pills may raise bleeding risk with blood thinners. Some cancer drugs may also be affected.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "Would a larger test or a different form give a different result? Those questions stay Open. This No applies to the tested mix and trial.",
         "refs": [
           "C-022",
-          "C-051"
+          "C-051",
+          "C-063"
         ],
         "sources": [
+          {
+            "label": "Read the cancer study",
+            "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/hsr2.70052"
+          },
           {
             "label": "Read the trial record",
             "url": "https://clinicaltrials.gov/study/NCT01740323"
@@ -483,25 +496,33 @@
           "herbs",
           "harm"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did added oral curcumin show a higher tumor response in this breast-cancer trial?",
+        "answer": false,
+        "answer_label": "No, reported in this test",
+        "expert_view": {
+          "identity": "Tested form: Oral curcumin added to docetaxel\n\nCancer model: Advanced or metastatic HER2-negative breast cancer; 37 analyzed of 42 enrolled\n\nComparison: Docetaxel alone; 19 control versus 18 combination\n\nEndpoint: RECIST objective response after six cycles; primary endpoint\n\nRead level: full methods sections 2.1–2.6, Figure 2 and results 3.3–3.4; ORR p=0.25\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nORR 55.6% versus 73.7%, p=0.25; 18 combination versus 19 control\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
+        }
       },
       {
         "id": "black-seed",
         "name": "Black seed",
         "short": "Black seed",
-        "form": "Food seeds, oil, and a purified compound",
+        "form": "Purified thymoquinone; not whole seeds or oil",
         "grade": "cells",
-        "summary": "Lab and animal work is reported for a compound from the seed. Whole seed and oil are different forms.",
-        "research": "Lab and animal work is reported for a compound from the seed. Whole seed and oil are different forms.",
+        "summary": "Tumor growth was slower with the pure seed compound than with the control liquid. Each group had five mice. The tumors did not go away. Proof is in Figure 5 and its group list.",
+        "research": "Tumor growth was slower with the pure seed compound than with the control liquid. Each group had five mice. The tumors did not go away. Proof is in Figure 5 and its group list.",
         "human": "MSK says black seed has not been shown to treat cancer in people. MSK is a cancer center.",
         "caution": "Skin oil can cause an allergy. Drug effects may change; the full risk in people is not known.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "Can whole seeds or oil give the same effect? Can the result help people with cancer? Both questions stay Open.",
         "refs": [
-          "C-052"
+          "C-052",
+          "C-064"
         ],
         "sources": [
+          {
+            "label": "Read the cancer study",
+            "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0075356"
+          },
           {
             "label": "Read the black-seed review",
             "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/nigella-sativa"
@@ -512,27 +533,32 @@
           "harm"
         ],
         "expert_view": {
-          "identity": "Nigella sativa; isolated thymoquinone is a different form from oil."
+          "identity": "Tested form: Purified thymoquinone; not whole seeds or oil\n\nCancer model: MDA-MB-231 tumors in female nude mice; five mice per group\n\nComparison: Vehicle control, alongside separate doxorubicin and combination arms\n\nEndpoint: Tumor volume over two weeks\n\nRead level: full methods, Results: TQ inhibits breast tumor growth; Figure 5A\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
         },
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did pure thymoquinone slow breast-tumor growth in the mouse test?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test"
       },
       {
         "id": "black-walnut",
         "name": "Black walnut",
         "short": "Black walnut",
-        "form": "Food nuts and hull extracts",
-        "grade": "unclear",
-        "summary": "Food nuts and hull extracts are different products. A cleanse claim is not proof of a cancer benefit.",
-        "research": "Food nuts and hull extracts are different products. A cleanse claim is not proof of a cancer benefit.",
+        "form": "Commercial pure juglone; not walnut hull products",
+        "grade": "cells",
+        "summary": "The cell-growth signal was lower with pure juglone in two prostate-cancer cell types. The test used a solvent group for comparison. Proof is in Figure 6B. The cell test does not show a benefit from walnut hull products.",
+        "research": "The cell-growth signal was lower with pure juglone in two prostate-cancer cell types. The test used a solvent group for comparison. Proof is in Figure 6B. The cell test does not show a benefit from walnut hull products.",
         "human": "A human cancer study of the exact hull product is still needed.",
         "caution": "The label and allergy risks need checking. Do not replace cancer care with a cleanse.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "Can the cell result be repeated? The mouse report has mixed model names and a unit error. Its exact numbers need a fresh check. Human use stays Open.",
         "refs": [
-          "C-049"
+          "C-049",
+          "C-065"
         ],
         "sources": [
+          {
+            "label": "Read the cancer study",
+            "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127467"
+          },
           {
             "label": "Read the supplements and cancer guide",
             "url": "https://www.cancer.gov/about-cancer/treatment/cam/diets-supplements"
@@ -541,9 +567,12 @@
         "tags": [
           "herbs"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did pure juglone lower prostate-cancer cell growth in the lab test?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test",
+        "expert_view": {
+          "identity": "Tested form: Commercial pure juglone; not walnut hull products\n\nCancer model: LNCaP and DU145 cell cultures\n\nComparison: Control solvent in cell assays\n\nEndpoint: MTT cell-growth signal after 48 hours\n\nRead level: full methods and Figure 6B; mouse text/legend model and unit inconsistency retained\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
+        }
       },
       {
         "id": "wormwood",
@@ -551,15 +580,19 @@
         "short": "Wormwood",
         "form": "The bitter herb and concentrated oil",
         "grade": "harm",
-        "summary": "The entry is about bitter wormwood. Bitter wormwood is not the same plant or drug as sweet-wormwood research.",
-        "research": "The entry is about bitter wormwood. Bitter wormwood is not the same plant or drug as sweet-wormwood research.",
+        "summary": "The paper says the bitter-herb extract can kill breast-cancer cells. Two cell types were tested. Only the short study report was read. The full methods cost money to read. Control groups and repeat tests still need a check.",
+        "research": "The paper says the bitter-herb extract can kill breast-cancer cells. Two cell types were tested. Only the short study report was read. The full methods cost money to read. Control groups and repeat tests still need a check.",
         "human": "No checked cancer benefit is established for this wormwood product in people here.",
         "caution": "Strong thujone exposure can cause seizures. The product strength must be known.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "Read the full methods and control groups before answering the growth question. The herb extract and oil are not sweet-wormwood drugs.",
         "refs": [
           "C-054"
         ],
         "sources": [
+          {
+            "label": "Read the cancer study",
+            "url": "https://link.springer.com/article/10.1007/s11033-012-1569-0"
+          },
           {
             "label": "Read the thujone safety review",
             "url": "https://www.ema.europa.eu/en/scientific-guidelines/use-herbal-medicinal-products-containing-thujone"
@@ -570,7 +603,7 @@
           "harm"
         ],
         "expert_view": {
-          "identity": "Artemisia absinthium; not Artemisia annua or artemisinin."
+          "identity": "Tested form: The bitter herb and concentrated oil\n\nRead level: primary abstract read; full methods require paid access\n\nCheck date: 2026-10-14\n\nReview: Primary source scope checked; matching proof or reliability gap remains open"
         },
         "question": "Did the exact tested form reduce cancer growth against a comparison group?",
         "answer": null,
@@ -580,18 +613,23 @@
         "id": "shilajit",
         "name": "Shilajit",
         "short": "Shilajit",
-        "form": "A resin sold as a supplement",
-        "grade": "unclear",
-        "summary": "The exact resin and its contents need a study. An old use is not a result showing that tumors shrink.",
-        "research": "The exact resin and its contents need a study. An old use is not a result showing that tumors shrink.",
-        "human": "This site has no checked human cancer study for the product.",
+        "form": "Iranian mummy sample, batch 92-0199-s4",
+        "grade": "cells",
+        "summary": "The cell-growth signal was lower with the named sample than with untreated breast-cancer cells. Cell death was higher too. Three tests were run. Proof is in Figures 3 and 4. The work tested cells, not tumors in people.",
+        "research": "The cell-growth signal was lower with the named sample than with untreated breast-cancer cells. Cell death was higher too. Three tests were run. Proof is in Figures 3 and 4. The work tested cells, not tumors in people.",
+        "human": "The paper tested cells grown in a lab. The sample is not every resin sold as shilajit. Normal cells were less affected, but not free from harm.",
         "caution": "A natural label does not prove a resin is pure. Some products sold as old remedies have unsafe metal levels. Each batch needs its own test.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "Can a sample with the same contents repeat the result? Other resins and human cancer use stay Open.",
         "refs": [
           "C-049",
-          "C-055"
+          "C-055",
+          "C-066"
         ],
         "sources": [
+          {
+            "label": "Read the cancer study",
+            "url": "https://journals.salviapub.com/index.php/gmj/article/download/1812/1196"
+          },
           {
             "label": "Read the supplement guide",
             "url": "https://www.cancer.gov/about-cancer/treatment/cam/diets-supplements"
@@ -604,25 +642,33 @@
         "tags": [
           "herbs"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did the named shilajit sample lower breast-cancer cell growth in the lab test?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test",
+        "expert_view": {
+          "identity": "Tested form: Iranian mummy sample, batch 92-0199-s4\n\nCancer model: MCF-7 and MDA-MB-231 breast-cancer cell cultures; three independent experiments\n\nComparison: Untreated cells; separate cisplatin positive control\n\nEndpoint: MTT viability signal and apoptosis assays\n\nRead level: publisher PDF methods pages 3–5 and Figures 3–4; full results read\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
+        }
       },
       {
         "id": "humic-fulvic",
         "name": "Humic and fulvic acids",
         "short": "Humic and fulvic acids",
-        "form": "Fractions from soil or resin products",
-        "grade": "unclear",
-        "summary": "A mixture needs a clear label and a study of that form. A different resin does not give it proof.",
-        "research": "A mixture needs a clear label and a study of that form. A different resin does not give it proof.",
+        "form": "Supplier fulvic acid C176008, purity above 95%; PBS preparation",
+        "grade": "cells",
+        "summary": "The cells took longer to double with the named fulvic acid. The time to double was longer in both cell types. Proof is in Figure 2. The result came from a cell test.",
+        "research": "The cells took longer to double with the named fulvic acid. The time to double was longer in both cell types. Proof is in Figure 2. The result came from a cell test.",
         "human": "No checked cancer result here shows that these products help people with cancer.",
         "caution": "The strength and contents need checking. A product with unknown purity is not proven safe.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "Can direct cell counts confirm the result? Can other soil or resin mixes do the same? Human benefit stays Open.",
         "refs": [
-          "C-049"
+          "C-049",
+          "C-067"
         ],
         "sources": [
+          {
+            "label": "Read the cancer study",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40221570/"
+          },
           {
             "label": "Read the supplements and cancer guide",
             "url": "https://www.cancer.gov/about-cancer/treatment/cam/diets-supplements"
@@ -631,9 +677,12 @@
         "tags": [
           "herbs"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did the named fulvic acid slow ovarian-cancer cell growth in the lab test?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test",
+        "expert_view": {
+          "identity": "Tested form: Supplier fulvic acid C176008, purity above 95%; PBS preparation\n\nCancer model: OVCAR-3 and SK-OV-3 cell cultures\n\nComparison: Zero fulvic acid control versus 100 micrograms/mL\n\nEndpoint: CCK-8 signal at 24, 48 and 72 hours; derived doubling time\n\nRead level: full methods: FA materials and CCK-8, results and Figure 2\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nDerived doubling time OVCAR-3 42.4 to 48.8 h; SK-OV-3 41.1 to 46.8 h\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
+        }
       },
       {
         "id": "magnesium",
@@ -641,15 +690,19 @@
         "short": "Magnesium",
         "form": "Food sources and prescribed replacement",
         "grade": "other",
-        "summary": "Blood tests can help show whether a level is low. Your team can choose a dose if you need one.",
-        "research": "Blood tests can help show whether a level is low. Your team can choose a dose if you need one.",
+        "summary": "The mouse test used this nutrient during cancer-drug care. Kidney harm was worse at low levels. The tumor-killing effect was weaker too. Added nutrient did not block the drug. The short study report was read. A benefit from the nutrient alone is still Open.",
+        "research": "The mouse test used this nutrient during cancer-drug care. Kidney harm was worse at low levels. The tumor-killing effect was weaker too. Added nutrient did not block the drug. The short study report was read. A benefit from the nutrient alone is still Open.",
         "human": "Fixing a low level is a health need, not proof of a tumor treatment.",
         "caution": "Too much can cause harm, especially with kidney problems. A new dose needs a care-team check.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "Read the full groups and tumor results. A test to fix a low level during drug care is not a test of the nutrient alone.",
         "refs": [
           "C-053"
         ],
         "sources": [
+          {
+            "label": "Read the cancer study",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28424213/"
+          },
           {
             "label": "Read the magnesium facts",
             "url": "https://ods.od.nih.gov/factsheets/Magnesium-Consumer/"
@@ -660,23 +713,31 @@
         ],
         "question": "Did the exact tested form reduce cancer growth against a comparison group?",
         "answer": null,
-        "answer_label": "Open"
+        "answer_label": "Open",
+        "expert_view": {
+          "identity": "Tested form: Food sources and prescribed replacement\n\nRead level: primary abstract read; full publisher access failed\n\nCheck date: 2026-10-14\n\nReview: Primary source scope checked; matching proof or reliability gap remains open"
+        }
       },
       {
         "id": "zinc",
         "name": "Zinc",
         "short": "Zinc",
-        "form": "Food sources and prescribed replacement",
-        "grade": "other",
-        "summary": "A low level may need care. A high dose when you have enough zinc is a different question.",
-        "research": "A low level may need care. A high dose when you have enough zinc is a different question.",
+        "form": "High oral zinc sulfate intake added to normal chow",
+        "grade": "cells",
+        "summary": "No. Growth was faster with high zinc intake than with the normal diet. Seven mice were used per group. Proof is in Figure 1. Other models can give other results. This test does not tell people to cut zinc from food.",
+        "research": "No. Growth was faster with high zinc intake than with the normal diet. Seven mice were used per group. Proof is in Figure 1. Other models can give other results. This test does not tell people to cut zinc from food.",
         "human": "Routine zinc pills have no established tumor benefit here.",
         "caution": "Too much zinc can lower copper and cause health problems.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "Why do zinc effects differ across models? Low levels and high intake need separate tests. Human tumor treatment stays Open.",
         "refs": [
-          "C-053"
+          "C-053",
+          "C-070"
         ],
         "sources": [
+          {
+            "label": "Read the cancer study",
+            "url": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2024.1389387/full"
+          },
           {
             "label": "Read the zinc facts",
             "url": "https://ods.od.nih.gov/factsheets/Zinc-Consumer/"
@@ -685,25 +746,33 @@
         "tags": [
           "nutrition"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did high zinc intake slow melanoma growth in this mouse test?",
+        "answer": false,
+        "answer_label": "No, reported in this test",
+        "expert_view": {
+          "identity": "Tested form: High oral zinc sulfate intake added to normal chow\n\nCancer model: B16F10 melanoma in C57BL/6 mice; seven per group, repeated experiments\n\nComparison: Normal diet without extra zinc\n\nEndpoint: Serial tumor volume and tumor mass\n\nRead level: full main results, Figure 1 caption, Materials and methods; n=7 per experimental setup\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
+        }
       },
       {
         "id": "capsaicin",
         "name": "Cayenne and capsaicin",
         "short": "Cayenne and capsaicin",
-        "form": "Food pepper and topical pain medicine",
-        "grade": "other",
-        "summary": "Cancer-cell tests and tests of pain drugs ask different questions. Eating pepper does not copy a skin-drug dose.",
-        "research": "Cancer-cell tests and tests of pain drugs ask different questions. Eating pepper does not copy a skin-drug dose.",
+        "form": "Purified capsaicin given orally in the experiment",
+        "grade": "cells",
+        "summary": "The paper says tumors were smaller with pure capsaicin than with the control liquid. Mean sizes were 75 and 336 cubic millimeters. The short study report was read. Full methods and mouse counts still need a check.",
+        "research": "The paper says tumors were smaller with pure capsaicin than with the control liquid. Mean sizes were 75 and 336 cubic millimeters. The short study report was read. Full methods and mouse counts still need a check.",
         "human": "Less pain does not prove that a tumor shrinks or that a person lives longer.",
         "caution": "Skin products can irritate. Food, pills, and skin drugs are not the same form.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "Can the full methods and group counts confirm the finding? Food peppers, skin pain creams, and human tumor treatment stay Open.",
         "refs": [
-          "C-056"
+          "C-056",
+          "C-068"
         ],
         "sources": [
+          {
+            "label": "Read the cancer study",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16540674/"
+          },
           {
             "label": "Read the cancer-drug dictionary entry",
             "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/capsaicin"
@@ -716,25 +785,33 @@
         "tags": [
           "skin"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did pure capsaicin reduce prostate-tumor size in the reported mouse test?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test",
+        "expert_view": {
+          "identity": "Tested form: Purified capsaicin given orally in the experiment\n\nCancer model: PC-3 prostate-cancer tumors in mice\n\nComparison: Vehicle-treated mice\n\nEndpoint: Mean tumor volume reported in primary abstract\n\nRead level: primary abstract results only; 75±35 versus 336±123 mm3, p=0.017; full-text access failed\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
+        }
       },
       {
         "id": "cuban-oregano",
         "name": "Cuban oregano",
         "short": "Cuban oregano",
-        "form": "Food leaves, oil, and extracts",
-        "grade": "unclear",
-        "summary": "The plant and product must be known. An oil, a leaf, and a lab extract can have very different contents.",
-        "research": "The plant and product must be known. An oil, a leaf, and a lab extract can have very different contents.",
+        "form": "Crude aqueous Plectranthus amboinicus leaf extract injected into the abdomen",
+        "grade": "cells",
+        "summary": "The leaf extract group had fewer cancer cells per unit of belly fluid than the saline group. Six mice were in each group. Mean counts were about 106,669 and 145,318 cells per cubic millimeter. Proof is in the Results and Discussion.",
+        "research": "The leaf extract group had fewer cancer cells per unit of belly fluid than the saline group. Six mice were in each group. Mean counts were about 106,669 and 145,318 cells per cubic millimeter. Proof is in the Results and Discussion.",
         "human": "This site does not establish a cancer benefit in people for this herb.",
-        "caution": "A lab claim does not prove a home oil is safe or useful. Strong products need a care-team review.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "caution": "The mice had signs that may reflect harm from the extract. The test was short. Tumor implants did not show a clear group difference.",
+        "next_step": "Can a longer test confirm the result and check harm? Food leaves, oil, and human use stay Open.",
         "refs": [
-          "C-049"
+          "C-049",
+          "C-069"
         ],
         "sources": [
+          {
+            "label": "Read the cancer study",
+            "url": "https://www.jcancer.org/v04p0573.htm"
+          },
           {
             "label": "Read the supplements and cancer guide",
             "url": "https://www.cancer.gov/about-cancer/treatment/cam/diets-supplements"
@@ -743,9 +820,12 @@
         "tags": [
           "herbs"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did the named leaf extract lower cancer-cell counts in the mouse test?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test",
+        "expert_view": {
+          "identity": "Tested form: Crude aqueous Plectranthus amboinicus leaf extract injected into the abdomen\n\nCancer model: Female Swiss albino mice with Ehrlich ascites carcinoma; six per group\n\nComparison: Saline injections\n\nEndpoint: Cancer-cell density in ascites on day nine\n\nRead level: full methods 2.1–2.2, Results and Discussion; cell-density p=0.004; implants p=0.051 not significant\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
+        }
       },
       {
         "id": "hydrogen-peroxide",
@@ -753,11 +833,11 @@
         "short": "Hydrogen peroxide",
         "form": "Household peroxide and concentrated products",
         "grade": "harm",
-        "summary": "The filed research asks how oxygen affects a tumor. The study does not test a drink made from this liquid.",
-        "research": "The filed research asks how oxygen affects a tumor. The study does not test a drink made from this liquid.",
+        "summary": "The filed tests do not use drinks made from this liquid to control cancer. A test that sends oxygen to mouse tumors is a different test. The growth question for this home product stays Open.",
+        "research": "The filed tests do not use drinks made from this liquid to control cancer. A test that sends oxygen to mouse tumors is a different test. The growth question for this home product stays Open.",
         "human": "No cancer benefit is shown here for drinking or injecting this liquid.",
         "caution": "If swallowed, the liquid can burn the gut and form gas bubbles. Strong products can cause severe burns.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "A new test must use this exact form and compare tumor growth with a control group. Drinking the liquid can cause burns and harmful gas bubbles.",
         "refs": [
           "C-057"
         ],
@@ -780,15 +860,24 @@
         "short": "Ivermectin",
         "form": "A prescription parasite medicine",
         "grade": "human",
-        "summary": "The filed trial is for people with advanced triple-negative breast cancer. It tests this drug with an immune treatment.",
-        "research": "The filed trial is for people with advanced triple-negative breast cancer. It tests this drug with an immune treatment.",
+        "summary": "The paper says a mix of this drug and an immune drug can help mice with tumors. The journal has a June 2026 notice about flaws. Some images look too much alike. The source data are gone. The answer stays Open.",
+        "research": "The paper says a mix of this drug and an immune drug can help mice with tumors. The journal has a June 2026 notice about flaws. Some images look too much alike. The source data are gone. The answer stays Open.",
         "human": "A trial listing alone does not show better tumor control or longer life. The listing is not proof for home use.",
         "caution": "Human and animal products are different. A cancer use needs a trial or a treating clinician, not a home dose.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "A new team must repeat the test. The drug mix and tumor type must match. Human benefit and the flaws in the paper remain Open.",
         "refs": [
-          "C-058"
+          "C-058",
+          "C-072"
         ],
         "sources": [
+          {
+            "label": "Read the journal concern",
+            "url": "https://www.nature.com/articles/s41523-026-00988-z"
+          },
+          {
+            "label": "Read the mouse study",
+            "url": "https://www.nature.com/articles/s41523-021-00229-5"
+          },
           {
             "label": "Read the breast-cancer trial",
             "url": "https://clinicaltrials.gov/study/NCT05318469"
@@ -803,23 +892,31 @@
         ],
         "question": "Did the exact tested form reduce cancer growth against a comparison group?",
         "answer": null,
-        "answer_label": "Open"
+        "answer_label": "Open",
+        "expert_view": {
+          "identity": "Tested form: A prescription parasite medicine\n\nRead level: full current article and journal concern read; concern via publisher HTML\n\nCheck date: 2026-10-14\n\nReview: disputed source; independent replication open"
+        }
       },
       {
         "id": "hcq",
         "name": "Hydroxychloroquine",
         "short": "Hydroxychloroquine",
-        "form": "A prescription medicine studied in cancer trials",
+        "form": "Hydroxychloroquine added to gemcitabine and nab-paclitaxel",
         "grade": "human",
-        "summary": "Trials can test different cancers, drugs, and doses. A study listing is not a result.",
-        "research": "Trials can test different cancers, drugs, and doses. A study listing is not a result.",
-        "human": "A benefit as a cancer drug used alone is not established here.",
+        "summary": "No gain in length of life was shown. At one year, 41% were alive with the added drug and 49% with cancer drugs alone. Tumor response was higher with the added drug. A tumor response is not the same as longer life. Proof is in the short study report and Figures 2 and 3.",
+        "research": "No gain in length of life was shown. At one year, 41% were alive with the added drug and 49% with cancer drugs alone. Tumor response was higher with the added drug. A tumor response is not the same as longer life. Proof is in the short study report and Figures 2 and 3.",
+        "human": "The trial was in people with pancreatic cancer. More tumors responded, but the main survival goal was not met. The drug can also cause harm.",
         "caution": "Heart rhythm and eye risks need a medical check. Do not start this drug for cancer on your own.",
-        "next_step": "What should the next test check? What would a clear yes or no need?",
+        "next_step": "Could a chosen group of people gain a benefit? Full methods and a second check stay Open. This No is for length of life in this trial.",
         "refs": [
-          "C-059"
+          "C-059",
+          "C-071"
         ],
         "sources": [
+          {
+            "label": "Read the cancer study",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+          },
           {
             "label": "Read the NCI trial list",
             "url": "https://www.cancer.gov/research/participate/clinical-trials/intervention/hydroxychloroquine"
@@ -833,9 +930,12 @@
           "drugs",
           "harm"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
-        "answer": null,
-        "answer_label": "Open"
+        "question": "Did added hydroxychloroquine show better one-year survival in this pancreatic-cancer trial?",
+        "answer": false,
+        "answer_label": "No, reported in this test",
+        "expert_view": {
+          "identity": "Tested form: Hydroxychloroquine added to gemcitabine and nab-paclitaxel\n\nCancer model: 112 untreated advanced or metastatic pancreatic cancer patients; randomized 55 versus 57\n\nComparison: The same chemotherapy without hydroxychloroquine\n\nEndpoint: Overall survival at 12 months; primary endpoint\n\nRead level: primary structured abstract and figure legends read; full-text access blocked; ORR secondary p=0.047\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\n12-month OS 41% versus 49%; secondary ORR 38.2% versus 21.1%, p=0.047\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
+        }
       }
     ],
     "lessons": [
