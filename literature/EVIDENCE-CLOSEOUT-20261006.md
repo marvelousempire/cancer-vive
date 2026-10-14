@@ -22,3 +22,7 @@ This is the current source-audit queue. A row is **open** until an exact paper o
 ## Scope
 
 Cancer Vive owns cancer evidence. Nephew training, DecantThat video intake, and shared orchestration belong in their respective owner repositories after this evidence work is resolved.
+
+## Added intake · 2026-10-13
+
+Fenugreek, castor oil, a separate castor fruit-extract row, comfrey powder, tree-frog gut bacteria, and DMSO skin/compound use were added to the source and claim ledgers, watch cards, matrix, and explorer. C-023–C-042 remain seed claims. S-013–S-032 record exact study or agency handles and tested forms. Second-reader review, full-method audit where only the abstract was accessible, replication, and untested human uses remain open. The unnamed herb/DMSO request is captured without inventing a compound or recipe.
