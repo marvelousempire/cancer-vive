@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { content, evidenceItems, evidenceClasses, mechanismLabels, navItems } from "./data.js";
 import FrameworkShell from "./FrameworkShell.jsx";
 import DiabetesView from "./DiabetesView.jsx";
+import ResearchIntegrationPanel from "./ResearchIntegrationPanel.jsx";
 import Corpus, { ResearchDocuments } from "./Corpus.jsx";
 import design from "../design-dna.profile.json";
 
@@ -148,6 +149,7 @@ export default function App() {
       {view === "education" && <Education />}
       {view === "research" && <Questions />}
     </main>
+    {view === "research" && <ResearchIntegrationPanel />}
     {!!compareIds.length && <div className="compare-tray"><strong>{compareIds.length} {u.selected}</strong><div className="compare-actions"><button className="quiet-button" onClick={() => setCompareIds([])}>{u.clear}</button><button className="primary-button" onClick={() => setCompareOpen(true)}>{u.compare}</button></div><div className="compare-chips">{compareIds.map((id) => <button className="compare-chip" key={id} aria-label={u.remove + ": " + evidenceItems.find((item)=>item.id===id)?.name} onClick={()=>toggleCompare(id)}>{evidenceItems.find((item)=>item.id===id)?.name} ×</button>)}</div></div>}
     {compareOpen && <CompareModal ids={compareIds} onClose={() => setCompareOpen(false)} />}
     <footer className="footer"><span>{content.pages.footer}</span><span>{u.checked}</span><span>{u.version} {release.version}{release.dirty ? " · " + u.draft : ""}</span></footer>
