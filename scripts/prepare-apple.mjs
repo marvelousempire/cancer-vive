@@ -13,7 +13,7 @@ const release={version,commit:execFileSync('git',['rev-parse','HEAD'],{encoding:
 const links=sourceLinks(JSON.parse(readFileSync('src/user-messages.json','utf8')),readFileSync('literature/sources.md','utf8'));
 const expectedPolicy=JSON.stringify(links,null,2)+'\n';
 if(!process.argv.includes('--write') && readFileSync('literature/source-links.json','utf8')!==expectedPolicy) throw new Error('Filed source-link policy is stale');
-const inputs={'design-dna.profile.json':'design-dna.profile.json','user-messages.json':'src/user-messages.json','claims.md':'literature/claims.md','sources.md':'literature/sources.md','icon.png':'apps/cancer-vive-desktop/src-tauri/icons/icon.png'};
+const inputs={'design-dna.profile.json':'design-dna.profile.json','user-messages.json':'src/user-messages.json','matrix.md':'literature/MASTER-CANCER-DETRIMENT-MATRIX.md','truth-filter.md':'literature/TRUTH-FILTER.md','claims.md':'literature/claims.md','sources.md':'literature/sources.md','icon.png':'apps/cancer-vive-desktop/src-tauri/icons/icon.png'};
 const hashes=Object.fromEntries(Object.entries(inputs).map(([name,path])=>[name,createHash('sha256').update(readFileSync(path)).digest('hex')]));
 if(process.argv.includes('--write')) {
   writeFileSync('literature/source-links.json',JSON.stringify(links,null,2)+'\n');

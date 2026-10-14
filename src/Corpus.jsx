@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import matrix from "../literature/MASTER-CANCER-DETRIMENT-MATRIX.md?raw";
+import filter from "../literature/TRUTH-FILTER.md?raw";
 import claims from "../literature/claims.md?raw";
 import sources from "../literature/sources.md?raw";
 import { content, expertContent } from "./data.js";
@@ -25,3 +27,5 @@ export default function Corpus({ initial = "sources" }) {
     </details>
   </section>;
 }
+
+export function ResearchDocuments() { return <section><h2>Research method and full matrix</h2>{[{title:"Full cancer detriment matrix",text:matrix},{title:"Original eight-review Truth Filter",text:filter}].map(doc=><details className="expert-details" key={doc.title}><summary>{doc.title} · Expert details</summary><article className="corpus-document"><Markdown remarkPlugins={[remarkGfm]} skipHtml>{doc.text}</Markdown></article></details>)}</section>; }

@@ -1,0 +1,634 @@
+{
+  "schema": "cancer-vive.boolean-investigation/v1",
+  "rules": {
+    "answer_values": [
+      true,
+      false,
+      null
+    ],
+    "unanswered_is_false": false,
+    "yes_requires_exact_scope_and_proof": true,
+    "safety_is_a_separate_question": true
+  },
+  "questions": [
+    {
+      "id": "fenugreek-growth",
+      "topic_id": "fenugreek",
+      "question": "Did the seed extract slow cancer cell growth in the filed lab study?",
+      "answer": true,
+      "work_state": "answered",
+      "scope": {
+        "form": "Food seeds and lab extracts",
+        "cancer_model": "Breast, pancreas and prostate cell lines",
+        "comparison": "See linked paper methods and comparison groups",
+        "endpoint": "Growth inhibition"
+      },
+      "findings": "Breast, prostate, and pancreas cancer cells were in the tests. Growth was slower after the extract. Some cells died.",
+      "sources": [
+        {
+          "label": "Read the cell study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19197146/"
+        },
+        {
+          "label": "Read the breast-cell study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33889009/"
+        },
+        {
+          "label": "Read about fenugreek safety",
+          "url": "https://www.nccih.nih.gov/health/fenugreek"
+        }
+      ],
+      "review_state": "Source readback; second scientific review open",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-023",
+        "C-024",
+        "C-025"
+      ]
+    },
+    {
+      "id": "castor-oil-growth",
+      "topic_id": "castor-oil",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Skin oil, oil packs, and modified drug carriers",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "Oil packs were studied for bowel symptoms. A changed form of oil can carry some cancer drugs. The active drug is the cancer treatment.",
+      "sources": [
+        {
+          "label": "Read the cancer-center review",
+          "url": "https://blog.dana-farber.org/insight/2026/02/can-castor-oil-cure-cancer/"
+        },
+        {
+          "label": "Read the oil-pack study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21168117/"
+        },
+        {
+          "label": "Read about ricin poisoning",
+          "url": "https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/ricin.html"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-026",
+        "C-027",
+        "C-029",
+        "C-042"
+      ]
+    },
+    {
+      "id": "castor-fruit-extract-growth",
+      "topic_id": "castor-fruit-extract",
+      "question": "Did the fruit extract reduce tumor growth in the filed mouse study?",
+      "answer": true,
+      "work_state": "answered",
+      "scope": {
+        "form": "A lab extract from castor fruit",
+        "cancer_model": "4T1 mouse model",
+        "comparison": "See linked paper methods and comparison groups",
+        "endpoint": "Growth inhibition"
+      },
+      "findings": "The lab test used breast-cancer cells. The mouse test used a shot of fruit extract.",
+      "sources": [
+        {
+          "label": "Read the fruit-extract study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31601896/"
+        }
+      ],
+      "review_state": "Source readback; second scientific review open",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-028"
+      ]
+    },
+    {
+      "id": "comfrey-growth",
+      "topic_id": "comfrey",
+      "question": "Does a DMSO mix of this powder slow tumor growth?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Powder from the plant and tested skin creams",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "One rat test had fewer early spots of changed liver cells but more cell harm. A long feeding test had liver tumors.",
+      "sources": [
+        {
+          "label": "Read the comfrey safety review",
+          "url": "https://www.ema.europa.eu/en/medicines/herbal/symphyti-radix"
+        },
+        {
+          "label": "Read the short rat study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18955295/"
+        },
+        {
+          "label": "Read the rat tumor study",
+          "url": "https://doi.org/10.1093/jnci/61.3.865"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-031",
+        "C-032",
+        "C-033"
+      ]
+    },
+    {
+      "id": "tree-frog-gut-bacteria-growth",
+      "topic_id": "tree-frog-gut-bacteria",
+      "question": "Did all five treated mice have a complete tumor response in the filed group?",
+      "answer": true,
+      "work_state": "answered",
+      "scope": {
+        "form": "A live bacterial strain tested in mice",
+        "cancer_model": "Colon-26, BALB/c mice, treated group n=5",
+        "comparison": "See linked paper methods and comparison groups",
+        "endpoint": "Complete response in the named group"
+      },
+      "findings": "A live germ from a tree frog was in the 2025 test. The mice had colon-type tumors. Cell killing and an immune response were seen.",
+      "sources": [
+        {
+          "label": "Read the mouse tumor study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41376334/"
+        },
+        {
+          "label": "Read the infection report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3942442/"
+        }
+      ],
+      "review_state": "Source readback; second scientific review open",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-034",
+        "C-035",
+        "C-036"
+      ]
+    },
+    {
+      "id": "dmso-growth",
+      "topic_id": "dmso",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "A solvent used with named medical compounds",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "A skin-cancer test used DMSO with ALA, a drug compound, light, and skin scraping. DMSO was not tested alone.",
+      "sources": [
+        {
+          "label": "Read the skin-cancer study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18803580/"
+        },
+        {
+          "label": "Read the skin-passage study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33804395/"
+        },
+        {
+          "label": "Read the drug-mixing study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24812268/"
+        },
+        {
+          "label": "Read about care for leaked cancer drugs",
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/dimethyl-sulfoxide"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-037",
+        "C-038",
+        "C-039",
+        "C-040",
+        "C-041"
+      ]
+    },
+    {
+      "id": "spike-proteins-growth",
+      "topic_id": "spike-proteins",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Virus spike, vaccine targets, and lab proteins",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "Lab tests can show how spike binds to a cell. A cell test alone does not show a cancer effect in people.",
+      "sources": [
+        {
+          "label": "Read the spike structure study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32075877/"
+        },
+        {
+          "label": "Read how the vaccines work",
+          "url": "https://www.cdc.gov/covid/vaccines/how-they-work.html"
+        },
+        {
+          "label": "Read the cancer-center vaccine guidance",
+          "url": "https://www.cancer.gov/about-cancer/coronavirus/covid-19-vaccines-people-with-cancer"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-043",
+        "C-044",
+        "C-045",
+        "C-046",
+        "C-047",
+        "C-048"
+      ]
+    },
+    {
+      "id": "cloves-growth",
+      "topic_id": "cloves",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Food spice, extract, and clove oil",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "The study had 13 people. There was no blinded placebo group. A full cancer-study check is still open here.",
+      "sources": [
+        {
+          "label": "Read the blood-sugar study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31064377/"
+        },
+        {
+          "label": "Read the guide to herbs during care",
+          "url": "https://www.mskcc.org/cancer-care/patient-education/herbal-remedies-and-treatment"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-017",
+        "C-019",
+        "C-020"
+      ]
+    },
+    {
+      "id": "turmeric-growth",
+      "topic_id": "turmeric",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Food spice and concentrated curcumin pills",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "A breast-cancer trial was set up to test tiredness and swelling during radiation care. Tumor control was not the test goal.",
+      "sources": [
+        {
+          "label": "Read the trial record",
+          "url": "https://clinicaltrials.gov/study/NCT01740323"
+        },
+        {
+          "label": "Read the turmeric safety review",
+          "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/turmeric"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-022",
+        "C-051"
+      ]
+    },
+    {
+      "id": "black-seed-growth",
+      "topic_id": "black-seed",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Food seeds, oil, and a purified compound",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "Lab and animal work is reported for a compound from the seed. Whole seed and oil are different forms.",
+      "sources": [
+        {
+          "label": "Read the black-seed review",
+          "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/nigella-sativa"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-052"
+      ]
+    },
+    {
+      "id": "black-walnut-growth",
+      "topic_id": "black-walnut",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Food nuts and hull extracts",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "Food nuts and hull extracts are different products. A cleanse claim is not proof of a cancer benefit.",
+      "sources": [
+        {
+          "label": "Read the supplements and cancer guide",
+          "url": "https://www.cancer.gov/about-cancer/treatment/cam/diets-supplements"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-049"
+      ]
+    },
+    {
+      "id": "wormwood-growth",
+      "topic_id": "wormwood",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "The bitter herb and concentrated oil",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "The entry is about bitter wormwood. Bitter wormwood is not the same plant or drug as sweet-wormwood research.",
+      "sources": [
+        {
+          "label": "Read the thujone safety review",
+          "url": "https://www.ema.europa.eu/en/scientific-guidelines/use-herbal-medicinal-products-containing-thujone"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-054"
+      ]
+    },
+    {
+      "id": "shilajit-growth",
+      "topic_id": "shilajit",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "A resin sold as a supplement",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "The exact resin and its contents need a study. An old use is not a result showing that tumors shrink.",
+      "sources": [
+        {
+          "label": "Read the supplement guide",
+          "url": "https://www.cancer.gov/about-cancer/treatment/cam/diets-supplements"
+        },
+        {
+          "label": "Read the FDA warning on some traditional products",
+          "url": "https://www.fda.gov/drugs/fraudulent-products/fda-warns-about-heavy-metal-poisoning-associated-certain-unapproved-ayurvedic-drug-products"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-049",
+        "C-055"
+      ]
+    },
+    {
+      "id": "humic-fulvic-growth",
+      "topic_id": "humic-fulvic",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Fractions from soil or resin products",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "A mixture needs a clear label and a study of that form. A different resin does not give it proof.",
+      "sources": [
+        {
+          "label": "Read the supplements and cancer guide",
+          "url": "https://www.cancer.gov/about-cancer/treatment/cam/diets-supplements"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-049"
+      ]
+    },
+    {
+      "id": "magnesium-growth",
+      "topic_id": "magnesium",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Food sources and prescribed replacement",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "Blood tests can help show whether a level is low. Your team can choose a dose if you need one.",
+      "sources": [
+        {
+          "label": "Read the magnesium facts",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-Consumer/"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-053"
+      ]
+    },
+    {
+      "id": "zinc-growth",
+      "topic_id": "zinc",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Food sources and prescribed replacement",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "A low level may need care. A high dose when you have enough zinc is a different question.",
+      "sources": [
+        {
+          "label": "Read the zinc facts",
+          "url": "https://ods.od.nih.gov/factsheets/Zinc-Consumer/"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-053"
+      ]
+    },
+    {
+      "id": "capsaicin-growth",
+      "topic_id": "capsaicin",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Food pepper and topical pain medicine",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "Cancer-cell tests and tests of pain drugs ask different questions. Eating pepper does not copy a skin-drug dose.",
+      "sources": [
+        {
+          "label": "Read the cancer-drug dictionary entry",
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/capsaicin"
+        },
+        {
+          "label": "Read the cayenne review",
+          "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/cayenne"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-056"
+      ]
+    },
+    {
+      "id": "cuban-oregano-growth",
+      "topic_id": "cuban-oregano",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Food leaves, oil, and extracts",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "The plant and product must be known. An oil, a leaf, and a lab extract can have very different contents.",
+      "sources": [
+        {
+          "label": "Read the supplements and cancer guide",
+          "url": "https://www.cancer.gov/about-cancer/treatment/cam/diets-supplements"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-049"
+      ]
+    },
+    {
+      "id": "hydrogen-peroxide-growth",
+      "topic_id": "hydrogen-peroxide",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Household peroxide and concentrated products",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "The filed research asks how oxygen affects a tumor. The study does not test a drink made from this liquid.",
+      "sources": [
+        {
+          "label": "Read the poison-control guidance",
+          "url": "https://www.poison.org/articles/hydrogen-peroxide"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-057"
+      ]
+    },
+    {
+      "id": "ivermectin-growth",
+      "topic_id": "ivermectin",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "A prescription parasite medicine",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "The filed trial is for people with advanced triple-negative breast cancer. It tests this drug with an immune treatment.",
+      "sources": [
+        {
+          "label": "Read the breast-cancer trial",
+          "url": "https://clinicaltrials.gov/study/NCT05318469"
+        },
+        {
+          "label": "Read the NCI drug definition",
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/ivermectin"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-058"
+      ]
+    },
+    {
+      "id": "hcq-growth",
+      "topic_id": "hcq",
+      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "A prescription medicine studied in cancer trials",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "Trials can test different cancers, drugs, and doses. A study listing is not a result.",
+      "sources": [
+        {
+          "label": "Read the NCI trial list",
+          "url": "https://www.cancer.gov/research/participate/clinical-trials/intervention/hydroxychloroquine"
+        },
+        {
+          "label": "Read the FDA label",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/214581s007lbl.pdf"
+        }
+      ],
+      "review_state": "needs paper-level question review",
+      "next_check": "Read the exact study. Record its model, comparison, measured result and limits before answering.",
+      "claim_ids": [
+        "C-059"
+      ]
+    }
+  ]
+}

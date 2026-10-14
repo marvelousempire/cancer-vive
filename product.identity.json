@@ -2,7 +2,7 @@
   "schema": "cancer-vive.identity/v1",
   "id": "cancer-vive",
   "name": "Cancer Vive",
-  "version": "0.9.2",
+  "version": "0.10.0",
   "configuration": {
     "identity": {
       "id": "cancer-vive",
