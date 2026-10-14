@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { content, evidenceItems, evidenceClasses, mechanismLabels, navItems } from "./data.js";
 import FrameworkShell from "./FrameworkShell.jsx";
+import DiabetesView from "./DiabetesView.jsx";
 import Corpus, { ResearchDocuments } from "./Corpus.jsx";
 import design from "../design-dna.profile.json";
 
@@ -128,15 +129,18 @@ export default function App() {
   const [view,setView] = useState(currentView);
   const [initialQuery,setInitialQuery] = useState("");
   const [theme,setTheme] = useState(() => { try { const saved=localStorage.getItem("cancer-vive.theme.v1"); return ["auto","light","dark"].includes(saved) ? saved : "auto"; } catch { return "auto"; } });
+  const [subject,setSubject] = useState(() => { try { return localStorage.getItem("cancer-vive.subject.v1") === "diabetes" ? "diabetes" : "cancer"; } catch { return "cancer"; } });
   const [compareIds,setCompareIds] = useState([]);
   const [compareOpen,setCompareOpen] = useState(false);
   useEffect(() => { const handle=() => setView(currentView()); window.addEventListener("hashchange",handle); return () => window.removeEventListener("hashchange",handle); },[]);
   const navigate = (next,query="") => { const target=validView(next); setInitialQuery(query); setView(target); window.location.hash=target; window.scrollTo({top:0,behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); };
   const changeTheme = (choice) => { setTheme(choice); try { localStorage.setItem("cancer-vive.theme.v1",choice); } catch {} };
+  const changeSubject = (next) => { const safe = next === "diabetes" ? "diabetes" : "cancer"; setSubject(safe); setCompareIds([]); setCompareOpen(false); setInitialQuery(""); try { localStorage.setItem("cancer-vive.subject.v1",safe); } catch {} };
   const toggleCompare = (id) => setCompareIds((current) => current.includes(id) ? current.filter((value) => value !== id) : current.length < 3 ? [...current,id] : current);
-  return <div className={"theme-root theme-" + theme} style={themeColors}><FrameworkShell activeView={view} onNavigate={navigate}><div className="site-shell">
+  return <div className={"theme-root theme-" + theme} style={themeColors}><FrameworkShell activeView={view} onNavigate={navigate} subject={subject}><div className="site-shell">
+    <div className="subject-control"><label htmlFor="subject-select">Explore a condition</label><select id="subject-select" value={subject} onChange={(e)=>changeSubject(e.target.value)}><option value="cancer">Cancer Vive · Cancer</option><option value="diabetes">Diabetes Vive · Diabetes</option></select><span role="status" aria-live="polite">{subject === "cancer" ? "Cancer evidence explorer" : "Diabetes education and evidence explorer"}</span></div>
     <div className="theme-control" role="group" aria-label={u.theme}>{["auto","light","dark"].map((choice) => <button key={choice} type="button" aria-pressed={theme===choice} onClick={() => changeTheme(choice)}>{u[choice]}</button>)}</div>
-    <p className="site-note">{u.scope}</p>
+    {subject === "cancer" ? <><p className="site-note">{u.scope}</p>
     <main className="page">
       {view === "dashboard" && <Dashboard onNavigate={navigate} />}
       {view === "mechanisms" && <Topics key={initialQuery} initialQuery={initialQuery} compareIds={compareIds} toggleCompare={toggleCompare} />}
@@ -147,6 +151,6 @@ export default function App() {
     {!!compareIds.length && <div className="compare-tray"><strong>{compareIds.length} {u.selected}</strong><div className="compare-actions"><button className="quiet-button" onClick={() => setCompareIds([])}>{u.clear}</button><button className="primary-button" onClick={() => setCompareOpen(true)}>{u.compare}</button></div><div className="compare-chips">{compareIds.map((id) => <button className="compare-chip" key={id} aria-label={u.remove + ": " + evidenceItems.find((item)=>item.id===id)?.name} onClick={()=>toggleCompare(id)}>{evidenceItems.find((item)=>item.id===id)?.name} ×</button>)}</div></div>}
     {compareOpen && <CompareModal ids={compareIds} onClose={() => setCompareOpen(false)} />}
     <footer className="footer"><span>{content.pages.footer}</span><span>{u.checked}</span><span>{u.version} {release.version}{release.dirty ? " · " + u.draft : ""}</span></footer>
-    <details className="expert-details release-details"><summary>{u.code}</summary><p>{release.commit}</p><a href="https://github.com/marvelousempire/cancer-vive" target="_blank" rel="noreferrer">{u.code} ↗</a></details>
+    <details className="expert-details release-details"><summary>{u.code}</summary><p>{release.commit}</p><a href="https://github.com/marvelousempire/cancer-vive" target="_blank" rel="noreferrer">{u.code} ↗</a></details></> : <DiabetesView view={view} navigate={navigate} />}
   </div></FrameworkShell></div>;
 }
