@@ -46,8 +46,43 @@
       "work_stage_gutter_px": 16
     },
     "paint": {
-      "theme": "clinical-blue-auto-light-dark",
-      "accent": "light-dark(#155fae, #8fc1ff)"
+      "theme": "inverse-blue-white-auto-light-dark",
+      "palette": {
+        "light": {
+          "bg": "#ffffff",
+          "surface": "#ffffff",
+          "surface-2": "#eaf2ff",
+          "surface-3": "#dceaff",
+          "line": "#aac3e0",
+          "line-strong": "#155fae",
+          "muted": "#155fae",
+          "soft": "#155fae",
+          "mint": "#155fae",
+          "mint-strong": "#155fae",
+          "blue": "#155fae",
+          "amber": "#805000",
+          "rose": "#9b3345",
+          "violet": "#6343a0",
+          "rail-bg": "#ffffff"
+        },
+        "dark": {
+          "bg": "#155fae",
+          "surface": "#155fae",
+          "surface-2": "#1c65b2",
+          "surface-3": "#286eb7",
+          "line": "#8bb8e8",
+          "line-strong": "#ffffff",
+          "muted": "#ffffff",
+          "soft": "#ffffff",
+          "mint": "#ffffff",
+          "mint-strong": "#ffffff",
+          "blue": "#ffffff",
+          "amber": "#ffe0a3",
+          "rose": "#ffe0e5",
+          "violet": "#e8e0ff",
+          "rail-bg": "#155fae"
+        }
+      }
     },
     "border": {
       "width_px": 1,

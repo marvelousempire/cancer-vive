@@ -7,17 +7,18 @@
 
 * { box-sizing: border-box; }
 
-html { background: light-dark(#fff, #071324); }
+html { background: light-dark(#fff, #155fae); }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: light-dark(#fff, #071324);
+  background: light-dark(#fff, #155fae);
 }
 
 
 button, input, select { font: inherit; }
+input::placeholder { color: var(--muted); opacity: .85; }
 button { color: inherit; }
 a { color: inherit; text-decoration: none; }
 
@@ -313,7 +314,7 @@ input, select {
   border: 1px solid var(--line-strong);
   border-radius: 12px;
   background: var(--surface);
-  color: #edf7f1;
+  color: var(--soft);
   outline: none;
 }
 input:focus, select:focus { border-color: rgba(75,137,211,.7); box-shadow: 0 0 0 3px rgba(75,137,211,.08); }
@@ -710,22 +711,8 @@ dd { margin: 0; color: var(--soft); font-size: .82rem; line-height: 1.58; }
 
 /* Cancer Vive theme roles: one declaration per role, with the browser choosing light or dark. */
 .theme-root { color-scheme: light dark;
-  --bg: light-dark(#fff, #071324);
-  --surface: light-dark(#f5f9ff, #0d1d31);
-  --surface-2: light-dark(#eaf2ff, #142a45);
-  --surface-3: light-dark(#dceaff, #1a3555);
-  --line: light-dark(#c7d7eb, #314966);
-  --line-strong: light-dark(#99b6d9, #54739a);
-  --muted: light-dark(#485d76, #a9bfdb);
-  --soft: light-dark(#19324f, #e3eeff);
-  --mint: light-dark(#155fae, #8fc1ff);
-  --mint-strong: light-dark(#084b93, #c4ddff);
-  --blue: light-dark(#155fae, #9fc9ff);
-  --amber: light-dark(#805000, #f0ca7f);
-  --rose: light-dark(#9b3345, #ff9c98);
-  --violet: light-dark(#6343a0, #c5b6ff);
-  --shadow: light-dark(0 20px 60px #173b6822, 0 30px 100px #0008);
-  --rail-bg: light-dark(#f2f7ffed, #07182cf0);
+  /* Color roles come from design-dna.profile.json in both renderers. */
+  --shadow: light-dark(0 20px 60px #173b6822, 0 30px 100px #0003);
   --rail-line: var(--line);
   --rail-accent: var(--mint);
   background: var(--bg); color: var(--soft);
@@ -733,11 +720,11 @@ dd { margin: 0; color: var(--soft); font-size: .82rem; line-height: 1.58; }
 .theme-root.theme-light { color-scheme: light; }
 .theme-root.theme-dark { color-scheme: dark; }
 .theme-root body, .theme-root .site-shell { background: var(--bg); }
-.theme-root .framework-shell { --rail-bg: light-dark(#f2f7ffed, #07182cf0); --rail-line: var(--line); --rail-accent: var(--mint); }
+.theme-root .framework-shell { --rail-bg: inherit; --rail-line: var(--line); --rail-accent: var(--mint); }
 .theme-root .framework-rail-lip, .theme-root .state-icon .framework-rail-label, .theme-root .framework-stage-context, .theme-root .matrix-table th, .theme-root .matrix-header-row, .theme-root .compare-modal, .theme-root .compare-tray { background: var(--surface); color: var(--soft); }
 .theme-root .hero-panel, .theme-root .evidence-card { background: var(--surface); }
 .theme-root .topbar { background: var(--surface); }
-.theme-root .primary-button { color: light-dark(#fff, #071324); }
+.theme-root .primary-button { color: var(--bg); }
 .theme-root .brand-mark, .theme-root .tag, .theme-root .framework-rail-item:hover { background: var(--surface-2); border-color: var(--line); color: var(--mint); }
 .theme-root .evidence-card::before { background: var(--mint); }
 .theme-root .evidence-preclinical, .theme-root .compare-toggle.selected, .theme-root .source-links a:hover { color: var(--mint); border-color: var(--line-strong); }

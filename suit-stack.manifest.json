@@ -1,6 +1,6 @@
 {
   "schema": "cancer-vive.suit-stack/v1",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "members": [
     {
       "id": "web",

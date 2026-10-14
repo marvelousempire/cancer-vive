@@ -2,7 +2,10 @@ import React, { useEffect, useMemo, useState } from "react";
 import { content, evidenceItems, evidenceClasses, mechanismLabels, navItems } from "./data.js";
 import FrameworkShell from "./FrameworkShell.jsx";
 import Corpus from "./Corpus.jsx";
+import design from "../design-dna.profile.json";
 
+const palette = design.domains.paint.palette;
+const themeColors = Object.fromEntries(Object.entries(palette.light).map(([role, color]) => ["--" + role, `light-dark(${color}, ${palette.dark[role]})`]));
 const u = content.ui;
 const release = __RELEASE__;
 const validView = (value) => navItems.some((item) => item.id === value) ? value : "dashboard";
@@ -131,7 +134,7 @@ export default function App() {
   const navigate = (next,query="") => { const target=validView(next); setInitialQuery(query); setView(target); window.location.hash=target; window.scrollTo({top:0,behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); };
   const changeTheme = (choice) => { setTheme(choice); try { localStorage.setItem("cancer-vive.theme.v1",choice); } catch {} };
   const toggleCompare = (id) => setCompareIds((current) => current.includes(id) ? current.filter((value) => value !== id) : current.length < 3 ? [...current,id] : current);
-  return <div className={"theme-root theme-" + theme}><FrameworkShell activeView={view} onNavigate={navigate}><div className="site-shell">
+  return <div className={"theme-root theme-" + theme} style={themeColors}><FrameworkShell activeView={view} onNavigate={navigate}><div className="site-shell">
     <div className="theme-control" role="group" aria-label={u.theme}>{["auto","light","dark"].map((choice) => <button key={choice} type="button" aria-pressed={theme===choice} onClick={() => changeTheme(choice)}>{u[choice]}</button>)}</div>
     <p className="site-note">{u.scope}</p>
     <main className="page">
