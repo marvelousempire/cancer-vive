@@ -21,6 +21,8 @@ jobs:
       - name: Check claim, source, and matrix references
         run: node scripts/check-evidence.mjs
       - name: Install site dependencies
-        run: npm install --ignore-scripts
+        run: npm install --ignore-scripts --no-package-lock
+      - name: Check public content and refusal tests
+        run: npm run check:content && npm test
       - name: Build public projection
         run: npm run build

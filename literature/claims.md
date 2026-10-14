@@ -50,6 +50,26 @@ Status key: `seed` | `reviewed` | `disputed` | `retired`
 | C-041 | DMSO altered and reduced activity of some platinum cancer drugs in laboratory mixing experiments, not a measured risk estimate for topical use in people. | mechanism | S-032 | W-025 | seed |
 | C-042 | Ricin in castor beans is a poison and does not make raw bean products a safe cancer treatment. | shown | S-020 | W-022 | seed |
 
+| C-043 | SARS-CoV-2 spike binds a cell receptor involved in viral entry, which is not itself a human cancer-treatment finding. | mechanism | S-035 | spike lesson | seed |
+| C-044 | COVID-19 mRNA vaccines supply instructions for a spike target and do not contain live SARS-CoV-2. | shown | S-034 | spike lesson | seed |
+| C-045 | COVID-19 vaccines are shown to cause cancer, recurrence, or cancer progression. | not-supported | S-033 | spike lesson | seed |
+| C-046 | A 2025 mouse study linked respiratory viral infections to growth of dormant breast-cancer cells in the lungs, not to exposure to vaccine or spike alone. | mechanism | S-036 | spike lesson | seed |
+| C-047 | The journal retracted the 2021 spike and DNA-repair paper in May 2022, so Cancer Vive does not use it as positive proof. | shown | S-037 | spike lesson | seed |
+| C-048 | Recent vaccination can enlarge lymph nodes and affect some cancer scan findings. | shown | S-033 | spike lesson | seed |
+| C-049 | The untested herbal and supplement products in this explorer are established cancer treatments. | not-supported | S-039 | public topics | seed |
+| C-050 | The human records in the 2025 respiratory-infection paper show associations, not proof that isolated spike or a vaccine caused cancer. | association | S-036 | spike lesson | seed |
+| C-051 | MSK flags bleeding and drug-interaction concerns for turmeric supplements. | shown | S-040 | public topics | seed |
+| C-052 | MSK reports lab and animal black-seed research but not established human cancer treatment. | not-supported | S-041 | public topics | seed |
+| C-053 | Magnesium and zinc have nutrient-replacement uses and excess-dose risks, which are not proof of tumor treatment. | shown | S-042 S-043 | public topics | seed |
+| C-054 | EMA guidance limits thujone exposure because neurological toxicity is a concern. | shown | S-044 | public topics | seed |
+| C-055 | FDA warns that some unapproved traditional products have harmful metal levels, without establishing that every shilajit product is contaminated. | shown | S-045 | public topics | seed |
+| C-056 | Topical capsaicin has a nerve-pain use that does not establish tumor control. | shown | S-046 | public topics | seed |
+| C-057 | Swallowing peroxide can cause injury and gas embolism, not a demonstrated cancer benefit. | shown | S-047 | public topics | seed |
+| C-058 | The filed ivermectin breast-cancer combination trial is evidence of research activity, not proof of efficacy. | shown | S-048 | public topics | seed |
+| C-059 | Hydroxychloroquine labeling includes cardiac and retinal risks requiring medical review. | shown | S-049 | public topics | seed |
+| C-060 | NCI reports no studies showing that stopping sugar makes cancer shrink or disappear. | not-supported | S-050 | sugar lesson | seed |
+| C-061 | The cited oxygen microbubble research in mice does not license drinking peroxide or claim an established human treatment. | mechanism | S-052 | oxygen lesson | seed |
+
 ## How to add a row
 
 1. One sentence.

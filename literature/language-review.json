@@ -1,0 +1,363 @@
+{
+  "schema": "cancer-vive.language-review/v1",
+  "tool": "ClarifyThat",
+  "mode": "enforced",
+  "profile": "board-grade-5",
+  "status": "pass",
+  "checked_at": "2026-10-14",
+  "content_sha256": "9a0117b5b3182f30c6625c04220ebb5f3eca06a006433686a48afc887b0db0b3",
+  "checker_sha256": "d0b32c524033efb9dcc40bebd1ffc9fa6fd4419fda17915cf357899ba034f2d5",
+  "scope": "All normal-view prose: topics, lessons, questions, help, home, proof types, pages and footer. Short labels manually reviewed. Exact source and drug names preserved. Original Expert records excluded. This is a language review, not a scientific second review.",
+  "blocks": [
+    {
+      "id": "topic.fenugreek",
+      "text_sha256": "be5646bdb4ceaf9651ff41769d5abc71908a15b32e01eb82379accf1a658e1e7",
+      "status": "pass"
+    },
+    {
+      "id": "topic.castor-oil",
+      "text_sha256": "958543772f6bc55fb239fde1155ae6458c58f063918cdd2853f57ac82cb3fa4b",
+      "status": "pass"
+    },
+    {
+      "id": "topic.castor-fruit-extract",
+      "text_sha256": "0084df52fbeeb390203458783fb66f7e2d2e95f183ace63accd94555845d2556",
+      "status": "pass"
+    },
+    {
+      "id": "topic.comfrey",
+      "text_sha256": "ac3c8a63f7bf2d54d2d2f50acebfd5d31e6ae46c19dbef91eb26c8676fdfba73",
+      "status": "pass"
+    },
+    {
+      "id": "topic.tree-frog-gut-bacteria",
+      "text_sha256": "5dce41f653b0d0d9e8c2e75d2e5d11c3a440870ffd355279d7de46e8e5b5b2e5",
+      "status": "pass"
+    },
+    {
+      "id": "topic.dmso",
+      "text_sha256": "7c156b42d4cc689c5a4b615fe10ba0ddfb9ecd9ec86bf97be78f420d9d006e1c",
+      "status": "pass"
+    },
+    {
+      "id": "topic.spike-proteins",
+      "text_sha256": "5bc02a5c3f813fd657477c3655561b04f91d56aeaefcd72e32e697f37af51789",
+      "status": "pass"
+    },
+    {
+      "id": "topic.cloves",
+      "text_sha256": "1ec67db134f3ed75adacddd507b5647442af9ad162fd31d60fcf74eac047f269",
+      "status": "pass"
+    },
+    {
+      "id": "topic.turmeric",
+      "text_sha256": "4074915ac86a8b29ca4a172903c9afeeaaedf03fcec2a450a132e2a28d13e35f",
+      "status": "pass"
+    },
+    {
+      "id": "topic.black-seed",
+      "text_sha256": "64673e931340c8cb5025682d05f66baf533f0822dc6e9f050636cc71383fe8ff",
+      "status": "pass"
+    },
+    {
+      "id": "topic.black-walnut",
+      "text_sha256": "23e97a4caafd109f5f974336a23b2845fe5dc1710437372943659c23c2ffa858",
+      "status": "pass"
+    },
+    {
+      "id": "topic.wormwood",
+      "text_sha256": "f69e8d719231a59028a177c1b8ef01b41519ec4bdb3f833b25d003393a63fb5e",
+      "status": "pass"
+    },
+    {
+      "id": "topic.shilajit",
+      "text_sha256": "dd5edfeff05bc363c290b722a276ec47e5ac5466999fe8947f9269d86e39afdc",
+      "status": "pass"
+    },
+    {
+      "id": "topic.humic-fulvic",
+      "text_sha256": "bda45e95d247c9408f7a7f40aa346368b912158ba5ab1e24d133059629dd4519",
+      "status": "pass"
+    },
+    {
+      "id": "topic.magnesium",
+      "text_sha256": "c3ffe59a25d2bd58b3b2feed58e2d8a1bba4194db493d7840f078f716c12e556",
+      "status": "pass"
+    },
+    {
+      "id": "topic.zinc",
+      "text_sha256": "82d22e17fcadd33c48a8f723bfea98ac11e5dc9f78171f5d8c62af324bfe42cb",
+      "status": "pass"
+    },
+    {
+      "id": "topic.capsaicin",
+      "text_sha256": "ed7dd591728e76828129d692b967c517f8701898e635a874d67a42e388c9feb3",
+      "status": "pass"
+    },
+    {
+      "id": "topic.cuban-oregano",
+      "text_sha256": "e7cf398494bd5477ea825298fca5498c87edf60e1f6847292bb9abda236c0651",
+      "status": "pass"
+    },
+    {
+      "id": "topic.hydrogen-peroxide",
+      "text_sha256": "c979d37333ea597a19b87ed97cc7eda4c1ab8e234334b51144ea8c79f4bfd999",
+      "status": "pass"
+    },
+    {
+      "id": "topic.ivermectin",
+      "text_sha256": "4174a816137635414ce6c52c180df8b827c59400b298b69bfc01ae8cfe9a19c9",
+      "status": "pass"
+    },
+    {
+      "id": "topic.hcq",
+      "text_sha256": "682fa68074ccd5877b830ff0a11ba5fa804d3e3863bbefaabb98bcf39ad44472",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.spike-proteins.0",
+      "text_sha256": "ff43db9d79af2be480b5097ac5ff767ad286cbbb4628111fe4d7e48ac5c134c0",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.spike-proteins.1",
+      "text_sha256": "f100d3f93da66a736d2bf093429e4b1019e5885394ee60acb06451211106a3af",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.spike-proteins.2",
+      "text_sha256": "8b35148aa069b1942aac113fefe96cb0f2698bff7001aa19c56f89561c950080",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.spike-proteins.3",
+      "text_sha256": "def14ae8cd1f4323ff249bb31f0b03cbfffd2c35e3763f990ceeb05a51090f14",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.spike-proteins.4",
+      "text_sha256": "0fa56d10e3672107651a9acf7997313656eb7cc1c1c77b17bfce1d81870fd36d",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.spike-proteins.5",
+      "text_sha256": "3421faa5cb7410f9d769250b39b9fbacb5692cb9b01fa95e1f00fa22eaa13f0a",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.spike-proteins.6",
+      "text_sha256": "5e0e3b3bfa281cfb1028ae3191393c6ed747805548b25007991de878e0d91dbb",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.sugar.0",
+      "text_sha256": "e2a5fff617c36c16eb2fe7b0a8ffd22b0b618907c0f980aac067ec98d02178ea",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.sugar.1",
+      "text_sha256": "2a3758ec1a02d1da815c92a3d719ccd32a931fdb134d896b47ac3b2d45f5711e",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.forms.0",
+      "text_sha256": "9bbd64d3647e3bd0ee7fdcfdbb2a98bbab9b81172260e6ae8e6ddc2c5d1a888b",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.forms.1",
+      "text_sha256": "a85702d52ff61b748735098db1b8e8992174aacf3730fbacbfdfaf5206c5aa98",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.oxygen.0",
+      "text_sha256": "8eacd12d42e4184f882073d53e0ef190c1091637ec04e5ba0dbf7736b01e7cb6",
+      "status": "pass"
+    },
+    {
+      "id": "lesson.oxygen.1",
+      "text_sha256": "2dfc586a38474d326593e160bfca080dff6e3dd6a4ae2c449a3ba5a72764ebf7",
+      "status": "pass"
+    },
+    {
+      "id": "question.0",
+      "text_sha256": "006a587d23b60df2ea44d4a2cd8b2452fd46b4decef0d199426d1b0393ea6499",
+      "status": "pass"
+    },
+    {
+      "id": "question.1",
+      "text_sha256": "29b01065a106a28bc7563332bbaf50307c2aab5f0885b65a84fea33156d8ba34",
+      "status": "pass"
+    },
+    {
+      "id": "question.2",
+      "text_sha256": "d26bfff538ece9ab875e6ea9e166d3c8a400c91eac6cbd5ce103506f508b09f0",
+      "status": "pass"
+    },
+    {
+      "id": "question.3",
+      "text_sha256": "8e5c4a5c7366df01f36f1b0285a6afda81d7f13b3b0701342a2511a83e16d9e7",
+      "status": "pass"
+    },
+    {
+      "id": "question.4",
+      "text_sha256": "c6212b294e089afe741a6421e55a7d72a08112e82f70180324b83fc331b466d2",
+      "status": "pass"
+    },
+    {
+      "id": "question.5",
+      "text_sha256": "83062be563636a5d8f08c9f6910a49d1ce4b5bdbd2144808ea86ef3550417a52",
+      "status": "pass"
+    },
+    {
+      "id": "home.0",
+      "text_sha256": "859d0cc5bf5f27a541b10c1ec39d4b5e0258347e7ef5d98aa2886f14ad5af483",
+      "status": "pass"
+    },
+    {
+      "id": "home.1",
+      "text_sha256": "ff3f48576e57fd3fbb22c97593adfedd2fa754d3a542b471f8ec0bfc09d247c9",
+      "status": "pass"
+    },
+    {
+      "id": "home.2",
+      "text_sha256": "5af5fe72ef9c76b97378460d795a457964247c95e6004f2de9e690fb423be431",
+      "status": "pass"
+    },
+    {
+      "id": "home.3",
+      "text_sha256": "757148dad5606d48d58792dcefb5f10df61d71c68e3a89674a93895f34bbf880",
+      "status": "pass"
+    },
+    {
+      "id": "proof.0",
+      "text_sha256": "0ecc3f970ba4d14c28211d81b14e8edfc241d2586e4cce1a2e111006980b496e",
+      "status": "pass"
+    },
+    {
+      "id": "proof.1",
+      "text_sha256": "6402a0138393087dc38e7e49b8c940f92091c27ad910186e6ba12dc209b6e8be",
+      "status": "pass"
+    },
+    {
+      "id": "proof.2",
+      "text_sha256": "89220d0f20d5ff983548e4569ca4a26729dd3c509df19926c0c342f26ffb17af",
+      "status": "pass"
+    },
+    {
+      "id": "proof.3",
+      "text_sha256": "09f91ff4caaa3369ec97a6ef97afabb37a46d1a1386ec2bd6b67de8ef693bc78",
+      "status": "pass"
+    },
+    {
+      "id": "page.topics_intro",
+      "text_sha256": "d60866d260d72e2bbc4af3e1f949cb22cad5f550b1202414c4646a946608afa5",
+      "status": "pass"
+    },
+    {
+      "id": "page.quick_intro",
+      "text_sha256": "4c4be22f76e02d0330d5fcc55c67bd785241ebe128235832b1623b0416e93060",
+      "status": "pass"
+    },
+    {
+      "id": "page.learn_intro",
+      "text_sha256": "b17be2b7267ab92389697e722806ec1ce1578e633e256e744d8e692fb4290302",
+      "status": "pass"
+    },
+    {
+      "id": "page.questions_intro",
+      "text_sha256": "807492efdad592f3a326d1a34a994cf7e904cb4b085e1ecf7ddce88d6f860f28",
+      "status": "pass"
+    },
+    {
+      "id": "page.sources_intro",
+      "text_sha256": "372a6840f8715f03baf0708151ce1762628fc07e6c2ca95f21af7dcea326295f",
+      "status": "pass"
+    },
+    {
+      "id": "page.footer",
+      "text_sha256": "6265bea05706c7622c9eccc091ecaf8963be14f3d194c9a0fe517b2c165edfb3",
+      "status": "pass"
+    },
+    {
+      "id": "home.intro",
+      "text_sha256": "43fec77bdf68d5ff84eb8f4712f83af9567dabf1503ba52a7c61714e41d82c43",
+      "status": "pass"
+    },
+    {
+      "id": "home.proof_intro",
+      "text_sha256": "90174a2488cc5047a391c94e2ae7e9517373b97c14a45ca261f11c6ab7b8e204",
+      "status": "pass"
+    },
+    {
+      "id": "ui.scope",
+      "text_sha256": "d9747166692e96b0eafbefcea9031bcd285345b82c01bf5db9d87e75666c069c",
+      "status": "pass"
+    },
+    {
+      "id": "ui.data_note",
+      "text_sha256": "ce5af124ede222fad497bbd311de885cc2caffc302fa08c3f3cf71451a5c751e",
+      "status": "pass"
+    },
+    {
+      "id": "ui.sources_description",
+      "text_sha256": "8c6e2b167bc1d44e6114f1160eae996ae529e3508b14588cc4eaa43e5cc2eae0",
+      "status": "pass"
+    },
+    {
+      "id": "ui.empty",
+      "text_sha256": "7f733af080a21011d383266167d6b824ac30833731b433db6b22a278588e7f97",
+      "status": "pass"
+    },
+    {
+      "id": "grade.cells",
+      "text_sha256": "a77e0b4900fe8aa42279634e972eddf7a61de52cd4fd85917f00c3ec1c95ead9",
+      "status": "pass"
+    },
+    {
+      "id": "grade.human",
+      "text_sha256": "70a02fcf89915a110314ac5dadad772bfff009a44104210ef1cda6de5ad84c6a",
+      "status": "pass"
+    },
+    {
+      "id": "grade.other",
+      "text_sha256": "863a87e28276359c44e6160be4c109062b5021b307fff1ea34c9cd4226dadf50",
+      "status": "pass"
+    },
+    {
+      "id": "grade.unclear",
+      "text_sha256": "89ebab71d9568b00bda173d61b51ab9acc5bd858a7293a6f5dc009edc4506295",
+      "status": "pass"
+    },
+    {
+      "id": "grade.harm",
+      "text_sha256": "d464f77225225823a19ae7438a1b2a3ac85b1d23d6b78546e71a096d81dd61d2",
+      "status": "pass"
+    },
+    {
+      "id": "grade.education",
+      "text_sha256": "ae849859af77251f1e7a6b4d964cf57d886f9c704abc993ed558e0226185bb88",
+      "status": "pass"
+    },
+    {
+      "id": "lesson-intro.spike-proteins",
+      "text_sha256": "633bcde4196435fefd0e8f7b3590e6bc6b63e1f0ad607784439cbb571de1c35c",
+      "status": "pass"
+    },
+    {
+      "id": "lesson-intro.sugar",
+      "text_sha256": "51fd1e313ac8ec92fadb8013156ea701ba36730a6b9ff77a05a050978f96365d",
+      "status": "pass"
+    },
+    {
+      "id": "lesson-intro.forms",
+      "text_sha256": "4891481243fb62922a76bae001da0a45f1021b586e3dbd47e0e916ac303fdb43",
+      "status": "pass"
+    },
+    {
+      "id": "lesson-intro.oxygen",
+      "text_sha256": "8cc825e7394895518a73e2b980154c5270543c24e885cf83b62357d8df484731",
+      "status": "pass"
+    }
+  ]
+}

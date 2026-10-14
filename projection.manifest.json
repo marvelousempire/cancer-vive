@@ -99,7 +99,9 @@
       "literature/MASTER-CANCER-DETRIMENT-MATRIX.md",
       "literature/claims.md",
       "literature/sources.md",
-      "literature/watch-cards.md"
+      "literature/watch-cards.md",
+      "src/user-messages.json",
+      "literature/spike-proteins.md"
     ],
     "actions": [
       "search",
@@ -115,7 +117,8 @@
       "dashboard",
       "matrix",
       "mechanisms",
-      "research"
+      "research",
+      "education"
     ]
   },
   "renderer": {
@@ -151,7 +154,8 @@
       "design-dna.profile.json",
       "marvelousempire/father-framework:data/design-dna-default.profile.json",
       "marvelousempire/that-app-studio:data/design-dna/registry.json",
-      "marvelousempire/automata:timelines/design-dna-framework.json"
+      "marvelousempire/automata:timelines/design-dna-framework.json",
+      "src/user-messages.json"
     ]
   },
   "design_dna_profile_ref": "design-dna.profile.json"
