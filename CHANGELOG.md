@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.7.1 — 2026-10-13
+
+- Added fenugreek, castor oil, separate castor fruit-extract research, comfrey powder, tree-frog gut bacteria, and DMSO skin/compound entries.
+- Linked each new entry to claims and sources in the existing research pages.
+- Kept lab, mouse, human symptom, skin-cancer combination, and untested herb-mix evidence separate.
+- Flagged comfrey liver harm, ricin poisoning, and bacterial infection risks. Added no dose or home treatment recipe.
+- Kept new claims at seed pending a second reader.
+
 ## 0.7.0 — 2026-09-27
 
 ### Repository focus cleanup

@@ -153,6 +153,81 @@ Evidence handles:
 - NCI hydroxychloroquine sulfate trials — https://www.cancer.gov/research/participate/clinical-trials/intervention/hydroxychloroquine-sulfate
 - FDA hydroxychloroquine sulfate label — https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/214581s007lbl.pdf
 
+## Added research · 2026-10-13
+
+These new cards are research notes. The old surgery notes above are dated. They do not state the reader's care plan today. No dose or home mix is added.
+
+### W-021 Fenugreek
+
+Fenugreek is **Trigonella foenum-graecum**. Food seeds are not seed extracts. The compound diosgenin is also a separate form.
+
+| Form or question | What was tested | What it means |
+|---|---|---|
+| Seed extract | Cancer cells in the lab, including breast, pancreas, and prostate cells (S-013) | Growth slowed and some cells died. This is a lab signal. |
+| Methanol-based seed extract | MCF-7 and SK-BR3 breast-cancer cells (S-014) | Failed cell division and cell death were seen. Changes involved p53, a cell-control protein, and mitochondria, the cell's power units. |
+| Food or supplements | No human cancer-treatment proof in these sources | Eating seeds does not copy a lab extract result. |
+
+S-014 had a short mouse safety test. The mice were not tested for tumor treatment. Strong extracts can lower blood sugar or cause an allergy. They can also upset the gut. More than food amounts is unsafe when pregnant (S-015). The care team should know about all supplements.
+
+Grade: **mechanism**. Human cancer treatment: **not established**. Claims: C-023–C-025.
+
+### W-022 Castor oil and separate castor-plant research
+
+Castor is **Ricinus communis**. The plant name does not make each form the same treatment.
+
+| Use or material | Evidence | Boundary |
+|---|---|---|
+| Oil rubbed on skin or oil packs over a lump | No proven human cancer benefit (S-017) | A skin use does not show that a tumor shrinks. |
+| Oil packs for constipation | Small human symptom study (S-018) | The study did not measure tumor control. |
+| Castor fruit extract | Cell and 4T1 mouse tumor results (S-016) | The study used a lab fruit extract, including injections in mice. It did not test oil packs. |
+| Modified castor oil in a paclitaxel formulation | Inactive drug carrier in the cited FDA label (S-019) | Paclitaxel is the cancer drug. Household oil is not a replacement. |
+| Antibody joined to ricin A-chain | Targeted drug research (S-021) | Ricin is a poison (S-020). This is not raw beans or castor oil. |
+
+Castor oil can cause bowel movements. That use is not a cancer treatment. No home extract, raw bean use, or cancer dose is offered here.
+
+Grade: oil cancer claim **not-supported**; fruit extract **mechanism**; pack symptoms **shown outside oncology**. Claims: C-026–C-030, C-042.
+
+### W-023 Comfrey powder
+
+Comfrey is **Symphytum officinale**. The plant part and poison content must be known. Roots, leaves, lab extracts, and tested skin creams are not the same form.
+
+| Evidence | Finding | Limit |
+|---|---|---|
+| Long-term rat feeding study (S-023) | Liver tumors followed comfrey exposure | Animal harm evidence; not a measured human risk rate. |
+| Short-term rat extract study (S-024) | Fewer early liver lesions, but more signs of cell injury | Not a cure, not a human trial, and not proof for powder. |
+| EMA skin-medicine assessment (S-022) | Named skin preparations have a use for minor sprains and bruises | Does not support cancer treatment or raw powder use. |
+
+**Do not swallow comfrey powder.** Comfrey can contain liver poisons called pyrrolizidine alkaloids. Drying or grinding does not prove the poisons are gone. Do not make a DMSO skin mix with the powder. No filed source shows that mix is safe or treats tumors.
+
+Grade: **harm concern**, with a limited animal signal kept visible. Claims: C-031–C-033.
+
+### W-024 Tree-frog gut bacteria
+
+S-025 is the matched paper from 2025. The study used a live **Ewingella americana** strain from a Japanese tree frog. The frog species is **Dryophytes japonicus**. Raw gut material was not the tested form.
+
+The main test used BALB/c mice with Colon-26 tumors. All five treated mice in that group had a complete response. Direct cell killing and an immune response were seen. Those results are from one strain and a small test group. The test does not show a cure in people.
+
+The mouse safety checks do not prove safety for people. This species has caused human infections (S-026). Do not collect, swallow, grow, or inject frog gut material as treatment.
+
+Grade: **mechanism / animal result**. Claims: C-034–C-036. Open: independent repeat tests, other tumor models, and human safety and benefit.
+
+### W-025 DMSO on skin with a compound
+
+**DMSO means dimethyl sulfoxide.** DMSO is a solvent. A solvent is a liquid that can dissolve some compounds. DMSO can help some drugs cross skin (S-027). The exact compound, mix, and skin site must be known. Skin entry does not prove that a useful dose can reach a tumor.
+
+| Named use | What is known | What it does not prove |
+|---|---|---|
+| ALA plus DMSO, light, and skin scraping | A human study followed 44 people with 60 basal-cell skin-cancer lesions (S-028). ALA is a medical compound used with light. | The combined treatment does not show an effect from DMSO alone, from herbs, or against internal tumors. |
+| Care after a cancer drug leaks from a vein | Topical DMSO has been studied to limit local tissue injury (S-029, S-030). | This is care for an injury, not a tumor treatment. The care team must choose the right response. |
+| RIMSO-50 | A prescription bladder treatment has a DMSO label (S-031). | Bladder approval does not approve a skin cancer mix. |
+| Unnamed herbs plus DMSO on skin | No exact herb, compound, or formulation was supplied. No human benefit is established for that mix here. | A lab result for an herb does not establish a safe skin mix. |
+
+These records do not support an herb mix for cancer. Do not make a home mix with comfrey, strong oils, or untested compounds. DMSO can change how much of a compound crosses skin. A cancer pharmacist should check the whole mix and all current drugs. A pharmacist is a drug expert.
+
+One lab study tested DMSO mixed with some platinum cancer drugs (S-032). The drugs were changed and were less active. The study does not show a risk rate for skin use in people. The exact drug and mix need a safety check.
+
+Grade: **shown for the named human medical contexts**, **mechanism for skin passage and drug mixing**, and **not-supported for an unnamed herb cancer mix**. Claims: C-037–C-041.
+
 ## This-week heat (detriment first)
 
 Harm-flag / do not start new: wormwood oil or cleanse kit; black-walnut hull kit; new black-seed oil; high-dose curcumin; untested shilajit; concentrated cayenne capsules; swallowed or injected hydrogen peroxide.

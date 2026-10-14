@@ -1,5 +1,89 @@
 export const evidenceItems = [
   {
+    id: "fenugreek",
+    name: "Fenugreek",
+    short: "Fenugreek",
+    constituent: "Food seeds · seed extract · diosgenin",
+    evidence: "Cancer-cell studies; human benefit not shown",
+    evidenceClass: "preclinical",
+    status: "Study further",
+    human: "The filed studies do not show that fenugreek treats cancer in people.",
+    rationale: "Cancer cell growth was slower after seed extracts in the lab. A breast-cell study found failed cell division and cell death.",
+    boundary: "Food seeds are not lab extracts. Large amounts can lower blood sugar or cause an allergy. The care team should know about supplements.",
+    mechanisms: ["cell-growth"],
+    refs: ["C-023", "C-024", "C-025", "S-013", "S-014", "S-015"]
+  },
+  {
+    id: "castor-oil",
+    name: "Castor oil",
+    short: "Castor oil",
+    constituent: "Skin oil · oil packs · oral laxative · drug carrier",
+    evidence: "No proven cancer benefit for the oil",
+    evidenceClass: "supportive",
+    status: "Keep uses separate",
+    human: "Oil packs have been studied for constipation, not tumor control. A modified oil is a carrier for some cancer drugs. The active drug is the cancer treatment.",
+    rationale: "There is no proof that rubbing oil on tumors treats cancer in people. Fruit extract and ricin are other research materials.",
+    boundary: "Store-bought oil is not fruit extract, ricin, or a drug carrier. Ricin is a poison. Do not make or use raw bean products.",
+    mechanisms: ["supportive", "harm"],
+    refs: ["C-026", "C-027", "C-029", "C-030", "C-042", "S-016", "S-017", "S-018", "S-019", "S-020", "S-021"]
+  },
+  {
+    id: "castor-fruit-extract",
+    name: "Castor plant fruit extract",
+    short: "Castor fruit extract",
+    constituent: "Lab fruit extract from Ricinus communis",
+    evidence: "Cell and mouse studies; not oil-pack proof",
+    evidenceClass: "preclinical",
+    status: "Lab research only",
+    human: "The filed study did not test cancer treatment in people.",
+    rationale: "Cell death and less movement were seen after fruit extract in breast-cancer cells. Tumor growth was slower in mice.",
+    boundary: "The study used a lab extract and injections in mice. It did not test castor oil rubbed on skin. Raw beans can poison people.",
+    mechanisms: ["cell-growth", "harm"],
+    refs: ["C-028", "S-016", "S-020"]
+  },
+  {
+    id: "comfrey",
+    name: "Comfrey powder",
+    short: "Comfrey powder",
+    constituent: "Leaf or root powder · lab extract · skin medicine",
+    evidence: "Liver harm concern; cancer benefit not shown",
+    evidenceClass: "harm",
+    status: "Do not swallow",
+    human: "Comfrey powder has no proven cancer use in people. Some skin creams are used for sprains and bruises.",
+    rationale: "Early liver lesions were fewer in one rat test. Cell harm was greater. Liver tumors were seen in a long rat feeding test.",
+    boundary: "Comfrey can contain liver poisons. Do not swallow the powder. A tested skin medicine is not raw powder or a DMSO mix.",
+    mechanisms: ["cell-growth", "harm"],
+    refs: ["C-031", "C-032", "C-033", "S-022", "S-023", "S-024"]
+  },
+  {
+    id: "tree-frog-gut-bacteria",
+    name: "Tree-frog gut bacteria / Ewingella americana",
+    short: "Tree-frog gut bacteria",
+    constituent: "A live bacterial strain from a Japanese tree frog",
+    evidence: "Mouse tumor response; no human cancer trial in this paper",
+    evidenceClass: "preclinical",
+    status: "Study further",
+    human: "The 2025 paper tested mice, not people. The paper does not show a cure for human cancer.",
+    rationale: "All five mice in one test group had a complete tumor response. Direct cell killing and an immune response were seen in the study.",
+    boundary: "The test used live bacteria in mice with Colon-26 tumors. It did not test raw gut material. This species can cause human infections.",
+    mechanisms: ["cell-growth", "immune-combination", "harm"],
+    refs: ["C-034", "C-035", "C-036", "S-025", "S-026"]
+  },
+  {
+    id: "dmso",
+    name: "DMSO on skin / compound mixes",
+    short: "DMSO on skin",
+    constituent: "Solvent · drug carrier · studied skin-cancer treatment mix",
+    evidence: "Human studies for named medical uses; no herb-mix proof",
+    evidenceClass: "human",
+    status: "Name the compound first",
+    human: "A skin-cancer study used DMSO with ALA, a medical compound, light, and scraping. It did not test herbs or DMSO alone.",
+    rationale: "DMSO can help some drugs cross skin. Care teams also use it for some injuries from cancer drugs leaking out of a vein.",
+    boundary: "Skin entry does not prove tumor delivery. No named herb mix was supplied. Do not make a home mix; drugs and skin risks need review.",
+    mechanisms: ["supportive", "harm"],
+    refs: ["C-037", "C-038", "C-039", "C-040", "C-041", "S-027", "S-028", "S-029", "S-030", "S-031", "S-032"]
+  },
+  {
     id: "cloves",
     name: "Cloves",
     short: "Cloves / eugenol",
@@ -209,6 +293,7 @@ export const mechanismLabels = {
 };
 
 export const researchQueue = [
+  { priority: 0, item: "Fenugreek / castor / comfrey / tree-frog bacteria / DMSO", work: "Check the new source-linked claims with a second reader. Keep forms, mouse results, skin-cancer care, and untested herb mixes separate." },
   { priority: 1, item: "Turmeric / curcumin", work: "Add paper-level cancer mechanism, breast-cancer, pharmacology, and human-trial sources; separate curcumin from turmeric-food evidence." },
   { priority: 2, item: "Cloves / eugenol", work: "Replace class-level S-011 with exact cancer paper citations and distinguish eugenol, extract, oil, and culinary clove." },
   { priority: 3, item: "Black seed / thymoquinone", work: "Add exact preclinical and human adjunct oncology citations." },

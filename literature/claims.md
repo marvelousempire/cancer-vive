@@ -29,6 +29,27 @@ Status key: `seed` | `reviewed` | `disputed` | `retired`
 | C-021 | Intermittent hypoxia training is a demonstrated cancer treatment. | not-supported | — | §06 | seed |
 | C-022 | A completed breast-cancer trial studied a curcumin formulation for treatment-related inflammation and fatigue; its listed endpoints do not establish tumor control or survival benefit. | shown | S-012 | §09(a) | seed |
 
+| C-023 | Fenugreek seed extract slowed growth and caused cell death in breast, pancreatic, and prostate cancer cell lines. | mechanism | S-013 | W-021 | seed |
+| C-024 | A methanol-based fenugreek seed extract caused failed cell division and cell death in MCF-7 and SK-BR3 breast-cancer cells, with p53 and mitochondrial pathway changes. | mechanism | S-014 | W-021 | seed |
+| C-025 | Fenugreek food, powder, or supplements are proven cancer treatments in people. | not-supported | S-013 S-014 S-015 | W-021 | seed |
+| C-026 | Castor oil rubbed on skin or used in packs is a proven cancer treatment in people. | not-supported | S-017 | W-022 | seed |
+| C-027 | A small human castor-oil-pack study measured constipation symptoms rather than cancer outcomes. | shown | S-018 | W-022 | seed |
+| C-028 | An ethanol-based castor fruit extract caused cell death and reduced movement in breast-cancer cells and reduced tumor volume in a 4T1 mouse model. | mechanism | S-016 | W-022 | seed |
+| C-029 | The cited paclitaxel label lists modified castor oil as an inactive carrier, not the cancer-treating drug. | shown | S-019 | W-022 | seed |
+| C-030 | A laboratory-made antibody joined to ricin A-chain has been studied for targeted cancer-cell killing, which is a different material from castor oil. | mechanism | S-021 | W-022 | seed |
+| C-031 | Feeding comfrey leaves or roots to rats caused liver tumors in a long-term experiment. | mechanism | S-023 | W-023 | seed |
+| C-032 | A short-term rat study of comfrey extract found fewer early liver lesions alongside increased signs of cell injury, not a demonstrated human treatment. | mechanism | S-024 | W-023 | seed |
+| C-033 | Comfrey powder is proven to treat cancer in people or gains that proof from skin medicines used for sprains and bruises. | not-supported | S-022 S-023 S-024 | W-023 | seed |
+| C-034 | A Japanese tree-frog gut strain of Ewingella americana produced complete responses in all five Colon-26 tumor-bearing mice in the paper's main comparison group. | mechanism | S-025 | W-024 | seed |
+| C-035 | The frog-strain mouse study found direct tumor-cell killing and immune activation, but did not test cancer treatment in people. | mechanism | S-025 | W-024 | seed |
+| C-036 | Limited safety findings for the frog-derived strain in mice establish human safety for Ewingella americana despite reports of human infection. | not-supported | S-025 S-026 | W-024 | seed |
+| C-037 | DMSO increased estradiol passage through tested skin samples in a patch study, which does not establish delivery of an herb to a tumor. | mechanism | S-027 | W-025 | seed |
+| C-038 | A human basal-cell skin-cancer study tested DMSO-supported ALA light treatment after scraping, so its outcomes cannot be assigned to DMSO alone or herbs. | shown | S-028 | W-025 | seed |
+| C-039 | Topical DMSO has been studied for tissue injury from leaked cancer drugs, a supportive-care use distinct from tumor treatment. | shown | S-029 S-030 | W-025 | seed |
+| C-040 | DMSO mixed with unnamed herbs on skin is a demonstrated treatment for internal tumors or skin cancer in this corpus. | not-supported | — | W-025 | seed |
+| C-041 | DMSO altered and reduced activity of some platinum cancer drugs in laboratory mixing experiments, not a measured risk estimate for topical use in people. | mechanism | S-032 | W-025 | seed |
+| C-042 | Ricin in castor beans is a poison and does not make raw bean products a safe cancer treatment. | shown | S-020 | W-022 | seed |
+
 ## How to add a row
 
 1. One sentence.
