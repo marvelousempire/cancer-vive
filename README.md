@@ -18,7 +18,13 @@ Cancer Vive includes a governed React/Vite public evidence explorer deployed thr
 - app source: `src/`
 - deploy workflow: `.github/workflows/pages.yml`
 
-The web interface is a projection of the research corpus. Markdown and JSON research files remain canonical.
+The public wording lives in `src/user-messages.json`. The full claim and source records stay in `literature/`. Raw records open only in closed Expert details. No dated private case notes are shipped in the client.
+
+Every topic gives the tested form, the human-study limit, a visible caution, a useful next step, and source links. Learn includes spike proteins, sugar, product forms, and oxygen claims.
+
+Before release, run the installed ClarifyThat tool in enforced `board-grade-5` mode on the public prose. Save a receipt in `literature/language-review.json` with the exact JSON SHA-256 and each checked block. Short labels need a manual review; exact drug and source names are preserved. A language pass is not a scientific review. The content gate rejects stale or failed receipts and missing claims or cautions.
+
+Run `npm run check:content`, `npm test`, and `npm run build`. A clean release emits `dist/release.json` with its exact version and commit. Confirm that record on Pages, then check the real topic search, source links, comparison, and Learn page.
 
 ## Scope
 

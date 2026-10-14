@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.8.0 — 2026-10-13
+
+- Rewrote the whole public site in plain words, with short answers, visible cautions, and useful questions.
+- Added a spike-protein lesson. Kept infection, vaccines, lab protein tests, and cancer outcomes separate.
+- Kept exact study citations and original claim records in closed Expert details.
+- Put the public words in one governed file and added an enforced ClarifyThat gate.
+- Added a build record so the live version can be tied to its source commit.
+- Kept topic search, comparison, themes, and menu controls. Added direct links to each section.
+
 ## 0.7.1 — 2026-10-13
 
 - Added fenugreek, castor oil, separate castor fruit-extract research, comfrey powder, tree-frog gut bacteria, and DMSO skin/compound entries.

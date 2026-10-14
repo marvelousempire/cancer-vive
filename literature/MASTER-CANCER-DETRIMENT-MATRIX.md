@@ -104,3 +104,7 @@ idea / traditional claim
 ```
 
 No row skips levels because another form of the same substance looked promising.
+
+## Spike-protein education
+
+Spike-protein education separates viral infection, vaccine targets, isolated proteins, and cancer claims. The 2025 infection study contains mouse findings and human associations; it is not a vaccine or isolated-spike trial. See C-043–C-048 and S-033–S-038. Public wording lives in `src/user-messages.json`.

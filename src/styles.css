@@ -768,3 +768,30 @@ dd { margin: 0; color: var(--soft); font-size: .82rem; line-height: 1.58; }
 .theme-root .orbit-core { background: var(--surface-3); border-color: var(--line-strong); }
 .theme-root .orbit-core span { color: var(--mint-strong); }
 .theme-root .rule-card, .theme-root .evidence-card, .theme-root .modal-backdrop { background: var(--surface); }
+
+/* Short answers, visible cautions, and closed study details use the existing theme. */
+.site-note { color: var(--muted); font-size: .9rem; line-height: 1.6; max-width: 85ch; }
+.topic-summary, .evidence-card > p { font-size: 1rem; line-height: 1.65; }
+.caution-box { border-left: 3px solid var(--amber); padding: .7rem 1rem; margin: 1rem 0; background: var(--surface-2); }
+.caution-box p { line-height: 1.65; margin-bottom: 0; }
+.topic-details > summary, .expert-details > summary, .lesson > summary { cursor: pointer; min-height: 44px; padding: .8rem 0; font-weight: 650; }
+.topic-details, .expert-details { border-top: 1px solid var(--line); margin-top: 1rem; }
+.topic-details .source-links { grid-template-columns: 1fr; }
+.expert-details .refs { flex-wrap: wrap; }
+.lesson { border: 1px solid var(--line); border-radius: 20px; padding: 1rem 1.5rem; margin: 1.5rem 0; background: var(--surface); }
+.lesson > summary { font-size: clamp(1.2rem, 2.5vw, 1.8rem); }
+.lesson section { max-width: 85ch; padding: .5rem 0 1.2rem; }
+.lesson p { line-height: 1.75; }
+.lesson .source-links { grid-template-columns: 1fr; }
+.proof-step { margin-top: 1rem; }
+.proof-step p { margin: .3rem 0; }
+.release-details { margin: 1rem 0 2rem; color: var(--muted); }
+.release-details p { overflow-wrap: anywhere; }
+
+/* Keep the reading area clear and the page titles compact. */
+.theme-control { position: relative; top: auto; right: auto; width: max-content; margin: 1rem 1rem 1rem auto; }
+.hero-panel h1, .view-title { font-size: clamp(2.1rem, 4vw, 4rem); line-height: 1.08; letter-spacing: -.035em; }
+.hero-panel { min-height: auto; padding: 3rem 2vw; gap: 2rem; }
+.evidence-harm { color: var(--amber); border-color: var(--amber); }
+.evidence-cells { color: var(--mint); }
+.evidence-education, .evidence-other { color: var(--blue); }
