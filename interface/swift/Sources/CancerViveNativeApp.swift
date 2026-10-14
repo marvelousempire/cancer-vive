@@ -12,6 +12,7 @@ struct CancerViveNativeApp: App {
     }
 }
 struct Notes {
+    let palette:InversePalette
     let content:StudyContent, release:BuildRecord, claims:String, sources:String
     let sourceLinks:[SourceLink]
     let identity:FatherConsoleIdentity
@@ -21,6 +22,7 @@ struct Notes {
             return try Data(contentsOf:url)
         }
         content=try JSONDecoder().decode(ContentFile.self,from:data("user-messages","json")).normal_view
+        palette=try JSONDecoder().decode(DesignProfile.self,from:data("design-dna.profile","json")).domains.paint.palette
         try content.validate()
         release=try JSONDecoder().decode(BuildRecord.self,from:data("release","json"))
         claims=String(decoding:try data("claims","md"),as:UTF8.self)
@@ -47,16 +49,19 @@ struct CancerReader:View {
     @State private var selection=CompareSelection()
     @State private var comparison=false
     @AppStorage("cancer-vive.native.theme.v1") private var theme="auto"
+    @Environment(\.colorScheme) private var scheme
     private var c:StudyContent { notes.content }
     private func u(_ key:String)->String { c.ui[key] ?? key }
     private func navigate(_ id:String, _ search:String="") { query=search; category="all"; grade="all"; layout="cards"; route=Route.all.first{$0.id==id} ?? Route.all[0] }
     var body:some View {
         NavigationSplitView {
-            List(Route.all,selection:Binding<Route?>(get:{route},set:{newRoute in if newRoute?.id != route?.id { navigate(newRoute?.id ?? "dashboard") }})) { r in Label(u(r.key),systemImage:r.symbol).tag(r) }
+            List(Route.all,selection:Binding<Route?>(get:{route},set:{newRoute in if newRoute?.id != route?.id { navigate(newRoute?.id ?? "dashboard") }})) { r in Label { Text(u(r.key)) } icon: { Image(systemName:r.symbol).foregroundStyle(notes.palette.color("soft",scheme)) }.tag(r) }
                 .navigationTitle("Cancer Vive").frame(minWidth:160)
+                .scrollContentBackground(.hidden)
+                .background(notes.palette.color("bg",scheme))
         } detail: {
             VStack(spacing:0) {
-                Text(u("scope")).font(.callout).foregroundStyle(.secondary).frame(maxWidth:.infinity,alignment:.leading).padding()
+                Text(u("scope")).font(.callout).frame(maxWidth:.infinity,alignment:.leading).padding()
                 ScrollView {
                     VStack(alignment:.leading,spacing:20) {
                         switch route?.id {
@@ -67,18 +72,19 @@ struct CancerReader:View {
                         default: start
                         }
                         Divider()
-                        Text(c.pages["footer"] ?? "").foregroundStyle(.secondary)
+                        Text(c.pages["footer"] ?? "")
                         Text(u("checked")).font(.caption)
                         Text("\(u("version")) \(notes.release.version)\(notes.release.dirty ? " · " + u("draft") : "")").font(.caption)
                         DisclosureGroup(u("code")) { Text(notes.release.commit).font(.system(.caption,design:.monospaced)); Link(u("code"),destination:URL(string:"https://github.com/marvelousempire/cancer-vive")!) }
                     }.padding(24).frame(maxWidth:1100,alignment:.leading)
                 }
                 if !selection.ids.isEmpty {
-                    HStack { Text("\(selection.ids.count) \(u("selected"))"); Spacer(); Button(u("clear")){selection.ids=[]}; Button(u("compare")){comparison=true}.buttonStyle(.borderedProminent) }.padding().background(.bar)
+                    HStack { Text("\(selection.ids.count) \(u("selected"))"); Spacer(); Button(u("clear")){selection.ids=[]}; Button(u("compare")){comparison=true}.buttonStyle(.borderedProminent) }.padding().background(notes.palette.color("surface-2",scheme))
                     HStack { ForEach(c.topics.filter{selection.ids.contains($0.id)}) { t in Button("\(t.name) ×"){selection.toggle(t.id)}.accessibilityLabel("\(u("remove")): \(t.name)") } }.padding(.bottom,8)
                 }
             }
         }
+        .modifier(InverseTheme(palette:notes.palette))
         .toolbar {
             Picker(u("theme"),selection:$theme) { Text(u("auto")).tag("auto");Text(u("light")).tag("light");Text(u("dark")).tag("dark") }.pickerStyle(.segmented).frame(width:220)
         }
@@ -88,6 +94,7 @@ struct CancerReader:View {
                 HStack { Text(u("compare")).font(.title2); Spacer(); Button(u("close")){comparison=false}.keyboardShortcut(.cancelAction) }.padding()
                 ScrollView([.horizontal,.vertical]) { HStack(alignment:.top,spacing:16) { ForEach(c.topics.filter{selection.ids.contains($0.id)}) { topic in topicCard(topic,full:true).frame(width:320) } }.padding() }
             }.frame(minWidth:1040,minHeight:640)
+                .modifier(InverseTheme(palette:notes.palette))
         }
     }
     private func heading(_ title:String,_ text:String)->some View { VStack(alignment:.leading,spacing:10) { Text(title).font(.largeTitle.bold());Text(text).fixedSize(horizontal:false,vertical:true) } }
@@ -118,7 +125,7 @@ struct CancerReader:View {
             if layout=="cards" { ForEach(filtered) { t in topicCard(t) } } else { topicTable(filtered,compare:true) }
         }
     }
-    private func proof(_ t:Topic)->some View { Text(c.grades[t.grade]?.label ?? "").font(.caption.bold()).foregroundStyle(.secondary) }
+    private func proof(_ t:Topic)->some View { Text(c.grades[t.grade]?.label ?? "").font(.caption.bold()) }
     private func compareButton(_ t:Topic)->some View {
         Button(selection.ids.contains(t.id) ? u("selected") : u("add")) { FatherHaptics.impact();selection.toggle(t.id) }
             .disabled(!selection.canAdd(t.id)).accessibilityLabel("\(selection.ids.contains(t.id) ? u("remove") : u("add")): \(t.name)")

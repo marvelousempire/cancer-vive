@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.2 — 2026-10-14
+
+- Light and Dark now swap white and the same blue. Auto follows the system.
+- All three app targets read one shared color palette. Native SwiftUI keeps native controls.
+- Fixed light-mode search text that used a hard-coded pale color.
+
 ## 0.9.1 — 2026-10-14
 
 - Added full local signing of the Mac Console bundle. The linker signature alone did not bind its app resources.
