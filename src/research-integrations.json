@@ -1,0 +1,33 @@
+{
+  "schema": "cancer-vive.research-integrations/v1",
+  "disclosure": "These are integration boundaries, not live connections, patient risk scores, clinical recommendations or commissioned evaluation authority.",
+  "systems": [
+    {
+      "id": "aot",
+      "name": "AoT",
+      "role": "Reasoning or organizational layer — authoritative upstream contract not yet verified.",
+      "status": "contract-needed",
+      "reference": null,
+      "allowed": "Display proposed reasoning steps and explicit uncertainty only after a verified schema is mapped.",
+      "blocked": "No invented AoT scores, medical deductions, patient models or implicit certification."
+    },
+    {
+      "id": "scorethat",
+      "name": "ScoreThat",
+      "role": "Independent research and instrumentation for provenance, metric integrity, uncertainty and shadow experiments.",
+      "status": "reference-only",
+      "reference": "https://github.com/marvelousempire/scorethat",
+      "allowed": "Use future typed provenance/research receipt adapters on the server after contract review; link to the owner now.",
+      "blocked": "No client-side research tokens, clinical risk scores, live formula changes, or automatic clinical assertion promotion."
+    },
+    {
+      "id": "else",
+      "name": "ELSE v1",
+      "role": "Independent versioned evaluation authority with scoped shadow API and durable receipts.",
+      "status": "reference-only",
+      "reference": "https://github.com/marvelousempire/else",
+      "allowed": "Future authenticated server-mediated shadow evaluations with readback and explicit scope; link to the owner now.",
+      "blocked": "No direct browser token access, no patient rating mutation, no claim that a shadow result is an approved clinical score."
+    }
+  ]
+}
