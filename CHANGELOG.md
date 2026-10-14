@@ -7,6 +7,7 @@
 - Kept lab, mouse, human symptom, skin-cancer combination, and untested herb-mix evidence separate.
 - Flagged comfrey liver harm, ricin poisoning, and bacterial infection risks. Added no dose or home treatment recipe.
 - Kept new claims at seed pending a second reader.
+- Added a Gitea check route with a supported checkout runtime. It runs the same source and build checks.
 
 ## 0.7.0 — 2026-09-27
 
