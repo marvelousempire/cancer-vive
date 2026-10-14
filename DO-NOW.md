@@ -1,7 +1,7 @@
-# Boolean investigation release
+# Study answer release
 
-Version 0.10.0 ships question-first cards and tables in Web, Mac Console and native SwiftUI. All topics include an explicit question and answer state. Three questions ask about exact reported source findings and have scoped Yes answers. The other growth questions remain open; no untested question is marked No. Findings, proof links and follow-up questions lead. Risks remain in study details.
+Version 0.11.0 adds seven scoped Yes and three No answers from primary studies. The 21 topics now have ten Yes, three No and eight Open answers. No means the named test did not show the named benefit; it does not mean every form or cancer has been ruled out. All eighteen former Open topics were investigated. Eight retain comparison, access, endpoint, or reliability gaps. Wider food, oil, powder and human-treatment questions remain open.
 
-The full cancer detriment matrix and original eight-review Truth Filter are included on Questions in all targets. The latter is restored verbatim from commit 928f2dcb529d07e1eb4180bffe69dcd949cdd64b. Exact original text is in labeled Expert details.
+Primary methods/results were read where accessible. Capsaicin and hydroxychloroquine answers use primary abstracts and figure legends where available; their full method gates remain explicit. Bitter wormwood and magnesium stay Open pending a matching full comparison audit. Ivermectin stays Open due the June 2026 journal concern about similar images and missing original data. All claims remain seed pending second scientific review.
 
-Release proof goes in ~/.nephew/run/cancer-vive-boolean-20261014/. Run language, content, semantic tests and all builds, then checked Gitea merge. Build clean merged main, install both Apple apps, and drive questions, open/yes states, source links, full documents and comparison. Current scientific second review remains open.
+The original cancer matrix and eight-review Truth Filter stay bundled in all targets. Release proof belongs in ~/.nephew/run/cancer-vive-study-audit-20261014/. Run language, content, source checks and all builds. Merge through checked Gitea, build clean merged main, install both Apple apps, and prove Yes, No, Open, source links, full documents and comparison in each running target.

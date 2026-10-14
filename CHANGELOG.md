@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.11.0 — 2026-10-14
+
+- Added ten scoped study answers: seven Yes and three No, each with its exact test and proof location.
+- Investigated all eighteen former Open topics; eight retain real matching-study, access, or reliability gaps.
+- Filed primary study read levels and kept wider product and human-use questions open.
+- Added the June 2026 ivermectin journal concern. Higher tumor response stays separate from survival.
+- Web, bundled Mac Console and native SwiftUI share the same updated content.
+
 ## 0.10.0 — 2026-10-14
 
 - Questions, findings and source proof lead all three app targets.
