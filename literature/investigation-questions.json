@@ -12,6 +12,38 @@
   },
   "questions": [
     {
+      "id": "chemotherapy-mpact-survival",
+      "topic_id": "chemotherapy",
+      "question": "Did adding nab-paclitaxel to gemcitabine improve survival in the MPACT pancreas trial?",
+      "answer": true,
+      "work_state": "answered",
+      "scope": {
+        "form": "nab-paclitaxel plus gemcitabine",
+        "cancer_model": "Previously untreated metastatic pancreatic adenocarcinoma in adults; stage IV by distant metastasis",
+        "comparison": "Gemcitabine alone; randomized 431 versus 430",
+        "endpoint": "Overall survival from randomization; Table 2, 12 and 24 months"
+      },
+      "findings": "The MPACT trial tested two cancer drugs against one drug in people with metastatic pancreas cancer. More people were alive with the two drugs at one and two years. The two-drug group also had more nerve and blood cell harm.",
+      "sources": [
+        {
+          "label": "Read the full pancreas trial",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4631139/"
+        }
+      ],
+      "review_state": "Primary full paper read; independent scientific reader open",
+      "next_check": "Which trial matches the cancer, stage and drug plan? Compare survival and harm at the same time point. Ask what the added drug changes versus the same care without it.",
+      "claim_ids": [
+        "C-080",
+        "C-081"
+      ],
+      "proof": {
+        "source_id": "S-073",
+        "read_level": "Full primary paper, methods/results/Tables 1–3/discussion read in PMC browser",
+        "checked_on": "2026-10-14",
+        "exact_result": "12-month OS 35% (30–39) versus 22% (18–27); 24-month OS 9% (6–13) versus 4% (2–7); median 8.5 versus 6.7 months, HR 0.72 (0.62–0.83)."
+      }
+    },
+    {
       "id": "fenugreek-growth",
       "topic_id": "fenugreek",
       "question": "Did the seed extract slow cancer cell growth in the filed lab study?",

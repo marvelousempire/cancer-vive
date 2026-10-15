@@ -1,0 +1,231 @@
+{
+  "schema": "cancer-vive.stage-context/v1",
+  "checked_on": "2026-10-14",
+  "rules": [
+    "No human stage inferred from preclinical models",
+    "No survival inferred from tumor response",
+    "No unknown rate treated as zero"
+  ],
+  "records": [
+    {
+      "topic_id": "chemotherapy",
+      "stage_state": "human-stage-IV-mpact;early-node-negative-tailorx",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4631139/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6172658/"
+      ],
+      "note": "MPACT only metastatic. TAILORx node-negative early disease, no invented numbered-stage subset. No universal chemotherapy survival rate."
+    },
+    {
+      "topic_id": "fenugreek",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "Breast, pancreas and prostate cell lines",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/19197146/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "castor-oil",
+      "stage_state": "human-non-oncology-and-unknown-animal",
+      "cancer_model": null,
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/1292501/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "castor-fruit-extract",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "4T1 mouse model",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/31601896/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "comfrey",
+      "stage_state": "animal-early-lesion",
+      "cancer_model": null,
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862927/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "tree-frog-gut-bacteria",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "Colon-26, BALB/c mice, treated group n=5",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41376334/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "dmso",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "Female BALB/c mice with subcutaneous 4T1 breast tumors; five per group",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3988339/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "spike-proteins",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "LNCaP prostate cancer cells",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775145/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "cloves",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "MDA-MB-231 tumors in nude mice; 10 mice split into two groups",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://link.springer.com/article/10.1186/1471-2407-13-600"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "turmeric",
+      "stage_state": "human-advanced-mixed",
+      "cancer_model": "Advanced or metastatic HER2-negative breast cancer; 37 analyzed of 42 enrolled",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://onlinelibrary.wiley.com/doi/full/10.1002/hsr2.70052"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "black-seed",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "MDA-MB-231 tumors in female nude mice; five mice per group",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0075356"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "black-walnut",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "LNCaP and DU145 cell cultures",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127467"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "wormwood",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "HeLa and SiHa cervical cancer cells",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10671751/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "shilajit",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "MCF-7 and MDA-MB-231 breast-cancer cell cultures; three independent experiments",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://journals.salviapub.com/index.php/gmj/article/download/1812/1196"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "humic-fulvic",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "OVCAR-3 and SK-OV-3 cell cultures",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/40221570/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "magnesium",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "BALB/c CT26 colon-tumor model, 8\u201312 mice/group; supplemented group n=10",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://journals.physiology.org/doi/full/10.1152/ajprenal.00688.2016"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "zinc",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "B16F10 melanoma in C57BL/6 mice; seven per group, repeated experiments",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2024.1389387/full"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "capsaicin",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "PC-3 prostate-cancer tumors in mice",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/16540674/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "cuban-oregano",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "Female Swiss albino mice with Ehrlich ascites carcinoma; six per group",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://www.jcancer.org/v04p0573.htm"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "hydrogen-peroxide",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": null,
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3877547/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "ivermectin",
+      "stage_state": "preclinical-no-human-stage",
+      "cancer_model": "MCF-7 and T-47D estrogen-stimulated breast cancer cell lines",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13132456/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "hcq",
+      "stage_state": "human-advanced-metastatic",
+      "cancer_model": "112 untreated advanced or metastatic pancreatic cancer patients; randomized 55 versus 57",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+      ],
+      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    }
+  ]
+}

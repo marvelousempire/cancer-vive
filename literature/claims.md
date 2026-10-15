@@ -97,3 +97,8 @@ Status key: `seed` | `reviewed` | `disputed` | `retired`
 3. At least one source id, or an explicit em dash if the claim is the absence of support.
 4. Point at a chapter.
 5. Start at `seed`. Move to `reviewed` only after a second reader checks the source.
+
+| C-080 | In MPACT metastatic pancreatic adenocarcinoma, added nab-paclitaxel improved overall survival versus gemcitabine alone: 35% versus 22% alive at one year and 9% versus 4% at two years. | shown | S-073 | Chemotherapy | seed |
+| C-081 | In MPACT, grade ≥3 neuropathy was 17% versus 1%, fatigue 17% versus 7%, and neutropenia 38% versus 27% with the combination versus gemcitabine alone, with event-specific safety denominators. | shown | S-073 | Chemotherapy | seed |
+| C-082 | In the TAILORx randomized recurrence-score 11–25 group, nine-year overall survival was 93.9% with endocrine therapy and 93.8% with added chemotherapy; younger exploratory subgroups had some recurrence benefit. | shown | S-074 | Chemotherapy | seed |
+| C-083 | Chemotherapy can damage healthy fast-growing cells and can cause acute and long-term adverse effects that depend on the regimen and patient. | shown | S-075 S-076 | Chemotherapy | seed |

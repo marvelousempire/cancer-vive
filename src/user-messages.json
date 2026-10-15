@@ -158,6 +158,169 @@
     },
     "topics": [
       {
+        "id": "chemotherapy",
+        "name": "Chemotherapy",
+        "short": "Chemo",
+        "form": "Named cancer drug regimens in human trials",
+        "grade": "human",
+        "summary": "The MPACT trial tested two cancer drugs against one drug in people with metastatic pancreas cancer. More people were alive with the two drugs at one and two years. The two-drug group also had more nerve and blood cell harm.",
+        "research": "The MPACT trial tested two cancer drugs against one drug in people with metastatic pancreas cancer. More people were alive with the two drugs at one and two years. The two-drug group also had more nerve and blood cell harm.",
+        "human": "Chemo benefit depends on the cancer, stage, drug plan and patient group. A survival rate after trial entry is not a cure rate or a forecast for one person.",
+        "caution": "Chemo can cause side effects. The risks can differ by drug and person. Ask the care team about your drug plan, blood counts, infection signs and lasting harm.",
+        "next_step": "Which trial matches the cancer, stage and drug plan? You can compare survival and harm at the same time point. Ask what the added drug changes versus the same care without it.",
+        "refs": [
+          "C-080",
+          "C-081",
+          "C-082",
+          "C-083"
+        ],
+        "sources": [
+          {
+            "label": "Read the full pancreas trial",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4631139/"
+          },
+          {
+            "label": "Read the full breast trial",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6172658/"
+          },
+          {
+            "label": "Read the NCI chemotherapy guide",
+            "url": "https://www.cancer.gov/about-cancer/treatment/types/chemotherapy"
+          },
+          {
+            "label": "Read the NCI side effect guide",
+            "url": "https://www.cancer.gov/publications/patient-education/chemotherapy-and-you.pdf"
+          },
+          {
+            "label": "Read how cancer stage is defined",
+            "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+          }
+        ],
+        "tags": [
+          "drugs"
+        ],
+        "question": "Did adding nab-paclitaxel to gemcitabine improve survival in the MPACT pancreas trial?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test",
+        "study_details": [
+          {
+            "heading": "How chemotherapy works",
+            "text": "Chemo drugs can kill cancer cells or stop their growth. The drugs can also harm healthy cells that grow fast. A treatment plan may aim for cure, lower return risk, slower growth or relief of symptoms.",
+            "sources": [
+              {
+                "label": "Read the NCI chemotherapy guide",
+                "url": "https://www.cancer.gov/about-cancer/treatment/types/chemotherapy"
+              }
+            ]
+          },
+          {
+            "heading": "Cancer type and stage",
+            "text": "MPACT tested adults with metastatic pancreas cancer. The cancer had spread to distant sites, which is stage IV. The trial did not test early-stage cancer or people with only local spread.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4631139/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The trial had 431 people assigned to nab-paclitaxel plus gemcitabine and 430 to gemcitabine alone. Both groups had chemotherapy. The comparison was an added drug, not chemo versus no cancer care.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4631139/"
+              }
+            ]
+          },
+          {
+            "heading": "Survival at one and two years",
+            "text": "At one year after random assignment, 35% were alive with the two drugs and 22% with one drug. The gap was 13 percentage points. At two years, the rates were 9% and 4%. Proof is in Table 2.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4631139/"
+              }
+            ]
+          },
+          {
+            "heading": "Known side effects",
+            "text": "NCI says chemo side effects can include fatigue, hair loss, nausea and mouth sores. Some drugs can cause blood cell loss, infection risk, bleeding, bowel changes and nerve harm. The effects can differ by drug. Not every person has every effect.",
+            "sources": [
+              {
+                "label": "Read the NCI chemotherapy guide",
+                "url": "https://www.cancer.gov/about-cancer/treatment/types/chemotherapy"
+              },
+              {
+                "label": "Read the NCI side effect guide",
+                "url": "https://www.cancer.gov/publications/patient-education/chemotherapy-and-you.pdf"
+              }
+            ]
+          },
+          {
+            "heading": "Lasting side effects",
+            "text": "Some chemo effects can last after treatment. NCI names harm to the heart, lungs, nerves, kidneys and organs needed to have children. Some drugs can raise the risk of a second cancer years after treatment.",
+            "sources": [
+              {
+                "label": "Read the NCI side effect guide",
+                "url": "https://www.cancer.gov/publications/patient-education/chemotherapy-and-you.pdf"
+              }
+            ]
+          },
+          {
+            "heading": "Side effect rates in MPACT",
+            "text": "Serious nerve symptoms were in 17% with two drugs and 1% with one drug. Serious fatigue rates were 17% and 7%. Low infection-fighting blood cells were in 38% and 27%. The listed events are grade 3 or higher. Proof is in Table 3.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4631139/"
+              }
+            ]
+          },
+          {
+            "heading": "Why one survival rate cannot cover all chemo",
+            "text": "TAILORx tested early breast cancer with no spread to underarm lymph nodes. The cancers were hormone-sensitive and HER2-negative. The main compared group had a gene-test score from 11 to 25. A gene score is not a cancer stage.",
+            "sources": [
+              {
+                "label": "Read the full breast trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6172658/"
+              }
+            ]
+          },
+          {
+            "heading": "A different breast cancer result",
+            "text": "At nine years, about 94% were alive in both TAILORx groups. The comparison was hormone therapy alone versus hormone therapy plus chemo after surgery. Most in the tested gene-score group had no added gain. Some women age 50 or younger had less return of cancer with chemo.",
+            "sources": [
+              {
+                "label": "Read the full breast trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6172658/"
+              }
+            ]
+          },
+          {
+            "heading": "What was read",
+            "text": "The full MPACT and TAILORx papers were read, including methods, results, tables and discussion. A separate science reader has not checked these entries. The 2013 and 2018 results are dated trial results, not current rates for all patients.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4631139/"
+              },
+              {
+                "label": "Read the full breast trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6172658/"
+              }
+            ]
+          }
+        ],
+        "expert_view": {
+          "identity": "MPACT: Von Hoff et al. NEJM 2013;369:1691–1703. DOI 10.1056/NEJMoa1304369; PMID 24131140; NCT00844649. Full primary paper read in PMC browser, 2026-10-14. Previously untreated metastatic pancreatic adenocarcinoma, KPS ≥70; locally advanced disease excluded. ITT n=431 versus 430. Table 2: 12-month OS 35% (95% CI 30–39) versus 22% (18–27); p<0.001. 24-month OS 9% (6–13) versus 4% (2–7); p=0.02. Median OS 8.5 versus 6.7 months; HR 0.72 (95% CI 0.62–0.83). Grade ≥3 neuropathy 70/421 (17%) versus 3/402 (1%); fatigue 70/421 (17%) versus 27/402 (7%); neutropenia 153/405 (38%) versus 103/388 (27%). Different safety denominators retained. Quality of life not measured; open-label and sponsor-designed, analyzed and funded by Celgene. No head-to-head comparison with FOLFIRINOX.\n\nTAILORx: Sparano et al. NEJM 2018;379:111–121. DOI 10.1056/NEJMoa1804710; PMID 29860917; NCT00310180. Full primary paper read in PMC browser, 2026-10-14. HR-positive/HER2-negative, axillary node-negative early breast cancer; do not infer a uniform numbered stage. Randomized midrange score 11–25 analyzed n=6711: endocrine 3399 versus chemoendocrine 3312. Table 2: 9-year overall survival 93.9±0.5% versus 93.8±0.5% (Kaplan–Meier estimate ±SE). Primary invasive disease-free survival 83.3±0.9% versus 84.3±0.8%, HR 1.08 (95% CI 0.94–1.24), p=0.26. Overall survival secondary, HR 0.99, p=0.89. Nonadherence 11.8%; younger-age exploratory subgroup findings and possible ovarian suppression mechanism do not establish a universal no-benefit claim. Main-paper reading does not mean all supplementary appendices or an independent review have passed."
+        }
+      },
+      {
         "id": "fenugreek",
         "name": "Fenugreek",
         "short": "Fenugreek",
@@ -196,6 +359,20 @@
         "answer_label": "Yes, reported in this test",
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the cell study",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/19197146/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The filed tests used seed extracts in breast, pancreas and prostate cancer cells. A seed extract can differ from food seeds."
           },
@@ -210,6 +387,16 @@
           {
             "heading": "What was read",
             "text": "The linked study findings were filed before this source pass. A full read-depth record and second science review still need to be filed."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the cell study",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/19197146/"
+              }
+            ]
           }
         ]
       },
@@ -261,6 +448,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "No human cancer stage was tested in the filed oil-pack bowel study. The full 1992 tumor-extract paper is not available here. Its model and stage details still need a check.",
+            "sources": [
+              {
+                "label": "Read the study record",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/1292501/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What study lead was found",
             "text": "A 1992 paper has the title Antitumor effect of castor oil extract. The study record is real. The record has no abstract, which is the short study report."
           },
@@ -275,6 +476,16 @@
           {
             "heading": "What was read",
             "text": "The primary study record was read. The full 1992 study could not be read. No Yes or No has been added from the MSK review."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is filed for oil or skin packs. A missing survival result stays unknown. The gap is not a zero survival rate.",
+            "sources": [
+              {
+                "label": "Read the study record",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/1292501/"
+              }
+            ]
           }
         ]
       },
@@ -307,6 +518,20 @@
         "answer_label": "Yes, reported in this test",
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the fruit-extract study",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/31601896/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The study used a lab fruit extract with breast cancer cells and mice with breast tumors. The mice had a shot of extract."
           },
@@ -321,6 +546,16 @@
           {
             "heading": "What was read",
             "text": "The linked study finding was filed before this source pass. A full read-depth record and second science review still need to be filed."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the fruit-extract study",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/31601896/"
+              }
+            ]
           }
         ]
       },
@@ -371,6 +606,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The full study tested rats with early liver lesions. Those lesions are not a human stage I, II, III or IV cancer. The study did not test treatment of an established human tumor.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862927/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The full study used a leaf extract by mouth in rats with early liver lesions. Early lesions are changed tissue spots before established tumors. The test did not use powder with DMSO on skin."
           },
@@ -393,6 +642,16 @@
           {
             "heading": "What was read",
             "text": "The full extract paper was read. The older long-term feeding paper was not read in full. A separate science reader has not checked the finding."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "The rat study did not measure human survival. Deaths and losses in a rat test cannot give a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862927/"
+              }
+            ]
           }
         ]
       },
@@ -434,6 +693,20 @@
         "answer_label": "Yes, reported in this test",
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the mouse tumor study",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/41376334/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The 2025 study used one live bacterial strain from a tree frog. The main group had five mice with colon-type tumors."
           },
@@ -452,6 +725,16 @@
           {
             "heading": "What was read",
             "text": "The named five-mouse result is in the filed study. A second science review remains Open. Infection reports from other strains cannot prove the exact strain has the same risk."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the mouse tumor study",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/41376334/"
+              }
+            ]
           }
         ]
       },
@@ -508,6 +791,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3988339/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The test used DMSO in salt water. The mice had shots into the belly for ten days. The test had five mice per group with breast tumors."
           },
@@ -530,6 +827,16 @@
           {
             "heading": "What was read",
             "text": "The full paper was read: methods, results, figures and discussion. A second AI source check is done. A separate science reader has not checked the finding."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3988339/"
+              }
+            ]
           }
         ]
       },
@@ -582,6 +889,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775145/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The test used one lab prostate cancer cell line. The cells had an isolated spike protein sample for three days. Cell colonies were counted on day nine."
           },
@@ -604,6 +925,16 @@
           {
             "heading": "What was read",
             "text": "The full paper was read: methods, results, figures and discussion. A second AI source check is done. A separate science reader has not checked the finding."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775145/"
+              }
+            ]
           }
         ]
       },
@@ -649,6 +980,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://link.springer.com/article/10.1186/1471-2407-13-600"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The study used pure eugenol, a clove compound, in mice with breast tumors. Ten mice were split into two groups. The test lasted four weeks."
           },
@@ -663,6 +1008,16 @@
           {
             "heading": "What was read",
             "text": "The full methods, results and Figure 6 were read. A repeat test and a separate science reader are still needed. Human tumor benefit stays Open."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://link.springer.com/article/10.1186/1471-2407-13-600"
+              }
+            ]
           }
         ]
       },
@@ -708,6 +1063,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The trial was for advanced breast cancer. Some people had cancer that had spread to distant sites. Each stage did not have its own checked result. The result does not cover all stages.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/hsr2.70052"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "People with advanced breast cancer had docetaxel, a cancer drug, with or without added curcumin. Curcumin is a turmeric compound. The study had 42 people and 37 were in the main check."
           },
@@ -722,6 +1091,16 @@
           {
             "heading": "What was read",
             "text": "The full methods and results were read. Five people were left out of the analysis. A larger test and separate science review are still needed. Food turmeric is a separate question."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "The main result was tumor response after six cycles. Tumor response is not a measure of how long people live. No checked survival rate for each stage is filed here.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/hsr2.70052"
+              }
+            ]
           }
         ]
       },
@@ -762,6 +1141,20 @@
         "answer_label": "Yes, reported in this test",
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0075356"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The study used pure thymoquinone, a black seed compound. Mice had breast tumors. Each group had five mice and the test lasted two weeks."
           },
@@ -776,6 +1169,16 @@
           {
             "heading": "What was read",
             "text": "The full methods and results were read. The control liquid, repeat result and human tumor benefit need more proof. A separate science reader is still needed."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0075356"
+              }
+            ]
           }
         ]
       },
@@ -815,6 +1218,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127467"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The study used pure juglone in two prostate cancer cell lines. Juglone is a walnut compound. The cells had the compound for two days."
           },
@@ -829,6 +1246,16 @@
           {
             "heading": "What was read",
             "text": "The full cell methods and Figure 6B were read. The mouse text and figure have model and unit conflicts. Those mouse results need a check. Walnut hull products and human tumor benefit stay Open."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127467"
+              }
+            ]
           }
         ]
       },
@@ -873,6 +1300,20 @@
         "answer_label": "Yes, reported in this test",
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10671751/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The test used a part taken from wormwood. Two cervical cancer cell lines had the extract for one day. Each group had six test wells."
           },
@@ -895,6 +1336,16 @@
           {
             "heading": "What was read",
             "text": "The full 2023 paper was read. The older 2012 oil paper could not be read in full. A separate science reader has not checked the finding."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10671751/"
+              }
+            ]
           }
         ]
       },
@@ -939,6 +1390,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://journals.salviapub.com/index.php/gmj/article/download/1812/1196"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The study used one named resin sample in two breast cancer cell lines. Three separate tests were run. Other resins can have different contents."
           },
@@ -953,6 +1418,16 @@
           {
             "heading": "What was read",
             "text": "The full results and methods were read from the study PDF. The same sample needs a repeat test and a separate science reader. Human tumor benefit stays Open."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://journals.salviapub.com/index.php/gmj/article/download/1812/1196"
+              }
+            ]
           }
         ]
       },
@@ -992,6 +1467,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/40221570/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The study used one supplier form of fulvic acid in two ovarian cancer cell lines. The tests ran over one, two and three days."
           },
@@ -1006,6 +1495,16 @@
           {
             "heading": "What was read",
             "text": "The full methods, results and Figure 2 were read. Direct counts, other mixes and human tumor benefit need more proof. A separate science reader is still needed."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/40221570/"
+              }
+            ]
           }
         ]
       },
@@ -1049,6 +1548,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://journals.physiology.org/doi/full/10.1152/ajprenal.00688.2016"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The test used mice with colon tumors and low magnesium. They had cisplatin, a cancer drug. The added magnesium plan changed food, drinking water and shots. Groups had eight to twelve mice."
           },
@@ -1071,6 +1584,16 @@
           {
             "heading": "What was read",
             "text": "The full paper was read: methods, results, figures and discussion. A second AI source check is done. A separate science reader has not checked the finding."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://journals.physiology.org/doi/full/10.1152/ajprenal.00688.2016"
+              }
+            ]
           }
         ]
       },
@@ -1110,6 +1633,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2024.1389387/full"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The study used high added zinc in mice with skin cancer tumors. Each group had seven mice. The tests were repeated."
           },
@@ -1124,6 +1661,16 @@
           {
             "heading": "What was read",
             "text": "The full methods and results were read. A separate science reader is still needed. The mouse result does not tell people to cut zinc from food."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2024.1389387/full"
+              }
+            ]
           }
         ]
       },
@@ -1167,6 +1714,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/16540674/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The test in the short report was pure capsaicin by mouth in mice with prostate tumors. The control mice had the same carrier with no capsaicin."
           },
@@ -1181,6 +1742,16 @@
           {
             "heading": "What was read",
             "text": "Only the primary abstract, the short study report, was read. Full-paper access failed. The app does not label that report as a full study review."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/16540674/"
+              }
+            ]
           }
         ]
       },
@@ -1220,6 +1791,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://www.jcancer.org/v04p0573.htm"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The study used a water leaf extract in mice with cancer cells in belly fluid. Each group had six mice. The test lasted nine days."
           },
@@ -1234,6 +1819,16 @@
           {
             "heading": "What was read",
             "text": "The full methods and results were read. Longer tests, harm checks and a separate science reader are still needed. Food leaves, oil and human benefit stay Open."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate is measured by this cell or animal finding. Cell activity and mouse tumor size are not a human survival percentage.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://www.jcancer.org/v04p0573.htm"
+              }
+            ]
           }
         ]
       },
@@ -1273,6 +1868,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The test used mice with tumors. No human cancer stage was tested for this finding. A mouse tumor does not prove a result at stage I, II, III or IV in people.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3877547/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The test used mice with tumors made from cells with a changed gene. Dilute peroxide was put into those tumors. Figure 7A says each group had six mice."
           },
@@ -1295,6 +1904,16 @@
           {
             "heading": "What was read",
             "text": "The full paper was read: methods, results, figures and discussion. A second AI source check is done. A separate science reader has not checked the finding."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "The mouse test did not measure how long people live. No human survival rate is known from that test.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3877547/"
+              }
+            ]
           }
         ]
       },
@@ -1347,6 +1966,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The cancer finding comes from cells or animals. No human cancer stage was tested for this finding. A cell line or mouse tumor does not prove an effect at human stage I, II, III or IV.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13132456/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "Two breast cancer cell lines had estrogen, a hormone, with ivermectin for five days. The study ran three separate tests. The 2026 study is from a different team."
           },
@@ -1369,6 +2002,16 @@
           {
             "heading": "What was read",
             "text": "The full 2026 paper was read. The journal concern on the older mouse paper was also read. A separate science reader has not checked the finding."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "The cell and mouse findings do not measure how long people live. No human survival rate is known from those tests.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13132456/"
+              }
+            ]
           }
         ]
       },
@@ -1413,6 +2056,20 @@
         },
         "study_details": [
           {
+            "heading": "Cancer type and stage",
+            "text": "The trial was in people with advanced or metastatic pancreas cancer. Metastatic means spread to distant sites, which is stage IV. The abstract does not give a separate survival result for each stage.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The trial had 112 people with advanced pancreas cancer. Fifty-five had added hydroxychloroquine with cancer drugs. Fifty-seven had the same cancer drugs alone."
           },
@@ -1427,6 +2084,16 @@
           {
             "heading": "What was read",
             "text": "The primary abstract and figure notes were read. Full-paper access was blocked. The full methods and a separate science check remain Open."
+          },
+          {
+            "heading": "Survival in people",
+            "text": "At twelve months after trial entry, 41% were alive with added hydroxychloroquine and 49% with the same cancer drugs alone. The trial had 55 and 57 people in those groups. The rates are for the trial groups, not a personal forecast.",
+            "sources": [
+              {
+                "label": "Read the cancer study",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+              }
+            ]
           }
         ]
       }

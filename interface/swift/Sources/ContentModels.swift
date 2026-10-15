@@ -7,7 +7,7 @@ struct StudyContent: Decodable {
     func validate() throws {
         guard !topics.isEmpty, Set(topics.map(\.id)).count == topics.count,
               topics.allSatisfy({ grades[$0.grade] != nil && !$0.caution.isEmpty && !$0.refs.isEmpty && !$0.sources.isEmpty }),
-              (topics.flatMap(\.sources) + lessons.flatMap { $0.sections.flatMap(\.sources) }).allSatisfy({ URL(string:$0.url)?.scheme == "https" })
+              (topics.flatMap(\.sources) + topics.flatMap { ($0.study_details ?? []).flatMap { $0.sources ?? [] } } + lessons.flatMap { $0.sections.flatMap(\.sources) }).allSatisfy({ URL(string:$0.url)?.scheme == "https" })
         else { throw ContentError.invalid }
     }
     func filtered(query:String, category:String, grade:String) -> [Topic] {
@@ -25,7 +25,7 @@ struct Step:Decodable { let title:String, text:String }
 struct Question:Decodable { let heading:String, text:String }
 struct SourceLink:Decodable,Identifiable { let label:String, url:String; var id:String { url } }
 struct ExpertIdentity:Decodable { let identity:String }
-struct StudyDetail:Decodable { let heading:String, text:String }
+struct StudyDetail:Decodable { let heading:String, text:String; let sources:[SourceLink]? }
 struct Topic:Decodable,Identifiable {
     let question:String, answer_label:String
     let answer:Bool?

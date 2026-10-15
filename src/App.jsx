@@ -36,7 +36,7 @@ function StudyDetails({ item }) {
   if (!item.study_details?.length) return null;
   return <section className="study-details" aria-label={u.study_details}>
     <h4>{u.study_details}</h4>
-    <dl>{item.study_details.map(row => <div key={row.heading}><dt>{row.heading}</dt><dd>{row.text}</dd></div>)}</dl>
+    <dl>{item.study_details.map(row => <div key={row.heading}><dt>{row.heading}</dt><dd>{row.text}{row.sources?.length > 0 && <SourceLinks sources={row.sources}/>}</dd></div>)}</dl>
   </section>;
 }
 
