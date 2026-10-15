@@ -124,3 +124,18 @@ All app topics now show cancer stage context and survival scope with source link
 ## Full-source detail pass · 2026-10-15
 
 Fenugreek C-092, fruit extract C-093, frog strain C-094 and HCQ C-095 now have full main-paper details in the app. Source audit: `third-source-audit-20261015.json`. The normal Quick view matrix includes every current topic and tested form. Castor oil, comfrey powder/DMSO, household peroxide and dandelion oil keep real matching-product gaps Open. New evidence is not independent clinical peer review.
+
+## Full 2024 seed main-paper review
+
+S-102 / C-104–C-107. Six selected aqueous ethanol extracts, not the pure seed oils, were tested by MTT after24h. VERO is a non-cancer monkey kidney cell line, not healthy human tissue. CC50 is half the viability signal; units micrograms/mL; values mean±SD, not patient survival.
+
+| Seed extract | VERO | FaDu | HeLa | RKO | SI FaDu / HeLa / RKO |
+|---|---|---|---|---|---|
+| Dandelion whole seeds |794.65±41.08|347.40±45.25|645.80±28.14|974.90±97.72|2.29 /1.23 /0.82|
+| Dandelion after oil removal |578.15±56.07|274.60±26.87|360.20±30.12|633.95±57.35|2.11 /1.61 /0.91|
+| Milk thistle whole seeds |480.55±6.29|190.05±17.47|254.50±31.54|270.55±13.65|2.53 /1.89 /1.78|
+| Milk thistle after oil removal |493.60±8.06|182.90±6.65|230.85±28.50|264.15±12.23|2.70 /2.14 /1.87|
+| Chamomile whole seeds |200.55±22.84|363.90±40.16|678.15±53.81|627.95±45.89|0.55 /0.30 /0.32|
+| Chamomile after oil removal |264.15±16.19|293.30±34.22|345.05±8.84|777.00±28.14|0.90 /0.77 /0.34|
+
+Scoped Yes: FaDu half-signal at lower exposure than VERO for both dandelion extracts. Scoped No: not all three cancer lines were more sensitive than VERO. RKO ratios below1 preclude that claim. Main oil-tumor benefit, human stage/survival, final DMSO vehicle/control and cell replicate count remain Open. Supplementary/raw data not read. Full 1992 castor and2025 seed-oil papers not obtained. [Full2024 source](https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/).

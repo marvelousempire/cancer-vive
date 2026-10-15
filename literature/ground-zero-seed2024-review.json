@@ -1,0 +1,162 @@
+{
+  "schema": "cancer-vive.ground-zero-review/v1",
+  "content_sha256": "0392bd7a3d9adad3c2512c058086575643db3cfdbbdc48ab3526d4bc13b769c8",
+  "automatic_status": "fail",
+  "automatic_log": "/tmp/cv-seed2024-groundzero.json",
+  "manual_review_status": "pass",
+  "reviewed_exception": "All listed root words refer to botanical plant parts. No administrator or system-root meaning. All new labels and numeric study rows manually reviewed. Unmodified scanner pass not claimed.",
+  "botanical_findings": [
+    {
+      "path": "$.normal_view.topics[2].form",
+      "text": "Oil extract requested; 2024 seed extracts, 2025 seed oil and water-based root extract are distinct forms"
+    },
+    {
+      "path": "$.normal_view.topics[2].caution",
+      "text": "The exact oil, plant part and route need a check. Do not replace cancer care with an oil based on a root study. Ask before putting new products on skin being treated with radiation."
+    },
+    {
+      "path": "$.normal_view.topics[2].sources[0].label",
+      "text": "Read the full root-extract study"
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[0].text",
+      "text": "The 2024 seed study tested throat, cervix and colon cancer cell lines. It also used a non-cancer monkey kidney cell line. No human cancer stage was tested. The separate root paper used colon cells and mice. Neither source gives a matched human stage result for oil."
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[0].sources[1].label",
+      "text": "Read the full root-extract study"
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[13].heading",
+      "text": "A separate root question has an answer"
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[13].text",
+      "text": "Did the water-based root extract slow tumor growth in this mouse test? Yes. Figure 4 shows lower tumor growth than in the control group. This answer is for the root extract, not oil."
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[13].sources[0].label",
+      "text": "Read the full root-extract study"
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[14].sources[0].label",
+      "text": "Read the full root-extract study"
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[15].text",
+      "text": "The control mice had salt water by mouth. The treated mice had the root extract by mouth. The test lasted 75 days. The paper has different wording for the schedule for the extract."
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[15].sources[0].label",
+      "text": "Read the full root-extract study"
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[16].text",
+      "text": "Figure 4 shows lower tumor growth with root extract. The main text does not give a clear final group mean with a range for that result. The abstract says more than 90% growth reduction. The result is not a human cure rate."
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[16].sources[0].label",
+      "text": "Read the full root-extract study"
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[17].sources[0].label",
+      "text": "Read the full root-extract study"
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[18].text",
+      "text": "The study needs a larger repeat test, clear dosing records and better harm checks. Human treatment benefit stays Open. Root water extract, leaf products and oil are separate forms."
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[18].sources[0].label",
+      "text": "Read the full root-extract study"
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[19].text",
+      "text": "The full 2024 seed main paper and the full root-water main paper were read. The 2025 seed-oil abstract was checked. Its full paper and the 1992 castor report are still missing. A separate science reader is still needed."
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[19].sources[0].label",
+      "text": "Read the full root-extract study"
+    },
+    {
+      "path": "$.normal_view.topics[2].study_details[20].sources[0].label",
+      "text": "Read the full root-extract study"
+    },
+    {
+      "path": "$.normal_view.topics[6].summary",
+      "text": "The leaf extract test had fewer early lesions with more liver cell injury. A separate ground-root test had more liver DNA changes. Neither test used a skin powder and DMSO mix or proved tumor treatment."
+    },
+    {
+      "path": "$.normal_view.topics[6].research",
+      "text": "The leaf extract test had fewer early lesions with more liver cell injury. A separate ground-root test had more liver DNA changes. Neither test used a skin powder and DMSO mix or proved tumor treatment."
+    },
+    {
+      "path": "$.normal_view.topics[6].sources[1].label",
+      "text": "Read the full ground-root study"
+    },
+    {
+      "path": "$.normal_view.topics[6].study_details[2].heading",
+      "text": "Did ground root raise liver DNA changes?"
+    },
+    {
+      "path": "$.normal_view.topics[6].study_details[2].text",
+      "text": "Yes, in a rat test. Six rats per group were given plain feed or feed with ground comfrey root for twelve weeks. A liver gene test had about 146 changed copies per million with comfrey and 30 with plain feed. Proof is in Table 1. The test was not of tumor shrinkage or a skin mix."
+    },
+    {
+      "path": "$.normal_view.topics[6].study_details[2].sources[0].label",
+      "text": "Read the full ground-root study"
+    },
+    {
+      "path": "$.normal_view.topics[6].study_details[3].heading",
+      "text": "What the root test can and cannot answer"
+    },
+    {
+      "path": "$.normal_view.topics[6].study_details[3].text",
+      "text": "The result is a sign of gene harm in rat liver. The result is not a human cancer risk rate. The gene changes fit a plant-poison pathway, but the whole root has many parts. A safe tumor effect of powder with DMSO stays Open."
+    },
+    {
+      "path": "$.normal_view.topics[6].study_details[3].sources[0].label",
+      "text": "Read the full ground-root study"
+    },
+    {
+      "path": "$.normal_view.topics[6].study_details[9].text",
+      "text": "The full leaf-extract paper and the full ground-root gene study were read. The 1978 long-term feeding paper was not read in full. No matched tumor test of powder with DMSO was found in this review."
+    },
+    {
+      "path": "$.normal_view.topics[6].study_details[9].sources[1].label",
+      "text": "Read the full ground-root study"
+    }
+  ],
+  "automatic_log_lines": [
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].form: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].caution: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].sources[0].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[0].text: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[0].sources[1].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[13].heading: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[13].text: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[13].sources[0].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[14].sources[0].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[15].text: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[15].sources[0].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[16].text: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[16].sources[0].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[17].sources[0].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[18].text: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[18].sources[0].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[19].text: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[19].sources[0].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[2].study_details[20].sources[0].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[6].summary: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[6].research: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[6].sources[1].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[6].study_details[2].heading: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[6].study_details[2].text: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[6].study_details[2].sources[0].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[6].study_details[3].heading: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[6].study_details[3].text: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[6].study_details[3].sources[0].label: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[6].study_details[9].text: root",
+    "FAIL /Users/averygoodman/Developer/cancer-vive/src/user-messages.json $.normal_view.topics[6].study_details[9].sources[1].label: root"
+  ]
+}
