@@ -1,6 +1,6 @@
 {
   "schema": "cancer-vive.stage-context/v1",
-  "checked_on": "2026-10-14",
+  "checked_on": "2026-10-15",
   "rules": [
     "No human stage inferred from preclinical models",
     "No survival inferred from tumor response",
@@ -160,7 +160,7 @@
     {
       "topic_id": "magnesium",
       "stage_state": "preclinical-no-human-stage",
-      "cancer_model": "BALB/c CT26 colon-tumor model, 8\u201312 mice/group; supplemented group n=10",
+      "cancer_model": "BALB/c CT26 colon-tumor model, 8–12 mice/group; supplemented group n=10",
       "human_stage_result_by_stage_available": false,
       "source_urls": [
         "https://journals.physiology.org/doi/full/10.1152/ajprenal.00688.2016"
@@ -226,6 +226,29 @@
         "https://pubmed.ncbi.nlm.nih.gov/31120501/"
       ],
       "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+    },
+    {
+      "topic_id": "radiation",
+      "stage_state": "human-regional-breast-context-dependent",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5015598/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7618363/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12269788/",
+        "https://www.cancer.gov/types/breast/treatment/radiation",
+        "https://www.cancer.gov/types/breast/stages/tnm-staging-system"
+      ],
+      "note": "Match node burden, timing, surgery and trial endpoint; no universal survival rate."
+    },
+    {
+      "topic_id": "dandelion-oil",
+      "stage_state": "preclinical-no-human-stage",
+      "human_stage_result_by_stage_available": false,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+      ],
+      "note": "Aqueous root cells and mouse xenografts are not oil or a human numbered stage."
     }
   ]
 }

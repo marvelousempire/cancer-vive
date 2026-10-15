@@ -1,5 +1,5 @@
-# Chemotherapy, stages and final target checks
+# Third source review, stages and radiation
 
-Version 0.14.0 adds chemotherapy, source-linked cancer stage context for all 22 topics, named survival comparisons and side effects. Full primary MPACT and TAILORx methods/results/tables/discussion were read via the browser. Human rates remain tied to trial population, treatment and time since randomization. No human stage is inferred from a cell or animal test.
+Version 0.15.0 covers the 24-topic matrix, stage-specific care education, breast PMRT after positive node sampling and radiation harm/recovery proof. Shared JSON owns Web, bundled Mac Console and native SwiftUI.
 
-Build, merge, deploy and install all three targets. Finish real target search, filters, details, exact proof, comparison, routes, source links, themes and saved-state checks. Scientific gaps and independent review stay open. Do not count app checks as clinical review.
+Run content/language/refusal and all three builds. Merge via Gitea, verify downstream Pages, install exact clean-main Mac builds and prove the new studies, lessons, matrix, source actions and theme/search/compare state on all three. Matching-product and independent science gaps stay Open. Never claim all severe radiation cases solved.

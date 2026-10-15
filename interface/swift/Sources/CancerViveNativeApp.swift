@@ -161,16 +161,16 @@ struct CancerReader:View {
         Group {
             if compare {
                 Table(rows) {
-                    TableColumn(u("topic")) { topic in Text(topic.name).bold().lineLimit(nil) }.width(min:100,ideal:140,max:180)
-                TableColumn(u("summary")) { topic in Text(topic.question + "\n" + topic.answer_label + "\n" + topic.research).lineLimit(nil).padding(.vertical,8) }.width(min:180,ideal:300)
+                    TableColumn(u("topic")) { topic in VStack(alignment:.leading,spacing:8) { Text(topic.name).bold();Text(topic.form).font(.caption) }.lineLimit(nil) }.width(min:100,ideal:140,max:180)
+                TableColumn(u("summary")) { topic in VStack(alignment:.leading,spacing:8) { Text(topic.question + "\n" + topic.answer_label + "\n" + topic.research);ForEach((topic.study_details ?? []).filter { $0.heading == "Cancer type and stage" }, id: \.heading) { row in Text(row.heading).bold();Text(row.text);sourceLinks(row.sources ?? []) };sourceLinks(topic.sources) }.lineLimit(nil).padding(.vertical,8) }.width(min:180,ideal:300)
                 TableColumn(u("evidence")) { topic in proof(topic) }.width(min:100,ideal:150,max:190)
                 TableColumn(u("caution")) { topic in Text(topic.caution).lineLimit(nil).padding(.vertical,8) }.width(min:180,ideal:280)
                     TableColumn(u("compare")) { topic in compareButton(topic) }.width(120)
                 }
             } else {
                 Table(rows) {
-                    TableColumn(u("topic")) { topic in Text(topic.name).bold().lineLimit(nil) }.width(min:100,ideal:140,max:180)
-                TableColumn(u("summary")) { topic in Text(topic.question + "\n" + topic.answer_label + "\n" + topic.research).lineLimit(nil).padding(.vertical,8) }.width(min:180,ideal:300)
+                    TableColumn(u("topic")) { topic in VStack(alignment:.leading,spacing:8) { Text(topic.name).bold();Text(topic.form).font(.caption) }.lineLimit(nil) }.width(min:100,ideal:140,max:180)
+                TableColumn(u("summary")) { topic in VStack(alignment:.leading,spacing:8) { Text(topic.question + "\n" + topic.answer_label + "\n" + topic.research);ForEach((topic.study_details ?? []).filter { $0.heading == "Cancer type and stage" }, id: \.heading) { row in Text(row.heading).bold();Text(row.text);sourceLinks(row.sources ?? []) };sourceLinks(topic.sources) }.lineLimit(nil).padding(.vertical,8) }.width(min:180,ideal:300)
                 TableColumn(u("evidence")) { topic in proof(topic) }.width(min:100,ideal:150,max:190)
                 TableColumn(u("caution")) { topic in Text(topic.caution).lineLimit(nil).padding(.vertical,8) }.width(min:180,ideal:280)
                 }

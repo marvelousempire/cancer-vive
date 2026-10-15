@@ -12,6 +12,42 @@
   },
   "questions": [
     {
+      "id": "radiation-postmastectomy-recurrence",
+      "topic_id": "radiation",
+      "question": "Did radiation lower return of cancer in the older trials after mastectomy with one to three positive nodes?",
+      "answer": true,
+      "work_state": "answered",
+      "scope": {
+        "form": "Chest wall and regional node radiation after mastectomy",
+        "cancer_model": "Older invasive breast cancer trials, one to three positive nodes after axillary dissection",
+        "comparison": "Same surgery without RT;pooled subgroup1314",
+        "endpoint": "10-year any recurrence;20-year breast cancer death"
+      },
+      "findings": "Yes. In older trials, fewer women had cancer come back with rays after breast removal. Fewer were dead from breast cancer. The gain for a person today can differ. A node sample alone is not a full stage or plan.",
+      "sources": [
+        {
+          "label": "Read the full pooled radiation trials",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5015598/"
+        }
+      ],
+      "proof": {
+        "source_id": "S-079",
+        "read_level": "Full primary pooled-trial main paper methods/results/discussion read",
+        "checked_on": "2026-10-15",
+        "exact_result": "EBCTCG Lancet2014 DOI10.1016/S0140-6736(14)60488-8 PMC5015598:22trials8135women;trials1964–1986. Afteraxillarydissection pN1–3n1314:10yanyrecurrence45.7%noRTvs34.2%RT,RR.68(.57–.82);20ybreastcancermortality50.2%vs42.3%,RR.80(.67–.95),p=.01. These are cause-specific death risks, not overall survival. Old systemic therapy and high baseline risk limit current absolute gains. Guideline2025DOI10.1200/JCO-25-01747 Tables3–4/Fig1:mostpN+PMRT;selectedpN1mic/lownodalburdenpN1afollowingALNDwithfavorablefeaturesmayomit. ypN+afterneoadjuvantPMRT; cT1–3N1ypN0conditional, timing of review predates full newer results. SUPREMO DOI10.1056/NEJMoa2412225:stageIIintermediaterisk,M0,ALND>=8–10nodesmandatoryforN1;808CWIvs799none;10yOS81.4%vs81.9%,HR1.04(.82–1.30),p=.80;chestwallrecurrence9/808vs20/799;notcomprehensiveRNItrial,axillaryRTforbidden. B51 DOI10.1056/NEJMoa2414859: cT1–3N1M0 ->ypN0;1641enrolled1556primaryanalysis;42%mastectomy;5yinvasivebreastcancerrecurrence-free92.7%RTvs91.8%,HR.88(.60–1.28),p=.51;OS93.6vs94%;grade3toxicity10vs6.5%;109eventsratherthan172planned. No inference for residual positive nodes, isolatedcellsnotseparatelyrecorded;exploratorysubtypesnotdefinitive. No individualized recommendation from a positive sentinel sample alone."
+      },
+      "review_state": "Primary source audit; independent scientific reader open",
+      "next_check": "Ask how many nodes were checked and had cancer. Ask how large the spots were. Were drugs given first? Ask for the gain with and without rays, which areas need care, and how to deal with harm.",
+      "claim_ids": [
+        "C-084",
+        "C-085",
+        "C-086",
+        "C-087",
+        "C-091"
+      ],
+      "broader_question_state": "open"
+    },
+    {
       "id": "chemotherapy-mpact-survival",
       "topic_id": "chemotherapy",
       "question": "Did adding nab-paclitaxel to gemcitabine improve survival in the MPACT pancreas trial?",
@@ -44,39 +80,77 @@
       }
     },
     {
+      "id": "dandelion-oil-growth",
+      "topic_id": "dandelion-oil",
+      "question": "Does dandelion oil extract slow tumor growth?",
+      "answer": null,
+      "work_state": "open",
+      "scope": {
+        "form": "Oil extract requested; water-based root extract is a separate research lead",
+        "cancer_model": null,
+        "comparison": null,
+        "endpoint": null
+      },
+      "findings": "The full paper tests a water-based root extract, not oil. That extract slowed colon tumor growth in a small mouse test. The oil question stays Open.",
+      "sources": [
+        {
+          "label": "Read the full root-extract study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+        }
+      ],
+      "claim_ids": [
+        "C-096",
+        "C-097"
+      ],
+      "proof": {
+        "source_id": "S-096",
+        "read_level": "Full primary root-extract main paper read; does not match requested oil",
+        "checked_on": "2026-10-15",
+        "exact_result": "Ovadje et al., Oncotarget2016;7:73080–73100. DOI10.18632/oncotarget.11485,PMC5341965. Full main primary XML read2026-10-15. Aqueous root extract;HT29,HCT116 versusNCM460;Figure1WST1quadruplicates/3independentexperiments,AnnexinV/PI separate. Figure4CD1nu/nu bilateral xenografts,randomized4mice/group,75days;oralPBSvsDRE. Two tumors/mouse notindependentanimals. Dosing conflict:mg/kg/dayversusgavage3times/week,discussiondrinkingwater;abstract>90%growthretardationnotexplicitfinalmaintextmeansorCI. No survival endpoint;small safetytest5controls/4treated,notproofabsenceofharm. Nooil,skinrouteorhumanoutcome. HealthCanadaPhaseIpermissionstatedbyauthorsnotcompletedclinicalefficacy."
+      },
+      "review_state": "Third AI source audit; independent scientific reader open",
+      "next_check": "What is in the oil and how is it used? Test that exact form with a matched control. A safe level and benefit in people stay Open."
+    },
+    {
       "id": "fenugreek-growth",
       "topic_id": "fenugreek",
       "question": "Did the seed extract slow cancer cell growth in the filed lab study?",
       "answer": true,
       "work_state": "answered",
       "scope": {
-        "form": "Food seeds and lab extracts",
+        "form": "2009 multisolvent seed extract; separate 2021 methanolic seed extract",
         "cancer_model": "Breast, pancreas and prostate cell lines",
-        "comparison": "See linked paper methods and comparison groups",
-        "endpoint": "Growth inhibition"
+        "comparison": "Medium with DMSO without extract in 2009",
+        "endpoint": "72-hour MTT; separate 96-hour live/dead stain"
       },
-      "findings": "Breast, prostate, and pancreas cancer cells were in the tests. Growth was slower after the extract. Some cells died.",
+      "findings": "The seed extract lowered the cancer cell activity signal in the 2009 lab test. Cell death was seen with separate stains. Proof is in Figures 1 and 3. The test did not measure tumors or survival in people.",
       "sources": [
         {
-          "label": "Read the cell study",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/19197146/"
+          "label": "Read the full seed-extract study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095649/"
         },
         {
-          "label": "Read the breast-cell study",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/33889009/"
+          "label": "Read the full breast-cell study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8057839/"
         },
         {
           "label": "Read about fenugreek safety",
           "url": "https://www.nccih.nih.gov/health/fenugreek"
         }
       ],
-      "review_state": "Source readback; second scientific review open",
+      "review_state": "Third AI source audit, 2026-10-15; independent scientific reader and replication open",
       "next_check": "What should the next test check? What would a clear yes or no need?",
       "claim_ids": [
         "C-023",
         "C-024",
         "C-025"
-      ]
+      ],
+      "proof": {
+        "source_id": "S-013",
+        "read_level": "Full primary main paper methods, results, figure captions and discussion read; supplementary files not independently audited",
+        "checked_on": "2026-10-15",
+        "exact_result": "S-013 full PMC3095649: triplicate wells per concentration, 72-hour MTT versus medium+DMSO. Figure 1 reports dose-dependent signal loss; Figure 3 live/dead staining at 96 hours. Not direct cell-number endpoint. Normal prostate cultures do not establish systemic safety. TGF-beta methods 1 ng/ml versus results 5 ng/ml; diosgenin methods 15 mM versus micromolar elsewhere. S-014 PMC8057839 full main paper: Figure 3, three independent experiments, 48-hour MCF-7/SK-BR3 viability, low-level stimulation and higher-level inhibition; IC50 150 and 40 micrograms/ml. Later SK-BR3 dose labels conflict with the selected doses; mouse methods six/group versus Table 2 mortality denominator ten. No genetic perturbation establishes p53 necessity. No clinical efficacy."
+      }
     },
     {
       "id": "castor-oil-growth",
@@ -132,23 +206,29 @@
       "answer": true,
       "work_state": "answered",
       "scope": {
-        "form": "A lab extract from castor fruit",
-        "cancer_model": "4T1 mouse model",
-        "comparison": "See linked paper methods and comparison groups",
-        "endpoint": "Growth inhibition"
+        "form": "Ricinus communis hydroethanolic fruit extract injected intraperitoneally",
+        "cancer_model": "BALB/c 4T1 breast tumors; ten mice/group",
+        "comparison": "0.9% saline",
+        "endpoint": "Tumor volume through day 22; Figure 5"
       },
-      "findings": "The lab test used breast-cancer cells. The mouse test used a shot of fruit extract.",
+      "findings": "The fruit extract group had lower tumor volume than the salt water group in this mouse test. Each group had ten mice. Proof is in Figure 5. The test used belly shots, not oil on skin.",
       "sources": [
         {
-          "label": "Read the fruit-extract study",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/31601896/"
+          "label": "Read the full fruit-extract study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6787038/"
         }
       ],
-      "review_state": "Source readback; second scientific review open",
+      "review_state": "Third AI source audit, 2026-10-15; independent scientific reader and replication open",
       "next_check": "What should the next test check? What would a clear yes or no need?",
       "claim_ids": [
         "C-028"
-      ]
+      ],
+      "proof": {
+        "source_id": "S-016",
+        "read_level": "Full primary main paper methods, results, figure captions and discussion read; supplementary files not independently audited",
+        "checked_on": "2026-10-15",
+        "exact_result": "Full PMC6787038 main paper. Female BALB/c 4T1 mammary-fat-pad tumors, randomized ten/group; saline vehicle versus intraperitoneal RCFE 0.5 mg/kg four doses 72 h apart from day 10 to day 22. Figure 5C reports >88% lower tumor volume than control at final check, not 88% regression of individual tumors. Cell MTT is activity, not direct death counts; Annexin V/PI and PARP cleavage separate. STAT3 phosphorylation, Bax/Bcl-2 and caspase-7 associations do not prove necessity; no rescue/knockdown isolation. No survival endpoint or comprehensive toxicology. Figure captions mean±SEM versus methods mean±SD inconsistency. Not castor oil, skin packs or established human treatment."
+      }
     },
     {
       "id": "comfrey-growth",
@@ -202,29 +282,35 @@
       "answer": true,
       "work_state": "answered",
       "scope": {
-        "form": "A live bacterial strain tested in mice",
-        "cancer_model": "Colon-26, BALB/c mice, treated group n=5",
-        "comparison": "See linked paper methods and comparison groups",
-        "endpoint": "Complete response in the named group"
+        "form": "Live frog-derived Ewingella americana intravenously",
+        "cancer_model": "Subcutaneous Colon-26, BALB/c mice, five/group in Figure 3",
+        "comparison": "PBS; liposomal doxorubicin; anti-PD-L1; broth unmatched",
+        "endpoint": "Day30 complete response; mouse survival through day60"
       },
-      "findings": "A live germ from a tree frog was in the 2025 test. The mice had colon-type tumors. Cell killing and an immune response were seen.",
+      "findings": "All five mice in the tested germ group had no felt tumor for at least 30 days. Proof is in Figure 3. The result was from one small mouse test. The germ was a named isolate, not raw frog gut.",
       "sources": [
         {
-          "label": "Read the mouse tumor study",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/41376334/"
+          "label": "Read the full mouse study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12710904/"
         },
         {
           "label": "Read the infection report",
           "url": "https://pubmed.ncbi.nlm.nih.gov/3942442/"
         }
       ],
-      "review_state": "Source readback; second scientific review open",
+      "review_state": "Third AI source audit, 2026-10-15; independent scientific reader and replication open",
       "next_check": "What should the next test check? What would a clear yes or no need?",
       "claim_ids": [
         "C-034",
         "C-035",
         "C-036"
-      ]
+      ],
+      "proof": {
+        "source_id": "S-025",
+        "read_level": "Full primary main paper methods, results, figure captions and discussion read; supplementary files not independently audited",
+        "checked_on": "2026-10-15",
+        "exact_result": "Full PMC12710904 main paper. Figure 2 screening n=3/group; Figure 3 efficacy n=5/group, subcutaneous Colon-26 in immunocompetent BALB/c. Single IV E. americana in Pearl Core E-MC64 broth; shared PBS control is not matched culture medium. Figure 3D CR 5/5 versus anti-PD-L1 1/5 at day 30; CR defined no palpable mass for >=30 days, not histological eradication. Figure 3E follow-up to day 60. Rechallenge claimed 0/10 versus 10/10; supplementary raw data not re-audited. Higher than 1e9 CFU caused acute mortality; tested optimum equals maximum tolerated dose. Figure 6 blood time day30 versus results day7; methods multiple times. Virulence analysis uses public ATCC33852 genome, not isolate whole-genome sequencing. Descriptive immune markers not causal depletion experiments. Not human benefit/safety or superiority to standard human colorectal regimens."
+      }
     },
     {
       "id": "dmso-growth",
@@ -953,16 +1039,16 @@
       "answer": false,
       "work_state": "answered",
       "scope": {
-        "form": "Hydroxychloroquine added to gemcitabine and nab-paclitaxel",
-        "cancer_model": "112 untreated advanced or metastatic pancreatic cancer patients; randomized 55 versus 57",
-        "comparison": "The same chemotherapy without hydroxychloroquine",
-        "endpoint": "Overall survival at 12 months; primary endpoint"
+        "form": "Oral hydroxychloroquine added to gemcitabine/nab-paclitaxel",
+        "cancer_model": "Previously untreated advanced/metastatic pancreatic ductal adenocarcinoma",
+        "comparison": "Same GA chemotherapy without HCQ;55versus57",
+        "endpoint": "12-month overall survival, primary;partial response separate secondary"
       },
       "findings": "No gain in length of life was shown. At one year, 41% were alive with the added drug and 49% with cancer drugs alone. Tumor response was higher with the added drug. A tumor response is not the same as longer life. Proof is in the short study report and Figures 2 and 3.",
       "sources": [
         {
-          "label": "Read the cancer study",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+          "label": "Read the full pancreas trial",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6547080/"
         },
         {
           "label": "Read the NCI trial list",
@@ -973,7 +1059,7 @@
           "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/214581s007lbl.pdf"
         }
       ],
-      "review_state": "Primary source readback; second scientific review open",
+      "review_state": "Third AI source audit, 2026-10-15; independent scientific reader and replication open",
       "next_check": "Could a chosen group of people gain a benefit? Full methods and a second check stay Open. This No is for length of life in this trial.",
       "claim_ids": [
         "C-059",
@@ -988,9 +1074,9 @@
       },
       "proof": {
         "source_id": "S-062",
-        "read_level": "primary structured abstract and figure legends read; full-text access blocked; ORR secondary p=0.047",
-        "checked_on": "2026-10-14",
-        "exact_result": "12-month OS 41% versus 49%; secondary ORR 38.2% versus 21.1%, p=0.047"
+        "read_level": "Full primary main paper methods, results, figure captions and discussion read; supplementary files not independently audited",
+        "checked_on": "2026-10-15",
+        "exact_result": "Full PMC6547080 main paper read. Open-label randomized phase2 NCT01506973, 55 GA+HCQ versus57 GA; ITT 12moOS41%(95%CI27–53) vs49%(35–61),p=.44. MedianOS11.1 vs12.1mo HR1.14(.76–1.69),p=.53. Table1 partial response21/55(38.2%) vs12/57(21.1%),p=.047, all partial;24nonevaluable,12/arm retained inITT. Safety54vs53;grade3/4neutropenia23/54vs12/53,p=.03. No placebo;higher dropout;response secondary and hypothesis generating. Only45genotyped;all8KRASwildtype incontrol mayinflatecontrolOS,butmostuntyped. No validated biomarker subgroup. Main paper full read does not mean supplements independently verified."
       },
       "broader_question_state": "open"
     }

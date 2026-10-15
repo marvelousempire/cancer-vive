@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-15",
+  "intent": "Full-source gap review, all-stage care education, breast PMRT and harm/recovery proof, complete item matrix",
+  "targets": [
+    {
+      "id": "web",
+      "renderer": "React",
+      "source": "src",
+      "build": "npm run build",
+      "target": "https://marvelousempire.github.io/cancer-vive/",
+      "canonical_local_door": "http://cancer-vive.localhost/"
+    },
+    {
+      "id": "console",
+      "renderer": "Tauri + bundled React",
+      "source": "apps/cancer-vive-desktop",
+      "build": "tauri build --bundles app",
+      "target": "~/Applications/Cancer Vive.app"
+    },
+    {
+      "id": "native",
+      "renderer": "SwiftUI",
+      "source": "interface/swift",
+      "build": "xcodegen generate + xcodebuild -scheme CancerViveNative -configuration Release",
+      "target": "~/Applications/Cancer Vive Native.app"
+    }
+  ],
+  "content_owner": "src/user-messages.json",
+  "proof": "Build and install exact source, then click changed study rows, lessons, matrix and links on all three targets",
+  "scope_limits": [
+    "No personal treatment directive",
+    "No all-case cure claim",
+    "Keep unmatched oils/skin mixes open"
+  ],
+  "micro_tool": {
+    "score": 8,
+    "decision": "Reuse existing content, language, source-link and three-target build tools; source interpretation remains human judgment"
+  }
+}
