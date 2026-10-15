@@ -117,3 +117,10 @@ Status key: `seed` | `reviewed` | `disputed` | `retired`
 | C-095 | Full HCQ trial methods retain a survival No while a separate secondary partial-response endpoint is Yes, with dropout, genomic imbalance and safety limitations. | shown | S-062 | §10 | seed |
 | C-096 | A water-based dandelion root extract slowed colon xenograft growth in a four-mouse-per-group experiment with methodological limits. | shown | S-096 | §10 | seed |
 | C-097 | The dandelion root experiment establishes a cancer benefit from the requested dandelion oil extract. | not-supported | S-096 | §10 | seed |
+
+| C-098 | Ground comfrey root in feed increased liver cII mutation frequency in six male rats per group over twelve weeks; this was not tumor treatment. | shown | S-097 | Four Open questions | seed |
+| C-099 | The nonrandomized peroxide-gel plus radiation phase1 cohort reported maintained local response in eleven of twelve treated people; one died before the three-month response scan. | shown | S-098 | Four Open questions | seed |
+| C-100 | Intratumoral KORTUC reduced acute hypoxia in HCT116 and HN5 mouse xenografts against vehicle and non-injected controls, without testing clinical efficacy. | mechanism | S-099 | Four Open questions | seed |
+| C-101 | The small combined-care cohort establishes how much human benefit peroxide gel adds to radiation alone. | not-supported | S-098 S-101 | Four Open questions | seed |
+| C-102 | The 2025 dandelion seed-oil abstract reports cancer-cell inhibition, while full assay controls and tumor benefit remain unchecked. | association | S-100 | Four Open questions | seed |
+| C-103 | The checked phase2 KORTUC registry has no posted results, which cannot be treated as evidence of no efficacy. | shown | S-101 | Four Open questions | seed |

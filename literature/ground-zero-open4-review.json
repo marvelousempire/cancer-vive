@@ -1,0 +1,227 @@
+{
+  "schema": "cancer-vive.ground-zero-review/v1",
+  "content_sha256": "d631bc44edf79d6e83fa2015575d8019e15ac1c5e0d64e86bb8329c64e1fe02e",
+  "automatic_status": "fail",
+  "automatic_findings": [
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].form",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].summary",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].research",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].caution",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].sources[0].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[0].sources[0].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[2].heading",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[2].text",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[2].sources[0].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[3].sources[0].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[4].text",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[4].sources[0].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[5].text",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[5].sources[0].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[6].sources[0].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[7].text",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[7].sources[0].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[8].text",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[8].sources[0].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[2].study_details[9].sources[0].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[6].summary",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[6].research",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[6].sources[1].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[6].study_details[2].heading",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[6].study_details[2].text",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[6].study_details[2].sources[0].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[6].study_details[3].heading",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[6].study_details[3].text",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[6].study_details[3].sources[0].label",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[6].study_details[9].text",
+      "leaks": [
+        "root"
+      ]
+    },
+    {
+      "file": "src/user-messages.json",
+      "path": "$.normal_view.topics[6].study_details[9].sources[1].label",
+      "leaks": [
+        "root"
+      ]
+    }
+  ],
+  "manual_review_status": "pass",
+  "reviewed_exception": "Exact botanical dandelion and comfrey root findings only. No system administrator access. Other paths and leak types are not exempt. Short labels and questions reviewed.",
+  "limits": "The unmodified scanner is not claimed to pass when it reports botanical-root false positives."
+}

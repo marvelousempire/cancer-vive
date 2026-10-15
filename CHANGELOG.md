@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.16.0 — 2026-10-15
+
+- Reviewed all four Open questions with new full comfrey root, human peroxide-gel and mouse oxygen papers.
+- Added three scoped Yes findings, controls, counts, stage limits and proof. Kept observed response separate from added benefit.
+- Filed the 2025 dandelion seed-oil abstract and its blocked full-paper gap. Castor oil full-report and matching-product gaps stay Open.
+- Checked the phase 2 gel trial record: no posted results; absence is not a No.
+
 ## 0.15.0 — 2026-10-15
 
 - Added stage 0–IV education and cancer-specific proven care, without a universal cure claim.
