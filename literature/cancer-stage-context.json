@@ -199,13 +199,15 @@
     },
     {
       "topic_id": "hydrogen-peroxide",
-      "stage_state": "preclinical-no-human-stage",
+      "stage_state": "mixed-preclinical-and-nonrandomized-human-gel-cohort",
       "cancer_model": null,
       "human_stage_result_by_stage_available": false,
       "source_urls": [
-        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3877547/"
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3877547/",
+        "https://kortuc.com/wp-content/uploads/2022/05/Phase-1-on-Red-Journal.pdf",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11461272/"
       ],
-      "note": "No inferred clinical stage from a cell line or transplant; human descriptors retained without inventing stage-stratified effects."
+      "note": "Special clinical gel plus radiation, not household product. Eight of twelve M1; no stage-stratified treatment effect or added survival gain."
     },
     {
       "topic_id": "ivermectin",

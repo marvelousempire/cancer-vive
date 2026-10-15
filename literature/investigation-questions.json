@@ -91,11 +91,15 @@
         "comparison": null,
         "endpoint": null
       },
-      "findings": "The full paper tests a water-based root extract, not oil. That extract slowed colon tumor growth in a small mouse test. The oil question stays Open.",
+      "findings": "A 2025 seed oil study has a cancer cell signal. Its full methods were not available in this review. The full root-water paper has a mouse growth result. Neither finding is proof that the requested oil slows tumors.",
       "sources": [
         {
           "label": "Read the full root-extract study",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+        },
+        {
+          "label": "Read the seed-oil study record",
+          "url": "https://doi.org/10.1016/j.foodchem.2025.143435"
         }
       ],
       "claim_ids": [
@@ -108,8 +112,10 @@
         "checked_on": "2026-10-15",
         "exact_result": "Ovadje et al., Oncotarget2016;7:73080–73100. DOI10.18632/oncotarget.11485,PMC5341965. Full main primary XML read2026-10-15. Aqueous root extract;HT29,HCT116 versusNCM460;Figure1WST1quadruplicates/3independentexperiments,AnnexinV/PI separate. Figure4CD1nu/nu bilateral xenografts,randomized4mice/group,75days;oralPBSvsDRE. Two tumors/mouse notindependentanimals. Dosing conflict:mg/kg/dayversusgavage3times/week,discussiondrinkingwater;abstract>90%growthretardationnotexplicitfinalmaintextmeansorCI. No survival endpoint;small safetytest5controls/4treated,notproofabsenceofharm. Nooil,skinrouteorhumanoutcome. HealthCanadaPhaseIpermissionstatedbyauthorsnotcompletedclinicalefficacy."
       },
-      "review_state": "Third AI source audit; independent scientific reader open",
-      "next_check": "What is in the oil and how is it used? Test that exact form with a matched control. A safe level and benefit in people stay Open."
+      "review_state": "Four-Open-question source pass; independent scientific reader remains open",
+      "next_check": "What is in the oil and how is it used? Test that exact form with a matched control. A safe level and benefit in people stay Open.",
+      "checked_on": "2026-10-15",
+      "followup_questions": []
     },
     {
       "id": "fenugreek-growth",
@@ -155,7 +161,7 @@
     {
       "id": "castor-oil-growth",
       "topic_id": "castor-oil",
-      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "question": "Do castor oil skin packs slow tumor growth?",
       "answer": null,
       "work_state": "open",
       "scope": {
@@ -183,8 +189,8 @@
           "url": "https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/ricin.html"
         }
       ],
-      "review_state": "Second AI source audit complete, 2026-10-14; independent scientific reader and replication open",
-      "next_check": "Read the full 1992 paper when it is available. Check what was in the extract, the control and the tumor result. Oil and pack benefit stays Open.",
+      "review_state": "Four-Open-question source pass; independent scientific reader remains open",
+      "next_check": "The full 1992 report is still needed. Check its plant part, extract, route, groups and tumor counts. A tumor test of skin oil or packs is still needed too.",
       "claim_ids": [
         "C-026",
         "C-027",
@@ -192,12 +198,13 @@
         "C-042",
         "C-078"
       ],
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-15",
       "proof": {
         "source_id": "S-071",
         "read_level": "Read level: primary bibliographic record only; no abstract or full methods obtained. MSK cites this as a mouse S180 extract study. Do not treat that secondary description as full primary proof.",
         "checked_on": "2026-10-14"
-      }
+      },
+      "followup_questions": []
     },
     {
       "id": "castor-fruit-extract-growth",
@@ -242,11 +249,15 @@
         "comparison": null,
         "endpoint": null
       },
-      "findings": "The leaf extract group had fewer small early liver lesions in rats. The same group had more signs of liver cell injury. The test was of early lesions. Powder was not tested on an existing tumor. Proof is in Figure 1 and Tables 1 and 2.",
+      "findings": "The leaf extract test had fewer early lesions with more liver cell injury. A separate ground-root test had more liver DNA changes. Neither test used a skin powder and DMSO mix or proved tumor treatment.",
       "sources": [
         {
           "label": "Read the full study",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862927/"
+        },
+        {
+          "label": "Read the full ground-root study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2361893/"
         },
         {
           "label": "Read the comfrey safety review",
@@ -261,19 +272,29 @@
           "url": "https://doi.org/10.1093/jnci/61.3.865"
         }
       ],
-      "review_state": "Second AI source audit complete, 2026-10-14; independent scientific reader and replication open",
+      "review_state": "Four-Open-question source pass; independent scientific reader remains open",
       "next_check": "Can a defined powder change an existing tumor without liver harm? The extract test does not answer that. The powder question stays Open.",
       "claim_ids": [
         "C-031",
         "C-032",
         "C-033"
       ],
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-15",
       "proof": {
         "source_id": "S-024",
         "read_level": "Full paper read. Ethanolic leaf extract by mouth in a chemically induced early-lesion model. Twenty rats per group initially; only eight control and nine treated survivors analyzed. Deaths excluded, severe attrition and unclear randomization. Fewer small lesions with more megalocytic/vacuolated hepatocytes. Not an established-tumor or powder/DMSO skin test.",
         "checked_on": "2026-10-14"
-      }
+      },
+      "followup_questions": [
+        {
+          "id": "ground-root-liver-mutations",
+          "question": "Did ground comfrey root raise liver cII mutation frequency in this rat test?",
+          "answer": true,
+          "finding": "146±15 versus30±16 per million, six male Big Blue rats/group,12weeks;Table1",
+          "source_id": "S-097",
+          "endpoint": "Liver gene mutation frequency, not tumor treatment"
+        }
+      ]
     },
     {
       "id": "tree-frog-gut-bacteria-growth",
@@ -941,7 +962,7 @@
     {
       "id": "hydrogen-peroxide-growth",
       "topic_id": "hydrogen-peroxide",
-      "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+      "question": "Does household peroxide treat cancer when used on skin, swallowed or injected?",
       "answer": null,
       "work_state": "open",
       "scope": {
@@ -950,7 +971,7 @@
         "comparison": null,
         "endpoint": null
       },
-      "findings": "In a mouse test, dilute peroxide put into tumors was linked to restored tumor growth. The cells had changed genes. The test was not of a drink or household skin product. Proof is in Figure 7. A result can change with the form and test.",
+      "findings": "The household-product question stays Open. A special peroxide gel with rays had tumor responses in a small human trial. A mouse gel study showed less tissue with low oxygen. The older changed-gene mouse test had restored growth. The form and test can change the result.",
       "sources": [
         {
           "label": "Read the full study",
@@ -959,20 +980,58 @@
         {
           "label": "Read the poison-control guidance",
           "url": "https://www.poison.org/articles/hydrogen-peroxide"
+        },
+        {
+          "label": "Read the full peroxide-gel trial",
+          "url": "https://kortuc.com/wp-content/uploads/2022/05/Phase-1-on-Red-Journal.pdf"
+        },
+        {
+          "label": "Read the full tumor-oxygen study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11461272/"
+        },
+        {
+          "label": "Read the phase 2 trial record",
+          "url": "https://clinicaltrials.gov/study/NCT03946202"
         }
       ],
-      "review_state": "Second AI source audit complete, 2026-10-14; independent scientific reader and replication open",
-      "next_check": "What happens in a test that matches the exact product and route? The household-product question stays Open. Do not drink or inject this liquid for cancer.",
+      "review_state": "Four-Open-question source pass; independent scientific reader remains open",
+      "next_check": "Check the gel trial against rays alone when the phase 2 results are available. The household forms need their own matched proof. Do not drink or inject household peroxide for cancer.",
       "claim_ids": [
         "C-057",
         "C-079"
       ],
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-15",
       "proof": {
         "source_id": "S-072",
         "read_level": "Full paper read. Engineered IGHG1 knockdown xenografts plus intratumoral 2 µM H2O2 versus same knockdown without H2O2; Figure 7A reports n=6/group. Growth restoration, not tumor shrinkage. Methods and results describe allocation differently; injected cell identity is not explicit in the tumor-method paragraph. Do not invent a liver-cancer model or import this result into household ingestion.",
         "checked_on": "2026-10-14"
-      }
+      },
+      "followup_questions": [
+        {
+          "id": "gel-observed-local-response",
+          "question": "Were local tumor responses reported with KORTUC plus radiation in this phase1 cohort?",
+          "answer": true,
+          "finding": "11/12 treated reported maintained local response;1early metastatic death before3month scan",
+          "source_id": "S-098",
+          "endpoint": "Observed combined-care response, not added benefit"
+        },
+        {
+          "id": "gel-added-clinical-benefit",
+          "question": "Did gel improve human cancer control beyond radiation alone?",
+          "answer": null,
+          "finding": "No separate randomized control; phase2 no posted results",
+          "source_id": "S-098 S-101",
+          "endpoint": "Incremental efficacy remains Open"
+        },
+        {
+          "id": "gel-mouse-reoxygenation",
+          "question": "Did KORTUC reduce hypoxia in these mouse xenografts?",
+          "answer": true,
+          "finding": "Figure4 strict >1log2Fc threshold2/6 HCT116 and4/8HN5; no human survival endpoint",
+          "source_id": "S-099",
+          "endpoint": "Acute tumor oxygenation"
+        }
+      ]
     },
     {
       "id": "ivermectin-growth",

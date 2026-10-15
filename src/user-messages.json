@@ -545,19 +545,24 @@
         "question": "Does dandelion oil extract slow tumor growth?",
         "answer": null,
         "answer_label": "Open",
-        "summary": "The full paper tests a water-based root extract, not oil. That extract slowed colon tumor growth in a small mouse test. The oil question stays Open.",
-        "research": "The full paper tests a water-based root extract, not oil. That extract slowed colon tumor growth in a small mouse test. The oil question stays Open.",
+        "summary": "A 2025 seed oil study has a cancer cell signal. Its full methods were not available in this review. The full root-water paper has a mouse growth result. Neither finding is proof that the requested oil slows tumors.",
+        "research": "A 2025 seed oil study has a cancer cell signal. Its full methods were not available in this review. The full root-water paper has a mouse growth result. Neither finding is proof that the requested oil slows tumors.",
         "human": "No human cancer benefit from the requested oil is shown by this study. An early trial permission is not a successful cancer trial.",
         "caution": "The exact oil, plant part and route need a check. Do not replace cancer care with an oil based on a root study. Ask before putting new products on skin being treated with radiation.",
         "next_step": "What is in the oil and how is it used? Test that exact form with a matched control. A safe level and benefit in people stay Open.",
         "refs": [
           "C-096",
-          "C-097"
+          "C-097",
+          "C-102"
         ],
         "sources": [
           {
             "label": "Read the full root-extract study",
             "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+          },
+          {
+            "label": "Read the seed-oil study record",
+            "url": "https://doi.org/10.1016/j.foodchem.2025.143435"
           }
         ],
         "study_details": [
@@ -572,6 +577,16 @@
               {
                 "label": "Read how cancer stage is defined",
                 "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
+            "heading": "A new oil lead, with a full-paper gap",
+            "text": "The 2025 abstract says growth signals were lower in breast, cervix and food pipe cancer cells with seed oil. The full methods, control and repeat counts were not checked. Seed oil is not a flower soaked in another oil. The tumor question stays Open.",
+            "sources": [
+              {
+                "label": "Read the seed-oil study record",
+                "url": "https://doi.org/10.1016/j.foodchem.2025.143435"
               }
             ]
           },
@@ -637,11 +652,15 @@
           },
           {
             "heading": "What was read",
-            "text": "The full main paper was read, including methods, results and Figures 1 to 10. Extra files were not fully checked. A separate science reader is still needed.",
+            "text": "The full root-water main paper was read. The new seed-oil abstract was checked. The seed-oil site asked for a human check, so its full paper was not read. A separate science reader is still needed.",
             "sources": [
               {
                 "label": "Read the full root-extract study",
                 "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+              },
+              {
+                "label": "Read the seed-oil study record",
+                "url": "https://doi.org/10.1016/j.foodchem.2025.143435"
               }
             ]
           },
@@ -657,7 +676,7 @@
           }
         ],
         "expert_view": {
-          "identity": "Ovadje et al., Oncotarget2016;7:73080–73100. DOI10.18632/oncotarget.11485,PMC5341965. Full main primary XML read2026-10-15. Aqueous root extract;HT29,HCT116 versusNCM460;Figure1WST1quadruplicates/3independentexperiments,AnnexinV/PI separate. Figure4CD1nu/nu bilateral xenografts,randomized4mice/group,75days;oralPBSvsDRE. Two tumors/mouse notindependentanimals. Dosing conflict:mg/kg/dayversusgavage3times/week,discussiondrinkingwater;abstract>90%growthretardationnotexplicitfinalmaintextmeansorCI. No survival endpoint;small safetytest5controls/4treated,notproofabsenceofharm. Nooil,skinrouteorhumanoutcome. HealthCanadaPhaseIpermissionstatedbyauthorsnotcompletedclinicalefficacy."
+          "identity": "Ovadje et al., Oncotarget2016;7:73080–73100. DOI10.18632/oncotarget.11485,PMC5341965. Full main primary XML read2026-10-15. Aqueous root extract;HT29,HCT116 versusNCM460;Figure1WST1quadruplicates/3independentexperiments,AnnexinV/PI separate. Figure4CD1nu/nu bilateral xenografts,randomized4mice/group,75days;oralPBSvsDRE. Two tumors/mouse notindependentanimals. Dosing conflict:mg/kg/dayversusgavage3times/week,discussiondrinkingwater;abstract>90%growthretardationnotexplicitfinalmaintextmeansorCI. No survival endpoint;small safetytest5controls/4treated,notproofabsenceofharm. Nooil,skinrouteorhumanoutcome. HealthCanadaPhaseIpermissionstatedbyauthorsnotcompletedclinicalefficacy.\n\nWu, Xiao & Wang, Food Chemistry 476 (2025) 143435. DOI: 10.1016/j.foodchem.2025.143435. Publisher abstract only; petroleum-ether seed oil. Abstract IC50 TE-1 212.4±2.1, HeLa 328.3±3.3, MCF-7 283.8±3.2 micrograms/mL. Full assay duration, vehicle, replication and normal-cell selectivity not checked. Publisher browser CAPTCHA; no challenge solved or bypassed. No tumor-bearing animal or clinical result established by the checked abstract."
         }
       },
       {
@@ -809,13 +828,13 @@
         "id": "castor-oil",
         "name": "Castor oil",
         "short": "Castor oil",
-        "form": "Skin oil, oil packs, and modified drug carriers",
+        "form": "Castor oil on skin or in packs; the 1992 extract is a separate lead",
         "grade": "other",
         "summary": "A 1992 paper is titled as a castor oil extract tumor test. Its full methods and results were not available in this review. That lead is worth checking. The record does not show whether skin oil or packs slow cancer.",
         "research": "A 1992 paper is titled as a castor oil extract tumor test. Its full methods and results were not available in this review. That lead is worth checking. The record does not show whether skin oil or packs slow cancer.",
         "human": "The bowel study did not measure tumor shrinkage. Household oil is not a cancer drug.",
         "caution": "Ricin is a poison found in raw castor beans. Do not make a home bean extract.",
-        "next_step": "Read the full 1992 paper when it is available. Check what was in the extract, the control and the tumor result. Oil and pack benefit stays Open.",
+        "next_step": "The full 1992 report is still needed. Check its plant part, extract, route, groups and tumor counts. A tumor test of skin oil or packs is still needed too.",
         "refs": [
           "C-026",
           "C-027",
@@ -845,7 +864,7 @@
           "skin",
           "harm"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "question": "Do castor oil skin packs slow tumor growth?",
         "answer": null,
         "answer_label": "Open",
         "expert_view": {
@@ -885,6 +904,16 @@
           {
             "heading": "Survival in people",
             "text": "No human cancer survival rate is filed for oil or skin packs. A missing survival result stays unknown. The gap is not a zero survival rate.",
+            "sources": [
+              {
+                "label": "Read the study record",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/1292501/"
+              }
+            ]
+          },
+          {
+            "heading": "What the new source search settled",
+            "text": "The 1992 study record was checked again. The full report was not obtained. A paper title is not enough to know the control, extract or tumor result. No Yes or No was added for skin packs.",
             "sources": [
               {
                 "label": "Read the study record",
@@ -1017,20 +1046,25 @@
         "short": "Comfrey powder",
         "form": "Powder from the plant and tested skin creams",
         "grade": "harm",
-        "summary": "The leaf extract group had fewer small early liver lesions in rats. The same group had more signs of liver cell injury. The test was of early lesions. Powder was not tested on an existing tumor. Proof is in Figure 1 and Tables 1 and 2.",
-        "research": "The leaf extract group had fewer small early liver lesions in rats. The same group had more signs of liver cell injury. The test was of early lesions. Powder was not tested on an existing tumor. Proof is in Figure 1 and Tables 1 and 2.",
+        "summary": "The leaf extract test had fewer early lesions with more liver cell injury. A separate ground-root test had more liver DNA changes. Neither test used a skin powder and DMSO mix or proved tumor treatment.",
+        "research": "The leaf extract test had fewer early lesions with more liver cell injury. A separate ground-root test had more liver DNA changes. Neither test used a skin powder and DMSO mix or proved tumor treatment.",
         "human": "The sources do not show a cancer benefit in people. Some skin creams have a use for sprains and bruises.",
         "caution": "Raw powder is not a tested skin cream. Drying the plant does not prove its poisons are gone.",
         "next_step": "Can a defined powder change an existing tumor without liver harm? The extract test does not answer that. The powder question stays Open.",
         "refs": [
           "C-031",
           "C-032",
-          "C-033"
+          "C-033",
+          "C-098"
         ],
         "sources": [
           {
             "label": "Read the full study",
             "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862927/"
+          },
+          {
+            "label": "Read the full ground-root study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2361893/"
           },
           {
             "label": "Read the comfrey safety review",
@@ -1054,7 +1088,7 @@
         "answer": null,
         "answer_label": "Open",
         "expert_view": {
-          "identity": "Full paper read. Ethanolic leaf extract by mouth in a chemically induced early-lesion model. Twenty rats per group initially; only eight control and nine treated survivors analyzed. Deaths excluded, severe attrition and unclear randomization. Fewer small lesions with more megalocytic/vacuolated hepatocytes. Not an established-tumor or powder/DMSO skin test.\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nMatching product/tumor question: Open."
+          "identity": "Full paper read. Ethanolic leaf extract by mouth in a chemically induced early-lesion model. Twenty rats per group initially; only eight control and nine treated survivors analyzed. Deaths excluded, severe attrition and unclear randomization. Fewer small lesions with more megalocytic/vacuolated hepatocytes. Not an established-tumor or powder/DMSO skin test.\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nMatching product/tumor question: Open.\n\nMei et al., Br J Cancer 92:873–875 (2005), DOI 10.1038/sj.bjc.6602420, PMC2361893. Full main paper and Tables 1–2 read. Male Big Blue rats, 6/group, ground root mixed into 2% feed versus basal feed, 12 weeks. Liver cII mutant frequency mean±SD 146±15 versus 30±16 ×10^-6, P<.001. Independent mutations 200 versus 46; PA-like spectrum supports, but does not isolate, the mechanism. Not a tumor-treatment endpoint; supplements not fully audited. Do not transfer oral root to skin powder/DMSO or a human risk percentage."
         },
         "study_details": [
           {
@@ -1082,6 +1116,26 @@
             ]
           },
           {
+            "heading": "Did ground root raise liver DNA changes?",
+            "text": "Yes, in a rat test. Six rats per group were given plain feed or feed with ground comfrey root for twelve weeks. A liver gene test had about 146 changed copies per million with comfrey and 30 with plain feed. Proof is in Table 1. The test was not of tumor shrinkage or a skin mix.",
+            "sources": [
+              {
+                "label": "Read the full ground-root study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2361893/"
+              }
+            ]
+          },
+          {
+            "heading": "What the root test can and cannot answer",
+            "text": "The result is a sign of gene harm in rat liver. The result is not a human cancer risk rate. The gene changes fit a plant-poison pathway, but the whole root has many parts. A safe tumor effect of powder with DMSO stays Open.",
+            "sources": [
+              {
+                "label": "Read the full ground-root study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2361893/"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The full study used a leaf extract by mouth in rats with early liver lesions. Early lesions are changed tissue spots before established tumors. The test did not use powder with DMSO on skin."
           },
@@ -1103,7 +1157,17 @@
           },
           {
             "heading": "What was read",
-            "text": "The full extract paper was read. The older long-term feeding paper was not read in full. A separate science reader has not checked the finding."
+            "text": "The full leaf-extract paper and the full ground-root gene study were read. The 1978 long-term feeding paper was not read in full. No matched tumor test of powder with DMSO was found in this review.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862927/"
+              },
+              {
+                "label": "Read the full ground-root study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2361893/"
+              }
+            ]
           },
           {
             "heading": "Survival in people",
@@ -2360,14 +2424,18 @@
         "short": "Hydrogen peroxide",
         "form": "Household peroxide and concentrated products",
         "grade": "harm",
-        "summary": "In a mouse test, dilute peroxide put into tumors was linked to restored tumor growth. The cells had changed genes. The test was not of a drink or household skin product. Proof is in Figure 7. A result can change with the form and test.",
-        "research": "In a mouse test, dilute peroxide put into tumors was linked to restored tumor growth. The cells had changed genes. The test was not of a drink or household skin product. Proof is in Figure 7. A result can change with the form and test.",
-        "human": "No cancer benefit is shown here for drinking or injecting this liquid.",
+        "summary": "The household-product question stays Open. A special peroxide gel with rays had tumor responses in a small human trial. A mouse gel study showed less tissue with low oxygen. The older changed-gene mouse test had restored growth. The form and test can change the result.",
+        "research": "The household-product question stays Open. A special peroxide gel with rays had tumor responses in a small human trial. A mouse gel study showed less tissue with low oxygen. The older changed-gene mouse test had restored growth. The form and test can change the result.",
+        "human": "A full human trial tested a special gel put into tumors with rays. It did not test a drink, skin peroxide or peroxide alone. Added benefit beyond rays stays Open.",
         "caution": "If swallowed, the liquid can burn the gut and form gas bubbles. Strong products can cause severe burns.",
-        "next_step": "What happens in a test that matches the exact product and route? The household-product question stays Open. Do not drink or inject this liquid for cancer.",
+        "next_step": "Check the gel trial against rays alone when the phase 2 results are available. The household forms need their own matched proof. Do not drink or inject household peroxide for cancer.",
         "refs": [
           "C-057",
-          "C-079"
+          "C-079",
+          "C-099",
+          "C-100",
+          "C-101",
+          "C-103"
         ],
         "sources": [
           {
@@ -2377,29 +2445,41 @@
           {
             "label": "Read the poison-control guidance",
             "url": "https://www.poison.org/articles/hydrogen-peroxide"
+          },
+          {
+            "label": "Read the full peroxide-gel trial",
+            "url": "https://kortuc.com/wp-content/uploads/2022/05/Phase-1-on-Red-Journal.pdf"
+          },
+          {
+            "label": "Read the full tumor-oxygen study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11461272/"
+          },
+          {
+            "label": "Read the phase 2 trial record",
+            "url": "https://clinicaltrials.gov/study/NCT03946202"
           }
         ],
         "tags": [
           "harm"
         ],
-        "question": "Did the exact tested form reduce cancer growth against a comparison group?",
+        "question": "Does household peroxide treat cancer when used on skin, swallowed or injected?",
         "answer": null,
         "answer_label": "Open",
         "expert_view": {
-          "identity": "Full paper read. Engineered IGHG1 knockdown xenografts plus intratumoral 2 µM H2O2 versus same knockdown without H2O2; Figure 7A reports n=6/group. Growth restoration, not tumor shrinkage. Methods and results describe allocation differently; injected cell identity is not explicit in the tumor-method paragraph. Do not invent a liver-cancer model or import this result into household ingestion.\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nMatching product/tumor question: Open."
+          "identity": "Full paper read. Engineered IGHG1 knockdown xenografts plus intratumoral 2 µM H2O2 versus same knockdown without H2O2; Figure 7A reports n=6/group. Growth restoration, not tumor shrinkage. Methods and results describe allocation differently; injected cell identity is not explicit in the tumor-method paragraph. Do not invent a liver-cancer model or import this result into household ingestion.\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nMatching product/tumor question: Open.\n\nNimalasena et al., IJROBP 108:1019–1029 (2020), DOI 10.1016/j.ijrobp.2020.06.022, NCT02757651: full main paper read. 13 enrolled, 1 withdrew before treatment, 12 treated; no parallel randomized control. 8/12 M1; 7 continued endocrine therapy. 11/12 reported maintained local response; 1 died before 3-month assessment. Primary endpoint pain; 5/12 grade-2 pain, 5/12 grade-3 dermatitis with bolus, symptoms reportedly resolved with supportive care. Historical RT toxicity comparison is not randomized equivalence. One patient had non-injected lesions as internal controls, not a separate randomized arm.\n\nNimalasena et al., BJC Reports (2024), DOI 10.1038/s44276-024-00098-y, PMC11461272: full main paper read. Randomized unblinded nude-mouse HCT116/HN5 xenografts; non-injected, sodium-hyaluronate and KORTUC arms. HCT116 n=3/3/6; HN5 n=8/8/8, Fig3 caption totals23 versus24 methods. Fig4 >1 log2 fold-change threshold reached2/6 and4/8 KORTUC tumors. Mechanism endpoint only, no tumor-growth or radiation-benefit test in this experiment. Phospho-ATM scoring uses one xenograft/condition, multiple fields are not independent animals.\n\nNCT03946202 API checked 2026-10-15: active not recruiting, last posted2026-09-02, hasResults=false, estimated primary completion2028-08-31. No efficacy inference from absent posted results."
         },
         "study_details": [
           {
             "heading": "Cancer type and stage",
-            "text": "The test used mice with tumors. No human cancer stage was tested for this finding. A mouse tumor does not prove a result at stage I, II, III or IV in people.",
+            "text": "No human cancer stage was tested in the mouse studies. The human gel trial treated advanced or returned breast cancer. Eight of twelve treated people had distant spread, which is stage IV. The mixed group did not give a separate result for each stage.",
             "sources": [
               {
-                "label": "Read the full study",
-                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3877547/"
+                "label": "Read the full peroxide-gel trial",
+                "url": "https://kortuc.com/wp-content/uploads/2022/05/Phase-1-on-Red-Journal.pdf"
               },
               {
-                "label": "Read how cancer stage is defined",
-                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+                "label": "Read the full tumor-oxygen study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11461272/"
               }
             ]
           },
@@ -2410,6 +2490,66 @@
               {
                 "label": "Read the full study",
                 "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3877547/"
+              }
+            ]
+          },
+          {
+            "heading": "Did tumors respond in the human gel trial?",
+            "text": "Yes. The paper reports lasting partial or full local responses in eleven of twelve treated people at the last check. One person was dead from distant cancer before the three-month response scan. All had rays plus the special gel. The source is Figure 2 and the Tumor response results.",
+            "sources": [
+              {
+                "label": "Read the full peroxide-gel trial",
+                "url": "https://kortuc.com/wp-content/uploads/2022/05/Phase-1-on-Red-Journal.pdf"
+              }
+            ]
+          },
+          {
+            "heading": "Did the gel add benefit beyond rays?",
+            "text": "Open. The twelve-person trial had no separate rays-only group. Seven people also took hormone drugs. The main test was pain and tolerance. The response finding cannot show how much benefit came from the gel. The result is not a survival gain or a cure rate.",
+            "sources": [
+              {
+                "label": "Read the full peroxide-gel trial",
+                "url": "https://kortuc.com/wp-content/uploads/2022/05/Phase-1-on-Red-Journal.pdf"
+              }
+            ]
+          },
+          {
+            "heading": "What harm occurred in the gel trial?",
+            "text": "Five of twelve had moderate pain after shots. Five had severe skin effects; all five had a skin-dose sheet during rays. The paper says those skin symptoms cleared with usual care. The result does not prove all harm can be cured. Proof is in Table 2 and the Discussion.",
+            "sources": [
+              {
+                "label": "Read the full peroxide-gel trial",
+                "url": "https://kortuc.com/wp-content/uploads/2022/05/Phase-1-on-Red-Journal.pdf"
+              }
+            ]
+          },
+          {
+            "heading": "Did the gel reduce low-oxygen tumor areas?",
+            "text": "Yes, in a separate mouse test. The gel group had less low-oxygen tissue than gel-only and no-shot groups. In Figure 4, two of six colon tumors and four of eight head-and-neck tumors passed the set threshold for oxygen gain. The study did not test tumor cure or added human survival.",
+            "sources": [
+              {
+                "label": "Read the full tumor-oxygen study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11461272/"
+              }
+            ]
+          },
+          {
+            "heading": "How strong is the oxygen mechanism proof?",
+            "text": "The mice were assigned at random, but the study was not blind. Oxygen was checked through tissue stains about one hour after a shot. The colon groups had three, three and six mice. Head-and-neck groups had eight each; one figure lists twenty-three tumors. The count gap needs a check.",
+            "sources": [
+              {
+                "label": "Read the full tumor-oxygen study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11461272/"
+              }
+            ]
+          },
+          {
+            "heading": "What is the phase 2 study waiting to answer?",
+            "text": "The trial record was checked on October 15, 2026. The study is active and no longer taking new people. It has no posted results. The trial is a test of rays with and without the special gel. An empty results page is not a No answer.",
+            "sources": [
+              {
+                "label": "Read the phase 2 trial record",
+                "url": "https://clinicaltrials.gov/study/NCT03946202"
               }
             ]
           },
@@ -2435,15 +2575,33 @@
           },
           {
             "heading": "What was read",
-            "text": "The full paper was read: methods, results, figures and discussion. A second AI source check is done. A separate science reader has not checked the finding."
-          },
-          {
-            "heading": "Survival in people",
-            "text": "The mouse test did not measure how long people live. No human survival rate is known from that test.",
+            "text": "The full old mouse paper, the full human gel paper and the full mouse oxygen paper were read. The phase 2 trial record was checked. Extra files and raw data were not fully audited. A separate science reader is still needed.",
             "sources": [
               {
                 "label": "Read the full study",
                 "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3877547/"
+              },
+              {
+                "label": "Read the full peroxide-gel trial",
+                "url": "https://kortuc.com/wp-content/uploads/2022/05/Phase-1-on-Red-Journal.pdf"
+              },
+              {
+                "label": "Read the full tumor-oxygen study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11461272/"
+              },
+              {
+                "label": "Read the phase 2 trial record",
+                "url": "https://clinicaltrials.gov/study/NCT03946202"
+              }
+            ]
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No checked survival gain is shown for household peroxide. The small gel trial was mainly a safety test. Tumor response in eleven people is not a survival rate. One treated person died from distant cancer before the three-month response check.",
+            "sources": [
+              {
+                "label": "Read the full peroxide-gel trial",
+                "url": "https://kortuc.com/wp-content/uploads/2022/05/Phase-1-on-Red-Journal.pdf"
               }
             ]
           }

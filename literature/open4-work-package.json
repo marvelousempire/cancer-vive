@@ -1,0 +1,34 @@
+{
+  "intent": "Review the four matching-product Open questions, add scoped supported answers with primary proof, and ship all three targets",
+  "targets": [
+    {
+      "id": "web",
+      "renderer": "React",
+      "source": "src",
+      "build": "npm run build",
+      "target": "https://marvelousempire.github.io/cancer-vive/",
+      "canonical_local_door": "http://cancer-vive.localhost/"
+    },
+    {
+      "id": "console",
+      "renderer": "Tauri + bundled React",
+      "source": "apps/cancer-vive-desktop",
+      "build": "tauri build --bundles app",
+      "target": "~/Applications/Cancer Vive.app"
+    },
+    {
+      "id": "native",
+      "renderer": "SwiftUI",
+      "source": "interface/swift",
+      "build": "xcodegen generate + xcodebuild -scheme CancerViveNative -configuration Release",
+      "target": "~/Applications/Cancer Vive Native.app"
+    }
+  ],
+  "content_owner": "src/user-messages.json",
+  "proof": "Exact clean-main builds and installs, then all study rows, changed questions, comparison, source actions, matrix and restart in each real target.",
+  "science_boundary": "An access gap or unmatched form is not a No. Observed response is not added benefit. No clinical peer review claimed.",
+  "micro_tool_opportunity": {
+    "score": 8,
+    "decision": "Reuse source, language, refusal and release tools. Scientific interpretation is not a deterministic tool."
+  }
+}
