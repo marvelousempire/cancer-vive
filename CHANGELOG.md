@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.15.0 — 2026-10-15
+
+- Added stage 0–IV education and cancer-specific proven care, without a universal cure claim.
+- Added breast radiation after mastectomy, positive node sample limits, 2025 guidance and full EBCTCG, SUPREMO and B-51 trial findings.
+- Added radiation mechanism, early and late harm, warning signs, recovery records and explicit unsolved injury limits.
+- Read full fenugreek, castor fruit, tree-frog and HCQ main papers and added controls, results, mechanisms and proof limits.
+- Added dandelion oil as Open with a distinct full-source root-extract lead. The normal matrix includes all 24 topics and forms.
+
 ## 0.14.0 — 2026-10-14
 
 - Added chemotherapy with full-paper MPACT and TAILORx findings, named survival time points, comparisons and side effects.

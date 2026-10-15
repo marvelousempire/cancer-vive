@@ -42,7 +42,7 @@
       "dark": "Dark",
       "theme": "Color theme",
       "version": "Version",
-      "checked": "Sources checked October 14, 2026.",
+      "checked": "Sources checked October 15, 2026.",
       "scope": "Find what can work against cancer. Ask a clear question. Check the test and its proof. Keep gaps open.",
       "code": "Code and release details",
       "study_records": "Full study records",
@@ -64,7 +64,8 @@
       "question": "Question",
       "answer": "Answer",
       "finding": "Finding",
-      "study_details": "Inside the study"
+      "study_details": "Inside the study",
+      "stage": "Cancer type and stage"
     },
     "home": {
       "eyebrow": "Cancer Vive",
@@ -74,6 +75,12 @@
       "spike": "Learn about spike proteins",
       "head": "Start with the question that matters to you.",
       "choices": [
+        {
+          "title": "What can help at each stage?",
+          "text": "Read stages 0 to IV and care for named cancers. See why node samples matter for breast radiation.",
+          "route": "education",
+          "button": "Read stages and radiation"
+        },
         {
           "title": "What can work against cancer?",
           "text": "Start with a growth or cell death question. Read the finding and its proof. Then ask what test should come next.",
@@ -157,6 +164,211 @@
       "education": "Cancer facts"
     },
     "topics": [
+      {
+        "id": "radiation",
+        "name": "Radiation after mastectomy",
+        "short": "Radiation",
+        "form": "External beam chest-wall and regional-node radiation after breast surgery",
+        "grade": "human",
+        "tags": [
+          "drugs",
+          "education"
+        ],
+        "question": "Did radiation lower return of cancer in the older trials after mastectomy with one to three positive nodes?",
+        "answer": true,
+        "answer_label": "Yes, reported in this test",
+        "summary": "Yes. In older trials, fewer women had cancer come back with rays after breast removal. Fewer were dead from breast cancer. The gain for a person today can differ. A node sample alone is not a full stage or plan.",
+        "human": "A 2025 care guide says most people with cancer in nearby nodes should have rays after breast removal. Some low-risk cases can skip this care. The full case must be checked.",
+        "caution": "Rays can harm healthy cells near the target. Skin, lung or heart harm can occur. So can swelling and a rare second cancer. Severe chest pain or sudden severe trouble breathing needs urgent care.",
+        "next_step": "Ask how many nodes were checked and had cancer. Ask how large the spots were. Were drugs given first? Ask for the gain with and without rays, which areas need care, and how to deal with harm.",
+        "refs": [
+          "C-084",
+          "C-085",
+          "C-086",
+          "C-087",
+          "C-091"
+        ],
+        "sources": [
+          {
+            "label": "Read the 2025 radiation guideline",
+            "url": "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf"
+          },
+          {
+            "label": "Read the full pooled radiation trials",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5015598/"
+          },
+          {
+            "label": "Read the full SUPREMO trial",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7618363/"
+          },
+          {
+            "label": "Read the full node-response trial",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12269788/"
+          },
+          {
+            "label": "Read the breast radiation guide",
+            "url": "https://www.cancer.gov/types/breast/treatment/radiation"
+          },
+          {
+            "label": "Read how breast nodes are staged",
+            "url": "https://www.cancer.gov/types/breast/stages/tnm-staging-system"
+          }
+        ],
+        "study_details": [
+          {
+            "heading": "Why radiation after breast removal?",
+            "text": "Surgery can take out tissue that can be seen. Small groups of cancer cells may stay in the chest wall or nearby nodes. Rays can harm their DNA, the cell gene code. The goal is to stop those cells from making more cells.",
+            "sources": [
+              {
+                "label": "Read how radiation treats cancer",
+                "url": "https://www.cancer.gov/about-cancer/treatment/types/radiation-therapy"
+              },
+              {
+                "label": "Read the 2025 radiation guideline",
+                "url": "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf"
+              }
+            ]
+          },
+          {
+            "heading": "Cancer type and stage",
+            "text": "The entry is for breast cancer after breast removal, called mastectomy. Cancer in nearby lymph nodes, small glands, is nearby spread. Nearby nodes alone do not mean stage IV. Stage is based on tumor size, cell traits and spread as well.",
+            "sources": [
+              {
+                "label": "Read how breast nodes are staged",
+                "url": "https://www.cancer.gov/types/breast/stages/tnm-staging-system"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
+            "heading": "What a positive node sample means",
+            "text": "A sentinel node test checks a few nodes that drain the breast first. A sample with cancer means cancer was found there. The test cannot show how many unchecked nodes have cancer. A few cells, small spots and large spots are not the same finding.",
+            "sources": [
+              {
+                "label": "Read how breast nodes are staged",
+                "url": "https://www.cancer.gov/types/breast/stages/tnm-staging-system"
+              }
+            ]
+          },
+          {
+            "heading": "When doctors recommend it",
+            "text": "The 2025 care guide says most people with cancer in nodes should have rays if surgery was done first. More nodes with cancer can mean a stronger case for rays. Some low-risk cases can skip rays after more nodes were removed. The full report is needed.",
+            "sources": [
+              {
+                "label": "Read the 2025 radiation guideline",
+                "url": "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf"
+              }
+            ]
+          },
+          {
+            "heading": "If drugs came before surgery",
+            "text": "Nodes that still have cancer after drugs are a reason to review rays. Nodes with no cancer found after drugs are a distinct case. The choice is based on the first extent of cancer and its response. A node sample alone is not enough to choose.",
+            "sources": [
+              {
+                "label": "Read the 2025 radiation guideline",
+                "url": "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf"
+              },
+              {
+                "label": "Read the full node-response trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12269788/"
+              }
+            ]
+          },
+          {
+            "heading": "What the older trials found",
+            "text": "The 2014 pooled study had 1,314 women with one to three nodes with cancer. All had more nodes removed. At ten years, cancer had come back in about 34% with rays and 46% without rays. The proof is in Figure 3.",
+            "sources": [
+              {
+                "label": "Read the full pooled radiation trials",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5015598/"
+              }
+            ]
+          },
+          {
+            "heading": "Survival in people",
+            "text": "At twenty years, about 42% had died from breast cancer with rays and 50% without rays in the older group. The result is death from breast cancer, not death from all causes. The rates are from past groups. They are not a forecast for one person.",
+            "sources": [
+              {
+                "label": "Read the full pooled radiation trials",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5015598/"
+              }
+            ]
+          },
+          {
+            "heading": "A newer trial asked a narrower question",
+            "text": "SUPREMO tested rays to the chest wall in 1,607 people at medium risk. At ten years, about 81% with rays and 82% without rays were alive. No clear gain in life span was shown. People with cancer in nodes had more nodes removed. The trial does not settle care after only a node sample.",
+            "sources": [
+              {
+                "label": "Read the full SUPREMO trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7618363/"
+              }
+            ]
+          },
+          {
+            "heading": "If positive nodes became negative",
+            "text": "B-51 tested people whose nodes had cancer at first, then had none found after drugs. No clear gain at five years was shown with added rays to node areas. The finding does not cover nodes that still had cancer. More years of follow-up are needed.",
+            "sources": [
+              {
+                "label": "Read the full node-response trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12269788/"
+              }
+            ]
+          },
+          {
+            "heading": "Which areas receive radiation?",
+            "text": "The plan can cover the chest wall or rebuilt breast and nearby node areas. A CT scan is used to map the targets and organs to protect. A breath hold can move the heart away. The team checks how much of the rays reach the heart and lungs.",
+            "sources": [
+              {
+                "label": "Read the 2025 radiation guideline",
+                "url": "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf"
+              }
+            ]
+          },
+          {
+            "heading": "What is still open",
+            "text": "Ask for the full surgery report. Ask for the size of spots in nodes, the count of nodes with cancer, and the tissue edges, called margins. Ask for ER, PR and HER2 tests. A breast care team must match the proof to the full case.",
+            "sources": [
+              {
+                "label": "Read the 2025 radiation guideline",
+                "url": "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf"
+              },
+              {
+                "label": "Read how breast nodes are staged",
+                "url": "https://www.cancer.gov/types/breast/stages/tnm-staging-system"
+              }
+            ]
+          },
+          {
+            "heading": "What was read",
+            "text": "The full main papers for the pooled trials, SUPREMO and B-51 were read. Parts of the 2025 care guide on who should have rays and how to plan were checked. The new trials tested distinct groups and areas. A separate science reader is still needed.",
+            "sources": [
+              {
+                "label": "Read the 2025 radiation guideline",
+                "url": "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf"
+              },
+              {
+                "label": "Read the full pooled radiation trials",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5015598/"
+              },
+              {
+                "label": "Read the full SUPREMO trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7618363/"
+              },
+              {
+                "label": "Read the full node-response trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12269788/"
+              }
+            ]
+          }
+        ],
+        "expert_view": {
+          "identity": "EBCTCG Lancet2014 DOI10.1016/S0140-6736(14)60488-8 PMC5015598:22trials8135women;trials1964–1986. Afteraxillarydissection pN1–3n1314:10yanyrecurrence45.7%noRTvs34.2%RT,RR.68(.57–.82);20ybreastcancermortality50.2%vs42.3%,RR.80(.67–.95),p=.01. These are cause-specific death risks, not overall survival. Old systemic therapy and high baseline risk limit current absolute gains. Guideline2025DOI10.1200/JCO-25-01747 Tables3–4/Fig1:mostpN+PMRT;selectedpN1mic/lownodalburdenpN1afollowingALNDwithfavorablefeaturesmayomit. ypN+afterneoadjuvantPMRT; cT1–3N1ypN0conditional, timing of review predates full newer results. SUPREMO DOI10.1056/NEJMoa2412225:stageIIintermediaterisk,M0,ALND>=8–10nodesmandatoryforN1;808CWIvs799none;10yOS81.4%vs81.9%,HR1.04(.82–1.30),p=.80;chestwallrecurrence9/808vs20/799;notcomprehensiveRNItrial,axillaryRTforbidden. B51 DOI10.1056/NEJMoa2414859: cT1–3N1M0 ->ypN0;1641enrolled1556primaryanalysis;42%mastectomy;5yinvasivebreastcancerrecurrence-free92.7%RTvs91.8%,HR.88(.60–1.28),p=.51;OS93.6vs94%;grade3toxicity10vs6.5%;109eventsratherthan172planned. No inference for residual positive nodes, isolatedcellsnotseparatelyrecorded;exploratorysubtypesnotdefinitive. No individualized recommendation from a positive sentinel sample alone."
+        },
+        "research": "Yes. In older trials, fewer women had cancer come back with rays after breast removal. Fewer were dead from breast cancer. The gain for a person today can differ. A node sample alone is not a full stage or plan."
+      },
       {
         "id": "chemotherapy",
         "name": "Chemotherapy",
@@ -321,13 +533,141 @@
         }
       },
       {
+        "id": "dandelion-oil",
+        "name": "Dandelion oil extract",
+        "short": "Dandelion",
+        "form": "Oil extract requested; water-based root extract is a separate research lead",
+        "grade": "unclear",
+        "tags": [
+          "herbs",
+          "skin"
+        ],
+        "question": "Does dandelion oil extract slow tumor growth?",
+        "answer": null,
+        "answer_label": "Open",
+        "summary": "The full paper tests a water-based root extract, not oil. That extract slowed colon tumor growth in a small mouse test. The oil question stays Open.",
+        "research": "The full paper tests a water-based root extract, not oil. That extract slowed colon tumor growth in a small mouse test. The oil question stays Open.",
+        "human": "No human cancer benefit from the requested oil is shown by this study. An early trial permission is not a successful cancer trial.",
+        "caution": "The exact oil, plant part and route need a check. Do not replace cancer care with an oil based on a root study. Ask before putting new products on skin being treated with radiation.",
+        "next_step": "What is in the oil and how is it used? Test that exact form with a matched control. A safe level and benefit in people stay Open.",
+        "refs": [
+          "C-096",
+          "C-097"
+        ],
+        "sources": [
+          {
+            "label": "Read the full root-extract study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+          }
+        ],
+        "study_details": [
+          {
+            "heading": "Cancer type and stage",
+            "text": "The source used colon cancer cells and mice with tumors. No human cancer stage was tested. The oil question has no matched human stage result.",
+            "sources": [
+              {
+                "label": "Read the full root-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+              },
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
+            "heading": "A separate root question has an answer",
+            "text": "Did the water-based root extract slow tumor growth in this mouse test? Yes. Figure 4 shows lower tumor growth than in the control group. This answer is for the root extract, not oil.",
+            "sources": [
+              {
+                "label": "Read the full root-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+              }
+            ]
+          },
+          {
+            "heading": "What was tested",
+            "text": "The mouse test used two human colon cell lines in mice with weak immune systems. Each mouse had a tumor on each side. There were four mice per group. Two tumors in one mouse are not two separate animals.",
+            "sources": [
+              {
+                "label": "Read the full root-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+              }
+            ]
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control mice had salt water by mouth. The treated mice had the root extract by mouth. The test lasted 75 days. The paper has different wording for the schedule for the extract.",
+            "sources": [
+              {
+                "label": "Read the full root-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+              }
+            ]
+          },
+          {
+            "heading": "What changed",
+            "text": "Figure 4 shows lower tumor growth with root extract. The main text does not give a clear final group mean with a range for that result. The abstract says more than 90% growth reduction. The result is not a human cure rate.",
+            "sources": [
+              {
+                "label": "Read the full root-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+              }
+            ]
+          },
+          {
+            "heading": "How it may work",
+            "text": "Cell tests found changed death signals and damage to the cells' energy parts. Blocking one death signal did not stop the effect. More than one path may matter. Those tests do not prove that an oil has the same effect.",
+            "sources": [
+              {
+                "label": "Read the full root-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+              }
+            ]
+          },
+          {
+            "heading": "What is still open",
+            "text": "The study needs a larger repeat test, clear dosing records and better harm checks. Human treatment benefit stays Open. Root water extract, leaf products and oil are separate forms.",
+            "sources": [
+              {
+                "label": "Read the full root-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+              }
+            ]
+          },
+          {
+            "heading": "What was read",
+            "text": "The full main paper was read, including methods, results and Figures 1 to 10. Extra files were not fully checked. A separate science reader is still needed.",
+            "sources": [
+              {
+                "label": "Read the full root-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+              }
+            ]
+          },
+          {
+            "heading": "Survival in people",
+            "text": "No human cancer survival rate was measured. Mouse tumor growth and survival in people are different results.",
+            "sources": [
+              {
+                "label": "Read the full root-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+              }
+            ]
+          }
+        ],
+        "expert_view": {
+          "identity": "Ovadje et al., Oncotarget2016;7:73080–73100. DOI10.18632/oncotarget.11485,PMC5341965. Full main primary XML read2026-10-15. Aqueous root extract;HT29,HCT116 versusNCM460;Figure1WST1quadruplicates/3independentexperiments,AnnexinV/PI separate. Figure4CD1nu/nu bilateral xenografts,randomized4mice/group,75days;oralPBSvsDRE. Two tumors/mouse notindependentanimals. Dosing conflict:mg/kg/dayversusgavage3times/week,discussiondrinkingwater;abstract>90%growthretardationnotexplicitfinalmaintextmeansorCI. No survival endpoint;small safetytest5controls/4treated,notproofabsenceofharm. Nooil,skinrouteorhumanoutcome. HealthCanadaPhaseIpermissionstatedbyauthorsnotcompletedclinicalefficacy."
+        }
+      },
+      {
         "id": "fenugreek",
         "name": "Fenugreek",
         "short": "Fenugreek",
         "form": "Food seeds and lab extracts",
         "grade": "cells",
-        "summary": "Breast, prostate, and pancreas cancer cells were in the tests. Growth was slower after the extract. Some cells died.",
-        "research": "Breast, prostate, and pancreas cancer cells were in the tests. Growth was slower after the extract. Some cells died.",
+        "summary": "The seed extract lowered the cancer cell activity signal in the 2009 lab test. Cell death was seen with separate stains. Proof is in Figures 1 and 3. The test did not measure tumors or survival in people.",
+        "research": "The seed extract lowered the cancer cell activity signal in the 2009 lab test. Cell death was seen with separate stains. Proof is in Figures 1 and 3. The test did not measure tumors or survival in people.",
         "human": "The filed studies did not test cancer care in people.",
         "caution": "Strong extracts can lower blood sugar or cause an allergy. Food seeds are not the tested lab product.",
         "next_step": "What should the next test check? What would a clear yes or no need?",
@@ -338,12 +678,12 @@
         ],
         "sources": [
           {
-            "label": "Read the cell study",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/19197146/"
+            "label": "Read the full seed-extract study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095649/"
           },
           {
-            "label": "Read the breast-cell study",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/33889009/"
+            "label": "Read the full breast-cell study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8057839/"
           },
           {
             "label": "Read about fenugreek safety",
@@ -374,19 +714,81 @@
           },
           {
             "heading": "What was tested",
-            "text": "The filed tests used seed extracts in breast, pancreas and prostate cancer cells. A seed extract can differ from food seeds."
+            "text": "The 2009 paper used a seed extract in breast, pancreas and prostate cancer cells. Each level had three wells. The main test ran for three days.",
+            "sources": [
+              {
+                "label": "Read the full seed-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095649/"
+              }
+            ]
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control cells had growth liquid and DMSO with no seed extract. The team also tested normal prostate cells and two pure plant compounds.",
+            "sources": [
+              {
+                "label": "Read the full seed-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095649/"
+              }
+            ]
           },
           {
             "heading": "What changed",
-            "text": "Cell growth was slower and some cells died in the lab tests. These findings are from cell tests. The current record does not give all group sizes or control details."
+            "text": "The cell activity signal was lower with the extract. Separate live and dead cell stains found cancer cell death. Proof is in Figures 1 and 3. A lower activity signal alone is not a direct cell count.",
+            "sources": [
+              {
+                "label": "Read the full seed-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095649/"
+              }
+            ]
+          },
+          {
+            "heading": "How it may work",
+            "text": "Some cell death and growth signals changed. Some growth signals were higher even while cells died. The mix may act in more than one way. The study did not prove one cause for the effect.",
+            "sources": [
+              {
+                "label": "Read the full seed-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095649/"
+              }
+            ]
+          },
+          {
+            "heading": "A second extract had mixed results",
+            "text": "A 2021 breast-cell study ran three separate tests. Higher levels had a lower cell activity signal. Some lower levels had a higher signal. Proof is in Figure 3. The result can change with the extract and level.",
+            "sources": [
+              {
+                "label": "Read the full breast-cell study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8057839/"
+              }
+            ]
           },
           {
             "heading": "What is still open",
-            "text": "The same extract needs a repeat test with clear controls and direct cell counts. Food seeds and human tumor benefit need separate proof."
+            "text": "Food seeds and the two lab extracts are different forms. The 2021 paper has conflicts in some test levels and animal counts. Neither paper is proof of a safe cancer treatment in people.",
+            "sources": [
+              {
+                "label": "Read the full seed-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095649/"
+              },
+              {
+                "label": "Read the full breast-cell study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8057839/"
+              }
+            ]
           },
           {
             "heading": "What was read",
-            "text": "The linked study findings were filed before this source pass. A full read-depth record and second science review still need to be filed."
+            "text": "The full 2009 and 2021 main papers were read. The new details include controls, test length and proof locations. A separate science reader and a matched human test are still needed.",
+            "sources": [
+              {
+                "label": "Read the full seed-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095649/"
+              },
+              {
+                "label": "Read the full breast-cell study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8057839/"
+              }
+            ]
           },
           {
             "heading": "Survival in people",
@@ -398,7 +800,10 @@
               }
             ]
           }
-        ]
+        ],
+        "expert_view": {
+          "identity": "S-013 full PMC3095649: triplicate wells per concentration, 72-hour MTT versus medium+DMSO. Figure 1 reports dose-dependent signal loss; Figure 3 live/dead staining at 96 hours. Not direct cell-number endpoint. Normal prostate cultures do not establish systemic safety. TGF-beta methods 1 ng/ml versus results 5 ng/ml; diosgenin methods 15 mM versus micromolar elsewhere. S-014 PMC8057839 full main paper: Figure 3, three independent experiments, 48-hour MCF-7/SK-BR3 viability, low-level stimulation and higher-level inhibition; IC50 150 and 40 micrograms/ml. Later SK-BR3 dose labels conflict with the selected doses; mouse methods six/group versus Table 2 mortality denominator ten. No genetic perturbation establishes p53 necessity. No clinical efficacy."
+        }
       },
       {
         "id": "castor-oil",
@@ -495,8 +900,8 @@
         "short": "Castor fruit extract",
         "form": "A lab extract from castor fruit",
         "grade": "cells",
-        "summary": "The lab test used breast-cancer cells. The mouse test used a shot of fruit extract.",
-        "research": "The lab test used breast-cancer cells. The mouse test used a shot of fruit extract.",
+        "summary": "The fruit extract group had lower tumor volume than the salt water group in this mouse test. Each group had ten mice. Proof is in Figure 5. The test used belly shots, not oil on skin.",
+        "research": "The fruit extract group had lower tumor volume than the salt water group in this mouse test. Each group had ten mice. Proof is in Figure 5. The test used belly shots, not oil on skin.",
         "human": "The filed paper did not test cancer care in people.",
         "caution": "A lab extract is not store-bought castor oil. Raw castor beans can poison people.",
         "next_step": "What should the next test check? What would a clear yes or no need?",
@@ -505,8 +910,8 @@
         ],
         "sources": [
           {
-            "label": "Read the fruit-extract study",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/31601896/"
+            "label": "Read the full fruit-extract study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6787038/"
           }
         ],
         "tags": [
@@ -533,19 +938,63 @@
           },
           {
             "heading": "What was tested",
-            "text": "The study used a lab fruit extract with breast cancer cells and mice with breast tumors. The mice had a shot of extract."
+            "text": "The study used a fruit extract in breast cancer cells and mice with 4T1 breast tumors. The mouse test had ten mice per group. Treatment was started after ten days of tumor growth.",
+            "sources": [
+              {
+                "label": "Read the full fruit-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6787038/"
+              }
+            ]
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control mice had salt water shots. The treated mice had four shots of extract into the belly. Tumor size was checked through day 22 after the cancer cells were put in.",
+            "sources": [
+              {
+                "label": "Read the full fruit-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6787038/"
+              }
+            ]
           },
           {
             "heading": "What changed",
-            "text": "Tumor growth was lower with the extract in the filed study. A fruit extract and castor oil are different tested forms. The current record still needs exact group and control details."
+            "text": "The paper says final tumor volume was more than 88% lower than in the control group. Proof is in Figure 5. The result is a group comparison, not proof that each tumor shrank by 88%.",
+            "sources": [
+              {
+                "label": "Read the full fruit-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6787038/"
+              }
+            ]
+          },
+          {
+            "heading": "How it may work",
+            "text": "The cell tests had more signs of cell death and less movement through a gel. Some growth and cell death signals changed. Those tests do not prove that the extract stops spread in people.",
+            "sources": [
+              {
+                "label": "Read the full fruit-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6787038/"
+              }
+            ]
           },
           {
             "heading": "What is still open",
-            "text": "The extract contents and repeat result need a check. A store oil pack on skin and human tumor benefit stay Open."
+            "text": "The test was short. A long-term survival result, full harm check and new team repeat are needed. The extract is not castor oil or an oil pack. Do not make a home castor bean extract.",
+            "sources": [
+              {
+                "label": "Read the full fruit-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6787038/"
+              }
+            ]
           },
           {
             "heading": "What was read",
-            "text": "The linked study finding was filed before this source pass. A full read-depth record and second science review still need to be filed."
+            "text": "The full paper was read, including the mouse methods and Figure 5. The groups were chosen at random. Blinded tumor measurement was not stated. A separate science reader is still needed.",
+            "sources": [
+              {
+                "label": "Read the full fruit-extract study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6787038/"
+              }
+            ]
           },
           {
             "heading": "Survival in people",
@@ -557,7 +1006,10 @@
               }
             ]
           }
-        ]
+        ],
+        "expert_view": {
+          "identity": "Full PMC6787038 main paper. Female BALB/c 4T1 mammary-fat-pad tumors, randomized ten/group; saline vehicle versus intraperitoneal RCFE 0.5 mg/kg four doses 72 h apart from day 10 to day 22. Figure 5C reports >88% lower tumor volume than control at final check, not 88% regression of individual tumors. Cell MTT is activity, not direct death counts; Annexin V/PI and PARP cleavage separate. STAT3 phosphorylation, Bax/Bcl-2 and caspase-7 associations do not prove necessity; no rescue/knockdown isolation. No survival endpoint or comprehensive toxicology. Figure captions mean±SEM versus methods mean±SD inconsistency. Not castor oil, skin packs or established human treatment."
+        }
       },
       {
         "id": "comfrey",
@@ -620,6 +1072,16 @@
             ]
           },
           {
+            "heading": "A narrower question with an answer",
+            "text": "Did the extract leave less early damage in one rat test? Yes, some small early lesions were fewer. The same test had more signs of liver injury. The extract result does not answer whether a powder and DMSO mix treats a tumor.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862927/"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The full study used a leaf extract by mouth in rats with early liver lesions. Early lesions are changed tissue spots before established tumors. The test did not use powder with DMSO on skin."
           },
@@ -661,8 +1123,8 @@
         "short": "Tree-frog gut bacteria",
         "form": "A live bacterial strain tested in mice",
         "grade": "cells",
-        "summary": "A live germ from a tree frog was in the 2025 test. The mice had colon-type tumors. Cell killing and an immune response were seen.",
-        "research": "A live germ from a tree frog was in the 2025 test. The mice had colon-type tumors. Cell killing and an immune response were seen.",
+        "summary": "All five mice in the tested germ group had no felt tumor for at least 30 days. Proof is in Figure 3. The result was from one small mouse test. The germ was a named isolate, not raw frog gut.",
+        "research": "All five mice in the tested germ group had no felt tumor for at least 30 days. Proof is in Figure 3. The result was from one small mouse test. The germ was a named isolate, not raw frog gut.",
         "human": "The paper tested mice, not people with cancer. A small mouse test does not prove a human cure.",
         "caution": "This germ species has caused illness in people. Raw frog gut material is not the tested strain.",
         "next_step": "What should the next test check? What would a clear yes or no need?",
@@ -673,8 +1135,8 @@
         ],
         "sources": [
           {
-            "label": "Read the mouse tumor study",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/41376334/"
+            "label": "Read the full mouse study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12710904/"
           },
           {
             "label": "Read the infection report",
@@ -686,7 +1148,7 @@
           "harm"
         ],
         "expert_view": {
-          "identity": "Ewingella americana; Dryophytes japonicus; Colon-26 tumors in BALB/c mice. Main group n=5."
+          "identity": "Full PMC12710904 main paper. Figure 2 screening n=3/group; Figure 3 efficacy n=5/group, subcutaneous Colon-26 in immunocompetent BALB/c. Single IV E. americana in Pearl Core E-MC64 broth; shared PBS control is not matched culture medium. Figure 3D CR 5/5 versus anti-PD-L1 1/5 at day 30; CR defined no palpable mass for >=30 days, not histological eradication. Figure 3E follow-up to day 60. Rechallenge claimed 0/10 versus 10/10; supplementary raw data not re-audited. Higher than 1e9 CFU caused acute mortality; tested optimum equals maximum tolerated dose. Figure 6 blood time day30 versus results day7; methods multiple times. Virulence analysis uses public ATCC33852 genome, not isolate whole-genome sequencing. Descriptive immune markers not causal depletion experiments. Not human benefit/safety or superiority to standard human colorectal regimens."
         },
         "question": "Did all five treated mice have a complete tumor response in the filed group?",
         "answer": true,
@@ -708,23 +1170,83 @@
           },
           {
             "heading": "What was tested",
-            "text": "The 2025 study used one live bacterial strain from a tree frog. The main group had five mice with colon-type tumors."
+            "text": "The paper tested live Ewingella americana from a Japanese tree frog. The main comparison had five mice per group with Colon-26 tumors under the skin. The mice had one shot into a vein.",
+            "sources": [
+              {
+                "label": "Read the full mouse study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12710904/"
+              }
+            ]
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The study had salt water, a cancer drug and an immune drug as controls. The germs were given in growth broth. The salt water control did not match that broth. The control gap can affect what the test proves.",
+            "sources": [
+              {
+                "label": "Read the full mouse study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12710904/"
+              }
+            ]
           },
           {
             "heading": "What changed",
-            "text": "All five treated mice had a complete tumor response in the named group. That result is five mice in one group. The result is not a test in people."
+            "text": "All five mice in the germ group had a complete response at day 30. The paper says a complete response was no felt tumor for at least 30 days. One of five mice in the immune drug group had that response. Proof is in Figure 3.",
+            "sources": [
+              {
+                "label": "Read the full mouse study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12710904/"
+              }
+            ]
+          },
+          {
+            "heading": "Mouse follow-up is not human survival",
+            "text": "Mouse survival was tracked in Figure 3 to day 60. A tumor challenge had no tumors in ten previously treated mice and tumors in ten untreated mice. The findings are mouse results, not human cure rates.",
+            "sources": [
+              {
+                "label": "Read the full mouse study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12710904/"
+              }
+            ]
           },
           {
             "heading": "How it may work",
-            "text": "Cell killing and an immune response were in the paper. Cell killing and immune response are two possible paths to a tumor effect. Their role in people needs a test."
+            "text": "More germs were inside the tumors over time. Tumor cell clusters were broken down in the lab. Tumors had more immune cell markers and signs of cell death. The findings are clues to possible paths. They do not prove each path caused the response.",
+            "sources": [
+              {
+                "label": "Read the full mouse study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12710904/"
+              }
+            ]
+          },
+          {
+            "heading": "What could cause harm",
+            "text": "Higher tested amounts caused deaths in mice. The chosen amount was also the highest tolerated amount. Human infection risk and safe delivery stay Open. The paper did not sequence the full genome of the tested isolate.",
+            "sources": [
+              {
+                "label": "Read the full mouse study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12710904/"
+              }
+            ]
           },
           {
             "heading": "What is still open",
-            "text": "The strain, route, repeat result and infection risk need separate checks. Raw frog gut material is not the tested strain. Human benefit stays Open."
+            "text": "The result needs a new team, a matched broth control and other tumor models. The paper has conflicting safety sample times. Raw frog gut, a drink and use in people were not tested.",
+            "sources": [
+              {
+                "label": "Read the full mouse study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12710904/"
+              }
+            ]
           },
           {
             "heading": "What was read",
-            "text": "The named five-mouse result is in the filed study. A second science review remains Open. Infection reports from other strains cannot prove the exact strain has the same risk."
+            "text": "The full main paper was read, including methods and Figures 2 to 6. The three-mouse screen and five-mouse comparison are distinct tests. A separate science reader has not checked the finding.",
+            "sources": [
+              {
+                "label": "Read the full mouse study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12710904/"
+              }
+            ]
           },
           {
             "heading": "Survival in people",
@@ -1882,6 +2404,16 @@
             ]
           },
           {
+            "heading": "A narrower question with an answer",
+            "text": "Did the tested peroxide shrink these mouse tumors? No. Figure 7 shows restored growth in tumors made from cells with a changed gene. This result does not answer every product or route.",
+            "sources": [
+              {
+                "label": "Read the full study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3877547/"
+              }
+            ]
+          },
+          {
             "heading": "What was tested",
             "text": "The test used mice with tumors made from cells with a changed gene. Dilute peroxide was put into those tumors. Figure 7A says each group had six mice."
           },
@@ -2032,8 +2564,8 @@
         ],
         "sources": [
           {
-            "label": "Read the cancer study",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+            "label": "Read the full pancreas trial",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6547080/"
           },
           {
             "label": "Read the NCI trial list",
@@ -2052,7 +2584,7 @@
         "answer": false,
         "answer_label": "No, reported in this test",
         "expert_view": {
-          "identity": "Tested form: Hydroxychloroquine added to gemcitabine and nab-paclitaxel\n\nCancer model: 112 untreated advanced or metastatic pancreatic cancer patients; randomized 55 versus 57\n\nComparison: The same chemotherapy without hydroxychloroquine\n\nEndpoint: Overall survival at 12 months; primary endpoint\n\nRead level: primary structured abstract and figure legends read; full-text access blocked; ORR secondary p=0.047\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\n12-month OS 41% versus 49%; secondary ORR 38.2% versus 21.1%, p=0.047\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
+          "identity": "Full PMC6547080 main paper read. Open-label randomized phase2 NCT01506973, 55 GA+HCQ versus57 GA; ITT 12moOS41%(95%CI27–53) vs49%(35–61),p=.44. MedianOS11.1 vs12.1mo HR1.14(.76–1.69),p=.53. Table1 partial response21/55(38.2%) vs12/57(21.1%),p=.047, all partial;24nonevaluable,12/arm retained inITT. Safety54vs53;grade3/4neutropenia23/54vs12/53,p=.03. No placebo;higher dropout;response secondary and hypothesis generating. Only45genotyped;all8KRASwildtype incontrol mayinflatecontrolOS,butmostuntyped. No validated biomarker subgroup. Main paper full read does not mean supplements independently verified."
         },
         "study_details": [
           {
@@ -2071,19 +2603,83 @@
           },
           {
             "heading": "What was tested",
-            "text": "The trial had 112 people with advanced pancreas cancer. Fifty-five had added hydroxychloroquine with cancer drugs. Fifty-seven had the same cancer drugs alone."
+            "text": "The trial had 112 people with advanced pancreas cancer. Fifty-five had added hydroxychloroquine with gemcitabine and nab-paclitaxel. Fifty-seven had the same cancer drugs alone. The main test was survival at one year.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6547080/"
+              }
+            ]
           },
           {
-            "heading": "What changed",
-            "text": "At one year, 41% were alive with the added drug and 49% with cancer drugs alone. No clear survival gain was shown. A separate tumor response result was higher with the added drug."
+            "heading": "What it was compared with",
+            "text": "People were put in groups at random. The trial was open label, which means the drug plan was known. The control had no placebo pill. Results include all 112 people in their assigned groups.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6547080/"
+              }
+            ]
           },
           {
-            "heading": "Why the results differ",
-            "text": "Tumor response means a measured change in a tumor. Survival means how long people live. A gain in tumor response does not prove longer life."
+            "heading": "Did more people live for one year?",
+            "text": "No clear gain was shown. At one year, 41% were alive with the added drug and 49% with cancer drugs alone. The test could not rule out chance. Proof is in the Efficacy results and Figure 3.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6547080/"
+              }
+            ]
+          },
+          {
+            "heading": "Did more tumors respond?",
+            "text": "Yes, for this separate test. Partial tumor shrinkage was seen in 21 of 55 people with the added drug and 12 of 57 without it. No complete response was reported. Proof is in Table 1. This did not lead to longer life.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6547080/"
+              }
+            ]
+          },
+          {
+            "heading": "Side effects in the trial",
+            "text": "Serious low infection-fighting blood cells were in about 43% with the added drug and 23% without it. The safety groups had 54 and 53 people. Some had nausea, nerve symptoms or vision changes. Proof is in Table 2.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6547080/"
+              }
+            ]
+          },
+          {
+            "heading": "How it may work",
+            "text": "The drug can block part of a cell waste-reuse process called autophagy. Cancer cells may use that process under stress. A possible target does not prove a survival gain.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6547080/"
+              }
+            ]
+          },
+          {
+            "heading": "What is still open",
+            "text": "Twenty-four people had no usable tumor response check. The trial was small and had no placebo. A gene test covered only 45 people and had a group imbalance. Tumor response was a second measure, not the main test.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6547080/"
+              }
+            ]
           },
           {
             "heading": "What was read",
-            "text": "The primary abstract and figure notes were read. Full-paper access was blocked. The full methods and a separate science check remain Open."
+            "text": "The full main paper was read. The old full-paper access gap is now closed. The added drug is not supported for routine use in this trial group. A separate science reader is still needed.",
+            "sources": [
+              {
+                "label": "Read the full pancreas trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6547080/"
+              }
+            ]
           },
           {
             "heading": "Survival in people",
@@ -2099,6 +2695,438 @@
       }
     ],
     "lessons": [
+      {
+        "id": "cancer-stages",
+        "title": "Cancer stages and care that can help",
+        "intro": "Stage tells where cancer is and how far it has spread. Care also depends on the cancer type and cell tests. Beat cancer can mean cure, less return, longer life or less pain. Ask which goal a result proves.",
+        "sections": [
+          {
+            "heading": "Stage 0: cells have not invaded",
+            "text": "Changed cells stay in their first tissue layer. Breast DCIS is one example. Care can remove the changed area by surgery. Breast surgery may be followed by radiation. The goal is to prevent invasive cancer.",
+            "sources": [
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              },
+              {
+                "label": "Read breast care by stage",
+                "url": "https://www.cancer.gov/types/breast/treatment/by-stage"
+              }
+            ]
+          },
+          {
+            "heading": "Stage I: early invasive cancer",
+            "text": "Cancer has grown into tissue but is still limited in many staging systems. The exact rules can differ by cancer. Stage I colon cancer can be cured by surgery. Early breast care may add radiation or drugs based on cell tests.",
+            "sources": [
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              },
+              {
+                "label": "Read colon care by stage",
+                "url": "https://www.cancer.gov/types/colorectal/hp/colon-treatment-pdq"
+              },
+              {
+                "label": "Read breast care by stage",
+                "url": "https://www.cancer.gov/types/breast/treatment/by-stage"
+              }
+            ]
+          },
+          {
+            "heading": "Stage II: more local growth or some node spread",
+            "text": "The tumor may be larger or reach nearby tissue or nodes. Some stage II cancers have no positive nodes. Colon care can start with surgery. Breast care can use surgery, radiation and drugs. Added treatment is based on risk.",
+            "sources": [
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              },
+              {
+                "label": "Read colon care by stage",
+                "url": "https://www.cancer.gov/types/colorectal/hp/colon-treatment-pdq"
+              },
+              {
+                "label": "Read breast care by stage",
+                "url": "https://www.cancer.gov/types/breast/treatment/by-stage"
+              }
+            ]
+          },
+          {
+            "heading": "Stage III: more regional spread",
+            "text": "Cancer can involve more nearby nodes or tissue, but has no distant spread in these systems. Cure may still be the aim. Stage III colon care uses surgery and chemo. Locally advanced breast care can use drugs, surgery and radiation.",
+            "sources": [
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              },
+              {
+                "label": "Read colon care by stage",
+                "url": "https://www.cancer.gov/types/colorectal/hp/colon-treatment-pdq"
+              },
+              {
+                "label": "Read breast care by stage",
+                "url": "https://www.cancer.gov/types/breast/treatment/by-stage"
+              }
+            ]
+          },
+          {
+            "heading": "Stage IV: spread to distant sites",
+            "text": "Cancer has reached distant parts of the body. Stage IV breast care is meant to slow cancer and control symptoms. Drugs may act throughout the body. Selected colon cancers with limited liver or lung spread may have surgery. Cure is not promised by a stage label.",
+            "sources": [
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              },
+              {
+                "label": "Read breast care by stage",
+                "url": "https://www.cancer.gov/types/breast/treatment/by-stage"
+              },
+              {
+                "label": "Read colon care by stage",
+                "url": "https://www.cancer.gov/types/colorectal/hp/colon-treatment-pdq"
+              }
+            ]
+          },
+          {
+            "heading": "Distant spread does not always rule out cure",
+            "text": "Cancer types use different stage rules. Testicular germ cell cancer can be curable even with distant spread, with cisplatin-based drugs as one form of care. It uses stages I to III, not a stage IV label. Its result does not transfer to breast cancer.",
+            "sources": [
+              {
+                "label": "Read the testicular cancer guide",
+                "url": "https://www.cancer.gov/types/testicular/hp/testicular-treatment-pdq"
+              }
+            ]
+          },
+          {
+            "heading": "A positive nearby node is not stage IV",
+            "text": "Nearby nodes are part of regional spread. Distant spread is a different finding. In breast cancer, tumor size, nodes, grade and ER, PR and HER2 tests help set the stage. Ask for the written stage and the reasons for it.",
+            "sources": [
+              {
+                "label": "Read the breast stage guide",
+                "url": "https://www.cancer.gov/types/breast/stages"
+              },
+              {
+                "label": "Read how breast nodes are staged",
+                "url": "https://www.cancer.gov/types/breast/stages/tnm-staging-system"
+              }
+            ]
+          },
+          {
+            "heading": "Stage and grade are different",
+            "text": "Stage is a measure of extent and spread. Grade describes how abnormal cells look. A gene-test score is another measure. None of these is a home test. A cell dish or mouse tumor cannot be given a human cancer stage.",
+            "sources": [
+              {
+                "label": "Read how cancer stage is defined",
+                "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              },
+              {
+                "label": "Read the breast stage guide",
+                "url": "https://www.cancer.gov/types/breast/stages"
+              }
+            ]
+          },
+          {
+            "heading": "How to check a claim that something beats cancer",
+            "text": "Ask whether the source shows cure, tumor shrinkage, less return or longer life. You can match the cancer, stage and treatment. Ask for the result without that treatment too. The herb and oil tests in this app do not prove cures at human stages.",
+            "sources": [
+              {
+                "label": "Read the full pooled radiation trials",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5015598/"
+              },
+              {
+                "label": "Read colon care by stage",
+                "url": "https://www.cancer.gov/types/colorectal/hp/colon-treatment-pdq"
+              }
+            ]
+          },
+          {
+            "heading": "What to ask at a care visit",
+            "text": "What is the cancer type and stage? Is the goal cure or control? What is my chance of return with and without each treatment? What harm may last? What test can show whether treatment worked?",
+            "sources": [
+              {
+                "label": "Read breast care by stage",
+                "url": "https://www.cancer.gov/types/breast/treatment/by-stage"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "radiation-care",
+        "title": "Radiation: how it works, harm and recovery",
+        "intro": "This guide is about breast and chest-wall rays after surgery. The beam can harm cancer and nearby healthy tissue. The goal is to gain more cancer control than harm. Benefits and risks must match the person and plan.",
+        "sections": [
+          {
+            "heading": "What exactly is radiation?",
+            "text": "Radiation is energy sent as waves or particles. Cancer treatment uses energy strong enough to damage DNA, the cell gene code. Damage can occur directly or through changed molecules inside cells. Cells with damage beyond repair stop dividing or die.",
+            "sources": [
+              {
+                "label": "Read how radiation treats cancer",
+                "url": "https://www.cancer.gov/about-cancer/treatment/types/radiation-therapy"
+              }
+            ]
+          },
+          {
+            "heading": "Why can it hurt healthy tissue?",
+            "text": "The beam can harm both cancer and healthy cells. The planned shape, angle and amount limit healthy exposure. Skin may not replace lost cells fast enough. Injury and swelling can lead to scar tissue or blocked fluid flow.",
+            "sources": [
+              {
+                "label": "Read how radiation treats cancer",
+                "url": "https://www.cancer.gov/about-cancer/treatment/types/radiation-therapy"
+              },
+              {
+                "label": "Read the skin care guide",
+                "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/skin-nail-changes"
+              },
+              {
+                "label": "Read the swelling care guide",
+                "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/lymphedema"
+              }
+            ]
+          },
+          {
+            "heading": "What makes harm more likely?",
+            "text": "The area and amount treated matter, as do prior rays, other drugs, smoking, existing heart or lung disease and healing problems. A skin dose hot spot can raise skin injury risk. A larger target can expose more healthy tissue.",
+            "sources": [
+              {
+                "label": "Read the 2025 radiation guideline",
+                "url": "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf"
+              },
+              {
+                "label": "Read radiation side effects",
+                "url": "https://www.cancer.gov/about-cancer/treatment/types/radiation-therapy/side-effects"
+              },
+              {
+                "label": "Read the skin protection trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11921048/"
+              }
+            ]
+          },
+          {
+            "heading": "What happens at treatment?",
+            "text": "A planning scan and position checks guide the beam. You may be asked to hold your breath to protect the heart. The team leaves the room but can see and hear you. External beam treatment does not leave you radioactive.",
+            "sources": [
+              {
+                "label": "Read the 2025 radiation guideline",
+                "url": "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf"
+              },
+              {
+                "label": "Read Radiation Therapy and You",
+                "url": "https://www.cancer.gov/publications/patient-education/radiation-therapy-and-you.pdf"
+              }
+            ]
+          },
+          {
+            "heading": "During care and the first weeks after",
+            "text": "Tiredness, soreness, swelling and red or darker skin can build up over weeks. Skin effects can keep getting worse for a short time after the last visit. Many early effects get better over weeks to months. Keep the follow-up visits.",
+            "sources": [
+              {
+                "label": "Read the breast radiation guide",
+                "url": "https://www.cancer.gov/types/breast/treatment/radiation"
+              },
+              {
+                "label": "Read Radiation Therapy and You",
+                "url": "https://www.cancer.gov/publications/patient-education/radiation-therapy-and-you.pdf"
+              },
+              {
+                "label": "Read radiation side effects",
+                "url": "https://www.cancer.gov/about-cancer/treatment/types/radiation-therapy/side-effects"
+              }
+            ]
+          },
+          {
+            "heading": "Skin breakdown: what helps and what proof exists?",
+            "text": "Painful wet peeling needs a nurse or doctor check. Care may include special dressings, pain care and antibiotics for infection. A trial showed less wet peeling with prescribed mometasone than a plain cream. The trial was of prevention, not proof that all severe wounds healed.",
+            "sources": [
+              {
+                "label": "Read the skin care guide",
+                "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/skin-nail-changes"
+              },
+              {
+                "label": "Read the skin protection trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11921048/"
+              }
+            ]
+          },
+          {
+            "heading": "The skin trial in numbers",
+            "text": "The main analysis had 124 people after mastectomy. Wet peeling was in 28 of 64 with mometasone and 40 of 60 with plain cream. Nineteen of 143 randomized people were left out. All had a skin-dose sheet called bolus. The result may differ with other plans.",
+            "sources": [
+              {
+                "label": "Read the skin protection trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11921048/"
+              }
+            ]
+          },
+          {
+            "heading": "Lung inflammation: urgent care can help",
+            "text": "A new cough, fever or trouble breathing needs a prompt check. Infection, blood clots, drug harm and cancer can look similar. Doctors may use scans, oxygen tests and other tests first. For lung swelling caused by rays, care may include steroids and oxygen. Severe cases need hospital care.",
+            "sources": [
+              {
+                "label": "Read the lung injury care guide",
+                "url": "https://www.eviq.org.au/clinical-resources/side-effect-and-toxicity-management/respiratory/1895-radiation-induced-lung-injury-pneumonitis-an"
+              }
+            ]
+          },
+          {
+            "heading": "A record of lung recovery, with limits",
+            "text": "One study was a record review of 1,176 people after breast rays. Sixteen had a lung condition called organizing pneumonia. Lung findings were clear in fourteen during follow-up. Two had repeat flares. Care varied, and only two had steroids. The source was a record review, not proof of one cure.",
+            "sources": [
+              {
+                "label": "Read the full lung follow-up study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4415292/"
+              }
+            ]
+          },
+          {
+            "heading": "Lung scars: a real gap",
+            "text": "Lung swelling and fixed lung scars are different problems. Steroids can help swelling. They do not erase fixed scars. The lung guide says no specific treatment can undo lung scars caused by rays. Oxygen and lung rehab may help symptoms. Recovery is not assured.",
+            "sources": [
+              {
+                "label": "Read the lung injury care guide",
+                "url": "https://www.eviq.org.au/clinical-resources/side-effect-and-toxicity-management/respiratory/1895-radiation-induced-lung-injury-pneumonitis-an"
+              }
+            ]
+          },
+          {
+            "heading": "Arm or chest swelling: control, not a proven cure",
+            "text": "Rays and node surgery can block fluid drainage. Early care can help limit swelling. A trained therapist may use fitted compression, gentle movement, skin care and lymph drainage. NCI says lasting lymphedema can be treated but has no known cure.",
+            "sources": [
+              {
+                "label": "Read the swelling care guide",
+                "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/lymphedema"
+              }
+            ]
+          },
+          {
+            "heading": "Heart harm: do not wait on chest pain",
+            "text": "Rare late heart problems can be serious. Severe chest pain, sudden severe trouble breathing or fainting needs emergency care. In the U.S., call 911. A heart attack may need urgent treatment to restore blood flow. The finding is not proof that all heart damage from rays is repaired.",
+            "sources": [
+              {
+                "label": "Read the breast radiation guide",
+                "url": "https://www.cancer.gov/types/breast/treatment/radiation"
+              },
+              {
+                "label": "Read urgent heart warning signs",
+                "url": "https://www.nhlbi.nih.gov/health/heart-attack/symptoms"
+              },
+              {
+                "label": "Read emergency heart care",
+                "url": "https://www.nhlbi.nih.gov/health/heart-attack/treatment"
+              }
+            ]
+          },
+          {
+            "heading": "Other lasting harm needs its own diagnosis",
+            "text": "Hard tissue, stiff shoulders, nerve symptoms, weak ribs or reconstruction problems may need tests and a rehab or surgical review. New pain or a lump may be injury or cancer. Care is based on the cause. There is no single repair or success rate for these problems.",
+            "sources": [
+              {
+                "label": "Read the breast radiation guide",
+                "url": "https://www.cancer.gov/types/breast/treatment/radiation"
+              },
+              {
+                "label": "Read about lasting effects and care",
+                "url": "https://www.cancer.gov/about-cancer/coping/survivorship/late-effects"
+              },
+              {
+                "label": "Read the 2025 radiation guideline",
+                "url": "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf"
+              }
+            ]
+          },
+          {
+            "heading": "Could a second cancer occur?",
+            "text": "Rare second cancers can occur years after care. A new cancer needs its own tissue test, stage and care plan. The care team may not be able to prove what caused one person's cancer. There is no detox that guarantees reversal of rays damage.",
+            "sources": [
+              {
+                "label": "Read the breast radiation guide",
+                "url": "https://www.cancer.gov/types/breast/treatment/radiation"
+              },
+              {
+                "label": "Read about lasting effects and care",
+                "url": "https://www.cancer.gov/about-cancer/coping/survivorship/late-effects"
+              }
+            ]
+          },
+          {
+            "heading": "The worst cases and the limit of the proof",
+            "text": "Severe lung or heart harm can threaten life and can be fatal. Permanent disability or a second cancer can occur. Most people do not have these severe harms. Published recoveries do not prove every severe case was solved.",
+            "sources": [
+              {
+                "label": "Read the lung injury care guide",
+                "url": "https://www.eviq.org.au/clinical-resources/side-effect-and-toxicity-management/respiratory/1895-radiation-induced-lung-injury-pneumonitis-an"
+              },
+              {
+                "label": "Read the breast radiation guide",
+                "url": "https://www.cancer.gov/types/breast/treatment/radiation"
+              }
+            ]
+          },
+          {
+            "heading": "When to call the team today",
+            "text": "Report new cough, fever, new arm swelling, worsening pain or open wet skin. A hot red swollen area can be infection. Do not wait for the next scan. Get the team's day and night contact plan before treatment starts.",
+            "sources": [
+              {
+                "label": "Read the skin care guide",
+                "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/skin-nail-changes"
+              },
+              {
+                "label": "Read the swelling care guide",
+                "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/lymphedema"
+              },
+              {
+                "label": "Read the lung injury care guide",
+                "url": "https://www.eviq.org.au/clinical-resources/side-effect-and-toxicity-management/respiratory/1895-radiation-induced-lung-injury-pneumonitis-an"
+              }
+            ]
+          },
+          {
+            "heading": "How the plan lowers risk",
+            "text": "Ask to see the heart and lung exposure, why each node area needs treatment, and whether breath hold can help. Ask how skin is checked and when a skin-dose sheet is needed. Planning lowers risk but does not remove all harm.",
+            "sources": [
+              {
+                "label": "Read the 2025 radiation guideline",
+                "url": "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf"
+              }
+            ]
+          },
+          {
+            "heading": "What you can do after each visit",
+            "text": "Use the skin care plan from the radiation care team. Ask before using oils, DMSO, herbs or new creams on the area. Keep gentle movement, rest and food intake suited to your symptoms. Keep a symptom log and bring it to follow-up.",
+            "sources": [
+              {
+                "label": "Read the skin care guide",
+                "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/skin-nail-changes"
+              },
+              {
+                "label": "Read Radiation Therapy and You",
+                "url": "https://www.cancer.gov/publications/patient-education/radiation-therapy-and-you.pdf"
+              }
+            ]
+          },
+          {
+            "heading": "What counts as solved?",
+            "text": "A symptom may ease while damage remains. A scan may improve while relapse risk stays. This guide labels trial evidence, record reviews and care advice. A full cure of every severe rays effect has not been shown. Those gaps stay Open.",
+            "sources": [
+              {
+                "label": "Read the skin protection trial",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11921048/"
+              },
+              {
+                "label": "Read the full lung follow-up study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4415292/"
+              },
+              {
+                "label": "Read the lung injury care guide",
+                "url": "https://www.eviq.org.au/clinical-resources/side-effect-and-toxicity-management/respiratory/1895-radiation-induced-lung-injury-pneumonitis-an"
+              },
+              {
+                "label": "Read the swelling care guide",
+                "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/lymphedema"
+              }
+            ]
+          }
+        ]
+      },
       {
         "id": "spike-proteins",
         "title": "Spike proteins: what you need to know",
@@ -2297,10 +3325,10 @@
     "pages": {
       "topics_title": "Questions, findings, and proof.",
       "topics_intro": "Look for cancer weak points. Compare clear questions and the tests behind each answer. Open means the question still needs work.",
-      "quick_title": "See the main point at a glance.",
-      "quick_intro": "The proof label shows the kind of test. A test does not promise that a product works.",
+      "quick_title": "All topics in one matrix.",
+      "quick_intro": "See every filed item, its tested form, question, finding, stage and source. Each row keeps its own limits.",
       "learn_title": "Clear answers to common cancer questions.",
-      "learn_intro": "Start with spike proteins, food, skin products, or oxygen claims. Check the linked sources and the limits.",
+      "learn_intro": "You can read about stages and care. See how rays treat cancer. Check each source and its limits.",
       "questions_title": "Build a question that can be checked.",
       "questions_intro": "Name the cells and form in the test. State what was measured. Check the source and the groups in each test.",
       "sources_intro": "These links let you check the full records. Some new claims still need a second reader to check the science.",

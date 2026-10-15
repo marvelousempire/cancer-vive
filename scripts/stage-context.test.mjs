@@ -7,8 +7,8 @@ test('each topic names sourced stage and survival scope without turning missing 
  assert.equal(context.records.length,topics.length);
  for(const t of topics){assert.ok(context.records.find(r=>r.topic_id===t.id));
  const stage=t.study_details.find(r=>r.heading==='Cancer type and stage');assert.ok(stage?.sources?.length,t.id);
- if(!['chemotherapy','hcq','turmeric','castor-oil','comfrey'].includes(t.id))assert.match(stage.text,/No human cancer stage was tested/);
- if(!['chemotherapy','hcq'].includes(t.id))assert.match(t.study_details.find(r=>r.heading==='Survival in people').text,/No human|did not measure|not a survival|No checked/);
+ if(!['chemotherapy','hcq','turmeric','castor-oil','comfrey','radiation'].includes(t.id))assert.match(stage.text,/No human cancer stage was tested/);
+ if(!['chemotherapy','hcq','radiation'].includes(t.id))assert.match(t.study_details.find(r=>r.heading==='Survival in people').text,/No human|did not measure|not a survival|No checked/);
  }
 });
 test('chemo rates name treatment comparison, time origin and separate toxicity',()=>{

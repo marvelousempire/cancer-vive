@@ -1,5 +1,37 @@
 [
   {
+    "label": "Source",
+    "url": "https://surgonc.org/wp-content/uploads/2025/10/jimenez-et-al-2025-postmastectomy-radiation-therapy-an-astro-asco-sso-clinical-practice-guideline.pdf"
+  },
+  {
+    "label": "Source",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5015598/"
+  },
+  {
+    "label": "Source",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7618363/"
+  },
+  {
+    "label": "Source",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12269788/"
+  },
+  {
+    "label": "Source",
+    "url": "https://www.cancer.gov/types/breast/treatment/radiation"
+  },
+  {
+    "label": "Source",
+    "url": "https://www.cancer.gov/types/breast/stages/tnm-staging-system"
+  },
+  {
+    "label": "Source",
+    "url": "https://www.cancer.gov/about-cancer/treatment/types/radiation-therapy"
+  },
+  {
+    "label": "Cancer Staging",
+    "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+  },
+  {
     "label": "Full paper",
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4631139/"
   },
@@ -16,20 +48,24 @@
     "url": "https://www.cancer.gov/publications/patient-education/chemotherapy-and-you.pdf"
   },
   {
-    "label": "Cancer Staging",
-    "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+    "label": "Source",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
   },
   {
-    "label": "PMID 19197146",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/19197146/"
+    "label": "Read the full seed-extract study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095649/"
   },
   {
-    "label": "PMID 33889009",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/33889009/"
+    "label": "Read the full breast-cell study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8057839/"
   },
   {
     "label": "Fenugreek: Usefulness and Safety",
     "url": "https://www.nccih.nih.gov/health/fenugreek"
+  },
+  {
+    "label": "PMID 19197146",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19197146/"
   },
   {
     "label": "Primary record",
@@ -46,6 +82,10 @@
   {
     "label": "Ricin",
     "url": "https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/ricin.html"
+  },
+  {
+    "label": "Read the full fruit-extract study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6787038/"
   },
   {
     "label": "PMID 31601896",
@@ -68,12 +108,16 @@
     "url": "https://doi.org/10.1093/jnci/61.3.865"
   },
   {
-    "label": "PMID 41376334",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/41376334/"
+    "label": "Read the full mouse study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12710904/"
   },
   {
     "label": "Nosocomial Ewingella americana bacteremia in an intensive care unit",
     "url": "https://pubmed.ncbi.nlm.nih.gov/3942442/"
+  },
+  {
+    "label": "PMID 41376334",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41376334/"
   },
   {
     "label": "Full paper",
@@ -240,8 +284,8 @@
     "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/ivermectin"
   },
   {
-    "label": "Primary report",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+    "label": "Read the full pancreas trial",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6547080/"
   },
   {
     "label": "Read the NCI trial list",
@@ -250,6 +294,66 @@
   {
     "label": "Hydroxychloroquine sulfate label",
     "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/214581s007lbl.pdf"
+  },
+  {
+    "label": "Primary report",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+  },
+  {
+    "label": "Source",
+    "url": "https://www.cancer.gov/types/breast/treatment/by-stage"
+  },
+  {
+    "label": "Source",
+    "url": "https://www.cancer.gov/types/colorectal/hp/colon-treatment-pdq"
+  },
+  {
+    "label": "Source",
+    "url": "https://www.cancer.gov/types/testicular/hp/testicular-treatment-pdq"
+  },
+  {
+    "label": "Source",
+    "url": "https://www.cancer.gov/types/breast/stages"
+  },
+  {
+    "label": "Source",
+    "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/skin-nail-changes"
+  },
+  {
+    "label": "Source",
+    "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/lymphedema"
+  },
+  {
+    "label": "Read radiation side effects",
+    "url": "https://www.cancer.gov/about-cancer/treatment/types/radiation-therapy/side-effects"
+  },
+  {
+    "label": "Source",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11921048/"
+  },
+  {
+    "label": "Read Radiation Therapy and You",
+    "url": "https://www.cancer.gov/publications/patient-education/radiation-therapy-and-you.pdf"
+  },
+  {
+    "label": "Source",
+    "url": "https://www.eviq.org.au/clinical-resources/side-effect-and-toxicity-management/respiratory/1895-radiation-induced-lung-injury-pneumonitis-an"
+  },
+  {
+    "label": "Source",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4415292/"
+  },
+  {
+    "label": "Read urgent heart warning signs",
+    "url": "https://www.nhlbi.nih.gov/health/heart-attack/symptoms"
+  },
+  {
+    "label": "Source",
+    "url": "https://www.nhlbi.nih.gov/health/heart-attack/treatment"
+  },
+  {
+    "label": "Source",
+    "url": "https://www.cancer.gov/about-cancer/coping/survivorship/late-effects"
   },
   {
     "label": "Respiratory viral infections awaken metastatic breast cancer cells in lungs",
@@ -278,6 +382,10 @@
   {
     "label": "https://clinicaltrials.gov/study/NCT01740323",
     "url": "https://clinicaltrials.gov/study/NCT01740323"
+  },
+  {
+    "label": "PMID 33889009",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33889009/"
   },
   {
     "label": "Paclitaxel Injection, USP label",
