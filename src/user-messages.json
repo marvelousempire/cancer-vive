@@ -536,7 +536,7 @@
         "id": "dandelion-oil",
         "name": "Dandelion oil extract",
         "short": "Dandelion",
-        "form": "Oil extract requested; water-based root extract is a separate research lead",
+        "form": "Oil extract requested; 2024 seed extracts, 2025 seed oil and water-based root extract are distinct forms",
         "grade": "unclear",
         "tags": [
           "herbs",
@@ -545,15 +545,19 @@
         "question": "Does dandelion oil extract slow tumor growth?",
         "answer": null,
         "answer_label": "Open",
-        "summary": "A 2025 seed oil study has a cancer cell signal. Its full methods were not available in this review. The full root-water paper has a mouse growth result. Neither finding is proof that the requested oil slows tumors.",
-        "research": "A 2025 seed oil study has a cancer cell signal. Its full methods were not available in this review. The full root-water paper has a mouse growth result. Neither finding is proof that the requested oil slows tumors.",
+        "summary": "The full 2024 seed study shows lower cell-life signals in some cancer cells. The result changed with the cell type. Healthy-cell tests did not prove safety in people. The missing 2025 oil paper and the tumor-treatment question stay Open.",
+        "research": "The full 2024 seed study shows lower cell-life signals in some cancer cells. The result changed with the cell type. Healthy-cell tests did not prove safety in people. The missing 2025 oil paper and the tumor-treatment question stay Open.",
         "human": "No human cancer benefit from the requested oil is shown by this study. An early trial permission is not a successful cancer trial.",
         "caution": "The exact oil, plant part and route need a check. Do not replace cancer care with an oil based on a root study. Ask before putting new products on skin being treated with radiation.",
         "next_step": "What is in the oil and how is it used? Test that exact form with a matched control. A safe level and benefit in people stay Open.",
         "refs": [
           "C-096",
           "C-097",
-          "C-102"
+          "C-102",
+          "C-104",
+          "C-105",
+          "C-106",
+          "C-107"
         ],
         "sources": [
           {
@@ -563,13 +567,25 @@
           {
             "label": "Read the seed-oil study record",
             "url": "https://doi.org/10.1016/j.foodchem.2025.143435"
+          },
+          {
+            "label": "Read the full 2024 seed study",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+          },
+          {
+            "label": "Read the 2025 seed-oil abstract",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39977979/"
           }
         ],
         "study_details": [
           {
             "heading": "Cancer type and stage",
-            "text": "The source used colon cancer cells and mice with tumors. No human cancer stage was tested. The oil question has no matched human stage result.",
+            "text": "The 2024 seed study tested throat, cervix and colon cancer cell lines. It also used a non-cancer monkey kidney cell line. No human cancer stage was tested. The separate root paper used colon cells and mice. Neither source gives a matched human stage result for oil.",
             "sources": [
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+              },
               {
                 "label": "Read the full root-extract study",
                 "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
@@ -577,6 +593,116 @@
               {
                 "label": "Read how cancer stage is defined",
                 "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+              }
+            ]
+          },
+          {
+            "heading": "The 2024 seed study: what was tested",
+            "text": "The team made 21 samples from dandelion, milk thistle and chamomile seeds. Six chosen extracts had cell tests. The samples were water-and-alcohol extracts from whole seeds or seeds left after oil was removed. Table 3 does not test the pure seed oils.",
+            "sources": [
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+              }
+            ]
+          },
+          {
+            "heading": "How to read the cell numbers",
+            "text": "CC50 is the test level that cut the cell-life signal in half. Lower means a stronger effect in this test. The unit is micrograms per milliliter. The numbers are lab results, not doses for people. MTT is a test of cell activity; it does not by itself prove how cells died.",
+            "sources": [
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+              }
+            ]
+          },
+          {
+            "heading": "Dandelion: whole-seed cell results",
+            "text": "Table 3 gives CC50 as mean plus or minus the spread: FaDu throat cancer, 347.40 ± 45.25; HeLa cervix cancer, 645.80 ± 28.14; RKO colon cancer, 974.90 ± 97.72. The non-cancer VERO kidney cells were 794.65 ± 41.08. All use micrograms per milliliter.",
+            "sources": [
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+              }
+            ]
+          },
+          {
+            "heading": "Dandelion: seeds left after oil removal",
+            "text": "Table 3 gives CC50 as mean plus or minus the spread: FaDu, 274.60 ± 26.87; HeLa, 360.20 ± 30.12; RKO, 633.95 ± 57.35. The non-cancer VERO cells were 578.15 ± 56.07. All use micrograms per milliliter. Oil removal did not make this a test of pure oil.",
+            "sources": [
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+              }
+            ]
+          },
+          {
+            "heading": "Were all cancer cells more sensitive?",
+            "text": "No, for the narrow claim that each cancer cell type was more affected than VERO. The VERO cells had a lower half-signal level than RKO with both extracts. VERO came from monkey kidneys. The study is not a test of all healthy human cells or safe use in people.",
+            "sources": [
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+              }
+            ]
+          },
+          {
+            "heading": "Did throat cancer cells show a stronger effect?",
+            "text": "Yes, in this cell test. The ratio is VERO CC50 divided by FaDu CC50. The whole-seed ratio was 2.29. The ratio after oil removal was 2.11. A ratio above one means the cancer cells reached the half-signal point first. For HeLa it was 1.23 and 1.61; for RKO it was 0.82 and 0.91.",
+            "sources": [
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+              }
+            ]
+          },
+          {
+            "heading": "What the other plants showed",
+            "text": "Table 3 keeps each plant separate. Milk thistle whole-seed ratios were 2.53, 1.89 and 1.78. The ratios after oil removal were 2.70, 2.14 and 1.87. The order is FaDu, HeLa, RKO. Chamomile ratios were below one for all three. The milk thistle result is not a dandelion result.",
+            "sources": [
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+              }
+            ]
+          },
+          {
+            "heading": "Healthy cells in all three plants",
+            "text": "VERO is the non-cancer cell line. Its CC50 was 794.65 and 578.15 for dandelion; 480.55 and 493.60 for milk thistle; 200.55 and 264.15 for chamomile. Each pair is whole seeds then seeds after oil removal, in micrograms per milliliter. A high number does not mean no harm at any level.",
+            "sources": [
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+              }
+            ]
+          },
+          {
+            "heading": "Other cancer-cell results in Table 3",
+            "text": "Milk thistle whole-seed CC50 was 190.05 for FaDu, 254.50 for HeLa and 270.55 for RKO. After oil removal it was 182.90, 230.85 and 264.15. Chamomile gave 363.90, 678.15 and 627.95; after oil removal, 293.30, 345.05 and 777.00. All use micrograms per milliliter. Full spread values are in the source.",
+            "sources": [
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+              }
+            ]
+          },
+          {
+            "heading": "Setup, control and repeat gaps",
+            "text": "Cells had extracts for 24 hours, then the MTT test. The extracts were first put in DMSO for the lab test. The lab test was not a DMSO skin mix. The main paper does not clearly give the cell-test repeat count, final DMSO level or a matched DMSO-only control. The result has those limits.",
+            "sources": [
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+              }
+            ]
+          },
+          {
+            "heading": "What this study cannot answer",
+            "text": "No tumor-bearing mice or people were tested in this study. It gives no human stage or survival rate. The study does not prove a cell-death path, a safe dose, or that the oil treats cancer. The full main paper, Table 3 and figure captions were read. The extra files were not read.",
+            "sources": [
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
               }
             ]
           },
@@ -652,7 +778,7 @@
           },
           {
             "heading": "What was read",
-            "text": "The full root-water main paper was read. The new seed-oil abstract was checked. The seed-oil site asked for a human check, so its full paper was not read. A separate science reader is still needed.",
+            "text": "The full 2024 seed main paper and the full root-water main paper were read. The 2025 seed-oil abstract was checked. Its full paper and the 1992 castor report are still missing. A separate science reader is still needed.",
             "sources": [
               {
                 "label": "Read the full root-extract study",
@@ -661,6 +787,10 @@
               {
                 "label": "Read the seed-oil study record",
                 "url": "https://doi.org/10.1016/j.foodchem.2025.143435"
+              },
+              {
+                "label": "Read the full 2024 seed study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
               }
             ]
           },
@@ -676,7 +806,7 @@
           }
         ],
         "expert_view": {
-          "identity": "Ovadje et al., Oncotarget2016;7:73080–73100. DOI10.18632/oncotarget.11485,PMC5341965. Full main primary XML read2026-10-15. Aqueous root extract;HT29,HCT116 versusNCM460;Figure1WST1quadruplicates/3independentexperiments,AnnexinV/PI separate. Figure4CD1nu/nu bilateral xenografts,randomized4mice/group,75days;oralPBSvsDRE. Two tumors/mouse notindependentanimals. Dosing conflict:mg/kg/dayversusgavage3times/week,discussiondrinkingwater;abstract>90%growthretardationnotexplicitfinalmaintextmeansorCI. No survival endpoint;small safetytest5controls/4treated,notproofabsenceofharm. Nooil,skinrouteorhumanoutcome. HealthCanadaPhaseIpermissionstatedbyauthorsnotcompletedclinicalefficacy.\n\nWu, Xiao & Wang, Food Chemistry 476 (2025) 143435. DOI: 10.1016/j.foodchem.2025.143435. Publisher abstract only; petroleum-ether seed oil. Abstract IC50 TE-1 212.4±2.1, HeLa 328.3±3.3, MCF-7 283.8±3.2 micrograms/mL. Full assay duration, vehicle, replication and normal-cell selectivity not checked. Publisher browser CAPTCHA; no challenge solved or bypassed. No tumor-bearing animal or clinical result established by the checked abstract."
+          "identity": "Ovadje et al., Oncotarget2016;7:73080–73100. DOI10.18632/oncotarget.11485,PMC5341965. Full main primary XML read2026-10-15. Aqueous root extract;HT29,HCT116 versusNCM460;Figure1WST1quadruplicates/3independentexperiments,AnnexinV/PI separate. Figure4CD1nu/nu bilateral xenografts,randomized4mice/group,75days;oralPBSvsDRE. Two tumors/mouse notindependentanimals. Dosing conflict:mg/kg/dayversusgavage3times/week,discussiondrinkingwater;abstract>90%growthretardationnotexplicitfinalmaintextmeansorCI. No survival endpoint;small safetytest5controls/4treated,notproofabsenceofharm. Nooil,skinrouteorhumanoutcome. HealthCanadaPhaseIpermissionstatedbyauthorsnotcompletedclinicalefficacy.\n\nWu, Xiao & Wang, Food Chemistry 476 (2025) 143435. DOI: 10.1016/j.foodchem.2025.143435. Publisher abstract only; petroleum-ether seed oil. Abstract IC50 TE-1 212.4±2.1, HeLa 328.3±3.3, MCF-7 283.8±3.2 micrograms/mL. Full assay duration, vehicle, replication and normal-cell selectivity not checked. Publisher browser CAPTCHA; no challenge solved or bypassed. No tumor-bearing animal or clinical result established by the checked abstract.\n\nMilovanovic et al., Foods 13(23):3907 (2024), DOI 10.3390/foods13233907, PMC11640657. Full main XML including Methods2.8/2.9, Results3.6, Tables1–3 and all six figure captions read2026-10-15. Twenty-one total extract samples; six selected aqueous ethanol Soxhlet extracts in Table3, not neat scCO2 oils. 24h exposure, DMSO stock, MTT3h, absorbance540/620nm, nonlinear dose-response CC50. Final vehicle concentration, matched vehicle-only comparator and cell-specific replicate n not clearly stated in main paper. SD not CI; no independent sample count invented. VERO monkey kidney comparator not healthy human tissue. D/DEX CC50 VERO/FaDu/HeLa/RKO:794.65±41.08/347.40±45.25/645.80±28.14/974.90±97.72;578.15±56.07/274.60±26.87/360.20±30.12/633.95±57.35 micrograms/mL. SI VERO/cancer D2.29/1.23/.82;DEX2.11/1.61/.91. MT native CC50 VERO480.55±6.29,FaDu190.05±17.47,HeLa254.50±31.54,RKO270.55±13.65;MTEX493.60±8.06,182.90±6.65,230.85±28.50,264.15±12.23. C native200.55±22.84,363.90±40.16,678.15±53.81,627.95±45.89;CEX264.15±16.19,293.30±34.22,345.05±8.84,777.00±28.14. Milk thistle SI1.78–2.70 is not dandelion. Main authors use not-cytotoxic thresholds for >500; finite CC50 does not mean no effect at any level. Antioxidant DPPH endpoint distinct from cell CC50; no measured molecular anticancer mechanism, human survival, clinical stage or established-tumor response. Supplement requested from EuropePMC but not obtained/read; raw data and S13 not audited. No new independent reviewer."
         }
       },
       {

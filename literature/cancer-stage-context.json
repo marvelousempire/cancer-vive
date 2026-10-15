@@ -248,9 +248,10 @@
       "stage_state": "preclinical-no-human-stage",
       "human_stage_result_by_stage_available": false,
       "source_urls": [
-        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/"
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5341965/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
       ],
-      "note": "Aqueous root cells and mouse xenografts are not oil or a human numbered stage."
+      "note": "2024 seed cell lines and separate root mouse study have no human clinical stage; selected extracts are not pure oil."
     }
   ]
 }

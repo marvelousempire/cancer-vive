@@ -1,0 +1,118 @@
+{
+  "schema": "cancer-vive.seed2024-review/v1",
+  "date": "2026-10-15",
+  "source_id": "S-102",
+  "read_level": "Full main paper, Tables1–3 and all six figure captions; supplementary/raw data not read",
+  "independent_reader": false,
+  "main_product_questions_open": 4,
+  "new_scoped_answers": {
+    "seed2024-fadu-selectivity": true,
+    "seed2024-all-cancer-selectivity": false
+  },
+  "exact_result": "Milovanovic et al., Foods 13(23):3907 (2024), DOI 10.3390/foods13233907, PMC11640657. Full main XML including Methods2.8/2.9, Results3.6, Tables1–3 and all six figure captions read2026-10-15. Twenty-one total extract samples; six selected aqueous ethanol Soxhlet extracts in Table3, not neat scCO2 oils. 24h exposure, DMSO stock, MTT3h, absorbance540/620nm, nonlinear dose-response CC50. Final vehicle concentration, matched vehicle-only comparator and cell-specific replicate n not clearly stated in main paper. SD not CI; no independent sample count invented. VERO monkey kidney comparator not healthy human tissue. D/DEX CC50 VERO/FaDu/HeLa/RKO:794.65±41.08/347.40±45.25/645.80±28.14/974.90±97.72;578.15±56.07/274.60±26.87/360.20±30.12/633.95±57.35 micrograms/mL. SI VERO/cancer D2.29/1.23/.82;DEX2.11/1.61/.91. MT native CC50 VERO480.55±6.29,FaDu190.05±17.47,HeLa254.50±31.54,RKO270.55±13.65;MTEX493.60±8.06,182.90±6.65,230.85±28.50,264.15±12.23. C native200.55±22.84,363.90±40.16,678.15±53.81,627.95±45.89;CEX264.15±16.19,293.30±34.22,345.05±8.84,777.00±28.14. Milk thistle SI1.78–2.70 is not dandelion. Main authors use not-cytotoxic thresholds for >500; finite CC50 does not mean no effect at any level. Antioxidant DPPH endpoint distinct from cell CC50; no measured molecular anticancer mechanism, human survival, clinical stage or established-tumor response. Supplement requested from EuropePMC but not obtained/read; raw data and S13 not audited. No new independent reviewer.",
+  "table3": [
+    [
+      "D_SX/Et/H2O",
+      "794.65 ± 41.08",
+      "347.40 ± 45.25",
+      "2.29",
+      "645.80 ± 28.14",
+      "1.23",
+      "974.90 ± 97.72",
+      "0.82"
+    ],
+    [
+      "DEX_SX/Et/H2O",
+      "578.15 ± 56.07",
+      "274.60 ± 26.87",
+      "2.11",
+      "360.20 ± 30.12",
+      "1.61",
+      "633.95 ± 57.35",
+      "0.91"
+    ],
+    [
+      "MT_SX/Et/H2O",
+      "480.55 ± 6.29",
+      "190.05 ± 17.47",
+      "2.53",
+      "254.50 ± 31.54",
+      "1.89",
+      "270.55 ± 13.65",
+      "1.78"
+    ],
+    [
+      "MTEX_SX/Et/H2O",
+      "493.60 ± 8.06",
+      "182.90 ± 6.65",
+      "2.70",
+      "230.85 ± 28.50",
+      "2.14",
+      "264.15 ± 12.23",
+      "1.87"
+    ],
+    [
+      "C_SX/Et/H2O",
+      "200.55 ± 22.84",
+      "363.90 ± 40.16",
+      "0.55",
+      "678.15 ± 53.81",
+      "0.30",
+      "627.95 ± 45.89",
+      "0.32"
+    ],
+    [
+      "CEX_SX/Et/H2O",
+      "264.15 ± 16.19",
+      "293.30 ± 34.22",
+      "0.90",
+      "345.05 ± 8.84",
+      "0.77",
+      "777.00 ± 28.14",
+      "0.34"
+    ]
+  ],
+  "access_attempts": {
+    "2025_seed_oil": "Publisher human-check screen; OpenAlex closed/no repository fulltext; official Crossref-linked Elsevier API rate limit. Abstract read via PubMed39977979. No full paper obtained.",
+    "1992_castor": "PubMed1292501 and EuropePMC record no abstract/fulltext. Chinese title located: 蓖麻油提取物的抗癌作用研究; authors 薛少安,吕登仕,李宝林,王仲会,陶静仪. Journal HTTPS certificate mismatch; HTTP archive timed out. No security warning bypass. No full report obtained.",
+    "2024_supplement": "EuropePMC supplementary endpoint timed out; supplementary/raw data not read."
+  },
+  "scope": "Shared content only; all three renderers retain their existing native rendering",
+  "targets": [
+    {
+      "id": "web",
+      "renderer": "React",
+      "source": "src",
+      "build": "npm run build",
+      "target": "https://marvelousempire.github.io/cancer-vive/",
+      "canonical_local_door": "http://cancer-vive.localhost/"
+    },
+    {
+      "id": "console",
+      "renderer": "Tauri + bundled React",
+      "source": "apps/cancer-vive-desktop",
+      "build": "tauri build --bundles app",
+      "target": "~/Applications/Cancer Vive.app"
+    },
+    {
+      "id": "native",
+      "renderer": "SwiftUI",
+      "source": "interface/swift",
+      "build": "xcodegen generate + xcodebuild -scheme CancerViveNative -configuration Release",
+      "target": "~/Applications/Cancer Vive Native.app"
+    }
+  ],
+  "proof_required": [
+    "all study rows and exact Table3 values",
+    "source action",
+    "comparison",
+    "search and filters",
+    "matrix and original documents",
+    "theme and restart"
+  ],
+  "micro_tool_opportunity": {
+    "score": 8,
+    "decision": "Reuse existing source checks, source-link policy, language gate, model tests and owner build routes. No new tool for subjective paper interpretation."
+  },
+  "source_sha256": "437041295f16be4850ffcfb38b1bf0ad6164f447750a6a4863f25d68c5355ce0"
+}

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.17.0 — 2026-10-15
+
+- Read the full 2024 seed main paper and added all six selected extract cancer-cell and non-cancer VERO results.
+- Added scoped FaDu selectivity Yes and across-all-cell-lines No; kept main oil tumor benefit Open.
+- Kept VERO monkey cells, DMSO controls, repeat-count, supplementary, missing 2025 seed-oil and 1992 castor full-paper gaps explicit.
+- Shared study details, proof links and comparison content ship together in Web, Mac Console and native SwiftUI.
+
 ## 0.16.0 — 2026-10-15
 
 - Reviewed all four Open questions with new full comfrey root, human peroxide-gel and mouse oxygen papers.

@@ -1,7 +1,7 @@
 {
   "name": "cancer-vive-console",
   "private": true,
-  "version": "0.16.0",
+  "version": "0.17.0",
   "scripts": {
     "build": "tauri build --bundles app"
   },

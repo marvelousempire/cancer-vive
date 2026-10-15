@@ -124,3 +124,8 @@ Status key: `seed` | `reviewed` | `disputed` | `retired`
 | C-101 | The small combined-care cohort establishes how much human benefit peroxide gel adds to radiation alone. | not-supported | S-098 S-101 | Four Open questions | seed |
 | C-102 | The 2025 dandelion seed-oil abstract reports cancer-cell inhibition, while full assay controls and tumor benefit remain unchecked. | association | S-100 | Four Open questions | seed |
 | C-103 | The checked phase2 KORTUC registry has no posted results, which cannot be treated as evidence of no efficacy. | shown | S-101 | Four Open questions | seed |
+
+| C-104 | Both selected 2024 dandelion extracts had lower 24-hour MTT CC50 in FaDu than in non-cancer VERO monkey kidney cells; SI was 2.29 and 2.11. | shown | S-102 | Seed study | seed |
+| C-105 | Both selected dandelion extracts were more cytotoxic to all three tested cancer cell lines than to VERO. | not-supported | S-102 | Seed study | seed |
+| C-106 | The 2024 Table3 compares six selected aqueous ethanol seed extracts, with finite non-cancer VERO CC50 values; it does not test human safety or tumor treatment by pure seed oil. | shown | S-102 | Seed study | seed |
+| C-107 | Milk thistle and chamomile Table3 results remain distinct from dandelion; milk thistle selectivity cannot be assigned to dandelion oil. | shown | S-102 | Seed study | seed |

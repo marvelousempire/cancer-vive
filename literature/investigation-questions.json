@@ -86,12 +86,12 @@
       "answer": null,
       "work_state": "open",
       "scope": {
-        "form": "Oil extract requested; water-based root extract is a separate research lead",
+        "form": "Oil extract requested; 2024 seed extracts, 2025 seed oil and water-based root extract are distinct forms",
         "cancer_model": null,
         "comparison": null,
         "endpoint": null
       },
-      "findings": "A 2025 seed oil study has a cancer cell signal. Its full methods were not available in this review. The full root-water paper has a mouse growth result. Neither finding is proof that the requested oil slows tumors.",
+      "findings": "The full 2024 seed study shows lower cell-life signals in some cancer cells. The result changed with the cell type. Healthy-cell tests did not prove safety in people. The missing 2025 oil paper and the tumor-treatment question stay Open.",
       "sources": [
         {
           "label": "Read the full root-extract study",
@@ -100,22 +100,57 @@
         {
           "label": "Read the seed-oil study record",
           "url": "https://doi.org/10.1016/j.foodchem.2025.143435"
+        },
+        {
+          "label": "Read the full 2024 seed study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11640657/"
+        },
+        {
+          "label": "Read the 2025 seed-oil abstract",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39977979/"
         }
       ],
       "claim_ids": [
         "C-096",
-        "C-097"
+        "C-097",
+        "C-102",
+        "C-104",
+        "C-105",
+        "C-106",
+        "C-107"
       ],
       "proof": {
         "source_id": "S-096",
         "read_level": "Full primary root-extract main paper read; does not match requested oil",
         "checked_on": "2026-10-15",
-        "exact_result": "Ovadje et al., Oncotarget2016;7:73080–73100. DOI10.18632/oncotarget.11485,PMC5341965. Full main primary XML read2026-10-15. Aqueous root extract;HT29,HCT116 versusNCM460;Figure1WST1quadruplicates/3independentexperiments,AnnexinV/PI separate. Figure4CD1nu/nu bilateral xenografts,randomized4mice/group,75days;oralPBSvsDRE. Two tumors/mouse notindependentanimals. Dosing conflict:mg/kg/dayversusgavage3times/week,discussiondrinkingwater;abstract>90%growthretardationnotexplicitfinalmaintextmeansorCI. No survival endpoint;small safetytest5controls/4treated,notproofabsenceofharm. Nooil,skinrouteorhumanoutcome. HealthCanadaPhaseIpermissionstatedbyauthorsnotcompletedclinicalefficacy."
+        "exact_result": "Ovadje et al., Oncotarget2016;7:73080–73100. DOI10.18632/oncotarget.11485,PMC5341965. Full main primary XML read2026-10-15. Aqueous root extract;HT29,HCT116 versusNCM460;Figure1WST1quadruplicates/3independentexperiments,AnnexinV/PI separate. Figure4CD1nu/nu bilateral xenografts,randomized4mice/group,75days;oralPBSvsDRE. Two tumors/mouse notindependentanimals. Dosing conflict:mg/kg/dayversusgavage3times/week,discussiondrinkingwater;abstract>90%growthretardationnotexplicitfinalmaintextmeansorCI. No survival endpoint;small safetytest5controls/4treated,notproofabsenceofharm. Nooil,skinrouteorhumanoutcome. HealthCanadaPhaseIpermissionstatedbyauthorsnotcompletedclinicalefficacy.",
+        "seed2024": {
+          "source_id": "S-102",
+          "read_level": "Full main paper, tables and figure captions; supplementary and raw data not read",
+          "exact_result": "Milovanovic et al., Foods 13(23):3907 (2024), DOI 10.3390/foods13233907, PMC11640657. Full main XML including Methods2.8/2.9, Results3.6, Tables1–3 and all six figure captions read2026-10-15. Twenty-one total extract samples; six selected aqueous ethanol Soxhlet extracts in Table3, not neat scCO2 oils. 24h exposure, DMSO stock, MTT3h, absorbance540/620nm, nonlinear dose-response CC50. Final vehicle concentration, matched vehicle-only comparator and cell-specific replicate n not clearly stated in main paper. SD not CI; no independent sample count invented. VERO monkey kidney comparator not healthy human tissue. D/DEX CC50 VERO/FaDu/HeLa/RKO:794.65±41.08/347.40±45.25/645.80±28.14/974.90±97.72;578.15±56.07/274.60±26.87/360.20±30.12/633.95±57.35 micrograms/mL. SI VERO/cancer D2.29/1.23/.82;DEX2.11/1.61/.91. MT native CC50 VERO480.55±6.29,FaDu190.05±17.47,HeLa254.50±31.54,RKO270.55±13.65;MTEX493.60±8.06,182.90±6.65,230.85±28.50,264.15±12.23. C native200.55±22.84,363.90±40.16,678.15±53.81,627.95±45.89;CEX264.15±16.19,293.30±34.22,345.05±8.84,777.00±28.14. Milk thistle SI1.78–2.70 is not dandelion. Main authors use not-cytotoxic thresholds for >500; finite CC50 does not mean no effect at any level. Antioxidant DPPH endpoint distinct from cell CC50; no measured molecular anticancer mechanism, human survival, clinical stage or established-tumor response. Supplement requested from EuropePMC but not obtained/read; raw data and S13 not audited. No new independent reviewer."
+        }
       },
       "review_state": "Four-Open-question source pass; independent scientific reader remains open",
       "next_check": "What is in the oil and how is it used? Test that exact form with a matched control. A safe level and benefit in people stay Open.",
       "checked_on": "2026-10-15",
-      "followup_questions": []
+      "followup_questions": [
+        {
+          "id": "seed2024-fadu-selectivity",
+          "question": "Did both 2024 dandelion seed extracts reach half-signal at a lower concentration in FaDu than VERO?",
+          "answer": true,
+          "finding": "SI2.29 whole seeds,2.11 defatted;Table3",
+          "source_id": "S-102",
+          "endpoint": "24h MTT cell viability signal, not tumor response"
+        },
+        {
+          "id": "seed2024-all-cancer-selectivity",
+          "question": "Were all three cancer cell lines more sensitive than VERO to both dandelion extracts?",
+          "answer": false,
+          "finding": "RKO SI0.82 and0.91;VERO half-signal reached at lower concentrations than RKO",
+          "source_id": "S-102",
+          "endpoint": "Comparative CC50, not all-human healthy-cell safety"
+        }
+      ]
     },
     {
       "id": "fenugreek-growth",
