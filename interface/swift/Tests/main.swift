@@ -3,7 +3,7 @@ let path=CommandLine.arguments[1]
 let data=try Data(contentsOf:URL(fileURLWithPath:path))
 let content=try JSONDecoder().decode(ContentFile.self,from:data).normal_view
 try content.validate()
-precondition(content.topics.count==21)
+precondition(content.topics.count==22)
 precondition(content.filtered(query:"castor oil",category:"all",grade:"all").map(\.id)==["castor-oil","castor-fruit-extract"])
 precondition(content.filtered(query:" DMSO ",category:"skin",grade:"all").map(\.id)==["comfrey","dmso"])
 precondition(content.filtered(query:"not-a-real-topic",category:"all",grade:"all").isEmpty)

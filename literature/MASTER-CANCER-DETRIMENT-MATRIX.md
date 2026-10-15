@@ -28,6 +28,7 @@ A mechanism is not a clinical outcome. A trial is not proof of benefit. A food, 
 
 | Item / variable | Key form or constituent | Cancer-relevant rationale currently filed | Evidence in Cancer Vive | Human oncology evidence | Established cancer treatment in this repo? | Important form / safety boundary | Current Cancer Vive position |
 |---|---|---|---|---|---|---|---|
+| **Chemotherapy: named human trials** | MPACT nab-paclitaxel + gemcitabine; TAILORx breast adjuvant regimens | MPACT survival Yes in stage IV pancreatic cancer, C-080–C-081 S-073; TAILORx benefit depends on group, C-082 S-074 | Human randomized trial results | Stage, biology, regimen and time point must match | Yes for named cancer indications; not a universal benefit | Acute and lasting side effects, C-083 S-075 S-076 | Read stage and survival beside each finding |
 | **Fenugreek** | Food seeds; seed extract; diosgenin | Seed extracts slowed growth and caused death in cancer cells | **Preclinical signal**. C-023–C-025, S-013–S-015 | Not established by the filed studies | **No** | Food is not lab extract; blood sugar, allergy, pregnancy, and medicine risks matter | **Study further** |
 | **Castor oil** | Skin oil, packs; separate 1992 extract lead | Does oil or a pack change tumor growth? | **Open**, C-078 S-071: primary record only | Matching human result Open | **No** | Extract composition/full methods unavailable; fruit extract and carrier are distinct | Obtain primary paper and match the form |
 | **Castor plant fruit extract** | Ethanol-based fruit extract | Cell death and less movement in breast-cancer cells; reduced 4T1 mouse tumor volume | **Preclinical signal**. C-028, S-016 | No human trial in this study | **No** | Lab extract and mouse injections do not support skin oil or packs | **Lab research only** |
@@ -112,3 +113,7 @@ No row skips levels because another form of the same substance looked promising.
 Spike-protein education separates viral infection, vaccine targets, isolated proteins, and cancer claims. The 2025 infection study contains mouse findings and human associations; it is not a vaccine or isolated-spike trial. See C-043–C-048 and S-033–S-038. Public wording lives in `src/user-messages.json`.
 
 The isolated-spike cell finding is now filed separately: C-074 S-068. No vaccine, infection or human benefit is inferred from it.
+
+## Stage and survival source scope
+
+All app topics now show cancer stage context and survival scope with source links. Cell cultures, early rat lesions and transplanted mouse tumors do not have a validated human clinical stage. Advanced or metastatic study descriptions remain explicit; no unreported stage subgroup is invented. Human tumor-response rates are not survival rates. Missing survival data are unknown, not zero. Full MPACT and TAILORx papers were read on October 14, 2026; exact results, uncertainty and safety denominators remain in Expert details.

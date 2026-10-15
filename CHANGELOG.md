@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.14.0 — 2026-10-14
+
+- Added chemotherapy with full-paper MPACT and TAILORx findings, named survival time points, comparisons and side effects.
+- Added cancer-stage and human-survival context with source links for all 22 topics. Preclinical models do not inherit human stages; absent data stay unknown.
+- Shared row source links render in Web, Mac Console and native SwiftUI.
+
 ## 0.13.0 — 2026-10-14
 
 - Added plain study details for all twenty-one topics in the normal topic and comparison views. Setup, control, measured result, proposed mechanism, reading level and gaps remain distinct.

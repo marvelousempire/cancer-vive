@@ -140,7 +140,7 @@ struct CancerReader:View {
             Text(t.name).font(.title2.bold());Text(t.question).font(.headline);Text(t.answer_label).bold();Text(t.research);sourceLinks(t.sources)
             if let rows=t.study_details { VStack(alignment:.leading,spacing:12) {
                 Text(u("study_details")).font(.headline)
-                ForEach(rows,id:\.heading) { row in VStack(alignment:.leading,spacing:6) { Text(row.heading).bold();Text(row.text) } }
+                ForEach(rows,id:\.heading) { row in VStack(alignment:.leading,spacing:6) { Text(row.heading).bold();Text(row.text);if let sources=row.sources { sourceLinks(sources) } } }
             } }
             if t.id=="spike-proteins" && !full { Button(c.home.spike){navigate("education")} }
             if full { details(t);caution(t) } else { DisclosureGroup(u("read_more")) {details(t).padding(.top,10);caution(t)} }

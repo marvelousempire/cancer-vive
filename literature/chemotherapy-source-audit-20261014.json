@@ -1,0 +1,21 @@
+{
+  "schema": "cancer-vive.source-audit/v1",
+  "checked_on": "2026-10-14",
+  "reviewer": "Codex AI",
+  "independent_reader": false,
+  "clinical_peer_review": false,
+  "artifacts": [
+    {
+      "file": "mpact-full-ax.txt",
+      "sha256": "805abe17263fe4d7e78499780bf6aaa250edaef85df9b1c9b807e806e005291e",
+      "read_scope": "Full main paper methods, results, tables, discussion; supplementary files not fully audited"
+    },
+    {
+      "file": "tailorx-full-dom.txt",
+      "sha256": "401990b26d03c5acd544fd8e2af8f19582bc925fd905ba10cea16f0613ba420d",
+      "read_scope": "Full main paper methods, results, tables, discussion; supplementary files not fully audited"
+    }
+  ],
+  "stage_rule": "No extrapolated human stage for preclinical results; no invented unreported stage subset",
+  "rate_rule": "Named trial, cancer, treatment, control, time origin, time point, endpoint and uncertainty; no universal chemotherapy survival percentage"
+}
