@@ -19,6 +19,7 @@ export function checkPublicContent(raw, receipt, knownClaims) {
     if (!topic.question || !topic.answer_label || ![true,false,null].includes(topic.answer)) errors.push(`${topic.id} needs a valid Boolean question`);
     if (topic.answer === null && topic.answer_label !== "Open") errors.push(`${topic.id} must keep an unanswered question open`);
     for (const key of ['summary', 'research', 'human', 'caution', 'next_step']) if (!topic[key]?.trim()) errors.push(`${topic.id} is missing ${key}`);
+    if (topic.study_details && (!topic.study_details.length || topic.study_details.some(row => !row.heading?.trim() || !row.text?.trim()))) errors.push(`${topic.id} has incomplete study details`);
     if (!data.normal_view.grades[topic.grade]) errors.push(`${topic.id} has an unknown proof label`);
     if (!topic.refs?.length) errors.push(`${topic.id} has no claim references`);
     for (const ref of topic.refs ?? []) if (!knownClaims.has(ref)) errors.push(`${topic.id} cites missing ${ref}`);

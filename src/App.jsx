@@ -32,6 +32,14 @@ function TopicDetails({ item }) {
   </>;
 }
 
+function StudyDetails({ item }) {
+  if (!item.study_details?.length) return null;
+  return <section className="study-details" aria-label={u.study_details}>
+    <h4>{u.study_details}</h4>
+    <dl>{item.study_details.map(row => <div key={row.heading}><dt>{row.heading}</dt><dd>{row.text}</dd></div>)}</dl>
+  </section>;
+}
+
 function CompareModal({ ids, onClose }) {
   const selected = evidenceItems.filter((item) => ids.includes(item.id));
   useEffect(() => {
@@ -55,7 +63,7 @@ function CompareModal({ ids, onClose }) {
       <div className="compare-grid">{selected.map((item) => <article className="compare-column" key={item.id}>
         <EvidenceBadge kind={item.grade} /><h3>{item.name}</h3><h4>{item.question}</h4><strong>{item.answer_label}</strong><p>{item.research}</p>
         <div className="compare-field"><span>{u.caution}</span><p>{item.caution}</p></div>
-        <TopicDetails item={item} />
+        <StudyDetails item={item} /><TopicDetails item={item} />
       </article>)}</div>
     </section>
   </div>;
@@ -80,7 +88,7 @@ function Topics({ compareIds, toggleCompare, initialQuery }) {
   const [grade, setGrade] = useState("all");
   const [layout, setLayout] = useState("cards");
   const filtered = useMemo(() => evidenceItems.filter((item) => {
-    const text = [item.question, item.name, item.form, item.summary, item.research, item.human, item.caution, item.next_step].join(" ").toLowerCase();
+    const text = [item.question, item.name, item.form, item.summary, item.research, item.human, item.caution, item.next_step, ...(item.study_details ?? []).map(row => row.heading + " " + row.text)].join(" ").toLowerCase();
     return (!query.trim() || text.includes(query.trim().toLowerCase())) && (category === "all" || item.tags.includes(category)) && (grade === "all" || item.grade === grade);
   }), [query, category, grade]);
   const selected = (id) => compareIds.includes(id);
@@ -98,6 +106,7 @@ function Topics({ compareIds, toggleCompare, initialQuery }) {
     {layout === "cards" ? <div className="evidence-grid">{filtered.map((item) => <article className={"evidence-card class-" + item.grade} key={item.id}>
       <div className="card-head"><EvidenceBadge kind={item.grade} /><button className={"compare-toggle " + (selected(item.id) ? "selected" : "")} disabled={atLimit(item.id)} onClick={() => toggleCompare(item.id)} aria-label={(selected(item.id) ? u.remove : u.add) + ": " + item.name}>{selected(item.id) ? u.selected : u.add}</button></div>
       <h3>{item.name}</h3><h4>{item.question}</h4><strong>{u.answer}: {item.answer_label}</strong><p className="topic-summary">{item.research}</p><SourceLinks sources={item.sources} />
+      <StudyDetails item={item} />
 
       {item.id === "spike-proteins" && <a className="quiet-button" href="#education">{content.home.spike}</a>}
       <details className="topic-details"><summary>{u.read_more}</summary><TopicDetails item={item} /><div className="caution-box"><strong>{u.caution}</strong><p>{item.caution}</p></div></details>

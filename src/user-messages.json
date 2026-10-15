@@ -63,7 +63,8 @@
       "load_failed": "The study notes did not open. You can close Cancer Vive and try to open it again.",
       "question": "Question",
       "answer": "Answer",
-      "finding": "Finding"
+      "finding": "Finding",
+      "study_details": "Inside the study"
     },
     "home": {
       "eyebrow": "Cancer Vive",
@@ -192,7 +193,25 @@
         ],
         "question": "Did the seed extract slow cancer cell growth in the filed lab study?",
         "answer": true,
-        "answer_label": "Yes, reported in this test"
+        "answer_label": "Yes, reported in this test",
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The filed tests used seed extracts in breast, pancreas and prostate cancer cells. A seed extract can differ from food seeds."
+          },
+          {
+            "heading": "What changed",
+            "text": "Cell growth was slower and some cells died in the lab tests. These findings are from cell tests. The current record does not give all group sizes or control details."
+          },
+          {
+            "heading": "What is still open",
+            "text": "The same extract needs a repeat test with clear controls and direct cell counts. Food seeds and human tumor benefit need separate proof."
+          },
+          {
+            "heading": "What was read",
+            "text": "The linked study findings were filed before this source pass. A full read-depth record and second science review still need to be filed."
+          }
+        ]
       },
       {
         "id": "castor-oil",
@@ -239,7 +258,25 @@
         "answer_label": "Open",
         "expert_view": {
           "identity": "Read level: primary bibliographic record only; no abstract or full methods obtained. MSK cites this as a mouse S180 extract study. Do not treat that secondary description as full primary proof.\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nMatching product/tumor question: Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What study lead was found",
+            "text": "A 1992 paper has the title Antitumor effect of castor oil extract. The study record is real. The record has no abstract, which is the short study report."
+          },
+          {
+            "heading": "What needs to be checked",
+            "text": "The full paper is needed to check the extract, tumor model, control group and measured result. The MSK review describes a mouse test. The review does not give the full paper methods."
+          },
+          {
+            "heading": "What is still open",
+            "text": "The extract may differ from store-bought oil or an oil pack on skin. The exact contents and full study results are unknown. The oil and skin-pack tumor questions stay Open."
+          },
+          {
+            "heading": "What was read",
+            "text": "The primary study record was read. The full 1992 study could not be read. No Yes or No has been added from the MSK review."
+          }
+        ]
       },
       {
         "id": "castor-fruit-extract",
@@ -267,7 +304,25 @@
         ],
         "question": "Did the fruit extract reduce tumor growth in the filed mouse study?",
         "answer": true,
-        "answer_label": "Yes, reported in this test"
+        "answer_label": "Yes, reported in this test",
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The study used a lab fruit extract with breast cancer cells and mice with breast tumors. The mice had a shot of extract."
+          },
+          {
+            "heading": "What changed",
+            "text": "Tumor growth was lower with the extract in the filed study. A fruit extract and castor oil are different tested forms. The current record still needs exact group and control details."
+          },
+          {
+            "heading": "What is still open",
+            "text": "The extract contents and repeat result need a check. A store oil pack on skin and human tumor benefit stay Open."
+          },
+          {
+            "heading": "What was read",
+            "text": "The linked study finding was filed before this source pass. A full read-depth record and second science review still need to be filed."
+          }
+        ]
       },
       {
         "id": "comfrey",
@@ -313,7 +368,33 @@
         "answer_label": "Open",
         "expert_view": {
           "identity": "Full paper read. Ethanolic leaf extract by mouth in a chemically induced early-lesion model. Twenty rats per group initially; only eight control and nine treated survivors analyzed. Deaths excluded, severe attrition and unclear randomization. Fewer small lesions with more megalocytic/vacuolated hepatocytes. Not an established-tumor or powder/DMSO skin test.\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nMatching product/tumor question: Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The full study used a leaf extract by mouth in rats with early liver lesions. Early lesions are changed tissue spots before established tumors. The test did not use powder with DMSO on skin."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control rats had water. Each group started with twenty rats. Only eight control rats and nine extract rats were left in the final check. Deaths were left out of that check."
+          },
+          {
+            "heading": "What changed",
+            "text": "Some small lesions were fewer with the extract. The study also had more signs of liver cell injury. Less early damage in one count does not prove less cancer or healthy liver cells."
+          },
+          {
+            "heading": "How it may work",
+            "text": "The extract was linked to less cell division. The same study had injured liver cells. The cause of each change needs a separate test."
+          },
+          {
+            "heading": "What is still open",
+            "text": "Many rats were lost before the final check. The study does not answer whether comfrey powder with DMSO treats a tumor. That exact mix stays Open."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full extract paper was read. The older long-term feeding paper was not read in full. A separate science reader has not checked the finding."
+          }
+        ]
       },
       {
         "id": "tree-frog-gut-bacteria",
@@ -350,7 +431,29 @@
         },
         "question": "Did all five treated mice have a complete tumor response in the filed group?",
         "answer": true,
-        "answer_label": "Yes, reported in this test"
+        "answer_label": "Yes, reported in this test",
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The 2025 study used one live bacterial strain from a tree frog. The main group had five mice with colon-type tumors."
+          },
+          {
+            "heading": "What changed",
+            "text": "All five treated mice had a complete tumor response in the named group. That result is five mice in one group. The result is not a test in people."
+          },
+          {
+            "heading": "How it may work",
+            "text": "Cell killing and an immune response were in the paper. Cell killing and immune response are two possible paths to a tumor effect. Their role in people needs a test."
+          },
+          {
+            "heading": "What is still open",
+            "text": "The strain, route, repeat result and infection risk need separate checks. Raw frog gut material is not the tested strain. Human benefit stays Open."
+          },
+          {
+            "heading": "What was read",
+            "text": "The named five-mouse result is in the filed study. A second science review remains Open. Infection reports from other strains cannot prove the exact strain has the same risk."
+          }
+        ]
       },
       {
         "id": "dmso",
@@ -402,7 +505,33 @@
         "answer_label": "Yes, reported in this test",
         "expert_view": {
           "identity": "Tested form: DMSO in saline, injected into mice with 4T1 tumors\n\nCancer model: Female BALB/c mice with subcutaneous 4T1 breast tumors; five per group\n\nComparison: Saline injections without DMSO\n\nEndpoint: Tumor volume over time and final tumor weight\n\nProof: S-067; Figure 1: 1 mg/g growth difference days 13–19, p<0.01; n=5/group. Daily intraperitoneal DMSO for 10 days. The 0.25 mg/g group had no significant tumor-weight benefit. Small, short mouse experiment; macrophage findings do not prove a causal human mechanism.\n\nRead level: full primary paper; methods, results, figures and discussion\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group?. Wider product and human benefit remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The test used DMSO in salt water. The mice had shots into the belly for ten days. The test had five mice per group with breast tumors."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control mice had salt water shots with no DMSO. The measured results were tumor size over time and tumor weight at the end."
+          },
+          {
+            "heading": "What changed",
+            "text": "The highest tested amount had slower tumor growth on days 13 to 19. The lowest amount had no clear drop in tumor weight. Proof is in Figure 1."
+          },
+          {
+            "heading": "How it may work",
+            "text": "The study found changes in immune cells near tumors. Those cells can help or block tumor growth. A change in those cells does not prove why a tumor grew less."
+          },
+          {
+            "heading": "What is still open",
+            "text": "A skin mix with herbs has not passed this test. The herb, mix and skin route need their own test. Human tumor benefit stays Open."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full paper was read: methods, results, figures and discussion. A second AI source check is done. A separate science reader has not checked the finding."
+          }
+        ]
       },
       {
         "id": "spike-proteins",
@@ -450,7 +579,33 @@
         "answer_label": "Yes, reported in this test",
         "expert_view": {
           "identity": "Tested form: Isolated SARS-CoV-2 spike protein preparation, not virus or vaccine\n\nCancer model: LNCaP prostate cancer cells\n\nComparison: Medium-only control\n\nEndpoint: Clonogenic survival, colony count at day 9\n\nProof: S-068; Figure 1A: relative colony counts 49±4%, 41±3%, 45±11% at 20, 50, 200 ng/ml after 72 h exposure; p<0.05 versus medium control, triplicate colony assay. No matched irrelevant-protein control or endotoxin check described. Vaccine benefit is an author hypothesis, not a tested endpoint.\n\nRead level: full primary paper; methods, results, figures and discussion\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group?. Wider product and human benefit remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The test used one lab prostate cancer cell line. The cells had an isolated spike protein sample for three days. Cell colonies were counted on day nine."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control cells had growth liquid with no added spike sample. The study did not describe a matched control with a different protein."
+          },
+          {
+            "heading": "What changed",
+            "text": "Colony counts were 49%, 41% and 45% of the control at the three tested levels. Each colony test had three wells. Proof is in Figure 1A."
+          },
+          {
+            "heading": "How it may work",
+            "text": "The cells had more signs of cell death and less cell growth. Some cell signals changed too. The study has not proved which signal caused the change."
+          },
+          {
+            "heading": "What is still open",
+            "text": "A second cell line and a matched protein control need checks. The study was not a test of a virus or vaccine. Human cancer benefit stays Open."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full paper was read: methods, results, figures and discussion. A second AI source check is done. A separate science reader has not checked the finding."
+          }
+        ]
       },
       {
         "id": "cloves",
@@ -491,7 +646,25 @@
         "answer_label": "Yes, reported in this test",
         "expert_view": {
           "identity": "Tested form: Pure eugenol injected in the mouse test\n\nCancer model: MDA-MB-231 tumors in nude mice; 10 mice split into two groups\n\nComparison: DMSO vehicle injections\n\nEndpoint: Tumor volume over four weeks\n\nRead level: full methods, results and Figure 6\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The study used pure eugenol, a clove compound, in mice with breast tumors. Ten mice were split into two groups. The test lasted four weeks."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control mice had shots of DMSO solvent with no eugenol. The study measured tumor size over time."
+          },
+          {
+            "heading": "What changed",
+            "text": "Tumor growth was slower with pure eugenol. Proof is in Figure 6. The test was not of food cloves or clove oil."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full methods, results and Figure 6 were read. A repeat test and a separate science reader are still needed. Human tumor benefit stays Open."
+          }
+        ]
       },
       {
         "id": "turmeric",
@@ -532,7 +705,25 @@
         "answer_label": "No, reported in this test",
         "expert_view": {
           "identity": "Tested form: Oral curcumin added to docetaxel\n\nCancer model: Advanced or metastatic HER2-negative breast cancer; 37 analyzed of 42 enrolled\n\nComparison: Docetaxel alone; 19 control versus 18 combination\n\nEndpoint: RECIST objective response after six cycles; primary endpoint\n\nRead level: full methods sections 2.1–2.6, Figure 2 and results 3.3–3.4; ORR p=0.25\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nORR 55.6% versus 73.7%, p=0.25; 18 combination versus 19 control\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "People with advanced breast cancer had docetaxel, a cancer drug, with or without added curcumin. Curcumin is a turmeric compound. The study had 42 people and 37 were in the main check."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "Nineteen people had the cancer drug alone. Eighteen had added curcumin. The main test was tumor response after six treatment cycles."
+          },
+          {
+            "heading": "What changed",
+            "text": "Tumor response was about 56% with added curcumin and about 74% with the drug alone. The difference was not clear in the study test. The No is for a clear added gain in this small trial."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full methods and results were read. Five people were left out of the analysis. A larger test and separate science review are still needed. Food turmeric is a separate question."
+          }
+        ]
       },
       {
         "id": "black-seed",
@@ -568,7 +759,25 @@
         },
         "question": "Did pure thymoquinone slow breast-tumor growth in the mouse test?",
         "answer": true,
-        "answer_label": "Yes, reported in this test"
+        "answer_label": "Yes, reported in this test",
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The study used pure thymoquinone, a black seed compound. Mice had breast tumors. Each group had five mice and the test lasted two weeks."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The study had a control group, a cancer drug group and a combined treatment group. The control liquid descriptions are different in the figure and methods. That point needs a check."
+          },
+          {
+            "heading": "What changed",
+            "text": "Tumor growth was lower with the pure compound in the filed test. Proof is in Figure 5A. The result does not measure a whole seed or oil product."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full methods and results were read. The control liquid, repeat result and human tumor benefit need more proof. A separate science reader is still needed."
+          }
+        ]
       },
       {
         "id": "black-walnut",
@@ -603,7 +812,25 @@
         "answer_label": "Yes, reported in this test",
         "expert_view": {
           "identity": "Tested form: Commercial pure juglone; not walnut hull products\n\nCancer model: LNCaP and DU145 cell cultures\n\nComparison: Control solvent in cell assays\n\nEndpoint: MTT cell-growth signal after 48 hours\n\nRead level: full methods and Figure 6B; mouse text/legend model and unit inconsistency retained\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The study used pure juglone in two prostate cancer cell lines. Juglone is a walnut compound. The cells had the compound for two days."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control cells had the solvent with no juglone. The test measured a signal from cell activity."
+          },
+          {
+            "heading": "What changed",
+            "text": "The cell test signal was lower with juglone. Proof is in Figure 6B. A lower signal is not a direct count of killed cells."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full cell methods and Figure 6B were read. The mouse text and figure have model and unit conflicts. Those mouse results need a check. Walnut hull products and human tumor benefit stay Open."
+          }
+        ]
       },
       {
         "id": "wormwood",
@@ -643,7 +870,33 @@
         },
         "question": "Did the named wormwood extract lower the cell-viability signal in this lab test?",
         "answer": true,
-        "answer_label": "Yes, reported in this test"
+        "answer_label": "Yes, reported in this test",
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The test used a part taken from wormwood. Two cervical cancer cell lines had the extract for one day. Each group had six test wells."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control cells had the same solvent with no plant extract. A separate group had cisplatin, a cancer drug."
+          },
+          {
+            "heading": "What changed",
+            "text": "The cell test signal was lower with the extract. A lower signal can mean less cell activity or fewer living cells. The test is not a direct cell count. Proof is in Figure 8A and the results."
+          },
+          {
+            "heading": "How it may work",
+            "text": "A separate test found more signs of cell death. A computer model was used to propose targets. A computer match does not prove that the extract binds to those targets."
+          },
+          {
+            "heading": "What is still open",
+            "text": "The extract is not a whole herb or an essential oil. The same extract needs a new test with direct cell counts. Human tumor benefit stays Open."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full 2023 paper was read. The older 2012 oil paper could not be read in full. A separate science reader has not checked the finding."
+          }
+        ]
       },
       {
         "id": "shilajit",
@@ -683,7 +936,25 @@
         "answer_label": "Yes, reported in this test",
         "expert_view": {
           "identity": "Tested form: Iranian mummy sample, batch 92-0199-s4\n\nCancer model: MCF-7 and MDA-MB-231 breast-cancer cell cultures; three independent experiments\n\nComparison: Untreated cells; separate cisplatin positive control\n\nEndpoint: MTT viability signal and apoptosis assays\n\nRead level: publisher PDF methods pages 3–5 and Figures 3–4; full results read\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The study used one named resin sample in two breast cancer cell lines. Three separate tests were run. Other resins can have different contents."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control cells had no resin. A separate group had cisplatin, a cancer drug. The study measured cell activity and signs of cell death."
+          },
+          {
+            "heading": "What changed",
+            "text": "The cell test signal was lower with the named sample. Proof is in Figures 3 and 4. The signal alone is not a direct cell count."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full results and methods were read from the study PDF. The same sample needs a repeat test and a separate science reader. Human tumor benefit stays Open."
+          }
+        ]
       },
       {
         "id": "humic-fulvic",
@@ -718,7 +989,25 @@
         "answer_label": "Yes, reported in this test",
         "expert_view": {
           "identity": "Tested form: Supplier fulvic acid C176008, purity above 95%; PBS preparation\n\nCancer model: OVCAR-3 and SK-OV-3 cell cultures\n\nComparison: Zero fulvic acid control versus 100 micrograms/mL\n\nEndpoint: CCK-8 signal at 24, 48 and 72 hours; derived doubling time\n\nRead level: full methods: FA materials and CCK-8, results and Figure 2\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nDerived doubling time OVCAR-3 42.4 to 48.8 h; SK-OV-3 41.1 to 46.8 h\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The study used one supplier form of fulvic acid in two ovarian cancer cell lines. The tests ran over one, two and three days."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control cells had no added fulvic acid. The study used a cell activity signal to estimate how long cell numbers took to double."
+          },
+          {
+            "heading": "What changed",
+            "text": "Estimated doubling time was about 42 to 49 hours in one cell line and about 41 to 47 hours in the other. Proof is in Figure 2. Those times came from the test signal, not direct cell counts."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full methods, results and Figure 2 were read. Direct counts, other mixes and human tumor benefit need more proof. A separate science reader is still needed."
+          }
+        ]
       },
       {
         "id": "magnesium",
@@ -757,7 +1046,33 @@
         "answer_label": "No, reported in this test",
         "expert_view": {
           "identity": "Tested form: Magnesium replacement during cisplatin treatment after magnesium deficiency\n\nCancer model: BALB/c CT26 colon-tumor model, 8–12 mice/group; supplemented group n=10\n\nComparison: Magnesium-deficient mice on cisplatin without the replacement regimen\n\nEndpoint: Final tumor weight, Figure 7D\n\nProof: S-065; Full publisher paper read in browser. Results: magnesium supplementation slightly, but not statistically, improved cisplatin killing versus deficient cisplatin group. Figure 7D. Combined diet restoration, magnesium threonate drinking water and injected magnesium sulfate cannot isolate one component. Deficiency versus normal diet affected tumor weight; that comparison is different from added replacement during cisplatin.\n\nRead level: full primary paper; methods, results, figures and discussion\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group?. Wider product and human benefit remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The test used mice with colon tumors and low magnesium. They had cisplatin, a cancer drug. The added magnesium plan changed food, drinking water and shots. Groups had eight to twelve mice."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control group had low magnesium and the same cancer drug with no added magnesium plan. The main test compared tumor weight at the end."
+          },
+          {
+            "heading": "What changed",
+            "text": "The added plan had a small gain in tumor killing. The gain did not pass the study test for a clear difference. The No means no clear gain in this test. Proof is in Figure 7D."
+          },
+          {
+            "heading": "What else changed",
+            "text": "Kidney harm was lower in a separate test. Less kidney harm and more tumor killing are two different questions. One answer does not cover both."
+          },
+          {
+            "heading": "What is still open",
+            "text": "The study cannot tell which part of the added plan caused a change. A larger test needs to check the tumor result. Human tumor benefit from magnesium alone stays Open."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full paper was read: methods, results, figures and discussion. A second AI source check is done. A separate science reader has not checked the finding."
+          }
+        ]
       },
       {
         "id": "zinc",
@@ -792,7 +1107,25 @@
         "answer_label": "No, reported in this test",
         "expert_view": {
           "identity": "Tested form: High oral zinc sulfate intake added to normal chow\n\nCancer model: B16F10 melanoma in C57BL/6 mice; seven per group, repeated experiments\n\nComparison: Normal diet without extra zinc\n\nEndpoint: Serial tumor volume and tumor mass\n\nRead level: full main results, Figure 1 caption, Materials and methods; n=7 per experimental setup\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The study used high added zinc in mice with skin cancer tumors. Each group had seven mice. The tests were repeated."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control mice had normal food with no extra zinc. The study measured tumor size and weight."
+          },
+          {
+            "heading": "What changed",
+            "text": "Tumor growth was faster with high zinc in this test. The No is for slower growth in this model. Proof is in Figure 1. Other models can have different results."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full methods and results were read. A separate science reader is still needed. The mouse result does not tell people to cut zinc from food."
+          }
+        ]
       },
       {
         "id": "capsaicin",
@@ -831,7 +1164,25 @@
         "answer_label": "Yes, reported in this test",
         "expert_view": {
           "identity": "Tested form: Purified capsaicin given orally in the experiment\n\nCancer model: PC-3 prostate-cancer tumors in mice\n\nComparison: Vehicle-treated mice\n\nEndpoint: Mean tumor volume reported in primary abstract\n\nRead level: primary abstract results only; 75±35 versus 336±123 mm3, p=0.017; full-text access failed\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The test in the short report was pure capsaicin by mouth in mice with prostate tumors. The control mice had the same carrier with no capsaicin."
+          },
+          {
+            "heading": "What changed",
+            "text": "Mean tumor sizes were 75 and 336 cubic millimeters in the capsaicin and control groups. The short report says the difference passed the study test. The mouse counts still need a full-paper check."
+          },
+          {
+            "heading": "What is still open",
+            "text": "The full methods, group sizes and repeat result need a check. Food peppers, skin pain creams and human tumor benefit stay Open."
+          },
+          {
+            "heading": "What was read",
+            "text": "Only the primary abstract, the short study report, was read. Full-paper access failed. The app does not label that report as a full study review."
+          }
+        ]
       },
       {
         "id": "cuban-oregano",
@@ -866,7 +1217,25 @@
         "answer_label": "Yes, reported in this test",
         "expert_view": {
           "identity": "Tested form: Crude aqueous Plectranthus amboinicus leaf extract injected into the abdomen\n\nCancer model: Female Swiss albino mice with Ehrlich ascites carcinoma; six per group\n\nComparison: Saline injections\n\nEndpoint: Cancer-cell density in ascites on day nine\n\nRead level: full methods 2.1–2.2, Results and Discussion; cell-density p=0.004; implants p=0.051 not significant\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The study used a water leaf extract in mice with cancer cells in belly fluid. Each group had six mice. The test lasted nine days."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control mice had salt water shots. The study counted cancer cells per unit of fluid and measured fluid volume."
+          },
+          {
+            "heading": "What changed",
+            "text": "Mean cell counts were about 106,669 with extract and 145,318 with salt water per cubic millimeter. The cell count difference was clear in the study test. Tumor implant weight had no clear change."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full methods and results were read. Longer tests, harm checks and a separate science reader are still needed. Food leaves, oil and human benefit stay Open."
+          }
+        ]
       },
       {
         "id": "hydrogen-peroxide",
@@ -901,7 +1270,33 @@
         "answer_label": "Open",
         "expert_view": {
           "identity": "Full paper read. Engineered IGHG1 knockdown xenografts plus intratumoral 2 µM H2O2 versus same knockdown without H2O2; Figure 7A reports n=6/group. Growth restoration, not tumor shrinkage. Methods and results describe allocation differently; injected cell identity is not explicit in the tumor-method paragraph. Do not invent a liver-cancer model or import this result into household ingestion.\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nMatching product/tumor question: Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The test used mice with tumors made from cells with a changed gene. Dilute peroxide was put into those tumors. Figure 7A says each group had six mice."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The main comparison was the same changed cells with no added peroxide. The study measured tumor growth over eight weeks."
+          },
+          {
+            "heading": "What changed",
+            "text": "Tumor growth was restored with added peroxide in this test. The result did not show tumor shrinkage. Proof is in Figure 7A."
+          },
+          {
+            "heading": "How it may work",
+            "text": "The study tested a cell growth signal linked to peroxide. The changed gene is part of that test. The result depends on the cells and test route."
+          },
+          {
+            "heading": "What is still open",
+            "text": "The group descriptions are different in the methods and results. The tumor methods do not clearly name the injected cell line. A household product, drink or skin use needs its own evidence."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full paper was read: methods, results, figures and discussion. A second AI source check is done. A separate science reader has not checked the finding."
+          }
+        ]
       },
       {
         "id": "ivermectin",
@@ -949,7 +1344,33 @@
         "answer_label": "Yes, reported in this test",
         "expert_view": {
           "identity": "Tested form: Research ivermectin in cultured cells\n\nCancer model: MCF-7 and T-47D estrogen-stimulated breast cancer cell lines\n\nComparison: Same estrogen conditions with 0.01% DMSO vehicle and no ivermectin\n\nEndpoint: MTT viability after five days\n\nProof: S-070; Rujimongkon et al., 2026, Figure 2A–B: 3 and 5 µM ivermectin reduced estrogen-stimulated MTT signal in MCF-7 and T-47D; 10 nM estradiol, five days, n=3 independent experiments; two-way ANOVA. This is viability/metabolic signal, not tumor survival. Micromolar exposure and human delivery are unresolved. Combination analysis elsewhere reuses the same team’s 2025 data; not independent replication.\n\nRead level: full primary paper; methods, results, figures and discussion\n\nReview: Second AI source audit complete, 2026-10-14; independent scientific reader and replication open\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group?. Wider product and human benefit remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "Two breast cancer cell lines had estrogen, a hormone, with ivermectin for five days. The study ran three separate tests. The 2026 study is from a different team."
+          },
+          {
+            "heading": "What it was compared with",
+            "text": "The control cells had the same hormone and solvent with no ivermectin. The test measured a signal from living cells."
+          },
+          {
+            "heading": "What changed",
+            "text": "The cell test signal was lower with ivermectin in both cell lines. The signal shows cell activity. The signal is not a direct cell count or a test of how long people live. Proof is in Figure 2A and 2B."
+          },
+          {
+            "heading": "How it may work",
+            "text": "Some hormone and growth signals changed. The study does not prove which signal caused the lower cell test result. Some drug-resistant cells had different results."
+          },
+          {
+            "heading": "What is still open",
+            "text": "Can people safely reach the drug levels used in these cell tests? Human cancer benefit stays Open. The older mouse paper still has a journal concern. This study does not settle that concern."
+          },
+          {
+            "heading": "What was read",
+            "text": "The full 2026 paper was read. The journal concern on the older mouse paper was also read. A separate science reader has not checked the finding."
+          }
+        ]
       },
       {
         "id": "hcq",
@@ -989,7 +1410,25 @@
         "answer_label": "No, reported in this test",
         "expert_view": {
           "identity": "Tested form: Hydroxychloroquine added to gemcitabine and nab-paclitaxel\n\nCancer model: 112 untreated advanced or metastatic pancreatic cancer patients; randomized 55 versus 57\n\nComparison: The same chemotherapy without hydroxychloroquine\n\nEndpoint: Overall survival at 12 months; primary endpoint\n\nRead level: primary structured abstract and figure legends read; full-text access blocked; ORR secondary p=0.047\n\nCheck date: 2026-10-14\n\nReview: Primary source readback; second scientific review open\n\n12-month OS 41% versus 49%; secondary ORR 38.2% versus 21.1%, p=0.047\n\nOriginal broad question: Did the exact tested form reduce cancer growth against a comparison group? Broad product and human scope remains Open."
-        }
+        },
+        "study_details": [
+          {
+            "heading": "What was tested",
+            "text": "The trial had 112 people with advanced pancreas cancer. Fifty-five had added hydroxychloroquine with cancer drugs. Fifty-seven had the same cancer drugs alone."
+          },
+          {
+            "heading": "What changed",
+            "text": "At one year, 41% were alive with the added drug and 49% with cancer drugs alone. No clear survival gain was shown. A separate tumor response result was higher with the added drug."
+          },
+          {
+            "heading": "Why the results differ",
+            "text": "Tumor response means a measured change in a tumor. Survival means how long people live. A gain in tumor response does not prove longer life."
+          },
+          {
+            "heading": "What was read",
+            "text": "The primary abstract and figure notes were read. Full-paper access was blocked. The full methods and a separate science check remain Open."
+          }
+        ]
       }
     ],
     "lessons": [

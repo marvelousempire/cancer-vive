@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.13.0 — 2026-10-14
+
+- Added plain study details for all twenty-one topics in the normal topic and comparison views. Setup, control, measured result, proposed mechanism, reading level and gaps remain distinct.
+- Web, offline Mac Console and native SwiftUI show the same study details and include them in search.
+
 ## 0.12.1 — 2026-10-14
 
 - Classified the scoped DMSO and magnesium mouse-study answers as cell or mouse proof. The proof filter now matches their exact study model on all targets.
