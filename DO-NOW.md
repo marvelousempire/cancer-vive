@@ -1,5 +1,25 @@
-# 2024 seed study release
+# Public ResearchThat cancer content — October 20, 2026
 
-Version 0.17.0 adds the full 2024 main seed study with all six selected extract cancer-cell and VERO results. The main oil question and the missing 2025 seed-oil and 1992 castor reports remain Open. Scoped cell selectivity Yes and No are not human treatment results.
+Avery asked to refresh the existing GitHub Pages site. Its address stays
+https://marvelousempire.github.io/cancer-vive/.
 
-Ship through Gitea. Verify exact clean-main Web and both installed Mac apps: study text, Table 3 values, source action, comparison, matrix, search, themes and restart. Keep target-bound release proof outside the source tree.
+The site now uses the ResearchThat name. It keeps the original cancer content
+and adds Aloe Vera, Vitamin B1 and benfotiamine from accepted ResearchThat
+`a6eb651eb20c94d7a7374ce7fba787d7f9a069d9`. Aloe prose is shorter; its source
+and evidence limits stay the same. B1 and benfotiamine records are exact.
+See `research-public-sync.json` for source and output hashes.
+
+Human cancer benefit stays Open. The page says that a separate care-expert
+review is still needed. No clinical approval or new full aloe-paper read is
+claimed. The primary B1 and benfotiamine links were checked on October 20.
+The two NCBI aloe pages blocked this fresh read; their prior source limits stay.
+
+This release is the public cancer reading site only. Private studies, food
+records, sign-in and the full ACT app are not exported. The existing ACT and
+both Mac apps already have these topics; this job does not install or restart
+them. Apple uploads stay on hold. No repository deletion is part of this job.
+
+Use the Gitea branch, check and merge route, then its governed GitHub mirror
+and existing Pages workflow. Keep the old deploy available for rollback.
+Check the actual public Matrix, search, sources, comparison and themes after
+deploy. A local build is not proof that the public site changed.

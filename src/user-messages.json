@@ -42,7 +42,7 @@
       "dark": "Dark",
       "theme": "Color theme",
       "version": "Version",
-      "checked": "Sources checked October 15, 2026.",
+      "checked": "New topics have source links. Some full papers still need review.",
       "scope": "Find what can work against cancer. Ask a clear question. Check the test and its proof. Keep gaps open.",
       "code": "Code and release details",
       "study_records": "Full study records",
@@ -65,10 +65,12 @@
       "answer": "Answer",
       "finding": "Finding",
       "study_details": "Inside the study",
-      "stage": "Cancer type and stage"
+      "stage": "Cancer type and stage",
+      "review_pending": "A care expert still needs to check these claims. We do not know if this helps people with cancer.",
+      "brand_initials": "RT"
     },
     "home": {
-      "eyebrow": "Cancer Vive",
+      "eyebrow": "ResearchThat",
       "title": "Put cancer under the microscope.",
       "intro": "Find what can slow cancer growth or harm cancer cells. Ask clear yes or no questions. Keep each answer tied to its test and source. A gap stays open.",
       "browse": "Find a topic",
@@ -152,6 +154,10 @@
       "education": {
         "label": "Learn the facts",
         "description": "This topic explains a claim; it is not a treatment."
+      },
+      "guidance": {
+        "label": "Source guide",
+        "description": "A guide is not a cancer trial."
       }
     },
     "categories": {
@@ -3620,7 +3626,7 @@
       "questions_title": "Build a question that can be checked.",
       "questions_intro": "Name the cells and form in the test. State what was measured. Check the source and the groups in each test.",
       "sources_intro": "These links let you check the full records. Some new claims still need a second reader to check the science.",
-      "footer": "Cancer Vive investigates what can work against cancer."
+      "footer": "Ask what can work against cancer."
     }
   },
   "expert_view": {

@@ -12,7 +12,7 @@
     "tenant_scope": "public"
   },
   "authority": {
-    "owner": "marvelousempire/cancer-vive",
+    "owner": "marvelousempire/researchTHAT",
     "projection_is_authority": false,
     "mutation_policy": "read_only"
   },
@@ -71,7 +71,7 @@
       "reduced_motion": "instant-state"
     },
     "motif": {
-      "brand": "Cancer Vive",
+      "brand": "ResearchThat",
       "surface": "Evidence Explorer"
     },
     "behavior": {
@@ -156,7 +156,8 @@
       "marvelousempire/that-app-studio:data/design-dna/registry.json",
       "marvelousempire/automata:timelines/design-dna-framework.json",
       "src/user-messages.json"
-    ]
+    ],
+    "public_content_sync": "research-public-sync.json"
   },
   "design_dna_profile_ref": "design-dna.profile.json"
 }

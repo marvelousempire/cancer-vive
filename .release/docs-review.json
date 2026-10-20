@@ -1,0 +1,106 @@
+{
+  "schema": "release.documentation-review/v1",
+  "repository": "averygoodman/cancer-vive",
+  "source_tree_sha256": "ccdd03504f779a981fd9d9ab98dcdad79c4fc49978b6d4ee0846536be24cdfda",
+  "reviewer": "Codex root public-site source review",
+  "reviewed_at": "2026-10-20T12:06:08.301397+00:00",
+  "release": {
+    "summary": "Refresh the existing public cancer site with three ResearchThat topics and identity.",
+    "target": "https://marvelousempire.github.io/cancer-vive/",
+    "proof": [
+      "30 Node tests pass",
+      "Both original and additions content gates pass",
+      "ClarifyThat prose gates pass; proper product labels preserved",
+      "Actual IAB search, matrix and comparison pass before deployment"
+    ],
+    "limitations": [
+      "Independent clinical review stays pending; no treatment claim",
+      "Private research library and food records are not exported",
+      "Public deployment readback remains separate",
+      "30 inherited Ground Zero plant-root false positives are unchanged; no new findings",
+      "No Apple uploads or app installs"
+    ]
+  },
+  "documents": [
+    {
+      "path": "README.md",
+      "sha256": "fe92efd116d76b2efd9c0763bfeebfb566788d88714d6b0964a68d0972cd2798",
+      "disposition": "updated",
+      "reason": "Matches public-site scope, source owner and proof limits."
+    },
+    {
+      "path": "DO-NOW.md",
+      "sha256": "aa6089b1c5a7837b6b5b813cbdbefbdb4898a6b8b40ec0165c0b0e22b26cf549",
+      "disposition": "updated",
+      "reason": "Matches public-site scope, source owner and proof limits."
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "26cd2d14da20341d34d698aba8b8037cb9a1dc59c8eaed4ea5676cae3ad246a7",
+      "disposition": "updated",
+      "reason": "Matches public-site scope, source owner and proof limits."
+    },
+    {
+      "path": "projection.manifest.json",
+      "sha256": "2fcf39b56d44bbede96b8d5451a8e9351a22234675019a71940dfdd402701394",
+      "disposition": "updated",
+      "reason": "Matches public-site scope, source owner and proof limits."
+    },
+    {
+      "path": "research-public-sync.json",
+      "sha256": "ec6abb8e4e145c569dd2de2c0c028d37ce8cea5fdb12074f5c8e6e94840d9dc3",
+      "disposition": "updated",
+      "reason": "Matches public-site scope, source owner and proof limits."
+    }
+  ],
+  "areas": [
+    {
+      "disposition": "updated",
+      "reason": "Identity, scope and pending medical review are explicit.",
+      "documents": [
+        "README.md",
+        "DO-NOW.md",
+        "CHANGELOG.md"
+      ],
+      "id": "docs"
+    },
+    {
+      "disposition": "updated",
+      "reason": "Pins the accepted public source and static-only projection.",
+      "documents": [
+        "projection.manifest.json",
+        "research-public-sync.json"
+      ],
+      "id": "wiring-guides"
+    },
+    {
+      "disposition": "not-applicable",
+      "reason": "No architecture or scientific conclusion changes.",
+      "documents": [],
+      "id": "white-papers"
+    },
+    {
+      "disposition": "not-applicable",
+      "reason": "Existing Pages build and mirror route are unchanged.",
+      "documents": [],
+      "id": "building-skills"
+    }
+  ],
+  "checks": [
+    {
+      "name": "content-and-unit",
+      "status": "pass",
+      "evidence": "npm run check:content and npm test; 30 pass"
+    },
+    {
+      "name": "build",
+      "status": "pass",
+      "evidence": "npm run build; known non-blocking chunk-size notice"
+    }
+  ],
+  "consumer_sync": {
+    "required": false,
+    "reason": "No shared teaching or app consumer delivery changes in this public-site-only update.",
+    "targets": []
+  }
+}

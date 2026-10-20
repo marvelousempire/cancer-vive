@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check:content": "node scripts/check-evidence.mjs",
+    "check:content": "node scripts/check-evidence.mjs && node scripts/check-public-research.mjs",
     "test": "node --test scripts/*.test.mjs",
     "build:mac-content": "VITE_BASE_PATH=./ VITE_OUT_DIR=apps/cancer-vive-desktop/frontend vite build",
     "check:suits": "node scripts/prepare-apple.mjs"

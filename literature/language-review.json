@@ -4,7 +4,7 @@
   "mode": "enforced",
   "profile": "board-grade-5",
   "status": "pass",
-  "content_sha256": "0392bd7a3d9adad3c2512c058086575643db3cfdbbdc48ab3526d4bc13b769c8",
+  "content_sha256": "402ec84397f03da8004db0322e2d9ce02cf3da0d4c1beb34422f5c488a4f7775",
   "blocks": [
     {
       "id": "normal.ui.empty",
@@ -314,6 +314,26 @@
     {
       "id": "normal.pages.sources_intro",
       "text_sha256": "372a6840f8715f03baf0708151ce1762628fc07e6c2ca95f21af7dcea326295f",
+      "status": "pass"
+    },
+    {
+      "id": "normal.ui.review_pending",
+      "text_sha256": "ccb3d0e1b9f972484483081591b6f9e34922b3809d178b67ec0b8364bf980284",
+      "status": "pass"
+    },
+    {
+      "id": "normal.pages.footer",
+      "text_sha256": "b36ccd3fb5164245ad50838e46785a0310cc8378360b69229206abcf7c666156",
+      "status": "pass"
+    },
+    {
+      "id": "normal.ui.checked",
+      "text_sha256": "62e0bcd108e77166d8209a7c2d8870e793081c3b56ea9c68681148f096334839",
+      "status": "pass"
+    },
+    {
+      "id": "normal.grades.guidance.description",
+      "text_sha256": "d34db64ee02f033923392791dc326681f78409a77f15df01d8a97c5feac421b9",
       "status": "pass"
     }
   ],
