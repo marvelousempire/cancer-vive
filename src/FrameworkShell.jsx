@@ -29,7 +29,7 @@ function EdgeRail({edge,state,setState,items,onNavigate,brand}){
   return (
     <aside className={"framework-rail rail-"+edge+" state-"+state} data-edge={edge} data-state={state} aria-label={menuNames[edge]}>
       <div className="framework-rail-body">
-        {brand ? <div className="framework-rail-brand"><span>CV</span><strong>Cancer Vive</strong><small>{content.ui.learn}</small></div> : null}
+        {brand ? <div className="framework-rail-brand"><span>RT</span><strong>ResearchThat</strong><small>{content.ui.learn}</small></div> : null}
         <div className={"framework-rail-items "+(horizontal?"horizontal":"vertical")}>
           {items.map((item,index)=><RailButton item={item} state={state} onNavigate={onNavigate} key={index+":"+(item.id||item.href)}/>)}
         </div>

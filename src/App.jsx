@@ -36,6 +36,7 @@ function StudyDetails({ item }) {
   if (!item.study_details?.length) return null;
   return <section className="study-details" aria-label={u.study_details}>
     <h4>{u.study_details}</h4>
+    {item.review_status === "clinical-review-pending" && <p className="review-note">{content.ui.review_pending}</p>}
     <dl>{item.study_details.map(row => <div key={row.heading}><dt>{row.heading}</dt><dd>{row.text}{row.sources?.length > 0 && <SourceLinks sources={row.sources}/>}</dd></div>)}</dl>
   </section>;
 }
@@ -110,13 +111,13 @@ function Topics({ compareIds, toggleCompare, initialQuery }) {
 
       {item.id === "spike-proteins" && <a className="quiet-button" href="#education">{content.home.spike}</a>}
       <details className="topic-details"><summary>{u.read_more}</summary><TopicDetails item={item} /><div className="caution-box"><strong>{u.caution}</strong><p>{item.caution}</p></div></details>
-    </article>)}</div> : <div className="table-wrap"><table className="matrix-table"><thead><tr><th>{u.topic}</th><th>{u.summary}</th><th>{u.evidence}</th><th>{u.caution}</th><th>{u.compare}</th></tr></thead><tbody>{filtered.map((item) => <tr key={item.id}><td><strong>{item.name}</strong><p>{item.form}</p></td><td>{item.question}<br/><strong>{item.answer_label}</strong><p>{item.research}</p>{item.study_details?.filter(row => row.heading === "Cancer type and stage").map(row => <section key={row.heading}><strong>{row.heading}</strong><p>{row.text}</p><SourceLinks sources={row.sources}/></section>)}<SourceLinks sources={item.sources}/></td><td><EvidenceBadge kind={item.grade} /></td><td>{item.caution}</td><td><button className="table-compare" disabled={atLimit(item.id)} onClick={() => toggleCompare(item.id)} aria-label={(selected(item.id) ? u.remove : u.add) + ": " + item.name}>{selected(item.id) ? u.selected : "+"}</button></td></tr>)}</tbody></table></div>}
+    </article>)}</div> : <div className="table-wrap"><table className="matrix-table"><thead><tr><th>{u.topic}</th><th>{u.summary}</th><th>{u.evidence}</th><th>{u.caution}</th><th>{u.compare}</th></tr></thead><tbody>{filtered.map((item) => <tr key={item.id}><td><strong>{item.name}</strong><p>{item.form}</p></td><td>{item.question}<br/><strong>{item.answer_label}</strong><p>{item.research}</p>{item.study_details?.filter(row => ["Cancer type and stage", "People, stages and survival"].includes(row.heading)).map(row => <section key={row.heading}><strong>{row.heading}</strong><p>{row.text}</p><SourceLinks sources={row.sources}/></section>)}<SourceLinks sources={item.sources}/>{item.review_status === "clinical-review-pending" && <p>{u.review_pending}</p>}</td><td><EvidenceBadge kind={item.grade} /></td><td>{item.caution}</td><td><button className="table-compare" disabled={atLimit(item.id)} onClick={() => toggleCompare(item.id)} aria-label={(selected(item.id) ? u.remove : u.add) + ": " + item.name}>{selected(item.id) ? u.selected : "+"}</button></td></tr>)}</tbody></table></div>}
   </section>;
 }
 
 function QuickView() {
   return <section className="section-block view-section"><div className="section-head"><h1 className="view-title">{content.pages.quick_title}</h1><p>{content.pages.quick_intro}</p></div>
-    <div className="table-wrap"><table className="matrix-table"><thead><tr><th>{u.topic}</th><th>{u.summary}</th><th>{u.evidence}</th><th>{u.caution}</th></tr></thead><tbody>{evidenceItems.map((item) => <tr key={item.id}><td><strong>{item.name}</strong><p>{item.form}</p></td><td>{item.question}<br/><strong>{item.answer_label}</strong><p>{item.research}</p>{item.study_details?.filter(row => row.heading === "Cancer type and stage").map(row => <section key={row.heading}><strong>{row.heading}</strong><p>{row.text}</p><SourceLinks sources={row.sources}/></section>)}<SourceLinks sources={item.sources}/></td><td><EvidenceBadge kind={item.grade} /></td><td>{item.caution}</td></tr>)}</tbody></table></div>
+    <div className="table-wrap"><table className="matrix-table"><thead><tr><th>{u.topic}</th><th>{u.summary}</th><th>{u.evidence}</th><th>{u.caution}</th></tr></thead><tbody>{evidenceItems.map((item) => <tr key={item.id}><td><strong>{item.name}</strong><p>{item.form}</p></td><td>{item.question}<br/><strong>{item.answer_label}</strong><p>{item.research}</p>{item.study_details?.filter(row => ["Cancer type and stage", "People, stages and survival"].includes(row.heading)).map(row => <section key={row.heading}><strong>{row.heading}</strong><p>{row.text}</p><SourceLinks sources={row.sources}/></section>)}<SourceLinks sources={item.sources}/>{item.review_status === "clinical-review-pending" && <p>{u.review_pending}</p>}</td><td><EvidenceBadge kind={item.grade} /></td><td>{item.caution}</td></tr>)}</tbody></table></div>
   </section>;
 }
 
@@ -129,7 +130,7 @@ function Education() {
 function Questions() {
   return <section className="section-block view-section"><div className="section-head"><h1 className="view-title">{content.pages.questions_title}</h1><p>{content.pages.questions_intro}</p></div>
     <div className="evidence-grid">{content.questions.map((question) => <article className="evidence-card" key={question.heading}><h3>{question.heading}</h3><p>{question.text}</p></article>)}</div>
-    <ResearchDocuments /><h2>{u.sources}</h2><p>{content.pages.sources_intro}</p><Corpus initial="sources" />
+    <ResearchDocuments /><h2>{u.sources}</h2>{evidenceItems.filter(item => item.review_status === "clinical-review-pending").map(item => <section key={item.id}><h3>{item.name}</h3><SourceLinks sources={item.sources} /><p>{u.review_pending}</p></section>)}<p>{content.pages.sources_intro}</p><Corpus initial="sources" />
   </section>;
 }
 

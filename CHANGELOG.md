@@ -1,5 +1,13 @@
 # Changelog
 
+## Public site refresh — 2026-10-20
+
+- Use ResearchThat branding at the existing public address.
+- Add the three sourced cancer topics from ResearchThat: Aloe Vera, B1 and benfotiamine.
+- Keep human benefit Open and show the pending care-expert review.
+- Preserve the original study details, source documents and blue/white themes.
+- Scope: public site only; no private data export, app install or Apple upload.
+
 ## 0.17.0 — 2026-10-15
 
 - Read the full 2024 seed main paper and added all six selected extract cancer-cell and non-cancer VERO results.

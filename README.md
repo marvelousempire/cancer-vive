@@ -1,6 +1,11 @@
-# Cancer Vive
+# ResearchThat public cancer reading site
 
-Cancer Vive is a cancer-focused research repository.
+This repository keeps the public site at its existing Cancer Vive URL.
+ResearchThat owns new research content. The October 20 refresh adds Aloe Vera,
+Vitamin B1 and benfotiamine to the public matrix, search and comparison.
+Sources and open clinical-review gaps stay visible. See [current release scope](DO-NOW.md).
+
+The earlier app and project records below retain their original scope.
 
 Its subject is evidence about factors, mechanisms, exposures, interventions, substances, and clinical variables that may cause detriment to cancer cells or tumors, alter cancer progression, or materially affect cancer treatment response. Claims stay separated by evidence strength so an interesting mechanism is not quietly promoted into a proven treatment.
 

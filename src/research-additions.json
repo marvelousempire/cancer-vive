@@ -1,0 +1,280 @@
+{
+  "schema": "researchthat.cancer-additions/v1",
+  "review": "clinical-and-language-review-pending",
+  "topics": [
+    {
+      "id": "aloe-vera",
+      "name": "Aloe Vera",
+      "short": "Aloe Vera",
+      "form": "Inner-leaf gel, latex and whole-leaf extract are different products",
+      "grade": "guidance",
+      "question": "Does Aloe vera treat cancer in people?",
+      "answer": null,
+      "answer_label": "Open — matched treatment proof is missing",
+      "summary": "The sources do not show that Aloe vera treats cancer in people. The plant and the form can change the result.",
+      "research": "The answer stays Open. One trial used Aloe arborescens with chemo. The trial plant is not Aloe vera. We read the short report, not the full paper. The result cannot show that Aloe vera works.",
+      "human": "The trial had 240 people whose cancer had spread. The short report does not give exact rates for tumor response or length of life.",
+      "caution": "Aloe latex can cause cramps and loose stools. Some leaf extracts have been linked to liver harm. A whole-leaf extract has caused cancer in animals. Inner-leaf gel is a different form.",
+      "next_step": "Read the full trial and its tables. Look for trials of Aloe vera itself. Ask your care team before using aloe during cancer care.",
+      "refs": [
+        "ALOE-NIH",
+        "ALOE-TRIAL-ABSTRACT",
+        "ALOE-IARC"
+      ],
+      "sources": [
+        {
+          "label": "Read the NIH aloe guide",
+          "url": "https://www.nccih.nih.gov/health/aloe-vera"
+        },
+        {
+          "label": "Read the related aloe trial abstract",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19368145/"
+        },
+        {
+          "label": "Read the IARC evaluation",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK350480/"
+        }
+      ],
+      "tags": [
+        "plants",
+        "harm"
+      ],
+      "review_status": "clinical-review-pending",
+      "study_details": [
+        {
+          "heading": "Cancer type and stage",
+          "text": "The trial used Aloe arborescens. The cancers had spread from the lung, colon, stomach or pancreas. These sources do not show a gain from Aloe vera at a set cancer stage.",
+          "sources": [
+            {
+              "label": "Read the related aloe trial abstract",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19368145/"
+            }
+          ]
+        },
+        {
+          "heading": "What was read",
+          "text": "The NIH guide, IARC report and short trial report were read in the source review. The full trial and its tables still need review. No cure or life span rate is claimed for Aloe vera.",
+          "sources": [
+            {
+              "label": "Read the NIH aloe guide",
+              "url": "https://www.nccih.nih.gov/health/aloe-vera"
+            },
+            {
+              "label": "Read the related aloe trial abstract",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19368145/"
+            },
+            {
+              "label": "Read the IARC evaluation",
+              "url": "https://www.ncbi.nlm.nih.gov/books/NBK350480/"
+            }
+          ]
+        },
+        {
+          "heading": "What does the hazard finding mean?",
+          "text": "IARC found that whole-leaf extract could cause cancer in people, based on animal tests. Proof in people was too weak to decide. This finding does not mean that all aloe forms cause cancer.",
+          "sources": [
+            {
+              "label": "Read the IARC evaluation",
+              "url": "https://www.ncbi.nlm.nih.gov/books/NBK350480/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vitamin-b1",
+      "name": "Vitamin B1 (thiamine)",
+      "short": "Vitamin B1 (thiamine)",
+      "form": "Thiamin in foods and supplements; benfotiamine is a distinct synthetic form",
+      "grade": "unclear",
+      "question": "Can extra B1 help treat cancer?",
+      "answer": null,
+      "answer_label": "Open — benefit in people is not established",
+      "summary": "B1 helps the body use food for fuel. Care for low B1 is not the same as care for cancer.",
+      "research": "B1 helps the body use food for fuel. Care for low B1 is not the same as care for cancer.",
+      "human": "These sources give no proof that B1 helps people live longer with cancer.",
+      "caution": "Ask your care team before you add B1 pills to your cancer care.",
+      "next_step": "Check trials in people with the same cancer and the same B1 form.",
+      "refs": [
+        "B1-NIH"
+      ],
+      "sources": [
+        {
+          "label": "Read the NIH Vitamin B1 guide",
+          "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+        }
+      ],
+      "tags": [
+        "nutrition"
+      ],
+      "review_status": "clinical-review-pending",
+      "study_details": [
+        {
+          "heading": "B1 and benfotiamine",
+          "text": "Thiamin and thiamine mean B1. Benfotiamine is a man-made form that turns into B1 in the body. A food B1 tag does not mean the food has this man-made form.",
+          "sources": [
+            {
+              "label": "Read the NIH Vitamin B1 guide",
+              "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+            }
+          ]
+        },
+        {
+          "heading": "Foods with B1",
+          "text": "Pork, trout, black beans and whole grains have B1. Some cereals have added B1. A food tag needs a known B1 amount above zero. The amount can change with the food form.",
+          "sources": [
+            {
+              "label": "Read the NIH Vitamin B1 guide",
+              "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+            }
+          ]
+        },
+        {
+          "heading": "Cancer type and stage",
+          "text": "The NIH guide is not a cancer trial. The guide gives no stage-based life span rates.",
+          "sources": [
+            {
+              "label": "Read the NIH Vitamin B1 guide",
+              "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+            }
+          ]
+        },
+        {
+          "heading": "Care during treatment",
+          "text": "NIH has reports of low B1 in people on the cancer drug fluorouracil. A care team can check and treat low B1. Such care does not prove that B1 treats cancer.",
+          "sources": [
+            {
+              "label": "Read the NIH Vitamin B1 guide",
+              "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+            }
+          ]
+        },
+        {
+          "heading": "What was read",
+          "text": "The NIH guide was read. Cancer benefit stays Open. Food tags show what is in food. The tags do not show a health effect.",
+          "sources": [
+            {
+              "label": "Read the NIH Vitamin B1 guide",
+              "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "benfotiamine",
+      "name": "Benfotiamine",
+      "short": "Benfotiamine",
+      "form": "Synthetic thiamine derivative used in some supplements; not the same as food B1",
+      "grade": "unclear",
+      "question": "Can benfotiamine help people with cancer?",
+      "answer": null,
+      "answer_label": "Open — benefit in people is not established",
+      "summary": "A 2015 test showed effects in some blood cancer cells. Benefit in people stays Open.",
+      "research": "A 2015 test showed effects in some blood cancer cells. Benefit in people stays Open.",
+      "human": "The sources give no proof of longer life or a gain at a set cancer stage.",
+      "caution": "Ask your care team before you add this B1 form to your cancer care.",
+      "next_step": "Check trials in people with the same cancer and the same B1 form.",
+      "refs": [
+        "B1-NIH",
+        "BENFO-2015"
+      ],
+      "sources": [
+        {
+          "label": "Read the NIH Vitamin B1 guide",
+          "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+        },
+        {
+          "label": "Read the 2015 leukemia cell study",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120709"
+        }
+      ],
+      "tags": [
+        "nutrition"
+      ],
+      "review_status": "clinical-review-pending",
+      "study_details": [
+        {
+          "heading": "Vitamin B1 link",
+          "text": "Benfotiamine is a man-made form of B1. A food B1 tag does not mean the food has this form.",
+          "sources": [
+            {
+              "label": "Read the NIH Vitamin B1 guide",
+              "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+            }
+          ]
+        },
+        {
+          "heading": "Cancer cells: was there an effect?",
+          "text": "Yes. The test showed effects in four of nine myeloid leukemia cell lines. These cell lines are blood cancer cells. HL-60 and NB4 had strong effects. KG1 and K562 had small effects. See Figure 1.",
+          "sources": [
+            {
+              "label": "Read the 2015 leukemia cell study",
+              "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120709"
+            }
+          ]
+        },
+        {
+          "heading": "Did all tested cells respond?",
+          "text": "No. Three T-cell leukemia lines did not respond in this test. Cells from the patient near death did not respond either. See Figure 1.",
+          "sources": [
+            {
+              "label": "Read the 2015 leukemia cell study",
+              "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120709"
+            }
+          ]
+        },
+        {
+          "heading": "What was tested",
+          "text": "The test used cells and controls. Figure 1 shows three runs. A cell test is not a life span trial.",
+          "sources": [
+            {
+              "label": "Read the 2015 leukemia cell study",
+              "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120709"
+            }
+          ]
+        },
+        {
+          "heading": "How might it work?",
+          "text": "Some cells swelled inside and stopped dividing. The signs fit a cell death process called paraptosis. See Figures 2–5.",
+          "sources": [
+            {
+              "label": "Read the 2015 leukemia cell study",
+              "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120709"
+            }
+          ]
+        },
+        {
+          "heading": "People, stages and survival",
+          "text": "One person with AML had a brief gain, then died as the cancer regrew. The case had no control group. No stage-based life span rate is given.",
+          "sources": [
+            {
+              "label": "Read the 2015 leukemia cell study",
+              "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120709"
+            }
+          ]
+        },
+        {
+          "heading": "Healthy cells and remaining gaps",
+          "text": "The paper gives no matched healthy-cell safety range. The lab levels may be hard to reach in people. Cancer benefit and safety stay Open.",
+          "sources": [
+            {
+              "label": "Read the 2015 leukemia cell study",
+              "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120709"
+            }
+          ]
+        },
+        {
+          "heading": "What was read",
+          "text": "The full main paper was read. The extra files and a separate clinical review remain open.",
+          "sources": [
+            {
+              "label": "Read the 2015 leukemia cell study",
+              "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120709"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

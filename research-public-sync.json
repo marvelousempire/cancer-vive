@@ -1,0 +1,17 @@
+{
+  "schema": "researchthat.public-cancer-sync/v1",
+  "source_commit": "a6eb651eb20c94d7a7374ce7fba787d7f9a069d9",
+  "source_file": "subjects/cancer/additions.json",
+  "sha256": "d300f2f3eaf8f9c66f76c5659a9c2dcbd534985053f89985945959021183f9fe",
+  "public_file": "src/research-additions.json",
+  "topic_ids": [
+    "aloe-vera",
+    "vitamin-b1",
+    "benfotiamine"
+  ],
+  "scope": "Existing public cancer site only; no private study or food database export; no app installs or Apple upload.",
+  "clinical_review": "pending",
+  "date": "2026-10-20",
+  "public_sha256": "2505ea178b12dff6010fb14e2a2b1d771254b7001247c9144dbb62fe09e35270",
+  "adaptation": "Aloe prose uses shorter words with the same source limits. Vitamin B1 and benfotiamine records remain exact."
+}

@@ -1,0 +1,27 @@
+{
+  "tool": "ClarifyThat",
+  "mode": "enforced",
+  "profile": "board-grade-5",
+  "status": "pass",
+  "content_sha256": "2505ea178b12dff6010fb14e2a2b1d771254b7001247c9144dbb62fe09e35270",
+  "blocks": [
+    {
+      "id": "aloe-vera",
+      "text_sha256": "bd56cd13b5ebd06dc9449527bb1bb9edc6008afec67a3f6c2aca2a0a722fd39d",
+      "status": "pass",
+      "failed_checks": []
+    },
+    {
+      "id": "vitamin-b1",
+      "text_sha256": "b4e91b01b76f8baedd329793c3a84efd8f830f150e48e010bd7647d17959b7a6",
+      "status": "pass",
+      "failed_checks": []
+    },
+    {
+      "id": "benfotiamine",
+      "text_sha256": "30cc7689a42cd1681571d0169999a7759cbc529a6919a2060c54063ce3dfe49b",
+      "status": "pass",
+      "failed_checks": []
+    }
+  ]
+}

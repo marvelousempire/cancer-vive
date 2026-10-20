@@ -7,7 +7,7 @@ const base = process.env.VITE_BASE_PATH || "/cancer-vive/";
 const version = JSON.parse(readFileSync(new URL("./package.json", import.meta.url), "utf8")).version;
 const commit = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
 const dirty = Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim());
-const release = { version, commit, dirty };
+const release = { version: "ResearchThat public · 2026-10-20", commit, dirty, content_source: "a6eb651eb20c94d7a7374ce7fba787d7f9a069d9" };
 
 export default defineConfig({
   base,
