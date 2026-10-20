@@ -1,3 +1,7 @@
+## Current ResearchThat frame — source candidate
+
+This address will show the current ResearchThat frame. ResearchThat owns the source. This repository carries only its checked public copy. All27 published cancer topics and118elements stay. Private data and account actions stay in the app. See [the carrier record](PUBLIC-RESEARCHTHAT.md). Publication is pending.
+
 # ResearchThat public cancer reading site
 
 This repository keeps the public site at its existing Cancer Vive URL.

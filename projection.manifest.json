@@ -132,7 +132,9 @@
   "build": {
     "target": "projection.vite",
     "carrier": "github-pages",
-    "base_path": "/cancer-vive/"
+    "base_path": "/cancer-vive/",
+    "active_for_public_pages": false,
+    "current_public_carrier": "public-researchthat-carrier.json"
   },
   "verification": {
     "readback_required": true,
@@ -157,7 +159,8 @@
       "marvelousempire/automata:timelines/design-dna-framework.json",
       "src/user-messages.json"
     ],
-    "public_content_sync": "research-public-sync.json"
+    "public_content_sync": "research-public-sync.json",
+    "legacy_source_preserved": true
   },
   "design_dna_profile_ref": "design-dna.profile.json"
 }
