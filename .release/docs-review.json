@@ -1,15 +1,16 @@
 {
   "schema": "release.documentation-review/v1",
   "repository": "averygoodman/cancer-vive",
-  "source_tree_sha256": "f5753de06cb45221957125ca8bb251d15d3ab9b470e6efb372e73f80f8b3e377",
+  "source_tree_sha256": "0ceff9bfd41922ae1b36fce0fd8a4f91db1d9e50806e0dfc009d310d8a5a27f3",
   "reviewer": "Codex > GPT-6",
-  "reviewed_at": "2026-10-20T23:03:18+00:00",
+  "reviewed_at": "2026-10-20T23:04:58+00:00",
   "release": {
     "summary": "Replace the old public Pages renderer with the exact sealed ResearchThat public frame.",
-    "target": "Existing https://marvelousempire.github.io/cancer-vive/ address through Gitea and its governed mirror.",
+    "target": "Existing https://marvelousempire.github.io/cancer-vive/ address through Gitea and its governed mirror. The registered cancer-vive.localhost static door uses the same build after accepted adoption.",
     "proof": [
       "30existing Node tests; existing content and suit checks; legacy source build;2new carrier tests including hash-change/extra-file/output refusals.",
-      "Producer source has159Python/9Node, public browser two project paths,27topics/118elements, currentframe/paint/themes/width checks."
+      "Producer source has159Python/9Node, public browser two project paths,27topics/118elements, currentframe/paint/themes/width checks.",
+      "New main build passed with VITE_OUT_DIR=.build/research-public-new-main-proof;30Node/suit and2Python checks passed again."
     ],
     "limitations": [
       "Producer ResearchThat PR22 acceptance is required before carrier merge. No actual public deployment is claimed.",
@@ -26,7 +27,7 @@
     },
     {
       "path": "DO-NOW.md",
-      "sha256": "8aacaa7f00e028e4b85f6315bc82c861ed2156e736d1dfccd90dd364e7d43cb0",
+      "sha256": "7914ebf69e4f7d772a7e01ea38206aaa325ceddbf04b5f829aa14fdcd33cadf5",
       "disposition": "updated",
       "reason": "Current carrier, preserved-source state and exact producer/deployment limits read and checked."
     },
@@ -38,7 +39,7 @@
     },
     {
       "path": "PUBLIC-RESEARCHTHAT.md",
-      "sha256": "353ad7e5447200500bb2cbaad8ac501a90b0dcbb74664cd80658bd08efa9185d",
+      "sha256": "81285e699d6c7fb80b20865b6961c6ee4178764f20017ddf96bb658ec7a48f06",
       "disposition": "updated",
       "reason": "Current carrier, preserved-source state and exact producer/deployment limits read and checked."
     },
@@ -53,6 +54,12 @@
       "sha256": "cb14b86d04591bfcc0d6b91678d5d2f22c9c2e349ee31a7c846dfb19329b21d3",
       "disposition": "updated",
       "reason": "Current carrier, preserved-source state and exact producer/deployment limits read and checked."
+    },
+    {
+      "path": "package.json",
+      "sha256": "8a4bfe770bce9da183cd488937c29d8808eec2cd46ae17e95696fca3b244f2f5",
+      "disposition": "updated",
+      "reason": "Current public build is shared by Pages and the registered local static release; archived Vite build remains named separately."
     }
   ],
   "areas": [
@@ -73,7 +80,8 @@
       "documents": [
         "PUBLIC-RESEARCHTHAT.md",
         "projection.manifest.json",
-        "public-researchthat-carrier.json"
+        "public-researchthat-carrier.json",
+        "package.json"
       ]
     },
     {
@@ -110,6 +118,12 @@
         "status": "pending",
         "revision": "sourcecandidate3c217cf; producer7d63d40",
         "receipt": "Future exactmirror/Pages/hash/realbrowserreceipt required."
+      },
+      {
+        "id": "legacy-local-door",
+        "status": "pending",
+        "revision": "candidate",
+        "receipt": "After merge use registered static owner route; exact local asset and browser checks required."
       }
     ]
   }
