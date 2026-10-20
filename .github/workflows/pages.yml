@@ -39,7 +39,7 @@ jobs:
         run: python3 scripts/test_researchthat_pages.py
 
       - name: Build the current ResearchThat public copy
-        run: python3 scripts/build-researchthat-pages.py --write dist
+        run: npm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
