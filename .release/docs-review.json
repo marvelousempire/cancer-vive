@@ -3,7 +3,7 @@
   "repository": "averygoodman/cancer-vive",
   "source_tree_sha256": "ccdd03504f779a981fd9d9ab98dcdad79c4fc49978b6d4ee0846536be24cdfda",
   "reviewer": "Codex root public-site source review",
-  "reviewed_at": "2026-10-20T00:00:00Z",
+  "reviewed_at": "2026-10-20T12:06:08.301397+00:00",
   "release": {
     "summary": "Refresh the existing public cancer site with three ResearchThat topics and identity.",
     "target": "https://marvelousempire.github.io/cancer-vive/",
@@ -55,35 +55,35 @@
   ],
   "areas": [
     {
-      "area": "docs",
       "disposition": "updated",
       "reason": "Identity, scope and pending medical review are explicit.",
       "documents": [
         "README.md",
         "DO-NOW.md",
         "CHANGELOG.md"
-      ]
+      ],
+      "id": "docs"
     },
     {
-      "area": "wiring-guides",
       "disposition": "updated",
       "reason": "Pins the accepted public source and static-only projection.",
       "documents": [
         "projection.manifest.json",
         "research-public-sync.json"
-      ]
+      ],
+      "id": "wiring-guides"
     },
     {
-      "area": "white-papers",
       "disposition": "not-applicable",
       "reason": "No architecture or scientific conclusion changes.",
-      "documents": []
+      "documents": [],
+      "id": "white-papers"
     },
     {
-      "area": "building-skills",
       "disposition": "not-applicable",
       "reason": "Existing Pages build and mirror route are unchanged.",
-      "documents": []
+      "documents": [],
+      "id": "building-skills"
     }
   ],
   "checks": [
