@@ -4,7 +4,7 @@
   "mode": "enforced",
   "profile": "board-grade-5",
   "status": "pass",
-  "content_sha256": "5cdad1f1e0292276948fbdbfef4cb0a713f59c4922531dd52a9c617d1b53d09a",
+  "content_sha256": "402ec84397f03da8004db0322e2d9ce02cf3da0d4c1beb34422f5c488a4f7775",
   "blocks": [
     {
       "id": "normal.ui.empty",
@@ -329,6 +329,11 @@
     {
       "id": "normal.ui.checked",
       "text_sha256": "62e0bcd108e77166d8209a7c2d8870e793081c3b56ea9c68681148f096334839",
+      "status": "pass"
+    },
+    {
+      "id": "normal.grades.guidance.description",
+      "text_sha256": "d34db64ee02f033923392791dc326681f78409a77f15df01d8a97c5feac421b9",
       "status": "pass"
     }
   ],

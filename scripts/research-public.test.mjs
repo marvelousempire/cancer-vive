@@ -37,3 +37,12 @@ test('the public renderer includes new topics and review limits without a privat
  assert.doesNotMatch(read('src/data.js'),/fetch\(|\/api\//);
  assert.match(read('index.html'),/<title>ResearchThat/);
 });
+import {checkResearchAdditions} from './check-public-research.mjs';
+const base=JSON.parse(read('src/user-messages.json'));
+test('the effective public gate checks appended topic provenance and review state',()=>{
+ assert.deepEqual(checkResearchAdditions(read('src/research-additions.json'),pin,receipt,base),[]);
+ for(const mutate of [t=>t.answer=true,t=>t.refs=['UNKNOWN'],t=>t.sources[0].url='http://localhost/private',t=>t.caution='',t=>t.study_details[0].sources=[]]){
+  const changed=structuredClone(additions);mutate(changed.topics[0]);
+  assert.ok(checkResearchAdditions(JSON.stringify(changed),pin,receipt,base).length);
+ }
+});

@@ -3,8 +3,6 @@ import additions from "./research-additions.json";
 
 // Plain public copy is governed in one file. Exact research records remain in literature/.
 export const content = { ...messages.normal_view,
-  home: {...messages.normal_view.home, eyebrow: "ResearchThat"},
-  grades: {...messages.normal_view.grades, guidance: {label: "Source guide", description: "A guide is not a cancer trial."}},
   topics: [...messages.normal_view.topics, ...additions.topics]
 };
 export const expertContent = messages.expert_view;

@@ -13,5 +13,12 @@
   "clinical_review": "pending",
   "date": "2026-10-20",
   "public_sha256": "2505ea178b12dff6010fb14e2a2b1d771254b7001247c9144dbb62fe09e35270",
-  "adaptation": "Aloe prose uses shorter words with the same source limits. Vitamin B1 and benfotiamine records remain exact."
+  "adaptation": "Aloe prose uses shorter words with the same source limits. Vitamin B1 and benfotiamine records remain exact.",
+  "references": {
+    "ALOE-NIH": "https://www.nccih.nih.gov/health/aloe-vera",
+    "ALOE-TRIAL-ABSTRACT": "https://pubmed.ncbi.nlm.nih.gov/19368145/",
+    "ALOE-IARC": "https://www.ncbi.nlm.nih.gov/books/NBK350480/",
+    "B1-NIH": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/",
+    "BENFO-2015": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120709"
+  }
 }
