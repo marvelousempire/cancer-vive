@@ -1,0 +1,1 @@
+{"schema": "studio.act-v3-app-profile/v1", "app_id": "researchthat", "storage_namespace": "researchthat-public", "record_kind": "public-research", "display_name": "ResearchThat", "access_mode": "public-readonly"}

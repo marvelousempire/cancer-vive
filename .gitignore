@@ -9,3 +9,5 @@ interface/swift/*.xcodeproj/
 interface/swift/Info.plist
 interface/swift/Sources/GeneratedMessages.swift
 apps/cancer-vive-desktop/src-tauri/gen/
+
+**/__pycache__/

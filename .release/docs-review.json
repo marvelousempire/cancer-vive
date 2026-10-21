@@ -1,106 +1,130 @@
 {
   "schema": "release.documentation-review/v1",
   "repository": "averygoodman/cancer-vive",
-  "source_tree_sha256": "ccdd03504f779a981fd9d9ab98dcdad79c4fc49978b6d4ee0846536be24cdfda",
-  "reviewer": "Codex root public-site source review",
-  "reviewed_at": "2026-10-20T12:06:08.301397+00:00",
+  "source_tree_sha256": "0ceff9bfd41922ae1b36fce0fd8a4f91db1d9e50806e0dfc009d310d8a5a27f3",
+  "reviewer": "Codex > GPT-6",
+  "reviewed_at": "2026-10-20T23:04:58+00:00",
   "release": {
-    "summary": "Refresh the existing public cancer site with three ResearchThat topics and identity.",
-    "target": "https://marvelousempire.github.io/cancer-vive/",
+    "summary": "Replace the old public Pages renderer with the exact sealed ResearchThat public frame.",
+    "target": "Existing https://marvelousempire.github.io/cancer-vive/ address through Gitea and its governed mirror. The registered cancer-vive.localhost static door uses the same build after accepted adoption.",
     "proof": [
-      "30 Node tests pass",
-      "Both original and additions content gates pass",
-      "ClarifyThat prose gates pass; proper product labels preserved",
-      "Actual IAB search, matrix and comparison pass before deployment"
+      "30existing Node tests; existing content and suit checks; legacy source build;2new carrier tests including hash-change/extra-file/output refusals.",
+      "Producer source has159Python/9Node, public browser two project paths,27topics/118elements, currentframe/paint/themes/width checks.",
+      "New main build passed with VITE_OUT_DIR=.build/research-public-new-main-proof;30Node/suit and2Python checks passed again."
     ],
     "limitations": [
-      "Independent clinical review stays pending; no treatment claim",
-      "Private research library and food records are not exported",
-      "Public deployment readback remains separate",
-      "30 inherited Ground Zero plant-root false positives are unchanged; no new findings",
-      "No Apple uploads or app installs"
+      "Producer ResearchThat PR22 acceptance is required before carrier merge. No actual public deployment is claimed.",
+      "Private web/Mac/native builds and source stay with current ResearchThat owners. This public publisher changes no app install.",
+      "Care-expert review is pending. No clinical approval, new Pages plan, privacy change, repository retirement, Apple upload or WireGuard change."
     ]
   },
   "documents": [
     {
       "path": "README.md",
-      "sha256": "fe92efd116d76b2efd9c0763bfeebfb566788d88714d6b0964a68d0972cd2798",
+      "sha256": "579e17ec57909e9e66ed64739714fb1beda0f78b6362763c1ab372b4ba5f9aa2",
       "disposition": "updated",
-      "reason": "Matches public-site scope, source owner and proof limits."
+      "reason": "Current carrier, preserved-source state and exact producer/deployment limits read and checked."
     },
     {
       "path": "DO-NOW.md",
-      "sha256": "aa6089b1c5a7837b6b5b813cbdbefbdb4898a6b8b40ec0165c0b0e22b26cf549",
+      "sha256": "7914ebf69e4f7d772a7e01ea38206aaa325ceddbf04b5f829aa14fdcd33cadf5",
       "disposition": "updated",
-      "reason": "Matches public-site scope, source owner and proof limits."
+      "reason": "Current carrier, preserved-source state and exact producer/deployment limits read and checked."
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "26cd2d14da20341d34d698aba8b8037cb9a1dc59c8eaed4ea5676cae3ad246a7",
+      "sha256": "7af5c9925e515c17864d94864a2ce3b782e94ee49907ba0afb116ebf73ed8797",
       "disposition": "updated",
-      "reason": "Matches public-site scope, source owner and proof limits."
+      "reason": "Current carrier, preserved-source state and exact producer/deployment limits read and checked."
+    },
+    {
+      "path": "PUBLIC-RESEARCHTHAT.md",
+      "sha256": "81285e699d6c7fb80b20865b6961c6ee4178764f20017ddf96bb658ec7a48f06",
+      "disposition": "updated",
+      "reason": "Current carrier, preserved-source state and exact producer/deployment limits read and checked."
     },
     {
       "path": "projection.manifest.json",
-      "sha256": "2fcf39b56d44bbede96b8d5451a8e9351a22234675019a71940dfdd402701394",
+      "sha256": "5a93d02e2a0b40976660e1e73b3c472418b425bc00030a9316249dffa20aa5d2",
       "disposition": "updated",
-      "reason": "Matches public-site scope, source owner and proof limits."
+      "reason": "Current carrier, preserved-source state and exact producer/deployment limits read and checked."
     },
     {
-      "path": "research-public-sync.json",
-      "sha256": "ec6abb8e4e145c569dd2de2c0c028d37ce8cea5fdb12074f5c8e6e94840d9dc3",
+      "path": "public-researchthat-carrier.json",
+      "sha256": "cb14b86d04591bfcc0d6b91678d5d2f22c9c2e349ee31a7c846dfb19329b21d3",
       "disposition": "updated",
-      "reason": "Matches public-site scope, source owner and proof limits."
+      "reason": "Current carrier, preserved-source state and exact producer/deployment limits read and checked."
+    },
+    {
+      "path": "package.json",
+      "sha256": "8a4bfe770bce9da183cd488937c29d8808eec2cd46ae17e95696fca3b244f2f5",
+      "disposition": "updated",
+      "reason": "Current public build is shared by Pages and the registered local static release; archived Vite build remains named separately."
     }
   ],
   "areas": [
     {
+      "id": "docs",
       "disposition": "updated",
-      "reason": "Identity, scope and pending medical review are explicit.",
+      "reason": "Update current entry and source/publish limits.",
       "documents": [
         "README.md",
         "DO-NOW.md",
         "CHANGELOG.md"
-      ],
-      "id": "docs"
+      ]
     },
     {
+      "id": "wiring-guides",
       "disposition": "updated",
-      "reason": "Pins the accepted public source and static-only projection.",
+      "reason": "Exact ResearchThat producer artifact replaces old Pages renderer; thirteen-file/hash refusal and normal mirror delivery.",
       "documents": [
+        "PUBLIC-RESEARCHTHAT.md",
         "projection.manifest.json",
-        "research-public-sync.json"
-      ],
-      "id": "wiring-guides"
+        "public-researchthat-carrier.json",
+        "package.json"
+      ]
     },
     {
+      "id": "white-papers",
       "disposition": "not-applicable",
-      "reason": "No architecture or scientific conclusion changes.",
-      "documents": [],
-      "id": "white-papers"
+      "reason": "No medical/evidence or architecture paper changes. Existing clinical and source limits retained exact.",
+      "documents": []
     },
     {
+      "id": "building-skills",
       "disposition": "not-applicable",
-      "reason": "Existing Pages build and mirror route are unchanged.",
-      "documents": [],
-      "id": "building-skills"
+      "reason": "No reusable shared method or installed skill changed; bounded carrier reuses existing Pages workflow.",
+      "documents": []
     }
   ],
   "checks": [
     {
-      "name": "content-and-unit",
+      "name": "Legacy published content and source checks",
       "status": "pass",
-      "evidence": "npm run check:content and npm test; 30 pass"
+      "evidence": "npmcheck:content,check:suits,30Node tests,oldVitebuild passed; public data unchanged."
     },
     {
-      "name": "build",
+      "name": "Public carrier checks and refusals",
       "status": "pass",
-      "evidence": "npm run build; known non-blocking chunk-size notice"
+      "evidence": "scripts/test_researchthat_pages.py2PASS; exact13file build; producerrelease and everyoutputhash checked."
     }
   ],
   "consumer_sync": {
-    "required": false,
-    "reason": "No shared teaching or app consumer delivery changes in this public-site-only update.",
-    "targets": []
+    "required": true,
+    "reason": "Exact public deployment and behavior remain required after accepted producer/carrier.",
+    "targets": [
+      {
+        "id": "public-pages",
+        "status": "pending",
+        "revision": "sourcecandidate3c217cf; producer7d63d40",
+        "receipt": "Future exactmirror/Pages/hash/realbrowserreceipt required."
+      },
+      {
+        "id": "legacy-local-door",
+        "status": "pending",
+        "revision": "candidate",
+        "receipt": "After merge use registered static owner route; exact local asset and browser checks required."
+      }
+    ]
   }
 }

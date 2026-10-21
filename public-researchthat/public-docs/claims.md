@@ -1,0 +1,131 @@
+# Claim ledger
+
+Each row is one sentence. Grade is required. Source ids point at `sources.md`. Review status: `seed` means the row was filed initially and has not had a second-pass evidence audit.
+
+Status key: `seed` | `reviewed` | `disputed` | `retired`
+
+| ID | Claim | Grade | Source ids | Chapter | Status |
+|----|-------|-------|------------|---------|--------|
+| C-001 | Many tumors convert glucose to lactate even when oxygen is present (aerobic glycolysis / Warburg phenotype). | shown | S-001 S-002 | §04 | seed |
+| C-002 | High tumor glucose uptake is used clinically in FDG-PET imaging. | shown | S-002 | §04 | seed |
+| C-003 | HIF-1α, PI3K/AKT/mTOR, MYC, and PKM2 are recurrent drivers of aerobic glycolysis programs. | mechanism | S-002 S-003 | §04 | seed |
+| C-004 | “Cancer is sugar” as a complete cause statement. | metaphor | S-002 | §04 | seed |
+| C-005 | Cutting dietary sugar is a demonstrated cancer treatment in this repository. | not-supported | — | §04 | seed |
+| C-006 | HIF-1α is marked by PHDs in oxygen and removed through VHL. | mechanism | S-003 S-004 | §05 | seed |
+| C-007 | VHL loss stabilizes HIF in oxygen (classic clear cell kidney cancer path). | mechanism | S-004 | §05 | seed |
+| C-008 | SDH or FH loss raises succinate or fumarate and can block PHDs (pseudohypoxia). | mechanism | S-005 | §05 | seed |
+| C-009 | IDH mutations can produce 2-hydroxyglutarate and disturb alpha-ketoglutarate enzymes including PHDs. | mechanism | S-005 | §05 | seed |
+| C-010 | PI3K/AKT/mTOR and ROS can raise or stabilize HIF without a drop in environmental oxygen. | mechanism | S-003 | §05 | seed |
+| C-011 | Planned intermittent hypoxia training is the same object as obstructive sleep apnea. | not-supported | S-006 S-007 | §06 | seed |
+| C-012 | Tumor cyclic hypoxia is a training protocol with a benefit lane. | not-supported | S-008 | §06 | seed |
+| C-013 | Zero environmental hypoxia is a single neutral that means “does nothing and causes no effect.” | not-supported | S-003 S-008 | §06 | seed |
+| C-014 | Type 2 diabetes is associated with higher incidence of several solid cancers (including liver, pancreas, endometrium, colorectal, breast). | association | S-009 | §07 | seed |
+| C-015 | Insulin and IGF-1 signaling can drive PI3K/AKT/mTOR programs that also appear in tumor metabolism. | mechanism | S-002 S-009 | §07 | seed |
+| C-016 | “Cancer is a type of diabetes.” | metaphor | S-009 | §07 | seed |
+| C-017 | Small human pilots have reported glucose-handling changes after clove extract. | shown | S-010 | §08 | seed |
+| C-018 | Clove extract or eugenol is a licensed diabetes medicine. | not-supported | — | §08 | seed |
+| C-019 | Eugenol or clove extracts show metabolic and inflammatory marks in animal and cell work. | mechanism | S-011 | §08 | seed |
+| C-020 | Clove oil or eugenol is a demonstrated human cancer treatment. | not-supported | — | §08 | seed |
+| C-021 | Intermittent hypoxia training is a demonstrated cancer treatment. | not-supported | — | §06 | seed |
+| C-022 | A completed breast-cancer trial studied a curcumin formulation for treatment-related inflammation and fatigue; its listed endpoints do not establish tumor control or survival benefit. | shown | S-012 | §09(a) | seed |
+
+| C-023 | Fenugreek seed extract slowed growth and caused cell death in breast, pancreatic, and prostate cancer cell lines. | mechanism | S-013 | W-021 | seed |
+| C-024 | A methanol-based fenugreek seed extract caused failed cell division and cell death in MCF-7 and SK-BR3 breast-cancer cells, with p53 and mitochondrial pathway changes. | mechanism | S-014 | W-021 | seed |
+| C-025 | Fenugreek food, powder, or supplements are proven cancer treatments in people. | not-supported | S-013 S-014 S-015 | W-021 | seed |
+| C-026 | Castor oil rubbed on skin or used in packs is a proven cancer treatment in people. | not-supported | S-017 | W-022 | seed |
+| C-027 | A small human castor-oil-pack study measured constipation symptoms rather than cancer outcomes. | shown | S-018 | W-022 | seed |
+| C-028 | An ethanol-based castor fruit extract caused cell death and reduced movement in breast-cancer cells and reduced tumor volume in a 4T1 mouse model. | mechanism | S-016 | W-022 | seed |
+| C-029 | The cited paclitaxel label lists modified castor oil as an inactive carrier, not the cancer-treating drug. | shown | S-019 | W-022 | seed |
+| C-030 | A laboratory-made antibody joined to ricin A-chain has been studied for targeted cancer-cell killing, which is a different material from castor oil. | mechanism | S-021 | W-022 | seed |
+| C-031 | Feeding comfrey leaves or roots to rats caused liver tumors in a long-term experiment. | mechanism | S-023 | W-023 | seed |
+| C-032 | A short-term rat study of comfrey extract found fewer early liver lesions alongside increased signs of cell injury, not a demonstrated human treatment. | mechanism | S-024 | W-023 | seed |
+| C-033 | Comfrey powder is proven to treat cancer in people or gains that proof from skin medicines used for sprains and bruises. | not-supported | S-022 S-023 S-024 | W-023 | seed |
+| C-034 | A Japanese tree-frog gut strain of Ewingella americana produced complete responses in all five Colon-26 tumor-bearing mice in the paper's main comparison group. | mechanism | S-025 | W-024 | seed |
+| C-035 | The frog-strain mouse study found direct tumor-cell killing and immune activation, but did not test cancer treatment in people. | mechanism | S-025 | W-024 | seed |
+| C-036 | Limited safety findings for the frog-derived strain in mice establish human safety for Ewingella americana despite reports of human infection. | not-supported | S-025 S-026 | W-024 | seed |
+| C-037 | DMSO increased estradiol passage through tested skin samples in a patch study, which does not establish delivery of an herb to a tumor. | mechanism | S-027 | W-025 | seed |
+| C-038 | A human basal-cell skin-cancer study tested DMSO-supported ALA light treatment after scraping, so its outcomes cannot be assigned to DMSO alone or herbs. | shown | S-028 | W-025 | seed |
+| C-039 | Topical DMSO has been studied for tissue injury from leaked cancer drugs, a supportive-care use distinct from tumor treatment. | shown | S-029 S-030 | W-025 | seed |
+| C-040 | DMSO mixed with unnamed herbs on skin is a demonstrated treatment for internal tumors or skin cancer in this corpus. | not-supported | — | W-025 | seed |
+| C-041 | DMSO altered and reduced activity of some platinum cancer drugs in laboratory mixing experiments, not a measured risk estimate for topical use in people. | mechanism | S-032 | W-025 | seed |
+| C-042 | Ricin in castor beans is a poison and does not make raw bean products a safe cancer treatment. | shown | S-020 | W-022 | seed |
+
+| C-043 | SARS-CoV-2 spike binds a cell receptor involved in viral entry, which is not itself a human cancer-treatment finding. | mechanism | S-035 | spike lesson | seed |
+| C-044 | COVID-19 mRNA vaccines supply instructions for a spike target and do not contain live SARS-CoV-2. | shown | S-034 | spike lesson | seed |
+| C-045 | COVID-19 vaccines are shown to cause cancer, recurrence, or cancer progression. | not-supported | S-033 | spike lesson | seed |
+| C-046 | A 2025 mouse study linked respiratory viral infections to growth of dormant breast-cancer cells in the lungs, not to exposure to vaccine or spike alone. | mechanism | S-036 | spike lesson | seed |
+| C-047 | The journal retracted the 2021 spike and DNA-repair paper in May 2022, so Cancer Vive does not use it as positive proof. | shown | S-037 | spike lesson | seed |
+| C-048 | Recent vaccination can enlarge lymph nodes and affect some cancer scan findings. | shown | S-033 | spike lesson | seed |
+| C-049 | The untested herbal and supplement products in this explorer are established cancer treatments. | not-supported | S-039 | public topics | seed |
+| C-050 | The human records in the 2025 respiratory-infection paper show associations, not proof that isolated spike or a vaccine caused cancer. | association | S-036 | spike lesson | seed |
+| C-051 | MSK flags bleeding and drug-interaction concerns for turmeric supplements. | shown | S-040 | public topics | seed |
+| C-052 | MSK reports lab and animal black-seed research but not established human cancer treatment. | not-supported | S-041 | public topics | seed |
+| C-053 | Magnesium and zinc have nutrient-replacement uses and excess-dose risks, which are not proof of tumor treatment. | shown | S-042 S-043 | public topics | seed |
+| C-054 | EMA guidance limits thujone exposure because neurological toxicity is a concern. | shown | S-044 | public topics | seed |
+| C-055 | FDA warns that some unapproved traditional products have harmful metal levels, without establishing that every shilajit product is contaminated. | shown | S-045 | public topics | seed |
+| C-056 | Topical capsaicin has a nerve-pain use that does not establish tumor control. | shown | S-046 | public topics | seed |
+| C-057 | Swallowing peroxide can cause injury and gas embolism, not a demonstrated cancer benefit. | shown | S-047 | public topics | seed |
+| C-058 | The filed ivermectin breast-cancer combination trial is evidence of research activity, not proof of efficacy. | shown | S-048 | public topics | seed |
+| C-059 | Hydroxychloroquine labeling includes cardiac and retinal risks requiring medical review. | shown | S-049 | public topics | seed |
+| C-060 | NCI reports no studies showing that stopping sugar makes cancer shrink or disappear. | not-supported | S-050 | sugar lesson | seed |
+| C-061 | The cited oxygen microbubble research in mice does not license drinking peroxide or claim an established human treatment. | mechanism | S-052 | oxygen lesson | seed |
+
+| C-062 | Did pure eugenol slow breast-tumor growth in the mouse test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-053 | study audit | seed |
+| C-063 | Did added oral curcumin show a statistically supported gain in tumor response in this breast-cancer trial? Reported answer: No; exact scope and limits are in the investigation ledger. | shown | S-054 | study audit | seed |
+| C-064 | Did pure thymoquinone slow breast-tumor growth in the mouse test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-055 | study audit | seed |
+| C-065 | Did pure juglone lower prostate-cancer cell growth in the lab test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-056 | study audit | seed |
+| C-066 | Did the named shilajit sample lower breast-cancer cell growth in the lab test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-057 | study audit | seed |
+| C-067 | Did the named fulvic acid slow ovarian-cancer cell growth in the lab test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-058 | study audit | seed |
+| C-068 | Did pure capsaicin reduce prostate-tumor size in the reported mouse test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-059 | study audit | seed |
+| C-069 | Did the named leaf extract lower cancer-cell counts in the mouse test? Reported answer: Yes; exact scope and limits are in the investigation ledger. | mechanism | S-060 | study audit | seed |
+| C-070 | Did high zinc intake slow melanoma growth in this mouse test? Reported answer: No; exact scope and limits are in the investigation ledger. | mechanism | S-061 | study audit | seed |
+| C-071 | Did added hydroxychloroquine show better one-year survival in this pancreatic-cancer trial? Reported answer: No; exact scope and limits are in the investigation ledger. | shown | S-062 | study audit | seed |
+| C-072 | The June 2026 journal concern identifies further image similarities and unavailable original data in the 2021 ivermectin mouse paper; Cancer Vive keeps that mouse-combination finding open. | shown | S-063 | study audit | seed |
+
+| C-073 | Injected DMSO reduced 4T1 tumor growth at higher tested exposures in small mouse groups; this does not test skin herbs. | mechanism | S-067 | second source audit | seed |
+| C-074 | An isolated spike preparation reduced LNCaP colony survival versus medium in one cell study; vaccine and human effects were not tested. | mechanism | S-068 | second source audit | seed |
+| C-075 | The named Artemisia absinthium flavonoid fraction reduced cervical-cell MTT viability signal versus vehicle. | mechanism | S-069 | second source audit | seed |
+| C-076 | Added magnesium did not show a statistically significant improvement in cisplatin tumor killing in the CT26 mouse comparison. | mechanism | S-065 | second source audit | seed |
+| C-077 | Ivermectin reduced estrogen-stimulated MTT viability signal in MCF-7 and T-47D cells in a separate 2026 study. | mechanism | S-070 | second source audit | seed |
+| C-078 | A primary bibliographic record identifies a 1992 castor oil extract antitumor paper; its full result remains unaudited. | shown | S-071 | second source audit | seed |
+| C-079 | Intratumoral dilute peroxide restored growth of engineered IGHG1-knockdown xenografts in a mouse experiment, not a household-product treatment test. | mechanism | S-072 | second source audit | seed |
+
+## How to add a row
+
+1. One sentence.
+2. One grade.
+3. At least one source id, or an explicit em dash if the claim is the absence of support.
+4. Point at a chapter.
+5. Start at `seed`. Move to `reviewed` only after a second reader checks the source.
+
+| C-080 | In MPACT metastatic pancreatic adenocarcinoma, added nab-paclitaxel improved overall survival versus gemcitabine alone: 35% versus 22% alive at one year and 9% versus 4% at two years. | shown | S-073 | Chemotherapy | seed |
+| C-081 | In MPACT, grade ≥3 neuropathy was 17% versus 1%, fatigue 17% versus 7%, and neutropenia 38% versus 27% with the combination versus gemcitabine alone, with event-specific safety denominators. | shown | S-073 | Chemotherapy | seed |
+| C-082 | In the TAILORx randomized recurrence-score 11–25 group, nine-year overall survival was 93.9% with endocrine therapy and 93.8% with added chemotherapy; younger exploratory subgroups had some recurrence benefit. | shown | S-074 | Chemotherapy | seed |
+| C-083 | Chemotherapy can damage healthy fast-growing cells and can cause acute and long-term adverse effects that depend on the regimen and patient. | shown | S-075 S-076 | Chemotherapy | seed |
+
+| C-084 | Older postmastectomy trials showed reduced recurrence and breast cancer death with chest-wall and regional-node radiation in women with one to three positive nodes after axillary dissection; the 2025 guideline supports most node-positive cases with selected omissions. | shown | S-078 S-079 S-093 | §10 | seed |
+| C-085 | SUPREMO found no clear ten-year overall survival benefit from chest-wall radiation in its intermediate-risk population after mastectomy and mandated axillary dissection for node-positive patients. | shown | S-080 | §10 | seed |
+| C-086 | B-51 found no significant five-year invasive recurrence-free interval benefit from regional-node radiation after initially positive nodes became ypN0 with neoadjuvant therapy, not in residual node-positive cases. | shown | S-081 | §10 | seed |
+| C-087 | Therapeutic radiation damages DNA and can harm nearby normal tissue; breast radiation has early effects and possible late heart, lung, bone, skin and second-cancer risks. | shown | S-085 S-094 | §10 | seed |
+| C-088 | The published Ho main paper reports less moist desquamation with mometasone than Eucerin in its analyzed PMRT cohort; this prevention result does not establish healing of all severe wounds. | shown | S-092 | §10 | seed |
+| C-089 | In one retrospective breast-RT series sixteen developed organizing pneumonia; fourteen cleared radiographic findings and two relapsed, with varied care and no randomized treatment assignment. | shown | S-091 | §10 | seed |
+| C-090 | Stage-specific established care depends on the cancer type and biology; nearby breast node involvement alone is not stage IV and distant testicular germ-cell cancer may still be curable. | shown | S-077 S-082 S-083 S-084 S-090 S-093 | §10 | seed |
+| C-091 | Radiation harm care can manage specific problems but no universal cure exists for all late injury, and fixed lung fibrosis or chronic lymphedema may persist. | shown | S-078 S-086 S-087 S-088 S-089 S-094 S-095 | §10 | seed |
+| C-092 | Fenugreek full-source details include solvent controls and cell-death stains in 2009, and dose-dependent stimulation and inhibition in a different 2021 extract. | shown | S-013 S-014 | §10 | seed |
+| C-093 | The full castor fruit paper used ten mice per group and reported lower final tumor volume with injected fruit extract, not efficacy of castor oil skin packs. | shown | S-016 | §10 | seed |
+| C-094 | The frog-derived Ewingella study reports five of five complete responses but has unmatched carrier controls and a narrow tolerated exposure range; no human efficacy follows. | shown | S-025 | §10 | seed |
+| C-095 | Full HCQ trial methods retain a survival No while a separate secondary partial-response endpoint is Yes, with dropout, genomic imbalance and safety limitations. | shown | S-062 | §10 | seed |
+| C-096 | A water-based dandelion root extract slowed colon xenograft growth in a four-mouse-per-group experiment with methodological limits. | shown | S-096 | §10 | seed |
+| C-097 | The dandelion root experiment establishes a cancer benefit from the requested dandelion oil extract. | not-supported | S-096 | §10 | seed |
+
+| C-098 | Ground comfrey root in feed increased liver cII mutation frequency in six male rats per group over twelve weeks; this was not tumor treatment. | shown | S-097 | Four Open questions | seed |
+| C-099 | The nonrandomized peroxide-gel plus radiation phase1 cohort reported maintained local response in eleven of twelve treated people; one died before the three-month response scan. | shown | S-098 | Four Open questions | seed |
+| C-100 | Intratumoral KORTUC reduced acute hypoxia in HCT116 and HN5 mouse xenografts against vehicle and non-injected controls, without testing clinical efficacy. | mechanism | S-099 | Four Open questions | seed |
+| C-101 | The small combined-care cohort establishes how much human benefit peroxide gel adds to radiation alone. | not-supported | S-098 S-101 | Four Open questions | seed |
+| C-102 | The 2025 dandelion seed-oil abstract reports cancer-cell inhibition, while full assay controls and tumor benefit remain unchecked. | association | S-100 | Four Open questions | seed |
+| C-103 | The checked phase2 KORTUC registry has no posted results, which cannot be treated as evidence of no efficacy. | shown | S-101 | Four Open questions | seed |
+
+| C-104 | Both selected 2024 dandelion extracts had lower 24-hour MTT CC50 in FaDu than in non-cancer VERO monkey kidney cells; SI was 2.29 and 2.11. | shown | S-102 | Seed study | seed |
+| C-105 | Both selected dandelion extracts were more cytotoxic to all three tested cancer cell lines than to VERO. | not-supported | S-102 | Seed study | seed |
+| C-106 | The 2024 Table3 compares six selected aqueous ethanol seed extracts, with finite non-cancer VERO CC50 values; it does not test human safety or tumor treatment by pure seed oil. | shown | S-102 | Seed study | seed |
+| C-107 | Milk thistle and chamomile Table3 results remain distinct from dandelion; milk thistle selectivity cannot be assigned to dandelion oil. | shown | S-102 | Seed study | seed |

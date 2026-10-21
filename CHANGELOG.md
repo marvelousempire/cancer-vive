@@ -1,3 +1,11 @@
+# Public frame carrier — 2026-10-20 source candidate
+
+- Use the current ResearchThat frame and exact public artifact from ResearchThat PR22.
+- Preserve all27published cancer topics, public sources and118element profiles.
+- Check every output hash and refuse extra files before Pages delivery.
+- Keep legacy source, private app owners and prior deployment for rollback.
+- Public deployment and exact producer acceptance remain pending.
+
 # Changelog
 
 ## Public site refresh — 2026-10-20

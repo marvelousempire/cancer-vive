@@ -24,3 +24,5 @@ jobs:
         run: npm run check:content && npm run check:suits && npm test
       - name: Build public projection
         run: npm run build
+      - name: Check current ResearchThat public carrier and refusals
+        run: python3 scripts/test_researchthat_pages.py && python3 scripts/build-researchthat-pages.py

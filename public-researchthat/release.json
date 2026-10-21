@@ -1,0 +1,52 @@
+{
+  "schema": "researchthat.public-release/v1",
+  "version": "0.6.0",
+  "source_revision": "7d63d40f5b2e2a4bca158b45dc4bfdddc3c18304",
+  "source_dirty": false,
+  "frame_owner": "dfde44d3a79ec52cccd5580a1401591500192795",
+  "public_input_owner": {
+    "repository": "https://git.jailynmarvin.com/averygoodman/cancer-vive",
+    "commit": "8d876895cac292f4c1f78c922013355bc04faea1"
+  },
+  "source_inputs": {
+    "src/user-messages.json": "402ec84397f03da8004db0322e2d9ce02cf3da0d4c1beb34422f5c488a4f7775",
+    "src/research-additions.json": "2505ea178b12dff6010fb14e2a2b1d771254b7001247c9144dbb62fe09e35270",
+    "literature/language-review.json": "e83d6806ca1b228d9a72cddb08c190a0d77489039e5263235e0c8c648ef4ed80",
+    "literature/research-additions-language.json": "95697f7fabd968ab3f245180dadcab8d923859126b83e71b5785c1819b49f27b",
+    "research-public-sync.json": "ec6abb8e4e145c569dd2de2c0c028d37ce8cea5fdb12074f5c8e6e94840d9dc3",
+    "scripts/check-evidence.mjs": "24a41281f48675a671cd6909855986e5ab2dbb515c7974b0efdd60f8b68bd006",
+    "scripts/check-public-research.mjs": "99c5c891dedc29a49aa56bd38ebc86b8543ec3cac1a219003d514ba661d818c4",
+    "literature/claims.md": "eb7b065d0a413c67e3407d0f4da1d79e922b7cefe23882458d248745b14c5c24",
+    "literature/sources.md": "7d9a204694cf34895ca18d121cfc5419ab537fc896d348e1207d9deff0fa38b4",
+    "literature/MASTER-CANCER-DETRIMENT-MATRIX.md": "fcb271002ac26eac6ff78b423792a06b3271a2e1b5f99c919675f9d3c5ec45e1",
+    "literature/TRUTH-FILTER.md": "63d79b8c5124dc213996e2801df76cb880ad7b4238276b233236d49ed0b6e88a"
+  },
+  "projection_inputs": {
+    "scripts/build_public_pages.py": "03a2074a60a28535bbcee39b45bfa42e67e2ee4651597f35a3c0a9a81d2623cd",
+    "public-pages-messages.json": "bfdf01f17d99249d225af40d72626e32d8c26a554aa234497b6487600dbf5d23",
+    "integrations/act_v3/face.js": "547657985bbc243f6b2b4148ec1d0ee2577b4f38048a2b6b9854105165ccdca6",
+    "integrations/act_v3/face.html": "4cc955fd0761b3e792811217d32e77ba769b6f8d5b4977d70477c089d78b5e3b",
+    "integrations/act_v3/public-frame/build.json": "20eb12ca7667e6127079466e75849f47cd3d002270159fa060f3d2831c412e5e"
+  },
+  "files": {
+    "index.html": "090aaead9f3b4136240d9e21b6c9891da7e0596467793f31cb02e564a298460c",
+    "research-frame.js": "8dd2b61caa49e11bdd679e6b8c95afecf0e9f3e1387162b9958789e2b992ca49",
+    "research-face.js": "5abebd1206aad9fa059aeed728437e8f2ff4248d7e6c76b1080789b402931a08",
+    "research-frame.css": "1edd2bbae8f16d3b28dc81c05384482e3ff9af1f891d859ccacb1bff93c1c433",
+    "research-face.css": "9221ccde8d15a47785b90e3877d45fbed737084086f88e98466506d11e56d9db",
+    "research-paint.json": "961126e6947f02e5edf8506a1b683c0fea6c42cdfe529339b991d2c328cfc879",
+    "app-profile.json": "21d6cb648b82016949cabf054cc7a82686bf2d7e7b5db4931550b42708211353",
+    "public-data.json": "b30e1aabb4e7609948dc43741f3de763d9de5433d77cde7a67905fb1190eed89",
+    "public-docs/claims.md": "eb7b065d0a413c67e3407d0f4da1d79e922b7cefe23882458d248745b14c5c24",
+    "public-docs/sources.md": "7d9a204694cf34895ca18d121cfc5419ab537fc896d348e1207d9deff0fa38b4",
+    "public-docs/MASTER-CANCER-DETRIMENT-MATRIX.md": "fcb271002ac26eac6ff78b423792a06b3271a2e1b5f99c919675f9d3c5ec45e1",
+    "public-docs/TRUTH-FILTER.md": "63d79b8c5124dc213996e2801df76cb880ad7b4238276b233236d49ed0b6e88a"
+  },
+  "private_data": false,
+  "private_writes": false,
+  "original_cancer_topics_exact": true,
+  "published_additions_exact": true,
+  "new_health_copy_release": "none; only previously published copy included",
+  "clinical_review_claimed": false,
+  "deployed": false
+}

@@ -1,4 +1,4 @@
-name: Deploy Cancer Vive to GitHub Pages
+name: Deploy ResearchThat public copy to GitHub Pages
 
 on:
   push:
@@ -35,9 +35,10 @@ jobs:
 
       - name: Check public content and refusal tests
         run: npm run check:content && npm run check:suits && npm test
-      - name: Build
-        env:
-          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+      - name: Check the sealed ResearchThat public copy
+        run: python3 scripts/test_researchthat_pages.py
+
+      - name: Build the current ResearchThat public copy
         run: npm run build
 
       - name: Upload Pages artifact

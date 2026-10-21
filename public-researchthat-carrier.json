@@ -1,0 +1,25 @@
+{
+  "schema": "researchthat.public-carrier/v1",
+  "producer_repository": "https://git.jailynmarvin.com/averygoodman/researchTHAT",
+  "producer_commit": "7d63d40f5b2e2a4bca158b45dc4bfdddc3c18304",
+  "producer_review": "https://git.jailynmarvin.com/averygoodman/researchTHAT/pulls/22",
+  "acceptance": "pending; must be accepted before carrier merge",
+  "address": "https://marvelousempire.github.io/cancer-vive/",
+  "files": {
+    "research-paint.json": "961126e6947f02e5edf8506a1b683c0fea6c42cdfe529339b991d2c328cfc879",
+    "index.html": "090aaead9f3b4136240d9e21b6c9891da7e0596467793f31cb02e564a298460c",
+    "app-profile.json": "21d6cb648b82016949cabf054cc7a82686bf2d7e7b5db4931550b42708211353",
+    "research-frame.js": "8dd2b61caa49e11bdd679e6b8c95afecf0e9f3e1387162b9958789e2b992ca49",
+    "release.json": "1a176748e7b720857e29ac37d16e9e0c0b45c599c03af8913156c4b958ede8d5",
+    "research-face.css": "9221ccde8d15a47785b90e3877d45fbed737084086f88e98466506d11e56d9db",
+    "research-frame.css": "1edd2bbae8f16d3b28dc81c05384482e3ff9af1f891d859ccacb1bff93c1c433",
+    "research-face.js": "5abebd1206aad9fa059aeed728437e8f2ff4248d7e6c76b1080789b402931a08",
+    "public-data.json": "b30e1aabb4e7609948dc43741f3de763d9de5433d77cde7a67905fb1190eed89",
+    "public-docs/sources.md": "7d9a204694cf34895ca18d121cfc5419ab537fc896d348e1207d9deff0fa38b4",
+    "public-docs/MASTER-CANCER-DETRIMENT-MATRIX.md": "fcb271002ac26eac6ff78b423792a06b3271a2e1b5f99c919675f9d3c5ec45e1",
+    "public-docs/TRUTH-FILTER.md": "63d79b8c5124dc213996e2801df76cb880ad7b4238276b233236d49ed0b6e88a",
+    "public-docs/claims.md": "eb7b065d0a413c67e3407d0f4da1d79e922b7cefe23882458d248745b14c5c24"
+  },
+  "old_source_preserved": true,
+  "private_data": false
+}
