@@ -14,7 +14,7 @@ class PublicCarrierTests(unittest.TestCase):
             self.assertEqual((output/'public-data.json').read_bytes(),(pages.ROOT/'public-researchthat/public-data.json').read_bytes())
             self.assertIn('public-mobile-menu.css',(output/'index.html').read_text())
             self.assertIn('public-mobile-menu.js',(output/'index.html').read_text())
-            self.assertIn('20261113c',(output/'index.html').read_text())
+            self.assertIn('20261113d',(output/'index.html').read_text())
             self.assertIn('public-phone-brand',(output/'public-mobile-menu.js').read_text())
             self.assertIn('public-phone-options-open',(output/'public-mobile-menu.css').read_text())
             self.assertIn('20261113d',(output/'index.html').read_text())
