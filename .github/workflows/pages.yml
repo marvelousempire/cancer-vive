@@ -88,5 +88,5 @@ jobs:
             echo '### Last live verification output'
             echo '```'
             tail -n 25 live-pages-verification.log 2>/dev/null || echo 'Verification did not start'
-            echo '\`\`\`'
+            echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
