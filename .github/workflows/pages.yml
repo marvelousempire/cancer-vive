@@ -53,12 +53,40 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Checkout source for post-deployment verification
-        uses: actions/checkout@v6
-
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Verify the actual public site after deployment
-        run: python3 scripts/verify-live-pages.py --url "https://marvelousempire.github.io/cancer-vive/" --attempts 18 --delay 5
+  verify_live:
+    name: Verify public website (separate from Pages deployment)
+    runs-on: ubuntu-latest
+    needs: deploy
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout exact deployed source
+        uses: actions/checkout@v6
+
+      - name: Verify published HTML, assets, and public-only data
+        id: live
+        shell: bash
+        run: |
+          set -o pipefail
+          python3 scripts/verify-live-pages.py --url "https://marvelousempire.github.io/cancer-vive/" --attempts 18 --delay 5 2>&1 | tee live-pages-verification.log
+
+      - name: Record the exact live verification outcome
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo '## Cancer Vive public website verification'
+            echo "Source commit: \`$GITHUB_SHA\`"
+            echo "GitHub Pages deployment job: \`${{needs.deploy.result } }}\`"
+            echo "Live website check: \`${{steps.live.outcome } }}\`"
+            echo 'A successful Pages deployment and a successful live verification are different results.'
+            echo ''
+            echo '### Last live verification output'
+            echo '\`\`\`'
+            tail -n 25 live-pages-verification.log 2>/dev/null || echo 'Verification did not start'
+            echo '\`\`\`'
+          } >> "$GITHUB_STEP_SUMMARY"
