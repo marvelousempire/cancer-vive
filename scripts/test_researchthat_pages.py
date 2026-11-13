@@ -11,7 +11,11 @@ class PublicCarrierTests(unittest.TestCase):
             output=Path(tmp)/'site';receipt=pages.build(output)
             self.assertEqual(receipt['files'],13)
             with self.assertRaises(ValueError):pages.build(output)
-            self.assertEqual((output/'index.html').read_bytes(),(pages.ROOT/'public-researchthat/index.html').read_bytes())
+            self.assertEqual((output/'public-data.json').read_bytes(),(pages.ROOT/'public-researchthat/public-data.json').read_bytes())
+            self.assertIn('public-mobile-menu.css',(output/'index.html').read_text())
+            self.assertIn('public-mobile-menu.js',(output/'index.html').read_text())
+            self.assertEqual((output/'public-mobile-menu.css').read_bytes(),(pages.ROOT/'scripts/public-mobile-menu.css').read_bytes())
+            self.assertEqual((output/'public-mobile-menu.js').read_bytes(),(pages.ROOT/'scripts/public-mobile-menu.js').read_bytes())
     def test_changed_and_extra_file_refused(self):
         with tempfile.TemporaryDirectory()as tmp:
             root=Path(tmp);shutil.copytree(pages.ROOT/'public-researchthat',root/'public-researchthat');shutil.copy2(pages.ROOT/'public-researchthat-carrier.json',root)
