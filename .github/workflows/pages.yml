@@ -41,6 +41,20 @@ jobs:
       - name: Build the current ResearchThat public copy
         run: npm run build
 
+      - name: Install browser test driver
+        run: npm install --no-save --ignore-scripts --no-package-lock playwright-core@1.57.0
+
+      - name: Exercise generated public site in mobile Chrome
+        run: node scripts/check-public-mobile-browser.cjs
+
+      - name: Save mobile screenshot for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: researchthat-public-mobile-${{ github.run_id }}
+          path: artifacts/public-phone-mobile.png
+          if-no-files-found: ignore
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
