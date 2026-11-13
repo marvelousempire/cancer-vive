@@ -48,8 +48,8 @@ def build(destination,root=ROOT):
         raise ValueError('Public page anchors changed; mobile patch refused')
     css=root/'scripts/public-mobile-menu.css'
     js=root/'scripts/public-mobile-menu.js'
-    html=html.replace(marker,marker+'<link rel="stylesheet" href="./public-mobile-menu.css?v=20261113d">',1)
-    html=html.replace(script_marker,script_marker+'<script src="./public-mobile-menu.js?v=20261113d" defer></script>',1)
+    html=html.replace(marker,marker+'<link rel="stylesheet" href="./public-mobile-menu.css?v=20261113e">',1)
+    html=html.replace(script_marker,script_marker+'<script src="./public-mobile-menu.js?v=20261113e" defer></script>',1)
     page.write_text(html)
     shutil.copy2(css,destination/'public-mobile-menu.css')
     shutil.copy2(js,destination/'public-mobile-menu.js')
