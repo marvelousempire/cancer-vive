@@ -55,7 +55,7 @@
       if (open && settings) settings.scrollIntoView({block:"start"});
     });
     function findOwner(id,label) {
-      const ownerPages = [...document.querySelectorAll(".pages button")];
+      const ownerPages = [...document.querySelectorAll(".footer-rail .build-path button")];
       const page = ownerPages.find(button => pageMatch(button,id,label));
       const legacy = root.querySelector('.side [data-room="' + id + '"]');
       return page || legacy || null;
@@ -69,6 +69,7 @@
         const target = findOwner(id,label);
         if (!target) {
           list.setAttribute("data-unavailable",id);
+          button.setAttribute("aria-label",label+" is temporarily unavailable");
           return;
         }
         target.click();
@@ -105,12 +106,13 @@
       if (details.open && !details.contains(event.target)) details.open = false;
     });
 
-    // Reduce duplicate shell navigation only after its real buttons exist.
+    // ACT's real public owner navigation is footer .build-path (not .pages).
+    // Hide it only after the replacement section entries resolve correctly.
     // Keep the owner controls in the DOM; delegate clicks to them.
     const refresh = () => {
       const matched = rooms.slice(0,5).every(([id,label]) => !!findOwner(id,label));
       document.documentElement.classList.toggle("public-phone-menu-ready",matched);
-      const active = [...document.querySelectorAll(".pages button")]
+      const active = [...document.querySelectorAll(".footer-rail .build-path button")]
         .find(button => button.getAttribute("aria-current") === "page" ||
                         button.getAttribute("aria-pressed") === "true");
       if (active) {
@@ -122,11 +124,11 @@
     const observer = new MutationObserver(refresh);
     // Navigation may mount asynchronously; do not watch the entire document
     // and trigger on our own live menu updates.
-    const pages = document.querySelector(".pages");
+    const pages = document.querySelector(".footer-rail .build-path");
     if (pages) observer.observe(pages,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-current","aria-pressed"]});
     else {
       const timer = window.setInterval(() => {
-        const currentPages = document.querySelector(".pages");
+        const currentPages = document.querySelector(".footer-rail .build-path");
         if (currentPages) {
           window.clearInterval(timer);
           observer.observe(currentPages,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-current","aria-pressed"]});
