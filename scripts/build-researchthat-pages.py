@@ -38,6 +38,21 @@ def build(destination,root=ROOT):
     if destination.exists()or destination.is_symlink():
         raise ValueError('Existing output is preserved; choose a new directory')
     shutil.copytree(root/'public-researchthat',destination)
+    # Overlay is deliberately applied *after* verifying and copying the exact
+    # sealed producer. Private files and source claims are never touched.
+    page=destination/'index.html'
+    html=page.read_text()
+    marker='<link rel="stylesheet" href="./research-face.css">'
+    script_marker='<script src="./research-frame.js"></script>'
+    if html.count(marker)!=1 or html.count(script_marker)!=1:
+        raise ValueError('Public page anchors changed; mobile patch refused')
+    css=root/'scripts/public-mobile-menu.css'
+    js=root/'scripts/public-mobile-menu.js'
+    html=html.replace(marker,marker+'<link rel="stylesheet" href="./public-mobile-menu.css">',1)
+    html=html.replace(script_marker,script_marker+'<script src="./public-mobile-menu.js" defer></script>',1)
+    page.write_text(html)
+    shutil.copy2(css,destination/'public-mobile-menu.css')
+    shutil.copy2(js,destination/'public-mobile-menu.js')
     return {'schema':'researchthat.public-carrier-build/v1','producer_commit':pin['producer_commit'],'files':len(FILES),'output':str(destination),'deployed':False}
 
 if __name__=='__main__':
