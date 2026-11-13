@@ -94,8 +94,7 @@
     list.append(tools);
     details.append(summary,list);
     line.append(name,details,options);
-    nav.append(section);
-    nav.append(line);
+    nav.append(line,section);
     main.prepend(nav);
 
     details.addEventListener("toggle", () => summary.setAttribute("aria-expanded",String(details.open)));
