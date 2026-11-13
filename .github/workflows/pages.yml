@@ -81,8 +81,8 @@ jobs:
           {
             echo '## Cancer Vive public website verification'
             echo "Source commit: \`$GITHUB_SHA\`"
-            echo "GitHub Pages deployment job: \`${{needs.deploy.result } }}\`"
-            echo "Live website check: \`${{steps.live.outcome } }}\`"
+            echo "GitHub Pages deployment job: \`${{ needs.deploy.result }}\`"
+            echo "Live website check: \`${{ steps.live.outcome }}\`"
             echo 'A successful Pages deployment and a successful live verification are different results.'
             echo ''
             echo '### Last live verification output'
