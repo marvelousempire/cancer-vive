@@ -104,3 +104,45 @@ jobs:
             tail -n 25 live-pages-verification.log 2>/dev/null || echo 'Verification did not start'
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
+
+  report_release:
+    name: Record Pages result in tracking issue
+    if: always()
+    runs-on: ubuntu-latest
+    needs: [build, deploy, verify_live]
+    permissions:
+      issues: write
+    steps:
+      - name: Report exact build, deploy, and live status
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const states = {
+              build: '${{ needs.build.result }}',
+              deploy: '${{ needs.deploy.result }}',
+              live: '${{ needs.verify_live.result }}'
+            };
+            const status = states.build === 'success' && states.deploy === 'success' && states.live === 'success'
+              ? 'Live HTTP files verified (phone usability still separate)'
+              : 'NOT fully live verified';
+            const body = [
+              '## Automated public Pages release readback',
+              '',
+              'Commit: \`${{ github.sha }}\`',
+              'Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}',
+              '',
+              '| Stage | Actual GitHub Actions result |',
+              '| --- | --- |',
+              '| Build and generated-mobile Chrome test | ' + states.build + ' |',
+              '| GitHub Pages deployment | ' + states.deploy + ' |',
+              '| Public URL HTML/asset readback | ' + states.live + ' |',
+              '',
+              '**Overall: ' + status + '.**',
+              'A green HTTP readback does not replace a real phone visual review.',
+              'If a stage failed, open the linked run and read its failed step and log.'
+            ].join('\\n');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: 10, body
+            });
