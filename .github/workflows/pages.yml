@@ -141,7 +141,7 @@ jobs:
               '**Overall: ' + status + '.**',
               'A green HTTP readback does not replace a real phone visual review.',
               'If a stage failed, open the linked run and read its failed step and log.'
-            ].join('\\n');
+            ].join('\n');
             await github.rest.issues.createComment({
               owner: context.repo.owner, repo: context.repo.repo,
               issue_number: 10, body
