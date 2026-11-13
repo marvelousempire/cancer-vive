@@ -7,9 +7,11 @@ const path = require('node:path');
 const {execFileSync} = require('node:child_process');
 const {chromium} = require('playwright-core');
 const root = path.resolve(__dirname, '../dist');
+const liveUrl = process.env.PUBLIC_PAGES_URL || '';
 const base = '/cancer-vive/';
 const mime = {'.html':'text/html','.css':'text/css','.js':'text/javascript','.json':'application/json','.md':'text/plain'};
-if (!fs.existsSync(path.join(root, 'index.html'))) throw new Error('Run npm run build first');
+if (!liveUrl && !fs.existsSync(path.join(root, 'index.html'))) throw new Error('Run npm run build first');
+if (liveUrl && liveUrl !== 'https://marvelousempire.github.io/cancer-vive/') throw new Error('Unexpected public URL refused');
 const executable = process.env.CHROME_BIN || ['google-chrome','google-chrome-stable','chromium','chromium-browser']
   .map(name=>{try{return execFileSync('which',[name],{encoding:'utf8'}).trim()}catch{return ''}}).find(Boolean);
 if (!executable) throw new Error('No Chrome/Chromium found; browser test is NOT a pass');
@@ -23,13 +25,13 @@ const server = http.createServer((req,res)=>{
   res.end(fs.readFileSync(full));
 });
 (async()=>{
-  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  if (!liveUrl) await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
   const browser = await chromium.launch({headless:true,executablePath:executable,args:['--no-sandbox']});
   const errors=[];
   try {
     const page = await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
     page.on('pageerror',err=>errors.push(err.message));
-    await page.goto('http://127.0.0.1:'+server.address().port+base,{waitUntil:'domcontentloaded'});
+    await page.goto(liveUrl || ('http://127.0.0.1:'+server.address().port+base),{waitUntil:'domcontentloaded',timeout:30000});
     await page.locator('.public-phone-nav').waitFor({state:'visible',timeout:25000});
     assert.equal((await page.locator('.public-phone-brand').innerText()).trim(),'ResearchTHAT');
     await page.waitForFunction(()=>document.documentElement.classList.contains('public-phone-menu-ready'),null,{timeout:25000});
@@ -53,9 +55,9 @@ const server = http.createServer((req,res)=>{
     await page.setViewportSize({width:1280,height:900});
     assert.equal(await page.locator('.public-phone-nav').isVisible(),false,'Desktop should retain original frame');
     assert.deepEqual(errors,[],'Browser script errors: '+errors.join('; '));
-    console.log('PASS: built Pages site in Chrome: actual ACT footer navigation, Sections clicks, Options controls, phone/desktop layout, no JS errors.');
+    console.log('PASS: '+(liveUrl?'LIVE public GitHub Pages':'built Pages site')+' in Chrome: actual ACT footer navigation, Sections clicks, Options controls, phone/desktop layout, no JS errors.');
   } finally {
     await browser.close();
-    await new Promise(resolve=>server.close(resolve));
+    if (!liveUrl) await new Promise(resolve=>server.close(resolve));
   }
-})().catch(error=>{console.error(error);process.exitCode=1;server.close()});
+})().catch(error=>{console.error(error);process.exitCode=1; if (!liveUrl && server.listening) server.close()});
