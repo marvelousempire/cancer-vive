@@ -15,7 +15,7 @@
  .public-phone-menu>summary:focus-visible,.public-phone-nav button:focus-visible {outline:3px solid currentColor;outline-offset:2px;}
  /* The original eight-item row remains clickable via its actual buttons,
     but no longer eats the phone's content area when the replacement is ready. */
- .public-phone-menu-ready:not(.public-phone-tools-open) .review .pages {position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important;}
+ .public-phone-menu-ready:not(.public-phone-tools-open) .review .footer-rail .build-path {position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important;}
  .public-phone-menu-ready:not(.public-phone-tools-open) .review .edge-tools {display:none!important;}
  /* Condense the research-specific header, not the research itself. */
  .research-domain .top {padding:8px 12px!important;gap:8px!important;}
@@ -80,4 +80,11 @@
 @media (max-width:360px) {
   .public-phone-brand {font-size:16px;}
   .public-phone-menu>summary,.public-phone-options {padding-left:8px;padding-right:8px;font-size:13px;}
+}
+
+/* ACT public frame actually renders its page destinations in .footer-rail .build-path.
+   Keep the source buttons mounted for delegated navigation while hiding only
+   their duplicate visual row on narrow phones. */
+@media (max-width:700px) {
+  .public-phone-menu-ready:not(.public-phone-tools-open) .review .footer-rail .build-path button {pointer-events:none!important;}
 }
