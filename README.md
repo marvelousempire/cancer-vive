@@ -1,3 +1,7 @@
+## Public GitHub Pages: verify the real website (November 13, 2026)
+
+The public site at https://marvelousempire.github.io/cancer-vive/ keeps the ResearchTHAT name. Its phone layout is a *post-verification overlay* applied during the Pages build: the 13 checked research files remain unchanged, while `scripts/public-mobile-menu.js` and `scripts/public-mobile-menu.css` are added to `dist`. A merged PR alone does **not** prove the update is on the public URL. The Pages deployment now checks the live HTTP site and mobile asset hashes after publication. The phone interface still requires separate tap-through acceptance. See [the public mobile shipping and troubleshooting guide](docs/PUBLIC-PAGES-MOBILE-SHIP.md).
+
 ## Current ResearchThat frame — source candidate
 
 This address will show the current ResearchThat frame. ResearchThat owns the source. This repository carries only its checked public copy. All27 published cancer topics and118elements stay. Private data and account actions stay in the app. See [the carrier record](PUBLIC-RESEARCHTHAT.md). Publication is pending.
