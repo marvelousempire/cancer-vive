@@ -26,10 +26,13 @@
 
     const line = document.createElement("div");
     line.className = "public-phone-line";
+    const name = document.createElement("strong");
+    name.className = "public-phone-brand";
+    name.textContent = "ResearchTHAT";
     const details = document.createElement("details");
     details.className = "public-phone-menu";
     const summary = document.createElement("summary");
-    summary.textContent = "☰ Sections";
+    summary.textContent = "Sections";
     summary.setAttribute("aria-expanded", "false");
     const list = document.createElement("div");
     list.className = "public-phone-menu-list";
@@ -37,13 +40,19 @@
     section.className = "public-phone-current";
     section.textContent = "Evidence";
     section.setAttribute("aria-live","polite");
-    const searchJump = document.createElement("button");
-    searchJump.type = "button";
-    searchJump.className = "public-phone-find";
-    searchJump.textContent = "Search";
-    searchJump.addEventListener("click", () => {
-      const input = root.querySelector("#query") || root.querySelector('[id="query"]');
-      if (input) { input.scrollIntoView({block:"center"}); input.focus(); }
+    const options = document.createElement("button");
+    options.type = "button";
+    options.className = "public-phone-options";
+    options.textContent = "Options";
+    options.setAttribute("aria-controls","public-phone-settings");
+    options.setAttribute("aria-expanded","false");
+    const settings = root.querySelector(".top");
+    if (settings) settings.id = "public-phone-settings";
+    options.addEventListener("click", () => {
+      const open = document.documentElement.classList.toggle("public-phone-options-open");
+      options.setAttribute("aria-expanded", String(open));
+      options.textContent = open ? "Close options" : "Options";
+      if (open && settings) settings.scrollIntoView({block:"start"});
     });
     function findOwner(id,label) {
       const ownerPages = [...document.querySelectorAll(".pages button")];
@@ -65,7 +74,7 @@
         target.click();
         details.open = false;
         section.textContent = label;
-        summary.textContent = "☰ Sections";
+        summary.textContent = "Sections";
         requestAnimationFrame(() => nav.scrollIntoView({block:"start"}));
         summary.focus({preventScroll:true});
       });
@@ -84,7 +93,8 @@
     });
     list.append(tools);
     details.append(summary,list);
-    line.append(details,section,searchJump);
+    line.append(name,details,options);
+    nav.append(section);
     nav.append(line);
     main.prepend(nav);
 
