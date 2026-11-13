@@ -86,7 +86,7 @@ jobs:
             echo 'A successful Pages deployment and a successful live verification are different results.'
             echo ''
             echo '### Last live verification output'
-            echo '\`\`\`'
+            echo '```'
             tail -n 25 live-pages-verification.log 2>/dev/null || echo 'Verification did not start'
             echo '\`\`\`'
           } >> "$GITHUB_STEP_SUMMARY"
