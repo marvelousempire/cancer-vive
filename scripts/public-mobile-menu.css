@@ -49,3 +49,35 @@
  .research-domain footer {font-size:11px!important;margin-top:16px!important;}
 }
 @media(prefers-reduced-motion:reduce){.public-phone-nav *{scroll-behavior:auto!important;transition:none!important;}}
+
+/* November header correction: one compact mobile identity and two entrances. */
+@media (max-width:700px) {
+  .research-domain .top { display:none!important; }
+  .public-phone-options-open .research-domain .top {
+    display:flex!important;
+    flex-direction:column!important;
+    padding:12px!important;
+    border:1px solid var(--line,#aac3e0);
+    border-radius:12px;
+    margin:8px 12px!important;
+    background:var(--bg,#fff);
+  }
+  .research-domain .top .brand {display:none!important;}
+  .research-domain .top-controls {width:100%!important;}
+  .research-domain .top-controls label {flex:1 1 120px!important;}
+  .research-domain .research-identity {display:none!important;}
+  .public-phone-nav {position:relative!important;top:auto!important;margin-bottom:6px!important;padding:0!important;}
+  .public-phone-line {display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:nowrap;}
+  .public-phone-brand {font-size:18px;font-weight:750;letter-spacing:-.03em;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;}
+  .public-phone-menu {flex:0 0 auto;}
+  .public-phone-menu>summary {padding:10px 11px;min-height:44px;font-size:14px;}
+  .public-phone-options {flex:0 0 auto;min-height:44px;padding:10px 11px;border:1px solid var(--line,#aac3e0);border-radius:12px;background:var(--surface-2,#eaf2ff);font-size:14px;font-weight:650;color:var(--soft,#155fae);}
+  .public-phone-current {display:block;font-size:12px;font-weight:500;margin-top:3px;opacity:.85;}
+  .research-domain .intro {padding:0 0 4px!important;}
+  .research-domain .intro h1 {margin:4px 0!important;font-size:clamp(20px,5.5vw,26px)!important;}
+  .research-domain .intro .facts {margin:5px 0!important;}
+}
+@media (max-width:360px) {
+  .public-phone-brand {font-size:16px;}
+  .public-phone-menu>summary,.public-phone-options {padding-left:8px;padding-right:8px;font-size:13px;}
+}
