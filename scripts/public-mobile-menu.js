@@ -1,4 +1,4 @@
-/* Public-only phone menu. The existing ResearchTHAT frame remains the page owner. */
+/* Cancer Vive public carrier: mobile-only presentation, original ResearchTHAT actions. */
 (() => {
   "use strict";
   const rooms = [
@@ -6,6 +6,13 @@
     ["sources", "Sources"], ["elements", "Elements"],
     ["studies", "Private studies"], ["foods", "Food library"], ["engine", "Engine receipts"]
   ];
+  const normalize = s => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+  const pageMatch = (button,id,label) => {
+    const identifiers = [button.dataset.room,button.dataset.page,button.dataset.id].filter(Boolean);
+    if (identifiers.includes(id)) return true;
+    const target = normalize(button.getAttribute("aria-label") || button.textContent);
+    return target === normalize(label) || (id === "engine" && target === "engine receipts");
+  };
   let installed = false;
   function init() {
     if (installed) return true;
@@ -16,56 +23,114 @@
     const nav = document.createElement("nav");
     nav.className = "public-phone-nav";
     nav.setAttribute("aria-label", "Public research sections");
+
+    const line = document.createElement("div");
+    line.className = "public-phone-line";
     const details = document.createElement("details");
     details.className = "public-phone-menu";
     const summary = document.createElement("summary");
-    summary.textContent = "☰ Browse sections";
+    summary.textContent = "☰ Sections";
+    summary.setAttribute("aria-expanded", "false");
     const list = document.createElement("div");
     list.className = "public-phone-menu-list";
-    for (const [id, name] of rooms) {
+    const section = document.createElement("span");
+    section.className = "public-phone-current";
+    section.textContent = "Evidence";
+    section.setAttribute("aria-live","polite");
+    const searchJump = document.createElement("button");
+    searchJump.type = "button";
+    searchJump.className = "public-phone-find";
+    searchJump.textContent = "Search";
+    searchJump.addEventListener("click", () => {
+      const input = root.querySelector("#query") || root.querySelector('[id="query"]');
+      if (input) { input.scrollIntoView({block:"center"}); input.focus(); }
+    });
+    function findOwner(id,label) {
+      const ownerPages = [...document.querySelectorAll(".pages button")];
+      const page = ownerPages.find(button => pageMatch(button,id,label));
+      const legacy = root.querySelector('.side [data-room="' + id + '"]');
+      return page || legacy || null;
+    }
+    for (const [id,label] of rooms) {
       const button = document.createElement("button");
       button.type = "button";
-      button.textContent = name;
+      button.textContent = label;
       button.dataset.publicRoom = id;
       button.addEventListener("click", () => {
-        // Reuse ResearchTHAT's existing navigation, never reimplement its pages.
-        const pageButtons = [...document.querySelectorAll(".pages button")];
-        const ownerPage = pageButtons.find((item) => item.textContent.trim() === name ||
-          item.getAttribute("data-room") === id || item.getAttribute("data-page") === id);
-        const ownerRoom = root.querySelector('.side [data-room="' + id + '"]');
-        const target = ownerPage || ownerRoom;
+        const target = findOwner(id,label);
         if (!target) {
-          summary.textContent = "☰ Browse sections";
+          list.setAttribute("data-unavailable",id);
           return;
         }
         target.click();
         details.open = false;
-        summary.textContent = "☰ Browse sections · " + name;
-        main.scrollIntoView({behavior: "instant", block: "start"});
-        summary.focus({preventScroll: true});
+        section.textContent = label;
+        summary.textContent = "☰ Sections";
+        requestAnimationFrame(() => nav.scrollIntoView({block:"start"}));
+        summary.focus({preventScroll:true});
       });
       list.append(button);
     }
-    details.addEventListener("toggle", () => {
-      summary.setAttribute("aria-expanded", String(details.open));
+    const tools = document.createElement("button");
+    tools.type = "button";
+    tools.className = "public-phone-tools-toggle";
+    tools.textContent = "More site tools";
+    tools.setAttribute("aria-expanded","false");
+    tools.addEventListener("click", () => {
+      const open = document.documentElement.classList.toggle("public-phone-tools-open");
+      tools.setAttribute("aria-expanded",String(open));
+      tools.textContent = open ? "Fewer site tools" : "More site tools";
+      details.open = false;
     });
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && details.open) {
-        details.open = false;
-        summary.focus();
-      }
+    list.append(tools);
+    details.append(summary,list);
+    line.append(details,section,searchJump);
+    nav.append(line);
+    main.prepend(nav);
+
+    details.addEventListener("toggle", () => summary.setAttribute("aria-expanded",String(details.open)));
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && details.open) { details.open = false; summary.focus(); }
     });
-    document.addEventListener("pointerdown", (event) => {
+    document.addEventListener("pointerdown", event => {
       if (details.open && !details.contains(event.target)) details.open = false;
     });
-    details.append(summary, list);
-    nav.append(details);
-    main.prepend(nav);
+
+    // Reduce duplicate shell navigation only after its real buttons exist.
+    // Keep the owner controls in the DOM; delegate clicks to them.
+    const refresh = () => {
+      const matched = rooms.slice(0,5).every(([id,label]) => !!findOwner(id,label));
+      document.documentElement.classList.toggle("public-phone-menu-ready",matched);
+      const active = [...document.querySelectorAll(".pages button")]
+        .find(button => button.getAttribute("aria-current") === "page" ||
+                        button.getAttribute("aria-pressed") === "true");
+      if (active) {
+        const item = rooms.find(([id,label]) => pageMatch(active,id,label));
+        if (item) section.textContent = item[1];
+      }
+    };
+    refresh();
+    const observer = new MutationObserver(refresh);
+    // Navigation may mount asynchronously; do not watch the entire document
+    // and trigger on our own live menu updates.
+    const pages = document.querySelector(".pages");
+    if (pages) observer.observe(pages,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-current","aria-pressed"]});
+    else {
+      const timer = window.setInterval(() => {
+        const currentPages = document.querySelector(".pages");
+        if (currentPages) {
+          window.clearInterval(timer);
+          observer.observe(currentPages,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-current","aria-pressed"]});
+          refresh();
+        }
+      },500);
+      window.setTimeout(() => window.clearInterval(timer),15000);
+    }
     return true;
   }
   if (!init()) {
     const observer = new MutationObserver(() => { if (init()) observer.disconnect(); });
-    observer.observe(document.documentElement, {childList: true, subtree: true});
-    document.addEventListener("DOMContentLoaded", () => { if (init()) observer.disconnect(); }, {once:true});
+    observer.observe(document.documentElement,{childList:true,subtree:true});
+    document.addEventListener("DOMContentLoaded",() => { if (init()) observer.disconnect(); },{once:true});
   }
 })();
