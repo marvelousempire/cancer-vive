@@ -37,6 +37,15 @@ const server = http.createServer((req,res)=>{
     await page.waitForFunction(()=>document.documentElement.classList.contains('public-phone-menu-ready'),null,{timeout:25000});
     assert.ok(await page.locator('.footer-rail .build-path button').count()>=5,'Real ACT page buttons must exist');
     assert.equal(await page.locator('.research-domain .research-identity').isVisible(),false,'Duplicate ResearchThat title hidden');
+    // Prior test incorrectly passed while three large ACT icon rows still
+    // occupied the top of the screenshot. This is a real visual acceptance gate.
+    const actHeader=page.locator('.review > header.identity');
+    assert.equal(await actHeader.count(),1,'ACT owner header must be located by the real selector');
+    assert.equal(await actHeader.isVisible(),false,'ACT icon bank must not appear above public mobile header');
+    const mobileHeaderBox=await page.locator('.public-phone-nav').boundingBox();
+    assert.ok(mobileHeaderBox && mobileHeaderBox.y<140,
+      'ResearchTHAT header must begin near the top, not below ACT icon banks: '+JSON.stringify(mobileHeaderBox));
+
     await page.locator('.public-phone-menu > summary').click();
     await page.locator('[data-public-room="sources"]').click();
     await page.waitForFunction(()=>document.querySelector('.public-phone-current')?.textContent==='Sources');
@@ -54,6 +63,7 @@ const server = http.createServer((req,res)=>{
     await page.screenshot({path:path.resolve(__dirname,'../artifacts/public-phone-mobile.png'),fullPage:true});
     await page.setViewportSize({width:1280,height:900});
     assert.equal(await page.locator('.public-phone-nav').isVisible(),false,'Desktop should retain original frame');
+    assert.equal(await page.locator('.review > header.identity').isVisible(),true,'Desktop ACT header must remain intact');
     assert.deepEqual(errors,[],'Browser script errors: '+errors.join('; '));
     console.log('PASS: '+(liveUrl?'LIVE public GitHub Pages':'built Pages site')+' in Chrome: actual ACT footer navigation, Sections clicks, Options controls, phone/desktop layout, no JS errors.');
   } finally {
