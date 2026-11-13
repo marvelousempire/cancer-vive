@@ -17,6 +17,10 @@ class PublicCarrierTests(unittest.TestCase):
             self.assertIn('20261113c',(output/'index.html').read_text())
             self.assertIn('public-phone-brand',(output/'public-mobile-menu.js').read_text())
             self.assertIn('public-phone-options-open',(output/'public-mobile-menu.css').read_text())
+            self.assertIn('20261113d',(output/'index.html').read_text())
+            self.assertIn('.footer-rail .build-path button',(output/'public-mobile-menu.js').read_text())
+            self.assertIn('.review .footer-rail .build-path',(output/'public-mobile-menu.css').read_text())
+            self.assertNotIn('document.querySelectorAll(".pages button")',(output/'public-mobile-menu.js').read_text())
             self.assertEqual((output/'public-mobile-menu.css').read_bytes(),(pages.ROOT/'scripts/public-mobile-menu.css').read_bytes())
             self.assertEqual((output/'public-mobile-menu.js').read_bytes(),(pages.ROOT/'scripts/public-mobile-menu.js').read_bytes())
     def test_changed_and_extra_file_refused(self):
