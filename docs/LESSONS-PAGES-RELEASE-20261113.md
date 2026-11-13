@@ -39,3 +39,11 @@ A source inspection of the actual published owner bundle `public-researchthat/re
 **Correction:** use `.footer-rail .build-path button` to find and delegate ACT's real page actions, observe `.footer-rail .build-path` for selection updates, and only hide the redundant row once all public page links resolve. Add an automated regression check asserting the actual selector is used. Bump mobile asset URL version to `20261113d`. The original ResearchTHAT data, evidence and owner frame remain unmodified.
 
 **Proof boundary:** This explains a confirmed mismatch in the source code; it does not by itself establish whether the Pages deployment succeeded or that an iPhone rendered the revised header correctly. Both require independent evidence.
+
+## Screenshot-backed finding: functional tests missed the visible ACT top header
+
+**November 13, 2026:** The owner supplied an actual narrow-screen screenshot showing the public page with three oversized dark ACT icon rows ABOVE the working `ResearchTHAT | Sections | Options` mobile header. The existing browser tests passed because they checked that the *Research domain's* duplicate heading (`.research-domain .research-identity`) was hidden, not whether the *ACT shell's* `<header class="identity consumer-header">` remained visible. These are different elements.
+
+**Repair:** Target the compiled owner's real top-level header selector `.review > header.identity` at phone widths up to 700px, only in the injected public carrier CSS. Keep the original header mounted but visually hidden on phones; leave the desktop shell and the subject controls unchanged. The automated browser gate now explicitly asserts that the ACT owner header is present but invisible at 390px, that the ResearchTHAT mobile header begins near the top of the page, and that desktop ACT chrome remains visible. The real hosted mobile Chrome test repeats this after deployment. Cache marker, carrier test and live asset verifier are advanced together to `20261113e`.
+
+**Lesson:** A passing click test is not a passing visual-layout test. Define screenshot-driven **negative assertions** for the unwanted content and its occupied space. The release must demonstrate the actual absence of redundant ACT chrome rather than merely the presence of a new menu. A physical iPhone Safari review remains separate.

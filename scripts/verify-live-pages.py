@@ -32,9 +32,9 @@ def inspect(base=DEFAULT_URL):
     for name in OVERLAY:
         source = (ROOT / "scripts" / name).read_bytes()
         # The asset must actually be referenced in published HTML and served byte-for-byte.
-        if "./" + name + "?v=20261113d" not in html:
+        if "./" + name + "?v=20261113e" not in html:
             raise ValueError("Live page is missing current mobile asset: " + name)
-        published = fetch(base, name + "?v=20261113d")
+        published = fetch(base, name + "?v=20261113e")
         if sha(published) != sha(source):
             raise ValueError("Live mobile asset does not match checked source: " + name)
     data = json.loads(fetch(base, "public-data.json"))

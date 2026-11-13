@@ -88,3 +88,13 @@
 @media (max-width:700px) {
   .public-phone-menu-ready:not(.public-phone-tools-open) .review .footer-rail .build-path button {pointer-events:none!important;}
 }
+
+/* Screenshot-confirmed repair: the black ACT icon bank is the owner's
+   top-level .identity header, NOT ResearchTHAT's .research-identity.
+   Do not remove the owner DOM, research evidence, or bottom Cancer/Diabetes
+   controls. This public-only stylesheet suppresses just that chrome on phones. */
+@media (max-width:700px) {
+  .review > header.identity {
+    display:none!important;
+  }
+}
