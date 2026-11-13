@@ -88,6 +88,27 @@ jobs:
           set -o pipefail
           python3 scripts/verify-live-pages.py --url "https://marvelousempire.github.io/cancer-vive/" --attempts 18 --delay 5 2>&1 | tee live-pages-verification.log
 
+      - name: Setup Node for live browser acceptance
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.12.0
+
+      - name: Install live browser driver
+        run: npm install --no-save --ignore-scripts --no-package-lock playwright-core@1.57.0
+
+      - name: Exercise actual published page in mobile Chrome
+        env:
+          PUBLIC_PAGES_URL: https://marvelousempire.github.io/cancer-vive/
+        run: node scripts/check-public-mobile-browser.cjs
+
+      - name: Save live public mobile screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: researchthat-LIVE-phone-${{ github.run_id }}
+          path: artifacts/public-phone-mobile.png
+          if-no-files-found: ignore
+
       - name: Record the exact live verification outcome
         if: always()
         shell: bash

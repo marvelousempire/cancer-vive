@@ -46,3 +46,7 @@ If direct public HTTPS access is unavailable from a session, do not claim a mobi
 ## Reuse
 
 Apply the existing AI Skills Library `skills/methodology/release-documentation-freshness/SKILL.md` and `checklists/post-ship-live-verification.md` to this release. The landing-page-deployment skill covers *temporary waiting pages* and is not a replacement for this actual application release process. skillTHAT is the foundry for a new capability packet only if a genuinely new reusable capability is needed, not for duplicating an existing shipping checklist.
+
+## Live mobile browser verification (added after the successful public asset readback)
+
+The Pages workflow's `verify_live` job now does **two independent checks** after a successful deployment: (1) HTTPS asset and public-data readback using `scripts/verify-live-pages.py`, then (2) a real headless Chrome test using `PUBLIC_PAGES_URL=https://marvelousempire.github.io/cancer-vive/ node scripts/check-public-mobile-browser.cjs`. The latter actually navigates the hosted ResearchTHAT page at 390px, opens Sections, navigates Evidence/Sources, opens and closes Options, verifies the duplicate title is hidden, checks narrow-screen overflow and desktop behavior, and captures a screenshot. A failure leaves `verify_live` red and is reported to Issue #10 by the existing release-report job. The screenshot is a GitHub Actions artifact, not proof of what a separate physical iPhone shows. A physical Safari review remains a distinct final acceptance step.
