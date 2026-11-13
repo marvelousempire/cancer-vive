@@ -31,3 +31,11 @@ Each stage may succeed or fail independently. A successful deployment with a fai
 - PR #14: post-deploy verifier added, but no source checkout in that job.
 - PR #15: source checkout added; the operator subsequently reported another failure.
 - This release change: separate deploy and verification jobs, with a job summary. The latest actual deployment/real iPhone behavior still requires independent verification.
+
+## Confirmed mobile navigation selector mismatch — November 13 follow-up
+
+A source inspection of the actual published owner bundle `public-researchthat/research-frame.js` found that ACT renders page navigation as `<nav class="build-path">` inside the `footer-rail`, with button labels and `aria-current=page`. Earlier Cancer Vive mobile JS looked for `.pages button`, and the CSS tried to hide `.review .pages`. **Those targets do not describe the actual owner frame.** The custom menu could therefore fail to resolve owner page destinations, leaving the original page navigation visible and the header crowded, even when correct mobile files were deployed.
+
+**Correction:** use `.footer-rail .build-path button` to find and delegate ACT's real page actions, observe `.footer-rail .build-path` for selection updates, and only hide the redundant row once all public page links resolve. Add an automated regression check asserting the actual selector is used. Bump mobile asset URL version to `20261113d`. The original ResearchTHAT data, evidence and owner frame remain unmodified.
+
+**Proof boundary:** This explains a confirmed mismatch in the source code; it does not by itself establish whether the Pages deployment succeeded or that an iPhone rendered the revised header correctly. Both require independent evidence.
