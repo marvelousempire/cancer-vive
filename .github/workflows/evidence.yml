@@ -24,5 +24,19 @@ jobs:
         run: npm run check:content && npm run check:suits && npm test
       - name: Build public projection
         run: npm run build
+      - name: Install browser test driver
+        run: npm install --no-save --ignore-scripts --no-package-lock playwright-core@1.57.0
+
+      - name: Exercise generated public site in mobile Chrome
+        run: node scripts/check-public-mobile-browser.cjs
+
+      - name: Save mobile screenshot for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: researchthat-public-mobile-${{ github.run_id }}
+          path: artifacts/public-phone-mobile.png
+          if-no-files-found: ignore
+
       - name: Check current ResearchThat public carrier and refusals
         run: python3 scripts/test_researchthat_pages.py && python3 scripts/build-researchthat-pages.py
