@@ -42,3 +42,19 @@
   .research-domain.public-learning-ready .public-learning-actions {display:grid;grid-template-columns:1fr;gap:8px;margin:12px 0;}
   .research-domain.public-learning-ready .public-learning-actions button {width:100%;text-align:center;}
 }
+
+/* Phone-first first screen: the research list, not the introduction, is the main work. */
+@media(max-width:700px){
+ .research-domain.public-learning-ready .public-learning-guide{padding:4px 0 8px!important;margin:0 0 6px!important;}
+ .research-domain .public-learning-eyebrow{display:none!important;}
+ .research-domain .public-learning-guide h1{font-size:clamp(22px,6vw,28px)!important;margin:0 0 6px!important;line-height:1.22!important;}
+ .research-domain .public-learning-guide > p:not(.public-learning-eyebrow){font-size:15px!important;line-height:1.4!important;margin:0 0 9px!important;}
+ .research-domain.public-learning-ready .public-learning-actions{grid-template-columns:1fr 1fr!important;gap:8px!important;margin:8px 0!important;}
+ .research-domain .public-learning-actions button{font-size:13px!important;line-height:1.25!important;min-height:44px!important;padding:7px 8px!important;}
+ .research-domain .public-learning-caution{font-size:12px!important;line-height:1.35!important;margin:8px 0!important;}
+ .research-domain .public-learning-explanation{padding-top:0!important;font-size:13px!important;}
+ .research-domain .public-learning-explanation summary{font-size:13px!important;min-height:40px!important;padding:7px 0!important;}
+ .research-domain.public-learning-ready .intro .facts{margin:4px 0 8px!important;}
+ .research-domain.public-learning-ready .intro .facts span:last-child{display:none!important;}
+ .research-domain .workspace{margin-top:4px!important;}
+}
