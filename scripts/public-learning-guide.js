@@ -18,7 +18,7 @@
     const heading = document.createElement("h1");
     heading.textContent = "Explore research questions";
     const description = document.createElement("p");
-    description.textContent = "Read what studies found, what remains uncertain, and where the evidence came from.";
+    description.textContent = "Read findings and their sources.";
     const actions = document.createElement("div");
     actions.className = "public-learning-actions";
     const browse = document.createElement("button");
@@ -50,7 +50,7 @@
     actions.append(browse,learn);
     const note = document.createElement("p");
     note.className = "public-learning-caution";
-    note.textContent = "Research is not medical advice. Study results have limits.";
+    note.textContent = "Research has limits. Not medical advice.";
     const explanation = document.createElement("details");
     explanation.className = "public-learning-explanation";
     const summary = document.createElement("summary");
