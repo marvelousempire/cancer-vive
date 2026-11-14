@@ -31,14 +31,31 @@ const server = http.createServer((req,res)=>{
   try {
     const page = await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
     page.on('pageerror',err=>errors.push(err.message));
+    await page.addInitScript(()=>{
+      // Reproduce the reported returning-phone condition: old Color selections.
+      localStorage.setItem('researchthat.appearance.v2','color');
+      localStorage.setItem('cancer-vive.theme.v1','color');
+    });
     await page.goto(liveUrl || ('http://127.0.0.1:'+server.address().port+base),{waitUntil:'domcontentloaded',timeout:30000});
     await page.locator('.public-phone-nav').waitFor({state:'visible',timeout:25000});
     assert.equal((await page.locator('.public-phone-brand').innerText()).trim(),'ResearchTHAT');
     await page.waitForFunction(()=>document.querySelector('.research-domain')?.dataset.researchAppearance==='auto');
     assert.equal(await page.locator('.research-domain #theme').inputValue(),'auto','Initial appearance must be Auto');
+    const actualAppearance=async(expected)=>{
+      await page.waitForFunction(expected=>{
+        const rgb=getComputedStyle(document.querySelector('.review')).backgroundColor;
+        const body=getComputedStyle(document.body).backgroundColor;
+        const stage=getComputedStyle(document.querySelector('.research-domain')).backgroundColor;
+        const nav=getComputedStyle(document.querySelector('.public-phone-nav')).backgroundColor;
+        const sel=document.querySelector('.research-domain #theme')?.value;
+        return [rgb,body,stage,nav].every(v=>v===expected)&&sel==='auto';
+      },expected,{timeout:12000});
+    };
     await page.emulateMedia({colorScheme:'dark'});
+    await actualAppearance('rgb(23, 20, 17)');
     await page.waitForFunction(()=>getComputedStyle(document.querySelector('.research-domain')).getPropertyValue('--bg').trim()==='#171411');
     await page.emulateMedia({colorScheme:'light'});
+    await actualAppearance('rgb(255, 255, 255)');
     await page.waitForFunction(()=>getComputedStyle(document.querySelector('.research-domain')).getPropertyValue('--bg').trim()==='#ffffff');
     await page.waitForFunction(()=>document.documentElement.classList.contains('public-phone-menu-ready'),null,{timeout:25000});
     assert.ok(await page.locator('.footer-rail .build-path button').count()>=5,'Real ACT page buttons must exist');

@@ -69,9 +69,9 @@ def build(destination,root=ROOT):
                       '<script src="./public-learning-guide.js?v=20261114a" defer></script><script src="./public-matrix.js?v=20261114c" defer></script>',1)
     # Mobile-first list and borderless floating rail correction.
     html=html.replace('./public-matrix.js?v=20261114c','./public-matrix.js?v=20261114d',1)
-    html=html.replace('./public-borderless-study.css?v=20261114b','./public-borderless-study.css?v=20261114e',1)
+    html=html.replace('./public-borderless-study.css?v=20261114b','./public-borderless-study.css?v=20261114g',1)
     html=html.replace('<script src="./public-matrix.js?v=20261114d" defer></script>',
-                      '<script src="./public-matrix.js?v=20261114d" defer></script><script src="./public-system-auto.js?v=20261114d" defer></script>',1)
+                      '<script src="./public-matrix.js?v=20261114d" defer></script><script src="./public-system-auto.js?v=20261114g" defer></script>',1)
     html=html.replace('./public-matrix.js?v=20261114d','./public-matrix.js?v=20261114f',1)
     html=html.replace('./public-matrix.css?v=20261114e','./public-matrix.css?v=20261114f',1)
     html=html.replace('./public-learning-guide.js?v=20261114a','./public-learning-guide.js?v=20261114f',1)
