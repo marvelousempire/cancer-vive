@@ -72,6 +72,10 @@ def build(destination,root=ROOT):
     html=html.replace('./public-borderless-study.css?v=20261114b','./public-borderless-study.css?v=20261114e',1)
     html=html.replace('<script src="./public-matrix.js?v=20261114d" defer></script>',
                       '<script src="./public-matrix.js?v=20261114d" defer></script><script src="./public-system-auto.js?v=20261114d" defer></script>',1)
+    html=html.replace('./public-matrix.js?v=20261114d','./public-matrix.js?v=20261114f',1)
+    html=html.replace('./public-matrix.css?v=20261114e','./public-matrix.css?v=20261114f',1)
+    html=html.replace('./public-learning-guide.js?v=20261114a','./public-learning-guide.js?v=20261114f',1)
+    html=html.replace('./public-learning-guide.css?v=20261114a','./public-learning-guide.css?v=20261114f',1)
     page.write_text(html)
     shutil.copy2(root/'scripts/public-system-auto.js',destination/'public-system-auto.js')
     shutil.copy2(root/'scripts/public-matrix.css',destination/'public-matrix.css')
