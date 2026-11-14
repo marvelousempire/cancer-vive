@@ -34,6 +34,12 @@ const server = http.createServer((req,res)=>{
     await page.goto(liveUrl || ('http://127.0.0.1:'+server.address().port+base),{waitUntil:'domcontentloaded',timeout:30000});
     await page.locator('.public-phone-nav').waitFor({state:'visible',timeout:25000});
     assert.equal((await page.locator('.public-phone-brand').innerText()).trim(),'ResearchTHAT');
+    await page.waitForFunction(()=>document.querySelector('.research-domain')?.dataset.researchAppearance==='auto');
+    assert.equal(await page.locator('.research-domain #theme').inputValue(),'auto','Initial appearance must be Auto');
+    await page.emulateMedia({colorScheme:'dark'});
+    await page.waitForFunction(()=>getComputedStyle(document.querySelector('.research-domain')).getPropertyValue('--bg').trim()==='#171411');
+    await page.emulateMedia({colorScheme:'light'});
+    await page.waitForFunction(()=>getComputedStyle(document.querySelector('.research-domain')).getPropertyValue('--bg').trim()==='#ffffff');
     await page.waitForFunction(()=>document.documentElement.classList.contains('public-phone-menu-ready'),null,{timeout:25000});
     assert.ok(await page.locator('.footer-rail .build-path button').count()>=5,'Real ACT page buttons must exist');
     assert.equal(await page.locator('.research-domain .research-identity').isVisible(),false,'Duplicate ResearchThat title hidden');
@@ -71,6 +77,14 @@ const server = http.createServer((req,res)=>{
     await matrixOpen.click();
     await page.locator('.public-matrix-search').waitFor({state:'visible'});
     await page.waitForFunction(()=>document.querySelector('.public-matrix-count')?.textContent.includes('filed items'));
+    assert.ok(await page.locator('.public-matrix-item').count()>=20,'All filed items appear BEFORE typing');
+    assert.notEqual(await page.locator('.public-matrix-search').evaluate(el=>el===document.activeElement),true,
+      'Opening Matrix must not focus search and summon the mobile keyboard');
+    const rails=await page.evaluate(()=>['.review .footer-rail','.review .pages','.review .edge-tools'].map(selector=>{
+      const el=document.querySelector(selector);if(!el)return null;
+      const s=getComputedStyle(el);return {selector,border:s.borderTopWidth,background:s.backgroundColor};
+    }));
+    for(const rail of rails.filter(Boolean))assert.equal(rail.border,'0px',rail.selector+' must have no line');
     assert.ok(await page.locator('.public-matrix-item').count()>=20,'All approved filed Matrix items are searchable');
     await page.locator('.public-matrix-search').fill('Fenugreek');
     assert.equal(await page.locator('.public-matrix-item').count(),1);
