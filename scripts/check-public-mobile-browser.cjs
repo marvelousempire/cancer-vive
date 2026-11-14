@@ -59,7 +59,7 @@ const server = http.createServer((req,res)=>{
     assert.equal(studyBackground,'rgba(0, 0, 0, 0)','Study guide must float on the canvas without a filled panel');
     assert.equal(borderWidths.button?.width,'1px','Buttons keep their visible border');
     assert.equal(borderWidths.chip?.width,'0px','Info chips should be borderless');
-    assert.equal(await page.locator('.public-learning-guide h1').innerText(),'Explore one question at a time.');
+    assert.equal(await page.locator('.public-learning-guide h1').innerText(),'Explore research questions');
     assert.equal(await page.locator('.public-learning-guide').count(),1,'Learning entrance should appear only once');
     assert.equal(await page.locator('.research-domain .intro > h1').isVisible(),false,'Old technical heading should not compete');
     const statusDimensions = await page.locator('.research-domain #status').evaluate(el => {
@@ -74,6 +74,10 @@ const server = http.createServer((req,res)=>{
     await page.locator('.public-learning-explanation summary').click();
     assert.equal(await page.locator('.public-learning-explanation p').isVisible(),true,'Evidence explanation must open');
     // One-tap mobile Matrix with exact filed items, names and eight-column data.
+    assert.equal(await page.locator('.public-matrix-launch').count(),1,'One Matrix entrance, no repeated CTA');
+    assert.equal(await page.locator('.public-learning-actions button').count(),2,'Only two compact learning actions');
+    const entrance=await page.locator('.public-learning-guide').boundingBox();
+    assert.ok(entrance && entrance.height<330,'Phone learning introduction must not consume a full screen: '+JSON.stringify(entrance));
     const matrixOpen=page.locator('.public-matrix-quick .public-matrix-launch');
     await matrixOpen.waitFor({state:'visible',timeout:12000});
     await matrixOpen.click();
