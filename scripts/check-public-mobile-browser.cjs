@@ -78,9 +78,10 @@ const server = http.createServer((req,res)=>{
     await matrixOpen.waitFor({state:'visible',timeout:12000});
     await matrixOpen.click();
     await page.locator('.public-matrix-search').waitFor({state:'visible'});
+    await page.waitForFunction(()=>document.querySelector('.public-matrix-count')?.textContent.includes('filed items'));
     const matrixItemBorder=await page.locator('.public-matrix-item').first().evaluate(el=>getComputedStyle(el).borderBottomWidth);
     assert.equal(matrixItemBorder,'0px','Matrix rows should float without permanent separators');
-    await page.waitForFunction(()=>document.querySelector('.public-matrix-count')?.textContent.includes('filed items'));
+
     assert.ok(await page.locator('.public-matrix-item').count()>=20,'All filed items appear BEFORE typing');
     assert.notEqual(await page.locator('.public-matrix-search').evaluate(el=>el===document.activeElement),true,
       'Opening Matrix must not focus search and summon the mobile keyboard');
