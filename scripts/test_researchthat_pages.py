@@ -30,6 +30,13 @@ class PublicCarrierTests(unittest.TestCase):
             self.assertEqual((output/'public-learning-guide.css').read_bytes(),(pages.ROOT/'scripts/public-learning-guide.css').read_bytes())
             self.assertIn('public-borderless-study.css?v=20261114b',(output/'index.html').read_text())
             self.assertEqual((output/'public-borderless-study.css').read_bytes(),(pages.ROOT/'scripts/public-borderless-study.css').read_bytes())
+            self.assertIn('public-matrix.js?v=20261114c',(output/'index.html').read_text())
+            self.assertIn('public-matrix.css?v=20261114c',(output/'index.html').read_text())
+            matrix=__import__('json').loads((output/'public-matrix.json').read_text())
+            self.assertGreaterEqual(len(matrix['rows']),20)
+            self.assertTrue(all(len(row)==8 for row in matrix['rows']))
+            self.assertFalse(matrix['private_records_included'])
+            self.assertEqual((output/'public-matrix.js').read_bytes(),(pages.ROOT/'scripts/public-matrix.js').read_bytes())
     def test_changed_and_extra_file_refused(self):
         with tempfile.TemporaryDirectory()as tmp:
             root=Path(tmp);shutil.copytree(pages.ROOT/'public-researchthat',root/'public-researchthat');shutil.copy2(pages.ROOT/'public-researchthat-carrier.json',root)

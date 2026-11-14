@@ -59,13 +59,23 @@ def build(destination,root=ROOT):
     border_css=root/'scripts/public-borderless-study.css'
     html=html.replace('<link rel="stylesheet" href="./public-learning-guide.css?v=20261114a">',
                       '<link rel="stylesheet" href="./public-learning-guide.css?v=20261114a"><link rel="stylesheet" href="./public-borderless-study.css?v=20261114b">',1)
+    # One new public read-only Matrix projection from the already sealed source.
+    # Keep the original Markdown unchanged and verify all eight columns.
+    import runpy
+    matrix_count=runpy.run_path(str(ROOT/'scripts/public_matrix.py'))['build_matrix'](root,destination)
+    html=html.replace('<link rel="stylesheet" href="./public-borderless-study.css?v=20261114b">',
+                      '<link rel="stylesheet" href="./public-borderless-study.css?v=20261114b"><link rel="stylesheet" href="./public-matrix.css?v=20261114c">',1)
+    html=html.replace('<script src="./public-learning-guide.js?v=20261114a" defer></script>',
+                      '<script src="./public-learning-guide.js?v=20261114a" defer></script><script src="./public-matrix.js?v=20261114c" defer></script>',1)
     page.write_text(html)
+    shutil.copy2(root/'scripts/public-matrix.css',destination/'public-matrix.css')
+    shutil.copy2(root/'scripts/public-matrix.js',destination/'public-matrix.js')
     shutil.copy2(border_css,destination/'public-borderless-study.css')
     shutil.copy2(css,destination/'public-mobile-menu.css')
     shutil.copy2(js,destination/'public-mobile-menu.js')
     shutil.copy2(guide_css,destination/'public-learning-guide.css')
     shutil.copy2(guide_js,destination/'public-learning-guide.js')
-    return {'schema':'researchthat.public-carrier-build/v1','producer_commit':pin['producer_commit'],'files':len(FILES),'output':str(destination),'deployed':False}
+    return {'schema':'researchthat.public-carrier-build/v1','producer_commit':pin['producer_commit'],'files':len(FILES),'output':str(destination),'deployed':False,'matrix_items':matrix_count}
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--write',type=Path);a=p.parse_args()
