@@ -41,3 +41,34 @@
 @media (prefers-reduced-motion:reduce) {
   .review * {scroll-behavior:auto!important;}
 }
+
+/* ACT V5 Face/Frame lesson: rails float on one uninterrupted canvas.
+   Only the icon and button surfaces may carry visible boundaries. */
+.review,
+.review > .identity,
+.review > .footer-rail,
+.review .footer-rail,
+.review .pages,
+.review .edge-tools,
+.review .left-tools,
+.review .right-tools,
+.review .rail-primary,
+.review .rail-middle,
+.review .rail-secondary,
+.review .header-icon-group,
+.review .header-view-group {
+  border:0!important;
+  border-top:0!important;
+  border-right:0!important;
+  border-bottom:0!important;
+  border-left:0!important;
+  outline:0!important;
+  box-shadow:none!important;
+  background:transparent!important;
+}
+.review .header-view-group nav+nav {border-left:0!important;}
+.review .footer-rail::before,
+.review .footer-rail::after,
+.review .edge-tools::before,
+.review .edge-tools::after {border:0!important;box-shadow:none!important;}
+/* Keep the original buttons, icons and keyboard focus, never erase controls. */
