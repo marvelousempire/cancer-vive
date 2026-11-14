@@ -152,13 +152,13 @@
       if(first)parent.prepend(b);else parent.append(b);
       return b;
     }
-    const guideActions=guide.querySelector(".public-learning-actions");
-    if(guideActions)addEntrance(guideActions,true);
+    // One Matrix entrance on phones; don't repeat it inside the learning guide.
     const phoneNav=main.querySelector(".public-phone-nav");
     if(phoneNav){
       const tray=make("div","public-matrix-quick");
-      tray.append(make("span",null,"Research Matrix"));
-      addEntrance(tray);
+      const launch=addEntrance(tray);
+      launch.textContent="Browse Matrix";
+      launch.setAttribute("aria-label","Browse the Research Matrix items");
       phoneNav.append(tray);
     }
     return true;
