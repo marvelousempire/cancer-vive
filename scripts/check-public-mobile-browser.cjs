@@ -38,6 +38,19 @@ const server = http.createServer((req,res)=>{
     assert.ok(await page.locator('.footer-rail .build-path button').count()>=5,'Real ACT page buttons must exist');
     assert.equal(await page.locator('.research-domain .research-identity').isVisible(),false,'Duplicate ResearchThat title hidden');
     await page.locator('.public-learning-guide').waitFor({state:'visible',timeout:12000});
+    // Borderless design: no borders on containers/chips, buttons remain visibly bounded.
+    const borderWidths = await page.evaluate(() => {
+      const get = (selector) => {
+        const el = document.querySelector(selector);
+        if (!el) return null;
+        const style = getComputedStyle(el);
+        return {width: style.borderTopWidth, style: style.borderTopStyle};
+      };
+      return {card:get('.research-domain .card'),guide:get('.public-learning-guide'),chip:get('.research-domain .facts span'),button:get('.public-phone-options')};
+    });
+    assert.equal(borderWidths.guide?.width,'0px','Learning container should be borderless');
+    assert.equal(borderWidths.button?.width,'1px','Buttons keep their visible border');
+    assert.equal(borderWidths.chip?.width,'0px','Info chips should be borderless');
     assert.equal(await page.locator('.public-learning-guide h1').innerText(),'Explore one question at a time.');
     assert.equal(await page.locator('.public-learning-guide').count(),1,'Learning entrance should appear only once');
     assert.equal(await page.locator('.research-domain .intro > h1').isVisible(),false,'Old technical heading should not compete');
