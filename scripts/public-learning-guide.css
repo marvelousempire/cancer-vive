@@ -28,7 +28,7 @@
 .research-domain.public-learning-ready #identity {display:none!important;}
 .research-domain.public-learning-ready #status {
   position:absolute!important;
-  height:1px!important;width:1px!important;
+  height:1px!important;min-height:0!important;width:1px!important;max-height:1px!important;
   overflow:hidden!important;clip-path:inset(50%)!important;
   white-space:nowrap!important;
 }
