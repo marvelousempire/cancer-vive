@@ -72,3 +72,16 @@
 .review .edge-tools::before,
 .review .edge-tools::after {border:0!important;box-shadow:none!important;}
 /* Keep the original buttons, icons and keyboard focus, never erase controls. */
+
+/* ACT V5 transparent resting-surface rule: the study is the canvas, not a
+   permanent decorated panel. Preserve only control/icon frames. */
+.review .research-domain .public-learning-guide,
+.review .research-domain .card,
+.review .research-domain .receipt,
+.review .research-domain .comparison,
+.review .research-domain .facts span,
+.review .research-domain .tag {
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+}
