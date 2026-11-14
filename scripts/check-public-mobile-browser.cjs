@@ -65,6 +65,25 @@ const server = http.createServer((req,res)=>{
     assert.equal(await page.locator('#query').evaluate(el=>el===document.activeElement),true,'Explore must focus search');
     await page.locator('.public-learning-explanation summary').click();
     assert.equal(await page.locator('.public-learning-explanation p').isVisible(),true,'Evidence explanation must open');
+    // One-tap mobile Matrix with exact filed items, names and eight-column data.
+    const matrixOpen=page.locator('.public-matrix-quick .public-matrix-launch');
+    await matrixOpen.waitFor({state:'visible',timeout:12000});
+    await matrixOpen.click();
+    await page.locator('.public-matrix-search').waitFor({state:'visible'});
+    await page.waitForFunction(()=>document.querySelector('.public-matrix-count')?.textContent.includes('filed items'));
+    assert.ok(await page.locator('.public-matrix-item').count()>=20,'All approved filed Matrix items are searchable');
+    await page.locator('.public-matrix-search').fill('Fenugreek');
+    assert.equal(await page.locator('.public-matrix-item').count(),1);
+    await page.locator('.public-matrix-item').first().click();
+    assert.ok((await page.locator('.public-matrix-detail').innerText()).includes('Food is not lab extract'),'Preserve the original form and safety distinction');
+    await page.locator('.public-matrix-detail .public-matrix-back').click();
+    await page.locator('.public-matrix-search').fill('Dandelion oil extract');
+    assert.equal(await page.locator('.public-matrix-item').count(),1);
+    await page.locator('.public-matrix-view').last().click();
+    assert.equal(await page.locator('.public-matrix-table thead th').count(),8,'Desktop/table mode must keep all eight source fields');
+    await page.locator('.public-matrix-head .public-matrix-back').click();
+    assert.equal(await page.locator('.public-matrix').isVisible(),false,'Close Matrix without losing previous research state');
+
     // Prior test incorrectly passed while three large ACT icon rows still
     // occupied the top of the screenshot. This is a real visual acceptance gate.
     const actHeader=page.locator('.review > header.identity');
