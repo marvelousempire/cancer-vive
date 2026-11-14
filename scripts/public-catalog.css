@@ -1,0 +1,43 @@
+/* Continuous canvas: catalog is primary. Source cards are airy touch surfaces. */
+.research-domain.research-catalog-ready .public-learning-guide {display:none!important}
+.research-domain.research-catalog-ready .intro,
+.research-domain.research-catalog-ready .workspace,
+.research-domain.research-catalog-ready .receipt,
+.research-domain.research-catalog-ready main>footer{display:none!important}
+.research-domain.public-matrix-open .research-catalog{display:none!important}
+.research-catalog[hidden],.research-catalog-reader[hidden],.research-catalog-cards[hidden],.research-catalog-filters[hidden]{display:none!important}
+.research-catalog{max-width:1150px;margin:0 auto;padding:12px 0 56px;color:var(--soft,inherit)}
+.research-catalog-heading h1{font-size:clamp(25px,5vw,36px);line-height:1.15;letter-spacing:-.035em;margin:8px 0}
+.research-catalog-heading p{font-size:15px;line-height:1.5;margin:6px 0 18px}
+.research-catalog input{width:100%;min-height:54px;font:inherit;font-size:16px;padding:15px 18px;border-radius:16px;background:var(--surface,transparent)}
+.research-catalog-toolbar,.research-catalog-filters{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.research-catalog button{font:inherit;cursor:pointer;min-height:50px;border-radius:15px;padding:14px 20px}
+.research-catalog button:focus-visible,.research-catalog input:focus-visible{outline:3px solid var(--soft,currentColor);outline-offset:3px}
+.research-catalog-choice[aria-pressed=true],.research-catalog-chip[aria-pressed=true]{background:var(--surface-2,#e8edf5);font-weight:750}
+.research-catalog-count,.research-catalog-caution{font-size:13px;line-height:1.5;opacity:.8}
+.research-catalog-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:16px;margin:16px 0}
+.research-catalog-cards.as-list{grid-template-columns:minmax(0,1fr);gap:8px}
+.research-catalog .research-catalog-card{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;text-align:left;gap:10px;border:0!important;background:color-mix(in srgb,var(--soft,currentColor) 4%,transparent)!important;border-radius:18px;padding:22px!important;min-height:170px;width:100%;box-shadow:none!important}
+.research-catalog-card strong{font-size:19px;line-height:1.25}
+.research-catalog-kind{font-size:12px;font-weight:650;opacity:.75}
+.research-catalog-form{font-size:13px;line-height:1.5;opacity:.88;overflow-wrap:anywhere}
+.research-catalog-more{font-size:13px;font-weight:750;margin-top:auto}
+.research-catalog .research-catalog-card:hover{background:color-mix(in srgb,var(--soft,currentColor) 8%,transparent)!important}
+.research-catalog-cards.as-list .research-catalog-card{min-height:100px;padding:18px!important}
+.research-catalog-reader h2{font-size:clamp(24px,5vw,34px);margin:12px 0}
+.research-catalog-field{padding:16px 0;max-width:78ch}
+.research-catalog-field h3{font-size:15px;margin:0 0 7px}
+.research-catalog-field p{font-size:16px;line-height:1.6;margin:0;overflow-wrap:anywhere}
+.research-catalog-empty{padding:26px 8px}.research-catalog-empty p{max-width:55ch}
+.research-catalog-source{display:inline-block;margin-top:20px}
+.research-domain.research-catalog-ready .layout .side{border:0!important;background:transparent!important;box-shadow:none!important}
+@media(max-width:700px){
+ .research-catalog{padding:4px 0 36px}
+ .research-catalog-toolbar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+ .research-catalog-toolbar button{padding:14px 6px!important;min-height:54px!important}
+ .research-catalog-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .research-catalog .research-catalog-card{padding:17px!important;min-height:176px}
+ .research-catalog-card strong{font-size:16px}
+ .research-catalog-form{font-size:12px}
+ .research-catalog-cards.as-list{grid-template-columns:1fr}
+}
