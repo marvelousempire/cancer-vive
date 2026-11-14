@@ -55,7 +55,8 @@
     source.href="./public-docs/MASTER-CANCER-DETRIMENT-MATRIX.md";
     source.target="_blank";source.rel="noopener noreferrer";
     screen.append(top,controls,count,items,reader,tableArea,source);
-    main.prepend(screen);
+    const phoneHeader=main.querySelector('.public-phone-nav');
+    main.insertBefore(screen,phoneHeader?phoneHeader.nextSibling:main.firstChild);
     let data=null,selected=null,mode="items",az=false,previousFocus=null,previousScroll=0;
     const escapeHTML=v=>String(v);
     function rows(){
