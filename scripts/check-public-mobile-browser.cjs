@@ -37,6 +37,15 @@ const server = http.createServer((req,res)=>{
     await page.waitForFunction(()=>document.documentElement.classList.contains('public-phone-menu-ready'),null,{timeout:25000});
     assert.ok(await page.locator('.footer-rail .build-path button').count()>=5,'Real ACT page buttons must exist');
     assert.equal(await page.locator('.research-domain .research-identity').isVisible(),false,'Duplicate ResearchThat title hidden');
+    await page.locator('.public-learning-guide').waitFor({state:'visible',timeout:12000});
+    assert.equal(await page.locator('.public-learning-guide h1').innerText(),'Explore one question at a time.');
+    assert.equal(await page.locator('.public-learning-guide').count(),1,'Learning entrance should appear only once');
+    assert.equal(await page.locator('.research-domain .intro > h1').isVisible(),false,'Old technical heading should not compete');
+    assert.equal(await page.locator('.research-domain #status').isVisible(),false,'Repeated public status should not crowd reading view');
+    await page.locator('.public-learning-primary').click();
+    assert.equal(await page.locator('#query').evaluate(el=>el===document.activeElement),true,'Explore must focus search');
+    await page.locator('.public-learning-explanation summary').click();
+    assert.equal(await page.locator('.public-learning-explanation p').isVisible(),true,'Evidence explanation must open');
     // Prior test incorrectly passed while three large ACT icon rows still
     // occupied the top of the screenshot. This is a real visual acceptance gate.
     const actHeader=page.locator('.review > header.identity');
