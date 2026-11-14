@@ -10,7 +10,7 @@ from urllib.error import URLError, HTTPError
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_URL = "https://marvelousempire.github.io/cancer-vive/"
-OVERLAY = ("public-mobile-menu.js", "public-mobile-menu.css", "public-learning-guide.js", "public-learning-guide.css", "public-borderless-study.css")
+OVERLAY = ("public-mobile-menu.js", "public-mobile-menu.css", "public-learning-guide.js", "public-learning-guide.css", "public-borderless-study.css", "public-matrix.js", "public-matrix.css")
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
@@ -32,12 +32,20 @@ def inspect(base=DEFAULT_URL):
     for name in OVERLAY:
         source = (ROOT / "scripts" / name).read_bytes()
         # The asset must actually be referenced in published HTML and served byte-for-byte.
-        version = "20261114b" if name == "public-borderless-study.css" else ("20261114a" if name.startswith("public-learning-guide.") else "20261113e")
+        version = "20261114c" if name.startswith("public-matrix.") else ("20261114b" if name == "public-borderless-study.css" else ("20261114a" if name.startswith("public-learning-guide.") else "20261113e"))
         if "./" + name + "?v=" + version not in html:
             raise ValueError("Live page is missing current public design asset: " + name)
         published = fetch(base, name + "?v=" + version)
         if sha(published) != sha(source):
             raise ValueError("Live mobile asset does not match checked source: " + name)
+    matrix=json.loads(fetch(base,"public-matrix.json"))
+    raw=fetch(base,"public-docs/MASTER-CANCER-DETRIMENT-MATRIX.md")
+    if(matrix.get("schema")!="researchthat.matrix-public-readonly/v1" or
+       matrix.get("private_records_included") is not False or
+       hashlib.sha256(raw).hexdigest()!=matrix.get("source_sha256") or
+       len(matrix.get("rows",[]))<20 or
+       any(len(row)!=8 for row in matrix["rows"])):
+        raise ValueError("Live Matrix does not match the sealed public Markdown")
     data = json.loads(fetch(base, "public-data.json"))
     if (data.get("mode") != "public-readonly" or
         data.get("private_records_included") is not False or
