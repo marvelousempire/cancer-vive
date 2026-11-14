@@ -76,7 +76,12 @@ def build(destination,root=ROOT):
     html=html.replace('./public-matrix.css?v=20261114e','./public-matrix.css?v=20261114f',1)
     html=html.replace('./public-learning-guide.js?v=20261114a','./public-learning-guide.js?v=20261114f',1)
     html=html.replace('./public-learning-guide.css?v=20261114a','./public-learning-guide.css?v=20261114f',1)
+    # Source-backed mobile catalog overlay; no private records or synthetic recipes.
+    html=html.replace('</head>', '<link rel="stylesheet" href="./public-catalog.css?v=20261114a"></head>',1)
+    html=html.replace('</body>', '<script src="./public-catalog.js?v=20261114a" defer></script></body>',1)
     page.write_text(html)
+    shutil.copy2(root/'scripts/public-catalog.js',destination/'public-catalog.js')
+    shutil.copy2(root/'scripts/public-catalog.css',destination/'public-catalog.css')
     shutil.copy2(root/'scripts/public-system-auto.js',destination/'public-system-auto.js')
     shutil.copy2(root/'scripts/public-matrix.css',destination/'public-matrix.css')
     shutil.copy2(root/'scripts/public-matrix.js',destination/'public-matrix.js')
