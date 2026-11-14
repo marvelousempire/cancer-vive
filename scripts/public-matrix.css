@@ -47,5 +47,5 @@
 .public-matrix .public-matrix-item:hover {
   background:color-mix(in srgb,var(--soft) 6%,transparent)!important;
   border-radius:12px!important;
-  padding-left:8px!important;
+  padding-left:0!important;
 }
