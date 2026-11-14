@@ -50,9 +50,17 @@ def build(destination,root=ROOT):
     js=root/'scripts/public-mobile-menu.js'
     html=html.replace(marker,marker+'<link rel="stylesheet" href="./public-mobile-menu.css?v=20261113e">',1)
     html=html.replace(script_marker,script_marker+'<script src="./public-mobile-menu.js?v=20261113e" defer></script>',1)
+    guide_css=root/'scripts/public-learning-guide.css'
+    guide_js=root/'scripts/public-learning-guide.js'
+    html=html.replace(marker+'<link rel="stylesheet" href="./public-mobile-menu.css?v=20261113e">',
+                      marker+'<link rel="stylesheet" href="./public-mobile-menu.css?v=20261113e"><link rel="stylesheet" href="./public-learning-guide.css?v=20261114a">',1)
+    html=html.replace('<script src="./public-mobile-menu.js?v=20261113e" defer></script>',
+                      '<script src="./public-mobile-menu.js?v=20261113e" defer></script><script src="./public-learning-guide.js?v=20261114a" defer></script>',1)
     page.write_text(html)
     shutil.copy2(css,destination/'public-mobile-menu.css')
     shutil.copy2(js,destination/'public-mobile-menu.js')
+    shutil.copy2(guide_css,destination/'public-learning-guide.css')
+    shutil.copy2(guide_js,destination/'public-learning-guide.js')
     return {'schema':'researchthat.public-carrier-build/v1','producer_commit':pin['producer_commit'],'files':len(FILES),'output':str(destination),'deployed':False}
 
 if __name__=='__main__':
