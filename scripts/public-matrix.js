@@ -128,15 +128,17 @@
       previousFocus=document.activeElement;previousScroll=window.scrollY;
       screen.hidden=false;root.classList.add("public-matrix-open");
       reader.hidden=true;selected=null;controls.hidden=false;mode="items";search.value="";
+      // Matrix is a browse-first destination: never summon the phone keyboard.
       screen.scrollIntoView({block:"start"});
       load().catch(e=>{count.textContent=e.message;items.replaceChildren();});
-      search.focus({preventScroll:true});
     };
     const close=()=>{
       screen.hidden=true;root.classList.remove("public-matrix-open");
       window.scrollTo({top:previousScroll,behavior:"instant"});
       if(previousFocus?.isConnected)previousFocus.focus({preventScroll:true});
     };
+    // Warm the list before first tap, while leaving the research view untouched.
+    load().catch(e=>{count.textContent=e.message;});
     back.addEventListener("click",close);
     search.addEventListener("input",()=>{selected=null;render();});
     sort.addEventListener("click",()=>{az=!az;render();});
