@@ -76,7 +76,18 @@ const server = http.createServer((req,res)=>{
     await page.locator('.research-catalog-search').fill('fenugreek');
     assert.equal(await page.locator('.research-catalog-card').count(),1,'Catalog searches filed names');
     await page.locator('.research-catalog-card').first().click();
-    assert.ok((await page.locator('.research-catalog-reader').innerText()).includes('Human cancer research'),'Profile has evidence fields');
+    assert.ok((await page.locator('.research-catalog-reader').innerText()).includes('What does the evidence say?'),'Plain-language evidence is visible first');
+    assert.ok((await page.locator('.research-catalog-reader').innerText()).includes('Important limits'),'Safety limits are immediately visible');
+    await page.locator('.research-catalog-evidence summary').first().click();
+    assert.ok((await page.locator('.research-catalog-reader').innerText()).includes('Human cancer research'),'Human evidence is readable when expanded');
+    assert.equal(await page.locator('.research-catalog-source').count(),1,'Original source link must be reachable');
+    const cck=await page.locator('.research-catalog-card').first().evaluate(el=>({
+      radius:getComputedStyle(el).borderTopLeftRadius,
+      border:getComputedStyle(el).borderTopWidth,
+      padding:getComputedStyle(el).paddingLeft
+    }));
+    assert.equal(cck.radius,'26px','CCK cards use the accepted large corner radius');
+    assert.equal(cck.border,'1px','CCK resting cards keep a fine border');
     await page.locator('.research-catalog-back').click();
     await page.locator('.research-catalog-search').fill('strawberry breast');
     assert.ok(await page.locator('.research-catalog-empty').count()===1,'Combination search must not invent medical connections');
@@ -84,6 +95,7 @@ const server = http.createServer((req,res)=>{
     const catalogButton = await page.locator('.research-catalog-card').first().evaluate(el=>({height:el.getBoundingClientRect().height,padding:getComputedStyle(el).paddingLeft}));
     assert.ok(catalogButton.height>=120,'Mobile cards must be comfortably sized');
     assert.ok(parseFloat(catalogButton.padding)>=16,'Cards must have generous inner padding');
+    assert.ok(!(await page.locator('.research-catalog').innerText()).includes('Food or ingredient mention'),'Do not claim a verified food identity from a keyword guess');
     assert.equal(await page.locator('.research-domain .intro > h1').isVisible(),false,'Old introduction must not compete');
     // One-tap mobile Matrix with exact filed items, names and eight-column data.
     assert.equal(await page.locator('.public-matrix-launch').count(),1,'One Matrix entrance, no repeated CTA');
