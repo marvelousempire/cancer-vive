@@ -55,6 +55,8 @@ const server = http.createServer((req,res)=>{
       return {card:get('.research-domain .card'),guide:get('.public-learning-guide'),chip:get('.research-domain .facts span'),button:get('.public-phone-options')};
     });
     assert.equal(borderWidths.guide?.width,'0px','Learning container should be borderless');
+    const studyBackground=await page.locator('.public-learning-guide').evaluate(el=>getComputedStyle(el).backgroundColor);
+    assert.equal(studyBackground,'rgba(0, 0, 0, 0)','Study guide must float on the canvas without a filled panel');
     assert.equal(borderWidths.button?.width,'1px','Buttons keep their visible border');
     assert.equal(borderWidths.chip?.width,'0px','Info chips should be borderless');
     assert.equal(await page.locator('.public-learning-guide h1').innerText(),'Explore one question at a time.');
@@ -77,6 +79,9 @@ const server = http.createServer((req,res)=>{
     await matrixOpen.click();
     await page.locator('.public-matrix-search').waitFor({state:'visible'});
     await page.waitForFunction(()=>document.querySelector('.public-matrix-count')?.textContent.includes('filed items'));
+    const matrixItemBorder=await page.locator('.public-matrix-item').first().evaluate(el=>getComputedStyle(el).borderBottomWidth);
+    assert.equal(matrixItemBorder,'0px','Matrix rows should float without permanent separators');
+
     assert.ok(await page.locator('.public-matrix-item').count()>=20,'All filed items appear BEFORE typing');
     assert.notEqual(await page.locator('.public-matrix-search').evaluate(el=>el===document.activeElement),true,
       'Opening Matrix must not focus search and summon the mobile keyboard');

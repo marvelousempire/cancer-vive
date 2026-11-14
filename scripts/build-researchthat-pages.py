@@ -64,12 +64,12 @@ def build(destination,root=ROOT):
     import runpy
     matrix_count=runpy.run_path(str(ROOT/'scripts/public_matrix.py'))['build_matrix'](root,destination)
     html=html.replace('<link rel="stylesheet" href="./public-borderless-study.css?v=20261114b">',
-                      '<link rel="stylesheet" href="./public-borderless-study.css?v=20261114b"><link rel="stylesheet" href="./public-matrix.css?v=20261114c">',1)
+                      '<link rel="stylesheet" href="./public-borderless-study.css?v=20261114b"><link rel="stylesheet" href="./public-matrix.css?v=20261114e">',1)
     html=html.replace('<script src="./public-learning-guide.js?v=20261114a" defer></script>',
                       '<script src="./public-learning-guide.js?v=20261114a" defer></script><script src="./public-matrix.js?v=20261114c" defer></script>',1)
     # Mobile-first list and borderless floating rail correction.
     html=html.replace('./public-matrix.js?v=20261114c','./public-matrix.js?v=20261114d',1)
-    html=html.replace('./public-borderless-study.css?v=20261114b','./public-borderless-study.css?v=20261114d',1)
+    html=html.replace('./public-borderless-study.css?v=20261114b','./public-borderless-study.css?v=20261114e',1)
     html=html.replace('<script src="./public-matrix.js?v=20261114d" defer></script>',
                       '<script src="./public-matrix.js?v=20261114d" defer></script><script src="./public-system-auto.js?v=20261114d" defer></script>',1)
     page.write_text(html)

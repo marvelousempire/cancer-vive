@@ -37,3 +37,15 @@
  .public-matrix button{font-size:14px;padding:9px 8px;}
  .public-matrix .public-matrix-item{font-size:16px;padding:13px 34px 13px 0;}
 }
+
+/* Filed items read as a floating list; selection remains a true button. */
+.public-matrix .public-matrix-item {
+  border:0!important;
+  border-bottom:0!important;
+  background:transparent!important;
+}
+.public-matrix .public-matrix-item:hover {
+  background:color-mix(in srgb,var(--soft) 6%,transparent)!important;
+  border-radius:12px!important;
+  padding-left:0!important;
+}

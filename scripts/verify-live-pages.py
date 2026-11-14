@@ -32,7 +32,7 @@ def inspect(base=DEFAULT_URL):
     for name in OVERLAY:
         source = (ROOT / "scripts" / name).read_bytes()
         # The asset must actually be referenced in published HTML and served byte-for-byte.
-        version = "20261114d" if name in {"public-matrix.js","public-borderless-study.css","public-system-auto.js"} else ("20261114c" if name == "public-matrix.css" else ("20261114a" if name.startswith("public-learning-guide.") else "20261113e"))
+        version = ("20261114e" if name in {"public-borderless-study.css","public-matrix.css"} else "20261114d") if name in {"public-matrix.js","public-borderless-study.css","public-system-auto.js","public-matrix.css"} else ( ("20261114a" if name.startswith("public-learning-guide.") else "20261113e"))
         if "./" + name + "?v=" + version not in html:
             raise ValueError("Live page is missing current public design asset: " + name)
         published = fetch(base, name + "?v=" + version)
