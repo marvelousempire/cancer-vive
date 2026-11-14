@@ -1,0 +1,43 @@
+/* StudyTHAT / ResearchTHAT public presentation experiment:
+   Borderless screen surfaces. Only buttons and icon controls retain borders.
+   This affects the public Pages carrier; original ResearchTHAT/ACT V3 sources
+   and native applications are unchanged. */
+.review,
+.review *:not(button):not([role="button"]):not(.header-icon),
+.review *:not(button):not([role="button"]):not(.header-icon)::before,
+.review *:not(button):not([role="button"]):not(.header-icon)::after {
+  border-width:0!important;
+  border-style:none!important;
+  box-shadow:none!important;
+}
+/* Preserve distinct clickable buttons (including the element atlas), while
+   leaving keyboard focus outlines available for accessibility. */
+.review button:focus-visible,
+.review [role="button"]:focus-visible,
+.review input:focus-visible,
+.review select:focus-visible,
+.review a:focus-visible,
+.review summary:focus-visible {
+  outline:3px solid var(--soft,#155fae)!important;
+  outline-offset:3px!important;
+}
+.review .research-domain .card,
+.review .research-domain .public-learning-guide,
+.review .research-domain .comparison,
+.review .research-domain .receipt {
+  box-shadow:none!important;
+}
+.review .research-domain .public-learning-guide {
+  background:var(--surface-2,#eaf2ff);
+}
+.review .research-domain .card {
+  background:var(--surface,#fff);
+}
+.review .research-domain input,
+.review .research-domain select {
+  background:var(--surface-2,#eaf2ff);
+}
+/* Keep a visible but unboxed title hierarchy and accessible controls. */
+@media (prefers-reduced-motion:reduce) {
+  .review * {scroll-behavior:auto!important;}
+}

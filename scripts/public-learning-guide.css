@@ -1,0 +1,44 @@
+/* Beginner reading path for the public ResearchTHAT carrier only. */
+.public-learning-guide {display:none;}
+.research-domain.public-learning-ready .public-learning-guide {
+  display:block;
+  padding:clamp(14px,3vw,28px);
+  margin:4px 0 12px;
+  border:1px solid var(--line,#aac3e0);
+  border-radius:18px;
+  background:var(--surface-2,#eaf2ff);
+  color:var(--soft,#155fae);
+}
+.research-domain .public-learning-eyebrow {font-size:12px;font-weight:750;letter-spacing:.1em;margin:0 0 8px;}
+.research-domain .public-learning-guide h1 {font-size:clamp(24px,3vw,34px);line-height:1.18;letter-spacing:-.035em;font-weight:750;margin:0 0 10px;}
+.research-domain .public-learning-guide > p:not(.public-learning-eyebrow) {max-width:62ch;font-size:16px;line-height:1.55;margin:0 0 12px;}
+.research-domain .public-learning-actions {display:flex;flex-wrap:wrap;gap:10px;margin:16px 0;}
+.research-domain .public-learning-actions button {min-height:48px;font-size:15px;font-weight:700;padding:10px 14px;border-radius:12px;cursor:pointer;}
+.research-domain .public-learning-primary {background:var(--soft,#155fae)!important;color:var(--bg,#fff)!important;border:1px solid var(--soft,#155fae)!important;}
+.research-domain .public-learning-secondary {background:var(--bg,#fff)!important;color:var(--soft,#155fae)!important;border:1px solid var(--line,#aac3e0)!important;}
+.research-domain .public-learning-caution {font-size:14px!important;line-height:1.5!important;}
+.research-domain .public-learning-explanation {border-top:1px solid var(--line,#aac3e0);padding-top:10px;font-size:14px;}
+.research-domain .public-learning-explanation summary {cursor:pointer;min-height:44px;display:list-item;padding:8px 4px;font-weight:700;}
+.research-domain .public-learning-explanation p {font-size:14px;line-height:1.55;margin:8px 0;}
+/* Keep evidence counts and disclaimer, remove repeated technical staging copy.
+   The existing #status remains available to screen readers as a live region. */
+.research-domain.public-learning-ready .intro > .eyebrow,
+.research-domain.public-learning-ready .intro > h1,
+.research-domain.public-learning-ready .intro > p:not(.eyebrow),
+.research-domain.public-learning-ready #identity {display:none!important;}
+.research-domain.public-learning-ready #status {
+  position:absolute!important;
+  height:1px!important;min-height:0!important;width:1px!important;max-height:1px!important;
+  overflow:hidden!important;clip-path:inset(50%)!important;
+  white-space:nowrap!important;
+}
+.research-domain.public-learning-ready .intro {padding:0!important;}
+.research-domain.public-learning-ready .intro .facts {margin:6px 0 12px!important;}
+.research-domain.public-learning-ready .card h3 {font-size:clamp(18px,2vw,22px);line-height:1.3;}
+.research-domain.public-learning-ready .card .tag {font-weight:700;}
+.research-domain.public-learning-ready .card strong {display:block;margin-top:10px;line-height:1.45;}
+@media(max-width:700px) {
+  .research-domain.public-learning-ready .public-learning-guide {padding:16px;margin:0 0 10px;border-radius:14px;}
+  .research-domain.public-learning-ready .public-learning-actions {display:grid;grid-template-columns:1fr;gap:8px;margin:12px 0;}
+  .research-domain.public-learning-ready .public-learning-actions button {width:100%;text-align:center;}
+}

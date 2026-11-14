@@ -10,7 +10,7 @@ from urllib.error import URLError, HTTPError
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_URL = "https://marvelousempire.github.io/cancer-vive/"
-OVERLAY = ("public-mobile-menu.js", "public-mobile-menu.css")
+OVERLAY = ("public-mobile-menu.js", "public-mobile-menu.css", "public-learning-guide.js", "public-learning-guide.css", "public-borderless-study.css")
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
@@ -32,9 +32,10 @@ def inspect(base=DEFAULT_URL):
     for name in OVERLAY:
         source = (ROOT / "scripts" / name).read_bytes()
         # The asset must actually be referenced in published HTML and served byte-for-byte.
-        if "./" + name + "?v=20261113e" not in html:
-            raise ValueError("Live page is missing current mobile asset: " + name)
-        published = fetch(base, name + "?v=20261113e")
+        version = "20261114b" if name == "public-borderless-study.css" else ("20261114a" if name.startswith("public-learning-guide.") else "20261113e")
+        if "./" + name + "?v=" + version not in html:
+            raise ValueError("Live page is missing current public design asset: " + name)
+        published = fetch(base, name + "?v=" + version)
         if sha(published) != sha(source):
             raise ValueError("Live mobile asset does not match checked source: " + name)
     data = json.loads(fetch(base, "public-data.json"))
