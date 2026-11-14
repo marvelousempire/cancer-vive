@@ -31,6 +31,8 @@ class PublicCarrierTests(unittest.TestCase):
             self.assertIn('public-borderless-study.css?v=20261114d',(output/'index.html').read_text())
             self.assertEqual((output/'public-borderless-study.css').read_bytes(),(pages.ROOT/'scripts/public-borderless-study.css').read_bytes())
             self.assertIn('public-matrix.js?v=20261114d',(output/'index.html').read_text())
+            self.assertIn('public-system-auto.js?v=20261114d',(output/'index.html').read_text())
+            self.assertEqual((output/'public-system-auto.js').read_bytes(),(pages.ROOT/'scripts/public-system-auto.js').read_bytes())
             self.assertIn('public-matrix.css?v=20261114c',(output/'index.html').read_text())
             matrix=__import__('json').loads((output/'public-matrix.json').read_text())
             self.assertGreaterEqual(len(matrix['rows']),20)
