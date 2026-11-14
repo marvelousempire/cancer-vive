@@ -24,6 +24,10 @@ class PublicCarrierTests(unittest.TestCase):
             self.assertNotIn('document.querySelectorAll(".pages button")',(output/'public-mobile-menu.js').read_text())
             self.assertEqual((output/'public-mobile-menu.css').read_bytes(),(pages.ROOT/'scripts/public-mobile-menu.css').read_bytes())
             self.assertEqual((output/'public-mobile-menu.js').read_bytes(),(pages.ROOT/'scripts/public-mobile-menu.js').read_bytes())
+            self.assertIn('public-learning-guide.js?v=20261114a',(output/'index.html').read_text())
+            self.assertIn('public-learning-guide.css?v=20261114a',(output/'index.html').read_text())
+            self.assertEqual((output/'public-learning-guide.js').read_bytes(),(pages.ROOT/'scripts/public-learning-guide.js').read_bytes())
+            self.assertEqual((output/'public-learning-guide.css').read_bytes(),(pages.ROOT/'scripts/public-learning-guide.css').read_bytes())
     def test_changed_and_extra_file_refused(self):
         with tempfile.TemporaryDirectory()as tmp:
             root=Path(tmp);shutil.copytree(pages.ROOT/'public-researchthat',root/'public-researchthat');shutil.copy2(pages.ROOT/'public-researchthat-carrier.json',root)
