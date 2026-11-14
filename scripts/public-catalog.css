@@ -50,3 +50,7 @@
 }
 @media(max-width:350px){.research-catalog-cards{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.research-catalog *{scroll-behavior:auto!important;transition:none!important}}
+
+/* Only the public read-only carrier hides its older duplicated question list.
+   ACT V3 owner still mounts the authenticated workspace without suppression. */
+.research-domain.research-catalog-ready.research-catalog-public .workspace{display:none!important}
