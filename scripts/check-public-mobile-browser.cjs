@@ -71,6 +71,14 @@ const server = http.createServer((req,res)=>{
     await matrixOpen.click();
     await page.locator('.public-matrix-search').waitFor({state:'visible'});
     await page.waitForFunction(()=>document.querySelector('.public-matrix-count')?.textContent.includes('filed items'));
+    assert.ok(await page.locator('.public-matrix-item').count()>=20,'All filed items appear BEFORE typing');
+    assert.notEqual(await page.locator('.public-matrix-search').evaluate(el=>el===document.activeElement),true,
+      'Opening Matrix must not focus search and summon the mobile keyboard');
+    const rails=await page.evaluate(()=>['.review .footer-rail','.review .pages','.review .edge-tools'].map(selector=>{
+      const el=document.querySelector(selector);if(!el)return null;
+      const s=getComputedStyle(el);return {selector,border:s.borderTopWidth,background:s.backgroundColor};
+    }));
+    for(const rail of rails.filter(Boolean))assert.equal(rail.border,'0px',rail.selector+' must have no line');
     assert.ok(await page.locator('.public-matrix-item').count()>=20,'All approved filed Matrix items are searchable');
     await page.locator('.public-matrix-search').fill('Fenugreek');
     assert.equal(await page.locator('.public-matrix-item').count(),1);
