@@ -60,41 +60,33 @@ const server = http.createServer((req,res)=>{
     await page.waitForFunction(()=>document.documentElement.classList.contains('public-phone-menu-ready'),null,{timeout:25000});
     assert.ok(await page.locator('.footer-rail .build-path button').count()>=5,'Real ACT page buttons must exist');
     assert.equal(await page.locator('.research-domain .research-identity').isVisible(),false,'Duplicate ResearchThat title hidden');
-    await page.locator('.public-learning-guide').waitFor({state:'visible',timeout:12000});
-    // Borderless design: no borders on containers/chips, buttons remain visibly bounded.
-    const borderWidths = await page.evaluate(() => {
-      const get = (selector) => {
-        const el = document.querySelector(selector);
-        if (!el) return null;
-        const style = getComputedStyle(el);
-        return {width: style.borderTopWidth, style: style.borderTopStyle};
-      };
-      return {card:get('.research-domain .card'),guide:get('.public-learning-guide'),chip:get('.research-domain .facts span'),button:get('.public-phone-options')};
-    });
-    assert.equal(borderWidths.guide?.width,'0px','Learning container should be borderless');
-    const studyBackground=await page.locator('.public-learning-guide').evaluate(el=>getComputedStyle(el).backgroundColor);
-    assert.equal(studyBackground,'rgba(0, 0, 0, 0)','Study guide must float on the canvas without a filled panel');
-    assert.equal(borderWidths.button?.width,'1px','Buttons keep their visible border');
-    assert.equal(borderWidths.chip?.width,'0px','Info chips should be borderless');
-    assert.equal(await page.locator('.public-learning-guide h1').innerText(),'Explore research questions');
-    assert.equal(await page.locator('.public-learning-guide').count(),1,'Learning entrance should appear only once');
-    assert.equal(await page.locator('.research-domain .intro > h1').isVisible(),false,'Old technical heading should not compete');
-    const statusDimensions = await page.locator('.research-domain #status').evaluate(el => {
-      const box=el.getBoundingClientRect(),style=getComputedStyle(el);
-      return {width:box.width,height:box.height,clip:style.clipPath};
-    });
-    assert.ok(statusDimensions.width<=1 && statusDimensions.height<=1 &&
-      statusDimensions.clip.includes('inset'),
-      'Repeated public status should occupy no visible reading space: '+JSON.stringify(statusDimensions));
-    await page.locator('.public-learning-primary').click();
-    assert.equal(await page.locator('#query').evaluate(el=>el===document.activeElement),true,'Explore must focus search');
-    await page.locator('.public-learning-explanation summary').click();
-    assert.equal(await page.locator('.public-learning-explanation p').isVisible(),true,'Evidence explanation must open');
+    await page.locator('.research-catalog').waitFor({state:'visible',timeout:12000});
+    await page.waitForFunction(()=>document.querySelectorAll('.research-catalog-card').length>=20);
+    assert.ok(await page.locator('.research-catalog-card').count()>=20,'Filed catalog cards should appear without searching');
+    assert.equal(await page.locator('.research-catalog-search').evaluate(el=>document.activeElement===el),false,'No keyboard on landing');
+    assert.equal(await page.locator('.research-catalog-toolbar button').count(),3,'Grid, List and Filter visible');
+    await page.locator('.research-catalog-toolbar button').nth(1).click();
+    assert.equal(await page.locator('.research-catalog-cards.as-list').count(),1,'List view works');
+    await page.locator('.research-catalog-toolbar button').first().click();
+    assert.equal(await page.locator('.research-catalog-cards.as-list').count(),0,'Grid view works');
+    await page.locator('.research-catalog-toolbar button').nth(2).click();
+    await page.locator('.research-catalog-chip').last().click();
+    assert.ok((await page.locator('.research-catalog-empty').innerText()).includes('No verified recipes'),'No fabricated recipe cards');
+    await page.locator('.research-catalog-chip').first().click();
+    await page.locator('.research-catalog-search').fill('fenugreek');
+    assert.equal(await page.locator('.research-catalog-card').count(),1,'Catalog searches filed names');
+    await page.locator('.research-catalog-card').first().click();
+    assert.ok((await page.locator('.research-catalog-reader').innerText()).includes('Human cancer research'),'Profile has evidence fields');
+    await page.locator('.research-catalog-back').click();
+    await page.locator('.research-catalog-search').fill('strawberry breast');
+    assert.ok(await page.locator('.research-catalog-empty').count()===1,'Combination search must not invent medical connections');
+    await page.locator('.research-catalog-search').fill('');
+    const catalogButton = await page.locator('.research-catalog-card').first().evaluate(el=>({height:el.getBoundingClientRect().height,padding:getComputedStyle(el).paddingLeft}));
+    assert.ok(catalogButton.height>=120,'Mobile cards must be comfortably sized');
+    assert.ok(parseFloat(catalogButton.padding)>=16,'Cards must have generous inner padding');
+    assert.equal(await page.locator('.research-domain .intro > h1').isVisible(),false,'Old introduction must not compete');
     // One-tap mobile Matrix with exact filed items, names and eight-column data.
     assert.equal(await page.locator('.public-matrix-launch').count(),1,'One Matrix entrance, no repeated CTA');
-    assert.equal(await page.locator('.public-learning-actions button').count(),2,'Only two compact learning actions');
-    const entrance=await page.locator('.public-learning-guide').boundingBox();
-    assert.ok(entrance && entrance.height<330,'Phone learning introduction must not consume a full screen: '+JSON.stringify(entrance));
     const matrixOpen=page.locator('.public-matrix-quick .public-matrix-launch');
     await matrixOpen.waitFor({state:'visible',timeout:12000});
     await matrixOpen.click();
