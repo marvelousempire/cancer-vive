@@ -31,6 +31,9 @@
   section.append(header,search,toolbar,filters,count,entries,reader,caution);
   const phone=main.querySelector(".public-phone-nav");if(phone)phone.after(section);else main.prepend(section);
   root.classList.add("research-catalog-ready");
+  // The static carrier may replace its duplicate public list; the real ACT
+  // product must retain its authenticated research workspace and instruments.
+  if(!window.ResearchThatMatrixData)root.classList.add("research-catalog-public");
   document.addEventListener("click",event=>{
    const target=event.target.closest?.('[data-public-room],.side [data-room],.footer-rail .build-path button');if(!target)return;
    const room=(target.dataset.publicRoom||target.dataset.room||target.getAttribute("aria-label")||target.textContent||"").toLowerCase().trim();

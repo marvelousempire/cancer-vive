@@ -97,6 +97,8 @@ const server = http.createServer((req,res)=>{
     assert.ok(parseFloat(catalogButton.padding)>=16,'Cards must have generous inner padding');
     assert.ok(!(await page.locator('.research-catalog').innerText()).includes('Food or ingredient mention'),'Do not claim a verified food identity from a keyword guess');
     assert.equal(await page.locator('.research-domain .intro > h1').isVisible(),false,'Old introduction must not compete');
+    assert.equal(await page.locator('.research-domain .workspace').isVisible(),false,
+      'Public catalog should not stack a second research card list under the catalog');
     // One-tap mobile Matrix with exact filed items, names and eight-column data.
     assert.equal(await page.locator('.public-matrix-launch').count(),1,'One Matrix entrance, no repeated CTA');
     const matrixOpen=page.locator('.public-matrix-quick .public-matrix-launch');

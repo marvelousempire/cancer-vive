@@ -77,8 +77,8 @@ def build(destination,root=ROOT):
     html=html.replace('./public-learning-guide.js?v=20261114a','./public-learning-guide.js?v=20261114f',1)
     html=html.replace('./public-learning-guide.css?v=20261114a','./public-learning-guide.css?v=20261114f',1)
     # Source-backed mobile catalog overlay; no private records or synthetic recipes.
-    html=html.replace('</head>', '<link rel="stylesheet" href="./public-catalog.css?v=20261114i"></head>',1)
-    html=html.replace('</body>', '<script src="./public-catalog.js?v=20261114i" defer></script></body>',1)
+    html=html.replace('</head>', '<link rel="stylesheet" href="./public-catalog.css?v=20261114j"></head>',1)
+    html=html.replace('</body>', '<script src="./public-catalog.js?v=20261114j" defer></script></body>',1)
     page.write_text(html)
     shutil.copy2(root/'scripts/public-catalog.js',destination/'public-catalog.js')
     shutil.copy2(root/'scripts/public-catalog.css',destination/'public-catalog.css')
