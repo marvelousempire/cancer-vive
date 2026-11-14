@@ -44,6 +44,14 @@
     const phone=main.querySelector(".public-phone-nav");
     if(phone)phone.after(outer);else main.prepend(outer);
     root.classList.add("research-catalog-ready");
+    // Catalog owns the landing only. Other ResearchThat rooms retain their real controls.
+    document.addEventListener("click",event=>{
+      const target=event.target.closest?.('[data-public-room],.side [data-room],.footer-rail .build-path button');
+      if(!target)return;
+      const room=(target.dataset.publicRoom||target.dataset.room||target.getAttribute("aria-label")||target.textContent||"").toLowerCase().trim();
+      const evidence=room==="topics"||room==="evidence"||room.includes("evidence");
+      queueMicrotask(()=>root.classList.toggle("research-catalog-ready",evidence));
+    },true);
     const fieldNames=["Item / variable","Form or constituent","Research rationale","Evidence","Human cancer research","Established treatment?","Safety and form limits","Current research position"];
     const sourceUrl=window.ResearchThatMatrixData?.source?.startsWith("http")?window.ResearchThatMatrixData.source:
       (window.ResearchThatMatrixData ? null : "./public-docs/MASTER-CANCER-DETRIMENT-MATRIX.md");
