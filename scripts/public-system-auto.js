@@ -74,7 +74,7 @@
         (r.type==="childList"&&!root.isConnected));
       if(affected)connect();
     });
-    observer.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:["class","style"]});
+    observer.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:["class"]});
   };
   if(!connect()){
     const wait=new MutationObserver(()=>{if(connect()){wait.disconnect();startObserver();}});
