@@ -56,7 +56,11 @@ def build(destination,root=ROOT):
                       marker+'<link rel="stylesheet" href="./public-mobile-menu.css?v=20261113e"><link rel="stylesheet" href="./public-learning-guide.css?v=20261114a">',1)
     html=html.replace('<script src="./public-mobile-menu.js?v=20261113e" defer></script>',
                       '<script src="./public-mobile-menu.js?v=20261113e" defer></script><script src="./public-learning-guide.js?v=20261114a" defer></script>',1)
+    border_css=root/'scripts/public-borderless-study.css'
+    html=html.replace('<link rel="stylesheet" href="./public-learning-guide.css?v=20261114a">',
+                      '<link rel="stylesheet" href="./public-learning-guide.css?v=20261114a"><link rel="stylesheet" href="./public-borderless-study.css?v=20261114b">',1)
     page.write_text(html)
+    shutil.copy2(border_css,destination/'public-borderless-study.css')
     shutil.copy2(css,destination/'public-mobile-menu.css')
     shutil.copy2(js,destination/'public-mobile-menu.js')
     shutil.copy2(guide_css,destination/'public-learning-guide.css')
