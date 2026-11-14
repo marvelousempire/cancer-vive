@@ -67,6 +67,9 @@ def build(destination,root=ROOT):
                       '<link rel="stylesheet" href="./public-borderless-study.css?v=20261114b"><link rel="stylesheet" href="./public-matrix.css?v=20261114c">',1)
     html=html.replace('<script src="./public-learning-guide.js?v=20261114a" defer></script>',
                       '<script src="./public-learning-guide.js?v=20261114a" defer></script><script src="./public-matrix.js?v=20261114c" defer></script>',1)
+    # Mobile-first list and borderless floating rail correction.
+    html=html.replace('./public-matrix.js?v=20261114c','./public-matrix.js?v=20261114d',1)
+    html=html.replace('./public-borderless-study.css?v=20261114b','./public-borderless-study.css?v=20261114d',1)
     page.write_text(html)
     shutil.copy2(root/'scripts/public-matrix.css',destination/'public-matrix.css')
     shutil.copy2(root/'scripts/public-matrix.js',destination/'public-matrix.js')
