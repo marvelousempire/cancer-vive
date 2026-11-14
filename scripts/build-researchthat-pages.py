@@ -61,8 +61,8 @@ def build(destination,root=ROOT):
                       '<link rel="stylesheet" href="./public-learning-guide.css?v=20261114a"><link rel="stylesheet" href="./public-borderless-study.css?v=20261114b">',1)
     # One new public read-only Matrix projection from the already sealed source.
     # Keep the original Markdown unchanged and verify all eight columns.
-    from public_matrix import build_matrix
-    matrix_count=build_matrix(root,destination)
+    import runpy
+    matrix_count=runpy.run_path(str(ROOT/'scripts/public_matrix.py'))['build_matrix'](root,destination)
     html=html.replace('<link rel="stylesheet" href="./public-borderless-study.css?v=20261114b">',
                       '<link rel="stylesheet" href="./public-borderless-study.css?v=20261114b"><link rel="stylesheet" href="./public-matrix.css?v=20261114c">',1)
     html=html.replace('<script src="./public-learning-guide.js?v=20261114a" defer></script>',
