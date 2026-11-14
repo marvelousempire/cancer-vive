@@ -16,15 +16,15 @@
     eyebrow.className = "public-learning-eyebrow";
     eyebrow.textContent = "PUBLIC RESEARCH LIBRARY";
     const heading = document.createElement("h1");
-    heading.textContent = "Explore one question at a time.";
+    heading.textContent = "Explore research questions";
     const description = document.createElement("p");
-    description.textContent = "Browse a research question, see what the evidence says and where it came from, then read more when you're ready.";
+    description.textContent = "Read what studies found, what remains uncertain, and where the evidence came from.";
     const actions = document.createElement("div");
     actions.className = "public-learning-actions";
     const browse = document.createElement("button");
     browse.type = "button";
     browse.className = "public-learning-primary";
-    browse.textContent = "Explore research questions";
+    browse.textContent = "Browse questions";
     browse.addEventListener("click", () => {
       const search = root.querySelector("#query");
       if (search && !search.closest("[hidden]")) {
@@ -40,7 +40,7 @@
     const learn = document.createElement("button");
     learn.type = "button";
     learn.className = "public-learning-secondary";
-    learn.textContent = "Learn how to read the research";
+    learn.textContent = "Learn to read evidence";
     learn.addEventListener("click", () => {
       const owner = [...document.querySelectorAll(".footer-rail .build-path button")]
         .find(button => (button.getAttribute("aria-label") || button.textContent).trim() === "Learn");
@@ -50,7 +50,7 @@
     actions.append(browse,learn);
     const note = document.createElement("p");
     note.className = "public-learning-caution";
-    note.textContent = "Research evidence has limits. This library does not recommend cancer treatments or replace medical advice.";
+    note.textContent = "Research is not medical advice. Study results have limits.";
     const explanation = document.createElement("details");
     explanation.className = "public-learning-explanation";
     const summary = document.createElement("summary");
