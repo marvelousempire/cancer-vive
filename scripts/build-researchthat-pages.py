@@ -70,7 +70,10 @@ def build(destination,root=ROOT):
     # Mobile-first list and borderless floating rail correction.
     html=html.replace('./public-matrix.js?v=20261114c','./public-matrix.js?v=20261114d',1)
     html=html.replace('./public-borderless-study.css?v=20261114b','./public-borderless-study.css?v=20261114d',1)
+    html=html.replace('<script src="./public-matrix.js?v=20261114d" defer></script>',
+                      '<script src="./public-matrix.js?v=20261114d" defer></script><script src="./public-system-auto.js?v=20261114d" defer></script>',1)
     page.write_text(html)
+    shutil.copy2(root/'scripts/public-system-auto.js',destination/'public-system-auto.js')
     shutil.copy2(root/'scripts/public-matrix.css',destination/'public-matrix.css')
     shutil.copy2(root/'scripts/public-matrix.js',destination/'public-matrix.js')
     shutil.copy2(border_css,destination/'public-borderless-study.css')
