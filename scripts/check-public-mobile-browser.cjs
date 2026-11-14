@@ -54,7 +54,13 @@ const server = http.createServer((req,res)=>{
     assert.equal(await page.locator('.public-learning-guide h1').innerText(),'Explore one question at a time.');
     assert.equal(await page.locator('.public-learning-guide').count(),1,'Learning entrance should appear only once');
     assert.equal(await page.locator('.research-domain .intro > h1').isVisible(),false,'Old technical heading should not compete');
-    assert.equal(await page.locator('.research-domain #status').isVisible(),false,'Repeated public status should not crowd reading view');
+    const statusDimensions = await page.locator('.research-domain #status').evaluate(el => {
+      const box=el.getBoundingClientRect(),style=getComputedStyle(el);
+      return {width:box.width,height:box.height,clip:style.clipPath};
+    });
+    assert.ok(statusDimensions.width<=1 && statusDimensions.height<=1 &&
+      statusDimensions.clip.includes('inset'),
+      'Repeated public status should occupy no visible reading space: '+JSON.stringify(statusDimensions));
     await page.locator('.public-learning-primary').click();
     assert.equal(await page.locator('#query').evaluate(el=>el===document.activeElement),true,'Explore must focus search');
     await page.locator('.public-learning-explanation summary').click();
